@@ -7,7 +7,7 @@
   "description": "A decentralized ecosystem for sharing, distributing, and discovering Magisk modules.",
   "metadata": {
     "version": 1,
-    "timestamp": 1792721794.943
+    "timestamp": 1792751820.506
   },
   "modules": [
     {
@@ -561,8 +561,8 @@
     {
       "id": "COPG",
       "name": "COPG SPOOF",
-      "version": "7.3.0",
-      "versionCode": 730,
+      "version": "7.6.0",
+      "versionCode": 760,
       "author": "AlirezaParsi",
       "description": "The most advanced device spoofer for Android",
       "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/5D-pHr7UP3tn/README.md",
@@ -573,10 +573,10 @@
       ],
       "verified": false,
       "added": 1790193106.726,
-      "timestamp": 1790899200,
+      "timestamp": 1792713600,
       "permissions": [],
       "features": {},
-      "stars": 43,
+      "stars": 51,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1790193106.726,
@@ -661,6 +661,27 @@
           "versionCode": 730,
           "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.3.0/COPG-v7.3.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.3.0.md"
+        },
+        {
+          "timestamp": 1792731690.402,
+          "version": "7.6.0",
+          "versionCode": 760,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.6.0/COPG-v7.6.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.6.0.md"
+        },
+        {
+          "timestamp": 1792731690.409,
+          "version": "7.5.1",
+          "versionCode": 751,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.5.1/COPG-v7.5.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.5.1.md"
+        },
+        {
+          "timestamp": 1792731690.414,
+          "version": "7.5.0",
+          "versionCode": 750,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.5.0/COPG-v7.5.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.5.0.md"
         }
       ]
     },
@@ -681,7 +702,7 @@
       "timestamp": 1791763200,
       "permissions": [],
       "features": {},
-      "stars": 19,
+      "stars": 21,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791802080.695,
@@ -1263,7 +1284,7 @@
       "timestamp": 1787875200,
       "permissions": [],
       "features": {},
-      "stars": 325,
+      "stars": 327,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1773660272.738,
@@ -1480,7 +1501,7 @@
       "timestamp": 1788480000,
       "permissions": [],
       "features": {},
-      "stars": 206,
+      "stars": 207,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1773659774.307,
@@ -2064,7 +2085,7 @@
       "timestamp": 1772236800,
       "permissions": [],
       "features": {},
-      "stars": 833,
+      "stars": 835,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1772285340.189,
@@ -2233,7 +2254,7 @@
       "timestamp": 1791590400,
       "permissions": [],
       "features": {},
-      "stars": 132,
+      "stars": 134,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771108173.19,
