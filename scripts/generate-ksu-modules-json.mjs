@@ -46,7 +46,7 @@ const CONCURRENCY = Number(process.env.CONCURRENCY || 8);
 const inspectIdx = process.argv.indexOf("--inspect");
 const INSPECT_ID = inspectIdx !== -1 ? process.argv[inspectIdx + 1] : null;
 
-const RAW_BASE_URL = INSPECT_ID ? "" : requireEnv("MMRL_RAW_BASE_URL").replace(/\/$/, "");
+const RAW_BASE_URL = INSPECT_ID ? "" : requireEnv("RAW_BASE_URL").replace(/\/$/, "");
 
 function requireEnv(name) {
   const value = process.env[name];
