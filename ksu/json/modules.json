@@ -2,12 +2,12 @@
   "name": "KernelSU Modules Repository",
   "website": "https://modules.kernelsu.org",
   "donate": "https://github.com/sponsors/tiann",
-  "cover": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/assets/ksu-cover.png",
+  "cover": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/assets/ksu-cover.webp",
   "submission": "https://developers.kernelsu.org",
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
-    "version": 1,
-    "timestamp": 1793726814.748
+    "version": 2,
+    "timestamp": 1793727417.612
   },
   "modules": [
     {
