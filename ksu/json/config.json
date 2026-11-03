@@ -1,0 +1,8 @@
+{
+  "name": "KernelSU Modules Repository",
+  "website": "https://modules.kernelsu.org",
+  "donate": "https://github.com/sponsors/tiann",
+  "cover": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/assets/ksu-cover.png",
+  "submission": "https://developers.kernelsu.org",
+  "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases."
+}

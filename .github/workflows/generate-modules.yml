@@ -29,21 +29,25 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Generate modules.json
+      - name: Generate modules.json from repo.mmrl.dev
         env:
-          MMRL_API_BASE_URL: ${{ secrets.MMRL_API_BASE_URL }}
-          MMRL_API_KEY: ${{ secrets.MMRL_API_KEY }}
-          MMRL_RAW_BASE_URL: https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/
-          MMRL_OUTPUT_PATH: json/modules.json
-          MMRL_META_PATH: json/config.json
+          API_BASE_URL: ${{ secrets.MMRL_API_BASE_URL }}
+          API_KEY: ${{ secrets.MMRL_API_KEY }}
+          RAW_BASE_URL: https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/
+          OUTPUT_PATH: json/modules.json
+          META_PATH: json/config.json
         run: node scripts/generate-modules-json.mjs
+
+      - name: Generate modules.json from modules.kernelsu.org
+        env:
+          RAW_BASE_URL: https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/
+          OUTPUT_PATH: ksu/json/modules.json
+          MODULES_PATH: ksu/modules
+          META_PATH: ksu/json/config.json
+        run: node scripts/generate-ksu-modules-json.mjs
 
       - name: Commit and push if changed
         run: |
-          if git diff --quiet -- json/modules.json; then
-            echo "No changes to modules.json"
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .

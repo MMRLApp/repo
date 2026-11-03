@@ -14,21 +14,21 @@
  * matching versions[] entry.
  *
  * Required env vars:
- *   MMRL_API_BASE_URL   e.g. https://mmrl.dergoogler.com/api
- *   MMRL_API_KEY        API key with "read" scope (sent as X-API-Key header)
- *   MMRL_RAW_BASE_URL   raw base of the repo + branch the output is pushed to,
+ *   API_BASE_URL   e.g. https://mmrl.dergoogler.com/api
+ *   API_KEY        API key with "read" scope (sent as X-API-Key header)
+ *   RAW_BASE_URL   raw base of the repo + branch the output is pushed to,
  *                        e.g. https://raw.githubusercontent.com/<owner>/<repo>/main
  *
  * Optional env vars:
- *   MMRL_OUTPUT_PATH    where to write the result (default: ./modules.json)
- *   MMRL_META_PATH      path to the repo-level static metadata JSON
+ *   OUTPUT_PATH    where to write the result (default: ./modules.json)
+ *   META_PATH      path to the repo-level static metadata JSON
  *                        (default: ./repo.meta.json)
- *   MMRL_CONCURRENCY    how many modules to fetch in parallel (default: 8)
+ *   CONCURRENCY    how many modules to fetch in parallel (default: 8)
  *
  * Usage (run from the repo root so modules/<id>/ files land in the repo):
- *   MMRL_API_BASE_URL=https://example.com/api \
- *   MMRL_API_KEY=xxxx \
- *   MMRL_RAW_BASE_URL=https://raw.githubusercontent.com/you/repo/main \
+ *   API_BASE_URL=https://example.com/api \
+ *   API_KEY=xxxx \
+ *   RAW_BASE_URL=https://raw.githubusercontent.com/you/repo/main \
  *   node scripts/generate-modules-json.mjs
  * ---------------------------------------------------------------------------
  * NOTE ON FIELD MAPPING
@@ -44,14 +44,14 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
-const API_BASE_URL = requireEnv("MMRL_API_BASE_URL");
-const API_KEY = requireEnv("MMRL_API_KEY");
+const API_BASE_URL = requireEnv("API_BASE_URL");
+const API_KEY = requireEnv("API_KEY");
 // Base for raw links, e.g. https://raw.githubusercontent.com/<owner>/<repo>/<branch>
-const RAW_BASE_URL = requireEnv("MMRL_RAW_BASE_URL").replace(/\/$/, "");
-const OUTPUT_PATH = process.env.MMRL_OUTPUT_PATH || "./modules.json";
-const MODULES_PATH = "modules";
-const META_PATH = process.env.MMRL_META_PATH || "./repo.meta.json";
-const CONCURRENCY = Number(process.env.MMRL_CONCURRENCY || 8);
+const RAW_BASE_URL = requireEnv("RAW_BASE_URL").replace(/\/$/, "");
+const OUTPUT_PATH = process.env.OUTPUT_PATH || "./modules.json";
+const MODULES_PATH = process.env.MODULES_PATH || "modules";
+const META_PATH = process.env.META_PATH || "./repo.meta.json";
+const CONCURRENCY = Number(process.env.CONCURRENCY || 8);
 
 function requireEnv(name) {
   const value = process.env[name];
