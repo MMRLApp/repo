@@ -1,0 +1,227 @@
+[![](/assets/e57d856a1738ccad.svg)](https://github.com/WayneShao/KernelSU-Tailscaled)
+[![](/assets/0418fd9c50421843.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/actions/workflows/publish-source.yml)
+[![](/assets/e83773a48156d63f.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/releases)
+[![](/assets/3f789e620dc42372.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/releases/latest)
+[![](/assets/587c5f2d5ed548a2.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/issues)
+
+# KernelSU-Tailscaled
+
+Run the official Tailscale daemon on rooted Android without occupying Android's
+VPN slot. KernelSU-first module with a local WebUI, serialized lifecycle control,
+diagnostic health checks, explicit legacy migration, and verified runtime updates.
+
+**[2.0.5 is the current stable release](https://github.com/WayneShao/KernelSU-Tailscaled/releases/latest).**
+The legacy Magisk-Tailscaled v1 release and update channel are retired. Only the
+`kernelsu-tailscaled` module line is maintained. Official store review is separate.
+This is an independent continuation of `ryukora/Magisk-Tailscaled`, not an official
+Tailscale or KernelSU product. The daemon remains the official Tailscale 1.104.2
+binary; this project maintains the Android module integration.
+
+## Identity And Compatibility
+
+Item
+Value
+
+Module ID
+`kernelsu-tailscaled`
+
+Source
+[WayneShao/KernelSU-Tailscaled](https://github.com/WayneShao/KernelSU-Tailscaled)
+
+Persistent data
+`/data/adb/kernelsu-tailscaled`
+
+Legacy ID
+`magisk-tailscaled`
+
+Legacy data
+`/data/adb/tailscale`, read only by explicit migration
+
+Architectures
+ARM and ARM64
+
+Primary manager
+KernelSU with WebUI support
+
+ARM64 testing targets are the maintainer's OnePlus PKX110 and Xiaomi nezha.
+Host tests and package validation do not establish broad Android, Magisk,
+APatch, or userspace-tunnel compatibility. See the verification record
+under `docs/verification` for actual results and remaining limits.
+
+## Install And Activate
+
+- Obtain a ZIP from the [current release](https://github.com/WayneShao/KernelSU-Tailscaled/releases/latest).
+The universal ZIP includes both architectures; an ARM64-only ZIP is also built.
+
+- Install the ZIP through KernelSU Manager, or `ksud module install ZIP`.
+The installer verifies the complete bundle, switches the owned runtime, and
+publishes the KernelSU WebUI and Action entrypoints. Existing v2 login and
+configuration are preserved. No post-install patch script is needed.
+
+- Installation starts the new runtime immediately unless an old login still
+requires explicit migration. No script requests or performs an Android reboot.
+
+- For a fresh identity, open the official local panel
+to sign in. For an existing legacy identity, follow the migration below.
+
+Hot installation switches scripts and binaries together and publishes the
+complete manager view from that same ZIP. Reopen an already-open Details page
+to load its new assets. Normal KernelSU module promotion remains compatible with
+the selected runtime. **Apply staged runtime** is also available for a staged
+candidate; routine ZIP installation does not need that extra step.
+
+## Update The Tailscale Engine
+
+Open **Tailscale engine update** in Details. Check for an official stable
+version, download and verify it, then apply when ready. Downloading does not
+interrupt the service; applying briefly restarts it while retaining your login
+and settings. No Android reboot is requested.
+
+Downloads use the official HTTPS server and its SHA-256 checksum. Failed
+activation restores the previous engine and saved identity. Pending recovery
+respects a later stop/disable. Updated engines persist across module installs
+and boot; a newer bundled engine takes precedence. See the
+[v2.0.5 release notes](https://github.com/WayneShao/KernelSU-Tailscaled/blob/f53ec850408fac799a91868652dbf8d2282703a6/docs/releases/v2.0.5.md) for validation and limits.
+
+## Migrate An Existing Login
+
+Existing `kernelsu-tailscaled` installations, including beta.5, install the current release
+normally and keep their login state. No migration is needed within this module ID.
+
+The old `magisk-tailscaled` ID is retired. Its `update.json` endpoint has been
+removed; it does not offer an automatic cross-ID upgrade. The following is a
+one-time procedure for retained legacy data, not a maintained v1 upgrade channel.
+
+- Stop the legacy Tailscale service explicitly, then disable the legacy module.
+Do not uninstall it with a legacy uninstall script that deletes its identity.
+
+- Invoke **Migrate legacy identity** in the new module or run its control entry
+with `migrate-legacy`. The module verifies that old/new daemons and watchers are
+stopped before proceeding.
+
+- Migration copies the identity and validated configuration; it never moves,
+deletes, replaces, or logs the legacy state. Existing destination identity or
+unrelated configuration is preserved and causes the operation to stop.
+
+- Enable the new module explicitly. Migration itself leaves it stopped, even
+across a subsequent boot. Existing hostname, DNS, route and exit preferences
+are retained. No duplicate identity should run in the old module concurrently.
+
+An interrupted migration keeps a hash-checked journal. Repeating migration
+resumes only matching transaction-owned data; changed destination content is
+preserved for inspection. `migration-status` distinguishes incomplete migration,
+awaiting enable, existing destination, and absent legacy state.
+
+## Runtime And Configuration
+
+Persistent identity, configuration and logs are separate from manager files.
+Complete checked generations live under `releases/`; `current` selects the active
+generation and `previous` records the prior one. Activation rejects engine
+downgrades. Failed activation can automatically restore a prior generation only
+when its engine version is identical; arbitrary state-format rollback is not
+promised. Generations are retained for diagnosis, not automatically pruned.
+
+`config/module.conf` is parsed as data, never sourced as shell code:
+
+```
+MODE=native
+TUN_NAME=tailscale0
+TAILSCALE_PORT=41641
+WEB_LISTEN=127.0.0.1:8088
+SOCKS_LISTEN=127.0.0.1:1055
+CONTROL_PROXY=
+DEVICE_HOSTNAME=
+SUPERVISOR_INTERVAL=5
+RESTART_BACKOFF_MAX=60
+
+```
+
+Native mode is explicit. Userspace mode requires the bundled helper and is never
+silently selected after an interface failure. An optional loopback HTTP/SOCKS5
+`CONTROL_PROXY` affects control-plane requests, not direct WireGuard traffic.
+No script edits another module's firewall, proxy, DNS, or ZeroTier configuration.
+
+Fresh identities initialize a hostname from the Android device name, falling
+back to product/model, and begin with DNS/subnet acceptance and exit routing off.
+Existing identities retain their preferences. The dashboard prefers the
+control-plane DNS name so admin-console renaming appears correctly.
+
+The status contract reports lifecycle, owned processes, real native interface
+and applicable routes, upstream health warnings, preferences, and active/staged
+versions separately. An API timeout or missing interface is not reported healthy.
+These local checks do not prove end-to-end peer reachability.
+If process identity checks disagree while the recorded process is still alive,
+the controller retains its record and socket and blocks replacement. It does
+not treat an inconclusive ownership check as proof that the process exited.
+
+```
+/data/adb/modules/kernelsu-tailscaled/control.sh
+  {enable|disable|toggle|start|stop|restart|status|status-json|logs|
+   web-restart|diagnostics|migration-status|migrate-legacy|apply-staged}
+
+```
+
+The WebUI invokes only a fixed command allowlist. The full official panel binds
+to IPv4 loopback. Log output is size-bounded and redacts keys, login URLs and proxy
+credentials. Treat any diagnostics as potentially containing device/network names.
+Uninstall stops owned processes but preserves v2 data. To intentionally discard a
+login, stop/uninstall the module first, then manually remove its isolated data
+directory. Legacy data is a separate ownership domain and is never purged by v2.
+
+## Development And Distribution
+
+```
+python3 -m unittest discover -s tests -v
+cd webroot-src
+npm ci
+npm run typecheck
+npm test
+npm run build
+cd ..
+sh scripts/build-release.sh --use-existing-binaries --output dist
+
+```
+
+Run process/lifecycle behavior tests on Linux or WSL; Windows-only unit tests skip
+those tests. Packages normalize LF, ordering, timestamps and executable modes.
+Binary payload manifests and architecture-specific installed-bundle manifests are
+verified independently. CI rebuilds all ZIPs twice and compares their bytes.
+
+Feature branches build artifacts without publishing. `v2.*-*` tags publish as
+prereleases; stable tags additionally require `STABLE_RELEASE_APPROVED=true` and
+the `source-release` environment. Enable repository release immutability before
+tag publication, then set `SOURCE_IMMUTABILITY_CONFIRMED=true` after checking the
+setting with an administrator account. `GITHUB_TOKEN` cannot read that admin-only
+setting; an optional, narrowly scoped `SOURCE_RELEASE_READ_TOKEN` enables a live
+preflight instead. This configuration acknowledgement does not replace the
+post-publication check: the workflow fails unless the actual release is immutable
+and all assets pass GitHub's release attestation verification.
+
+Tag builds call `publish-source.yml`. Its manual entry can resume publication
+using the original tag and build run ID without rebuilding packages or moving
+the tag. It verifies the successful build's commit and all existing draft assets
+before publishing; already published immutable assets are verified, not replaced.
+
+The official store submission and distribution requirements are documented in
+[the research record](https://github.com/WayneShao/KernelSU-Tailscaled/blob/f53ec850408fac799a91868652dbf8d2282703a6/docs/research/2026-09-07-kernelsu-store-requirements.md).
+Submission requires manual review and is not performed by the build workflow.
+After approval, configure the store repository's default-branch metadata,
+immutable releases, a protected `kernelsu-store` environment, and a separately
+scoped `KERNELSU_STORE_TOKEN` with destination contents write and administration
+read permissions. Set `STORE_PUBLICATION_ENABLED=true` only after those steps.
+The manual store workflow accepts a previously verified immutable stable source
+release and publishes **one universal ZIP**, never an architecture-specific
+default download. It never replaces existing assets or tags.
+
+## Credits And License
+
+- [Tailscale](https://github.com/tailscale/tailscale): official daemon and CLI.
+
+- [KernelSU](https://github.com/tiann/KernelSU): root manager and WebUI bridge.
+
+- [hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel): userspace helper.
+
+- [ryukora/Magisk-Tailscaled](https://github.com/ryukora/Magisk-Tailscaled),
+ANASFANANI, and prior contributors: original module and retained history.
+
+See [LICENSE](https://github.com/WayneShao/KernelSU-Tailscaled/blob/f53ec850408fac799a91868652dbf8d2282703a6/LICENSE), [NOTICE](https://github.com/WayneShao/KernelSU-Tailscaled/blob/f53ec850408fac799a91868652dbf8d2282703a6/NOTICE), and `webroot/licenses` for license texts.

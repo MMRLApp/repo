@@ -1,0 +1,366 @@
+# ReSuSFS
+
+  ![](/assets/7f88231eb1397e0e.png)
+  ![](/assets/b71ee05ef8b84881.png)
+
+[![](/assets/c971bf401f8d3ef6.svg)](https://github.com/ahmed-alnassif/ReSuSFS/actions/workflows/release.yml)
+[![](/assets/7bad82291f0bf241.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
+[![](/assets/53be2b99d9e75623.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
+[![](/assets/4e0c19d01478f059.svg)](https://t.me/ahmed_alnassif_tg)
+[![](/assets/d78cdaa5efb26e9e.svg)](https://github.com/ahmed-alnassif/ReSuSFS/blob/cbca0e6a58b5fa48020fca4592d8fce99247b46e/LICENSE)
+[![](/assets/ad0e56fdd0adbd4e.svg)](https://gitlab.com/simonpunk/susfs4ksu)
+[![](/assets/06fcdc331daf4f3d.svg)](https://github.com/tiann/KernelSU)
+[![](/assets/703fea9d2ff86ecb.svg)](https://github.com/Baka-SU/BakaSU)
+[![](/assets/006ff8be129fe880.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
+
+Root hiding made simple, powerful when you need it. A [KernelSU](https://kernelsu.org/) module and WebUI that turns SuSFS into clean config files and toggle switches for everyday use, with **strong hiding applied out of the box** via built-in spoofing and hiding scripts for one-tap protection, plus a script manager with scheduling for power users who want more, all without leaving the WebUI.
+
+Important
+
+**KernelSU Next is not recommended.**
+
+KernelSU Next is currently **unmaintained** and has been observed engaging in anti-competitive behavior, including blacklisting the official ReSuSFS module without technical justification. This is not a security decision, it is a control decision.
+
+Using an unmaintained kernel root solution can lead to:
+
+- **Instability** and unexpected crashes.
+
+- **Bootloops** that can leave your device unusable.
+
+- **Security vulnerabilities** that will never be patched.
+
+- **Broken module compatibility** as the ecosystem moves forward.
+
+To protect your device and ensure you receive official support:
+
+- Use **KernelSU**: The upstream, official root solution.
+
+- Use **BakaSU**: A trusted, community-respected fork.
+
+ReSuSFS is the only official SuSFS module for KernelSU. It is fully supported on KernelSU and BakaSU only.
+
+Do not use KernelSU Next. Choose stability. Choose freedom. Choose official support.
+
+Important
+
+**Future Direction**
+
+ReSuSFS will gradually move beyond SuSFS management. SuSFS will become optional, while development will focus more on UserHub, giving users greater freedom and control to create, manage, and automate their own scripts and configurations.
+
+## Requirements
+
+- [KernelSU](https://kernelsu.org/)
+
+- SuSFS support is optional, pick one:
+
+- [GKID Kernel](https://github.com/ahmed-alnassif/GKID-Kernels) with SuSFS built in
+
+- A supported GKI kernel, ReSuSFS loads the SuSFS LKM for you (see [SuSFS LKM](#user-content-susfs-lkm))
+
+## Install
+
+- Download the [latest release](https://github.com/ahmed-alnassif/ReSuSFS/releases/latest)
+
+- Flash the zip in KernelSU Manager
+
+- Reboot (a full reboot is required after installing or updating, hot install is not supported)
+
+- Strong hiding is applied automatically, no setup needed
+
+- Optional: edit config files, or use the WebUI to fine-tune
+
+When updating, ReSuSFS asks before touching your existing configs, and only asks for a backup if configs exist.
+
+Note
+
+v26.10.16 removed `hidden_api_policy` so ReSuSFS no longer enables hidden API access. If you edited your configuration before, review it after updating.
+
+## Config files
+
+All optional, all live under `/data/adb/ReSuSFS/`. Missing or empty files mean "nothing to apply" for that feature, no errors. Entries are appended in the order they appear, top line first.
+
+File
+What it does
+
+`sus_paths.txt`
+hide static/read-only paths
+
+`sus_paths_loop.txt`
+hide frequently changing paths
+
+`sus_maps.txt`
+hide mapped library files
+
+`kstat_paths.txt`
+spoof file stat for bind mounted paths
+
+`open_redirect.txt`
+redirect a path to another path
+
+`uname.txt`
+spoof kernel release/version
+
+`cmdline_or_bootconfig.txt`
+spoof `/proc/cmdline` or `/proc/bootconfig`
+
+`config.txt`
+toggle kernel flags (mount hiding, logging, avc spoofing)
+
+`scripts/`
+built-in scripts for spoofing and hiding
+
+`scripts_postfs.txt`
+scripts to run at post-fs-data stage
+
+`scripts_bootcompleted.txt`
+scripts to run at boot-completed stage
+
+`scripts_cron.txt`
+scheduled scripts and their cron expressions
+
+`cron.log`
+start time, end time, and exit code of every scheduled run
+
+## SuSFS LKM
+
+Kernels without built-in SuSFS (`CONFIG_KSU_SUSFS=y`) can still use it through the SuSFS guard LKM from [susfs4ksu-lkm](https://github.com/inforcqb/susfs4ksu-lkm).
+
+- Detected automatically from your kernel, nothing to configure
+
+- Downloaded when you flash the module or run Action
+
+- Loaded on every boot at post-fs-data
+
+- Skipped when your kernel already has SuSFS built in
+
+Supported KMIs: `android12-5.10`, `android13-5.10`, `android13-5.15`, `android14-5.15`, `android14-6.1`, `android15-6.6`, `android16-6.12`, `android17-6.18`. Custom kernels with a different KMI are not supported.
+
+Files are stored in `/data/adb/ReSuSFS_LKM/`. If the download fails, ReSuSFS keeps the version you already have.
+
+## Built-in Scripts
+
+Pre-made scripts for common spoofing and hiding tasks. They live in `/data/adb/ReSuSFS/scripts/` and are enabled by default for set-and-forget users. They can be disabled by removing their filenames from `scripts_postfs.txt` or `scripts_bootcompleted.txt`.
+
+Strong hiding is applied out of the box with no configuration needed. Power users can fine-tune individual scripts via the WebUI or by editing the files directly.
+
+Script
+Stage
+What it does
+
+`ReSuSFS_apply-cmdline-bootconfig.sh`
+post-fs-data
+hides bootloader unlock state from kernel cmdline/bootconfig
+
+`ReSuSFS_apply-kstat-add.sh`
+post-fs-data
+hides file stats for framework-managed paths
+
+`ReSuSFS_apply-ksu-settings.sh`
+post-fs-data
+sets KernelSU features for hiding and compatibility
+
+`ReSuSFS_apply-uname.sh`
+post-fs-data
+spoofs kernel version and build info from uname
+
+`ReSuSFS_apply-mount-hiding.sh`
+boot-completed
+hides module mounts redirected to system paths
+
+`ReSuSFS_apply-props.sh`
+boot-completed
+spoofs root indicators and removes custom ROM fingerprints
+
+`ReSuSFS_apply-settings.sh`
+boot-completed
+spoofs developer options and debugging states in system settings
+
+`ReSuSFS_apply-sus-maps.sh`
+boot-completed
+hides zygisk libraries and module font files from memory maps
+
+`ReSuSFS_apply-sus-paths-loop.sh`
+boot-completed
+hides recovery traces, root tools, and suspicious pty nodes
+
+`ReSuSFS_apply-sus-paths.sh`
+boot-completed
+hides custom ROM traces and addon.d paths
+
+`ReSuSFS_cleanup-markers.sh`
+boot-completed
+removes susfs leftover markers from shared storage
+
+## WebUI Features
+
+- **Strong hiding by default**, built-in scripts are pre-enabled for set-and-forget users
+
+- **Status dashboard**, see if SuSFS is active at a glance, tap for the full enabled-features breakdown straight from the kernel
+
+- **Configuration summary**, live entry counts per feature and enabled script count, right on the home page
+
+- **Built-in code editor**, full-screen editor for every config file and user script, no terminal needed
+
+- **File manager**, browse storage and load a custom file straight into any feature, without overwriting your default
+
+- **User-friendly SuSFS configs**, every feature exposed as its own clean box: edit, apply, or load custom
+
+- **Toggle switches**, flip kernel flags (mount hiding, logging, avc spoofing) without touching raw text
+
+- **Built-in scripts manager**, view, enable, or disable pre-made spoofing and hiding scripts from the WebUI
+
+- **UserHub**, create, edit, run, and delete your own shell scripts, with per-script toggles to run automatically at post-fs-data and/or boot-completed
+
+- **Scheduling**, run any script every few minutes, every few hours, or daily, no cron syntax needed
+
+- **Script tags, search, and sort**, find scripts fast and filter by tag
+
+- **Run logs**, see when each scheduled script last ran and what it returned, with colored output
+
+- **Backup and restore**, export your whole config (and any UserHub scripts) into one archive, restore it on any device
+
+- **Reboot button**, with confirmation, right in the header
+
+- **Back gesture support**, back closes dialogs, the editor, and terminals before leaving the app, and asks before discarding unsaved changes
+
+- **Multi-language support**
+
+## UserHub
+
+A tab for managing your own shell scripts without a terminal:
+
+- Create a new script from a blank template, or import an existing `.sh` file from storage
+
+- Edit any script in the same full-screen code editor used for config files
+
+- Run a script on demand, output streams live in the WebUI
+
+- Toggle a script to run automatically at `post-fs-data` and/or `boot-completed`
+
+- Schedule a script: every N minutes, every N hours, or daily at a set time
+
+- Add tags to scripts, filter by tag, search by name, title, author, or description
+
+- Sort by name, enabled first, or last modified
+
+- See each script's last scheduled run and its exit code, open its full log, or open the combined schedule log from the log button
+
+Scripts live under `/data/adb/ReSuSFS/scripts/`. Which scripts run at which stage is tracked in `scripts_postfs.txt` and `scripts_bootcompleted.txt` under the same directory. Schedules are stored in `scripts_cron.txt` and run through BusyBox `crond`. Every scheduled run writes START and END lines with the exit code to `cron.log`.
+
+Script output follows the bracket tag style, and the WebUI colors it:
+
+Tag
+Meaning
+
+`[+]`
+success
+
+`[-]`
+error
+
+`[!]`
+warning
+
+`[>]`
+action
+
+`[*]`
+info
+
+`[%]`
+banner
+
+## CLI
+
+Every command can be run manually via `ReSuSFS <flag>`. Useful for scripting, debugging, or if you just prefer terminal over WebUI.
+
+```
+ _____       _____        _____ ______ _____ 
+|  __ \     / ____|      / ____|  ____/ ____|
+| |__) |___| (___  _   _| (___ | |__ | (___  
+|  _  // _ \\___ \| | | |\___ \|  __| \___ \ 
+| | \ \  __/____) | |_| |____) | |    ____) |
+|_|  \_\___|_____/ \__,_|_____/|_|   |_____/ 
+
+Authors:  ahmed-alnassif, [[email&#160;protected]](/cdn-cgi/l/email-protection)
+Version: v2.3.0
+
+[%] status: active ✅ | susfs v2.3.0 (GKI) | features: 9 🧩
+usage:
+ --action 				full apply (early+late stage)
+ --stage-early 				post-fs-data stage only
+ --stage-late 				boot-completed stage only
+ --status 				show susfs version / variant / enabled features
+ --status-report 			silently refresh module.prop's live status line
+
+if [file] is given it is appended (deduped) into the default list, then applied:
+ --apply-sus-paths [file] 		add_sus_path from list
+ --apply-sus-paths-loop [file] 		add_sus_path_loop from list
+ --apply-sus-maps [file] 		add_sus_map from list
+ --apply-kstat-add [file] 		stage add_sus_kstat from list
+ --apply-kstat-update [file] 		commit update_sus_kstat from list
+ --apply-open-redirect [file] 		add_open_redirect from list
+ --apply-uname [file] 			set_uname from config
+ --apply-cmdline-bootconfig [file] 	set_cmdline_or_bootconfig from file
+ --apply-toggles <early|late> [file] 	apply hide_sus_mnts/enable_log/avc_log_spoofing from config
+ --run-script <file> 			run a user script from UserHub
+ --run-postfs-scripts 			run all UserHub scripts flagged for post-fs-data
+ --run-bootcompleted-scripts 		run all UserHub scripts flagged for boot-completed
+
+ --help 				displays this message
+
+```
+
+Every `--apply-*` flag accepts an optional file path. Passing one appends that file's contents into the default config file (deduplicated, comments preserved), then applies the merged default. It does not run standalone or get discarded after, it becomes a permanent part of your saved config:
+
+```
+ReSuSFS --apply-sus-paths /sdcard/my_paths.txt
+
+```
+
+Check status any time to confirm SuSFS is active and see which kernel features are enabled:
+
+```
+ReSuSFS --status
+
+```
+
+## Backup and share your config
+
+The WebUI can export all your config files, built-in scripts, and UserHub scripts into a single archive, and restore from one. This makes it easy to share a working setup with the community, hand someone your config, or back it up before flashing something risky. Your strong hiding setup travels with you.
+
+Export creates an archive in `/storage/emulated/0/Download/`. Send that file to anyone, they load it with Restore, done.
+
+## Donate
+
+If ReSuSFS is useful to you, consider supporting development.
+
+**[Donations](https://github.com/ahmed-alnassif#-support-my-work)**
+
+## Community
+
+Join the discussion, get support, and stay up to date on ReSuSFS and other projects:
+
+- **Telegram Group:** [ahmed_alnassif_tg](https://t.me/ahmed_alnassif_tg)
+
+## Translations
+
+Want to see ReSuSFS in your language? Head over to [Weblate](https://hosted.weblate.org/engage/ReSuSFS) to contribute a translation.
+
+[![](/assets/154be3fd7ab29d38.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
+
+## Credits
+
+- [SuSFS](https://gitlab.com/simonpunk/susfs4ksu) by simonpunk
+
+- [susfs4ksu-lkm](https://github.com/inforcqb/susfs4ksu-lkm) by inforcqb
+
+- WebUI built on top of [bindhosts](https://github.com/bindhosts/bindhosts) by the bindhosts team
+
+## Author
+
+[Ahmed Al-Nassif](https://github.com/ahmed-alnassif) (@ahmed-alnassif)
+
+## License
+
+[GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
