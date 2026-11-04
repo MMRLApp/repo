@@ -8,7 +8,7 @@
 [![](/assets/b1313ec045b74093.svg)](https://github.com/topjohnwu/Magisk)
 [![](/assets/964bcdcda941337b.svg)](https://www.android.com/)
 [![](/assets/b6ef3fada3c5fc2f.svg)](https://github.com/AlirezaParsi/COPG/releases)
-[![](/assets/645662f215fa9272.svg)](https://github.com/AlirezaParsi/COPG/blob/a7f76e3d08f237e96a7c3386a795f37d3e15212f/LICENSE)
+[![](/assets/645662f215fa9272.svg)](https://github.com/AlirezaParsi/COPG/blob/2b7889f3f864138b2d89097228e921c4c8cbeea7/LICENSE)
 
 [![](/assets/0ad92c2d0b5f1b92.svg)](#user-content--installation)
 [![](/assets/9fd0b1577341be05.svg)](#user-content--webui)
@@ -19,7 +19,7 @@
 
 **🌐 Official website — download COPG free & buy COPG PRO: [vendors.copg.my](https://vendors.copg.my/)**
 
-🌐 Languages / 语言：**English** · [简体中文](https://github.com/AlirezaParsi/COPG/blob/a7f76e3d08f237e96a7c3386a795f37d3e15212f/README.zh.md)
+🌐 Languages / 语言：**English** · [简体中文](https://github.com/AlirezaParsi/COPG/blob/2b7889f3f864138b2d89097228e921c4c8cbeea7/README.zh.md)
 
 ## ✨ Why COPG?
 
@@ -54,6 +54,12 @@ are otherwise gated to specific hardware. It pairs that with a **CPU spoofer**, 
 - **Prop + Android ID** `PRO` — stealth copy-on-write prop spoof (fingerprint, build props) and per-app Android ID. *(CPU, device profiles, Build/serial and block-CPU stay `FREE`.)*
 
 - **IMEI / Device ID** `PRO` — fake IMEI per app, or **device-wide Global IMEI** (Settings, `*#06#` and every app — runs in a separate process, no risk gate).
+
+- **Wi-Fi / Bluetooth MAC** `PRO` ⚠️ — a per-app fake Wi-Fi and Bluetooth MAC address: stable per app, fresh each launch, or pinned to an exact address.
+
+- **Boot ID** `PRO` ⚠️ — a per-app `/proc` boot_id, so a value meant to be unique-per-boot stops linking your accounts across apps.
+
+- **Randomize IDs Each Launch** `PRO` — re-roll every derived ID (Android ID, serial, Advertising ID, App Set ID, IMEI, boot ID, MAC) on every cold launch; pair with the Random device profile for a brand-new identity each time.
 
 - **DRM / Widevine** `PRO` — report a higher Widevine security level (L1 / L2 / L3) and spoof the DRM device & system ID.
 
@@ -235,9 +241,10 @@ straight from the manager. On **Magisk**, install the **KSU WebUI** app and open
 sort & filters
 
 - ➕ **Add Package** — pick any installed app, choose a device profile, toggle **CPU / GPU / SIM /
-Prop / Android ID / Advertising ID (GAID) / App Set ID / DRM / IMEI / Sensor / Canvas / Tensor /
-GPS / Proxy / Timezone / Language / WebView User‑Agent / Fake Uptime / Mock‑Location / Hide VPN /
-Hide Developer Options** and the **DND / Auto‑Brightness / Keep‑Screen‑On / Screen‑DPI** tweaks
+Prop / Android ID / Advertising ID (GAID) / App Set ID / DRM / IMEI / Wi‑Fi MAC / Bluetooth MAC /
+Boot ID / Sensor / Canvas / Tensor / GPS / Proxy / Timezone / Language / WebView User‑Agent /
+Fake Uptime / Mock‑Location / Hide VPN / Hide Developer Options / Randomize IDs** and the
+**DND / Auto‑Brightness / Keep‑Screen‑On / Screen‑DPI** tweaks
 
 - 📊 **Dashboard** — live system info: Android, ABI, Zygisk variant, root & kernel
 
@@ -280,7 +287,8 @@ Package **tags** are colon suffixes — e.g. `:cpu=<model>` (CPU spoof + pick th
 `:lang=<bcp47>` (language / region), `:ua=<profile>` (WebView User‑Agent), `:uptime=<sec>` (fake uptime),
 `:sensor` (sensor‑roster spoof), `:webfp` (WebView canvas spoof), `:tensorfeat` (Pixel Tensor features),
 `:gps=<lat>,<lng>` (GPS location), `:proxy` (per‑app proxy),
-`:mock` (mock‑location hide), `:vpn` / `:vpns` (VPN hide), `:hidedev` (hide developer options),
+`:mac` / `:btmac` (Wi‑Fi / Bluetooth MAC), `:bootid` (boot ID), `:randid` (randomize IDs each launch),
+`:mock` (mock‑location hide), `:vpn` / `:vpnn` (VPN hide · in‑app / + native), `:hidedev` (hide developer options),
 `:blocked` (force real CPU), `:dnd` / `:dab` / `:kso` / `:nolog` / `:dpi=<n>` (comfort tweaks).
 
 ## ❓ FAQ

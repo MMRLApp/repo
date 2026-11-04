@@ -1,6 +1,6 @@
 # FuseHide
 
-[🇨🇳 中文 README](https://github.com/XiaoTong6666/zygisk_fusehide/blob/7698c9002807f1a22f7631b8bd23fe4d1b4cbac1/README.zh-CN.md)
+[🇨🇳 中文 README](https://github.com/XiaoTong6666/zygisk_fusehide/blob/896db08c201bb807ab3527d16fc9f2e3b0873e5e/README.zh-CN.md)
 
 FuseHide is an Android 12+ storage-visibility module and MediaProvider/FUSE research tool. It injects into the MediaProvider process and hooks the userspace FUSE implementation in `libfuse_jni.so`, allowing selected apps to see a filtered view of `/storage/emulated/0` (`/sdcard`) according to runtime-configurable, per-UID rules.
 
@@ -120,7 +120,9 @@ The injected Java classes are loaded from the APK dex payload through `InMemoryD
 
 FuseHide should not install both hook backends into the same MediaProvider process.
 
-The Zygisk module contains `post-fs-data.sh` logic that checks LSPosed's module/scope database for an enabled FuseHide MediaProvider scope. When that scope is detected, the module records `lsp_scope_enabled` and disables the Zygisk module path. The native Zygisk entry also checks the marker and refuses to inject when the LSPosed path is active.
+The Zygisk module contains `post-fs-data.sh` logic that checks LSPosed's module/scope database for an enabled FuseHide MediaProvider scope. When that scope is detected, the module records `lsp_scope_enabled`. The native Zygisk entry checks this marker and skips injection when it is present.
+
+When the marker is absent, the root companion queries the current package and user's LSPosed scope through the system SQLite library before preloading, and skips Zygisk injection when the scope is enabled. Before native initialization, Zygisk uses load addresses to distinguish its own preloaded FuseHide instance from other instances and skips initialization when another instance is detected.
 
 In other words, **use one injection backend for MediaProvider at a time**.
 
@@ -635,7 +637,7 @@ MediaProvider/          local AOSP MediaProvider reference tree; not part of the
 
 ```
 
-For the detailed FUSE hook architecture, see [`docs/architecture.md`](https://github.com/XiaoTong6666/zygisk_fusehide/blob/7698c9002807f1a22f7631b8bd23fe4d1b4cbac1/docs/architecture.md).
+For the detailed FUSE hook architecture, see [`docs/architecture.md`](https://github.com/XiaoTong6666/zygisk_fusehide/blob/896db08c201bb807ab3527d16fc9f2e3b0873e5e/docs/architecture.md).
 
 ## Troubleshooting
 
@@ -722,7 +724,7 @@ The release workflow publishes both APK artifacts and a standalone Zygisk module
 
 ## License
 
-FuseHide is licensed under the [Apache License 2.0](https://github.com/XiaoTong6666/zygisk_fusehide/blob/7698c9002807f1a22f7631b8bd23fe4d1b4cbac1/LICENSE).
+FuseHide is licensed under the [Apache License 2.0](https://github.com/XiaoTong6666/zygisk_fusehide/blob/896db08c201bb807ab3527d16fc9f2e3b0873e5e/LICENSE).
 
 Third-party code keeps its own license terms. In particular, the bundled xz-embedded sources declare `SPDX-License-Identifier: 0BSD` in their source headers.
 

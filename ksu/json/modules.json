@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1793798595.096
+    "timestamp": 1793833052.977
   },
   "modules": [
     {
@@ -327,11 +327,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4b6804c0f27f12f5.png",
       "added": 1792694429,
-      "timestamp": 1792905113,
+      "timestamp": 1793815363.496,
       "size": 10511947,
       "permissions": [],
       "features": {},
-      "stars": 425,
+      "stars": 426,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -485,7 +485,7 @@
       "size": 8198728,
       "permissions": [],
       "features": {},
-      "stars": 404,
+      "stars": 412,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792981018,
@@ -501,14 +501,6 @@
           "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.2.1-Stable/duck-toolbox-0.2.1-Stable.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable.md",
           "size": 8198728
-        },
-        {
-          "timestamp": 1793168826,
-          "version": "0.2.1-Stable (128-canary)",
-          "versionCode": 128,
-          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-019e1fbb-20261028T062703329057Z/duck-toolbox-0.2.1-Stable-128-canary.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__128-canary_.md",
-          "size": 8502820
         },
         {
           "timestamp": 1793266161,
@@ -573,6 +565,14 @@
           "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-8d6a2470-20261102T134544799456Z/duck-toolbox-0.2.1-Stable-149-canary.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__149-canary_.md",
           "size": 11410924
+        },
+        {
+          "timestamp": 1793816254,
+          "version": "0.2.1-Stable (150-canary)",
+          "versionCode": 150,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-75f78866-20261104T181659228848Z/duck-toolbox-0.2.1-Stable-150-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__150-canary_.md",
+          "size": 11429802
         }
       ]
     },
@@ -819,7 +819,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 10,
+      "stars": 11,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1545,47 +1545,6 @@
       ]
     },
     {
-      "id": "S-T-E-P-S",
-      "name": "A-智能步数管理［HyperOS］",
-      "version": "1101",
-      "versionCode": 20261101,
-      "author": "xiaoji0308",
-      "description": "自动增加步数",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/S-T-E-P-S/README.md",
-      "support": "https://github.com/xiaoji0308/Steps",
-      "added": 1792827664,
-      "timestamp": 1793464328,
-      "size": 41160,
-      "permissions": [],
-      "features": {},
-      "stars": 9,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1792827664,
-        "source": "https://github.com/xiaoji0308/Steps",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1792827664,
-          "version": "1024",
-          "versionCode": 20261024,
-          "zipUrl": "https://github.com/xiaoji0308/Steps/releases/download/1024/26.1024.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/S-T-E-P-S/changelogs/1024.md",
-          "size": 35594
-        },
-        {
-          "timestamp": 1793464328,
-          "version": "1101",
-          "versionCode": 20261101,
-          "zipUrl": "https://github.com/xiaoji0308/Steps/releases/download/1101/26.1101.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/S-T-E-P-S/changelogs/1101.md",
-          "size": 41160
-        }
-      ]
-    },
-    {
       "id": "shellscaled",
       "name": "Shellscaled",
       "version": "1.104.5",
@@ -1778,7 +1737,7 @@
       "size": 147461,
       "permissions": [],
       "features": {},
-      "stars": 24,
+      "stars": 25,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791709999,
@@ -1951,8 +1910,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.197 (197-c59a62b-release)",
-      "versionCode": 197,
+      "version": "1.202 (202-34ca0ce-release)",
+      "versionCode": 202,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -1966,8 +1925,8 @@
         "fusehide"
       ],
       "added": 1792001757,
-      "timestamp": 1793780826,
-      "size": 7657170,
+      "timestamp": 1793807747,
+      "size": 7677650,
       "permissions": [],
       "features": {},
       "stars": 22,
@@ -2034,6 +1993,30 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v197-c59a62b/FuseHide-1.197_197-c59a62b-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.197__197-c59a62b-release_.md",
           "size": 7657170
+        },
+        {
+          "timestamp": 1793798682,
+          "version": "1.199 (199-a6e1d36-release)",
+          "versionCode": 199,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v199-a6e1d36/FuseHide-1.199_199-a6e1d36-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.199__199-a6e1d36-release_.md",
+          "size": 7657170
+        },
+        {
+          "timestamp": 1793803236,
+          "version": "1.201 (201-33b2011-release)",
+          "versionCode": 201,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v201-33b2011/FuseHide-1.201_201-33b2011-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.201__201-33b2011-release_.md",
+          "size": 7677650
+        },
+        {
+          "timestamp": 1793807747,
+          "version": "1.202 (202-34ca0ce-release)",
+          "versionCode": 202,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v202-34ca0ce/FuseHide-1.202_202-34ca0ce-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.202__202-34ca0ce-release_.md",
+          "size": 7677650
         }
       ]
     },
