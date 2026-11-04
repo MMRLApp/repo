@@ -1,6 +1,6 @@
 [![](/assets/e57d856a1738ccad.svg)](https://github.com/WayneShao/KernelSU-Tailscaled)
 [![](/assets/0418fd9c50421843.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/actions/workflows/publish-source.yml)
-[![](/assets/e83773a48156d63f.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/releases)
+[![](/assets/624d34ef6eadf246.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/releases)
 [![](/assets/3f789e620dc42372.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/releases/latest)
 [![](/assets/587c5f2d5ed548a2.svg)](https://github.com/WayneShao/KernelSU-Tailscaled/issues)
 

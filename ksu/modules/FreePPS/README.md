@@ -6,7 +6,7 @@
 **让米系设备享受公版PPS快充支持！**
 
 [![](/assets/7ce0f3250c03e848.svg)](https://github.com/Seyud/FreePPS_release/releases/latest)
-[![](/assets/60f8d38c22974d5d.svg)](https://github.com/Seyud/FreePPS_release/releases)
+[![](/assets/cc7c9d8236e192e4.svg)](https://github.com/Seyud/FreePPS_release/releases)
 [![](/assets/7b1603d216671145.svg)](https://www.rust-lang.org/)
 [![](/assets/9b1d0be7bb4861f9.svg)](https://qun.qq.com/universal-share/share?ac=1&authKey=yGST4VNx53EILHT9hGSsCp31dMjknUn2Sk7YQpor07eDDzT24a1DtLnOmLqqlwgU&busi_data=eyJncm91cENvZGUiOiIxMDQwNDQ4NDgxIiwidG9rZW4iOiJHWHkyQ2E2TVMyZWU0WnNRU01UN2c2YjhuS0Vhb3Q3VERFZ0VTekxFVlorR3c4eVBYM2hDTXNuTjBRSm83T0FlIiwidWluIjoiMTEwNTc4MzAzMyJ9&data=qlkmodlW6ZB2dDVXRmbCMk_0FAgwp5Dw-UBtThSD5KUx4erJDe0cNBnEJnYqaFnGRLQ_asSN9AQOuG5Z6TxX0A&svctype=4&tempid=h5_group_info)
 [![](/assets/a9c47fffdf63892b.svg)](https://t.me/HyperChargePPS)

@@ -3,7 +3,7 @@
 **把电池健康度写在 root 管理器模块描述里，刷入即用，零配置**
 
 [![](/assets/5478adfe2d3bb8ce.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
-[![](/assets/b0b07d37d417b5d4.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
+[![](/assets/f9a0fc67d98d3bf0.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-%E5%AE%89%E8%A3%85)
 [![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/LICENSE)
