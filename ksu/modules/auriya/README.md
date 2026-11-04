@@ -1,6 +1,6 @@
 ![](/assets/fb56ff3906426e3d.svg)
   [![](/assets/50c9e65b99fcf07e.svg)](https://auriya.pages.dev/)
-  [![](/assets/88bbb9db759382d8.svg)](https://github.com/pavelc4/auriya/releases)
+  [![](/assets/4a70a80ef3967d6b.svg)](https://github.com/pavelc4/auriya/releases)
   [![](/assets/dbce25fb06bbbb81.svg)](https://github.com/pavelc4/auriya/blob/cd10b39d93702b6139d5f690246d36449a7b012a/LICENSE)
 
 ## About Auriya

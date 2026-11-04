@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1793763484.362
+    "timestamp": 1793798595.096
   },
   "modules": [
     {
@@ -446,7 +446,7 @@
       "size": 969705,
       "permissions": [],
       "features": {},
-      "stars": 863,
+      "stars": 864,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -679,7 +679,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 310,
+      "stars": 311,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -1027,7 +1027,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 33,
+      "stars": 34,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1116,7 +1116,7 @@
       "size": 65461674,
       "permissions": [],
       "features": {},
-      "stars": 218,
+      "stars": 220,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792267431,
@@ -1273,7 +1273,7 @@
       "size": 27549353,
       "permissions": [],
       "features": {},
-      "stars": 1323,
+      "stars": 1325,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1348,7 +1348,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 617,
+      "stars": 623,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -1390,7 +1390,7 @@
       "size": 4933635,
       "permissions": [],
       "features": {},
-      "stars": 608,
+      "stars": 615,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -1951,8 +1951,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.196 (196-43ec341-release)",
-      "versionCode": 196,
+      "version": "1.197 (197-c59a62b-release)",
+      "versionCode": 197,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -1966,7 +1966,7 @@
         "fusehide"
       ],
       "added": 1792001757,
-      "timestamp": 1793338445,
+      "timestamp": 1793780826,
       "size": 7657170,
       "permissions": [],
       "features": {},
@@ -2025,6 +2025,14 @@
           "versionCode": 196,
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v196-43ec341/FuseHide-1.196_196-43ec341-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.196__196-43ec341-release_.md",
+          "size": 7657170
+        },
+        {
+          "timestamp": 1793780826,
+          "version": "1.197 (197-c59a62b-release)",
+          "versionCode": 197,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v197-c59a62b/FuseHide-1.197_197-c59a62b-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.197__197-c59a62b-release_.md",
           "size": 7657170
         }
       ]
