@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1793851044.403
+    "timestamp": 1793885863.125
   },
   "modules": [
     {
@@ -311,8 +311,8 @@
     {
       "id": "COPG",
       "name": "COPG",
-      "version": "7.6.1",
-      "versionCode": 761,
+      "version": "7.7.0",
+      "versionCode": 770,
       "author": "AlirezaParsi",
       "description": "Advanced Android customization & spoofing — per-app device, CPU, GPU, Build, SIM, DRM and ID control with a WebUI.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/README.md",
@@ -327,8 +327,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4b6804c0f27f12f5.png",
       "added": 1792694429,
-      "timestamp": 1793815363.496,
-      "size": 10511947,
+      "timestamp": 1793875847,
+      "size": 10546613,
       "permissions": [],
       "features": {},
       "stars": 426,
@@ -363,6 +363,14 @@
           "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.6.1/COPG-v7.6.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.6.1.md",
           "size": 10511947
+        },
+        {
+          "timestamp": 1793875847,
+          "version": "7.7.0",
+          "versionCode": 770,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.0/COPG-v7.7.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.7.0.md",
+          "size": 10546613
         }
       ]
     },
@@ -766,7 +774,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/b3a933b89393bb5f.png",
       "added": 1791694187,
-      "timestamp": 1792548631.941,
+      "timestamp": 1793866569.821,
       "size": 4959776,
       "permissions": [],
       "features": {
@@ -796,6 +804,14 @@
           "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.5/Hybrid-Mount-6.2.5-2118.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.5.md",
           "size": 4959776
+        },
+        {
+          "timestamp": 1793866555,
+          "version": "6.2.6-rc.1",
+          "versionCode": 602006301,
+          "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.1/Hybrid-Mount-6.2.6-rc.1-2139.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6-rc.1.md",
+          "size": 5032123
         }
       ]
     },
@@ -1027,7 +1043,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 34,
+      "stars": 35,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1116,7 +1132,7 @@
       "size": 65461674,
       "permissions": [],
       "features": {},
-      "stars": 220,
+      "stars": 221,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792267431,
@@ -1348,7 +1364,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 623,
+      "stars": 627,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -1390,7 +1406,7 @@
       "size": 4933635,
       "permissions": [],
       "features": {},
-      "stars": 615,
+      "stars": 622,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -1799,8 +1815,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.3.0-10135",
-      "versionCode": 10135,
+      "version": "v0.3.0-10136",
+      "versionCode": 10136,
       "author": "Anatdx",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -1811,28 +1827,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1792860759,
-      "timestamp": 1793662578.599,
-      "size": 2920476,
+      "added": 1792874874,
+      "timestamp": 1793856123,
+      "size": 2909040,
       "permissions": [],
       "features": {},
-      "stars": 112,
+      "stars": 115,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792860759,
+        "added": 1792874874,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792860759,
-          "version": "v0.2.0-10116",
-          "versionCode": 10116,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-40113272047/YukiZygisk-v0.2.0-10116-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.2.0-10116.md",
-          "size": 3082665
-        },
         {
           "timestamp": 1792874874,
           "version": "v0.2.0-10117",
@@ -1904,6 +1912,14 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41546108840/YukiZygisk-v0.3.0-10135-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10135.md",
           "size": 2920476
+        },
+        {
+          "timestamp": 1793856123,
+          "version": "v0.3.0-10136",
+          "versionCode": 10136,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41973134583/YukiZygisk-v0.3.0-10136-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10136.md",
+          "size": 2909040
         }
       ]
     },
