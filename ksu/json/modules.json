@@ -7,9 +7,49 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1793937308.577
+    "timestamp": 1793971293.452
   },
   "modules": [
+    {
+      "id": "acc",
+      "name": "Advanced Charging Controller (ACC) with WebUI",
+      "version": "v1.6.0 (ACC: dev-2025-06-06)",
+      "versionCode": 10600,
+      "author": "Infiniti151, VR25",
+      "description": "Extend your battery's service life by controlling charging current, temperature, and voltage.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/acc/README.md",
+      "support": "https://github.com/Infiniti151/acc-with-webui/issues",
+      "license": "GPL-3.0-or-later",
+      "categories": [
+        "charging-controller",
+        "battery-longevity",
+        "battery-health"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/26ef13138d9c44b8.png",
+      "added": 1793897102,
+      "timestamp": 1793953755.804,
+      "size": 548317,
+      "permissions": [],
+      "features": {},
+      "stars": 8,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1793897102,
+        "source": "https://github.com/Infiniti151/acc-with-webui",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1793897102,
+          "version": "v1.6.0 (ACC: dev-2025-06-06)",
+          "versionCode": 10600,
+          "zipUrl": "https://github.com/Infiniti151/acc-with-webui/releases/download/v1.6.0/acc-with-webui_v1.6.0_10600.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/acc/changelogs/v1.6.0__ACC__dev-2025-06-06_.md",
+          "size": 548317
+        }
+      ]
+    },
     {
       "id": "altdb",
       "name": "altdb",
@@ -210,7 +250,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 47,
+      "stars": 48,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -707,6 +747,45 @@
       ]
     },
     {
+      "id": "genshin_bootanim",
+      "name": "原神开机动画",
+      "version": "1.0.3",
+      "versionCode": 10003,
+      "author": "ZNH",
+      "description": "把开机动画换成原神启动画面",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/genshin_bootanim/README.md",
+      "support": "https://github.com/kingsznhone/genshin-bootanimation/issues",
+      "license": "GPL-3.0-only",
+      "categories": [
+        "bootanimation",
+        "theme"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/d7db11202bbd7f6f.png",
+      "added": 1793671130,
+      "timestamp": 1793942201.341,
+      "size": 8877025,
+      "permissions": [],
+      "features": {},
+      "stars": 1,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1793671130,
+        "source": "https://github.com/kingsznhone/genshin-bootanimation",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1793671130,
+          "version": "1.0.3",
+          "versionCode": 10003,
+          "zipUrl": "https://github.com/kingsznhone/genshin-bootanimation/releases/download/1.0.3/genshin_bootanim-10003-1.0.3.zip",
+          "changelog": "",
+          "size": 8877025
+        }
+      ]
+    },
+    {
       "id": "gs_quick_reload",
       "name": "一键重载模块（Fold7）",
       "version": "v2.2",
@@ -812,6 +891,14 @@
           "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.1/Hybrid-Mount-6.2.6-rc.1-2139.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6-rc.1.md",
           "size": 5032123
+        },
+        {
+          "timestamp": 1793957641,
+          "version": "6.2.6-rc.2",
+          "versionCode": 602006302,
+          "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.2/Hybrid-Mount-6.2.6-rc.2-2154.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6-rc.2.md",
+          "size": 5430516
         }
       ]
     },
@@ -965,7 +1052,7 @@
       "size": 291063,
       "permissions": [],
       "features": {},
-      "stars": 62,
+      "stars": 63,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792829886,
@@ -1043,7 +1130,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 35,
+      "stars": 36,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1083,7 +1170,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 597,
+      "stars": 598,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1128,11 +1215,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1793677927,
+      "timestamp": 1793957478.709,
       "size": 65461674,
       "permissions": [],
       "features": {},
-      "stars": 221,
+      "stars": 222,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792267431,
@@ -1271,6 +1358,40 @@
       ]
     },
     {
+      "id": "MoveCertificate",
+      "name": "MoveCertificate",
+      "version": "v1.6.2",
+      "versionCode": 28,
+      "author": "ys1231",
+      "description": "支持Android7-17移动证书，兼容magiskv20.4+/kernelsu/APatch",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MoveCertificate/README.md",
+      "support": "https://github.com/ys1231/MoveCertificate/issues",
+      "license": "Apache-2.0",
+      "added": 1788355788,
+      "timestamp": 1793942286.651,
+      "size": 571640,
+      "permissions": [],
+      "features": {},
+      "stars": 5,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1788355788,
+        "source": "https://github.com/ys1231/MoveCertificate-ksu",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1788355788,
+          "version": "v1.6.2",
+          "versionCode": 28,
+          "zipUrl": "https://github.com/ys1231/MoveCertificate-ksu/releases/download/v1.6.2/MoveCertificate-v1.6.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MoveCertificate/changelogs/v1.6.2.md",
+          "size": 571640
+        }
+      ]
+    },
+    {
       "id": "netproxy",
       "name": "NetProxy",
       "version": "v8.6.2",
@@ -1364,7 +1485,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 627,
+      "stars": 632,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -1386,8 +1507,8 @@
     {
       "id": "oh_my_keymint",
       "name": "Oh My Keymint",
-      "version": "1.2.5-17b0eb6",
-      "versionCode": 174,
+      "version": "1.2.6-9069c6c",
+      "versionCode": 180,
       "author": "James Clef",
       "description": "Custom keystore implementation for Android Keystore Spoofer",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oh_my_keymint/README.md",
@@ -1402,11 +1523,11 @@
         "integrity"
       ],
       "added": 1789532214,
-      "timestamp": 1793515926.357,
-      "size": 4933635,
+      "timestamp": 1793941233,
+      "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 622,
+      "stars": 624,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -1430,6 +1551,14 @@
           "zipUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/1.2.5-17b0eb6/OhMyKeymint-release-arm64-v8a-1.2.5-17b0eb6.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oh_my_keymint/changelogs/1.2.5-17b0eb6.md",
           "size": 4933635
+        },
+        {
+          "timestamp": 1793941233,
+          "version": "1.2.6-9069c6c",
+          "versionCode": 180,
+          "zipUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/1.2.6-9069c6c/OhMyKeymint-release-arm64-v8a-1.2.6-9069c6c.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oh_my_keymint/changelogs/1.2.6-9069c6c.md",
+          "size": 4930351
         }
       ]
     },
@@ -1733,6 +1862,51 @@
       ]
     },
     {
+      "id": "susdock",
+      "name": "SusDock",
+      "version": "0.3.6",
+      "versionCode": 306,
+      "author": "Nix24",
+      "description": "A SuSFS Manager for LKM Setups",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/susdock/README.md",
+      "support": "https://github.com/Nixie24/susdock/issues",
+      "license": "GPL-2.0-only",
+      "categories": [
+        "tools"
+      ],
+      "added": 1793207635,
+      "timestamp": 1793957459,
+      "size": 30383,
+      "permissions": [],
+      "features": {},
+      "stars": 4,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1793207635,
+        "source": "https://github.com/Nixie24/susdock",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1793207635,
+          "version": "0.3.5",
+          "versionCode": 305,
+          "zipUrl": "https://github.com/Nixie24/susdock/releases/download/v0.3.5-305/susdock-v0.3.5-305.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/susdock/changelogs/0.3.5.md",
+          "size": 25623
+        },
+        {
+          "timestamp": 1793957459,
+          "version": "0.3.6",
+          "versionCode": 306,
+          "zipUrl": "https://github.com/Nixie24/susdock/releases/download/v0.3.6-306/susdock-v0.3.6-306.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/susdock/changelogs/0.3.6.md",
+          "size": 30383
+        }
+      ]
+    },
+    {
       "id": "SvcHub",
       "name": "SvcHub",
       "version": "1.5.0",
@@ -1813,6 +1987,45 @@
       ]
     },
     {
+      "id": "tailscale-bindhosts",
+      "name": "tailscale-bindhosts",
+      "version": "v1.0.0",
+      "versionCode": 1,
+      "author": "PEMessage",
+      "description": "Generate MagicDNS hosts entries for tailscaled and apply them through bindhosts.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/tailscale-bindhosts/README.md",
+      "support": "https://github.com/PEMessage/tailscale-bindhosts/issues",
+      "license": "GPL-3.0-only",
+      "categories": [
+        "tailscale",
+        "hosts",
+        "dns"
+      ],
+      "added": 1793870109,
+      "timestamp": 1793942133.2,
+      "size": 32979,
+      "permissions": [],
+      "features": {},
+      "stars": 0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1793870109,
+        "source": "https://github.com/PEMessage/tailscale-bindhosts",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1793870109,
+          "version": "v1.0.0",
+          "versionCode": 1,
+          "zipUrl": "https://github.com/PEMessage/tailscale-bindhosts/releases/download/v1.0.0/tailscale-bindhosts-1-v1.0.0.zip",
+          "changelog": "",
+          "size": 32979
+        }
+      ]
+    },
+    {
       "id": "yukizygisk",
       "name": "YukiZygisk",
       "version": "v0.3.0-10136",
@@ -1832,7 +2045,7 @@
       "size": 2909040,
       "permissions": [],
       "features": {},
-      "stars": 115,
+      "stars": 119,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792874874,
@@ -2039,8 +2252,8 @@
     {
       "id": "zygisk-sui",
       "name": "Zygisk - Sui",
-      "version": "v13.5.4.3 (574-746c06c-release)",
-      "versionCode": 574,
+      "version": "v13.5.4.3 (576-3af0920-release)",
+      "versionCode": 576,
       "author": "XiaoTong, RikkaW, Sui Contributors",
       "description": "Fork by XiaoTong. Modern super user interface implementation on Android.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/README.md",
@@ -2054,28 +2267,20 @@
         "sui",
         "zygisk"
       ],
-      "added": 1791883105,
-      "timestamp": 1793695454,
-      "size": 1452599,
+      "added": 1792041159,
+      "timestamp": 1793949381,
+      "size": 1452547,
       "permissions": [],
       "features": {},
       "stars": 14,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1791883105,
+        "added": 1792041159,
         "source": "https://github.com/XiaoTong6666/zygisk-sui",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1791883105,
-          "version": "v13.5.4.3 (562-b033d81-release)",
-          "versionCode": 562,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v562-b033d81/Sui-v13.5.4.3_562-b033d81-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__562-b033d81-release_.md",
-          "size": 1360195
-        },
         {
           "timestamp": 1792041159,
           "version": "v13.5.4.3 (563-a82856c-release)",
@@ -2147,6 +2352,14 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v574-746c06c/Sui-v13.5.4.3_574-746c06c-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__574-746c06c-release_.md",
           "size": 1452599
+        },
+        {
+          "timestamp": 1793949381,
+          "version": "v13.5.4.3 (576-3af0920-release)",
+          "versionCode": 576,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v576-3af0920/Sui-v13.5.4.3_576-3af0920-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__576-3af0920-release_.md",
+          "size": 1452547
         }
       ]
     },
