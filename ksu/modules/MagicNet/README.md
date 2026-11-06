@@ -9,7 +9,7 @@
 [![](/assets/9c49b603bce36592.svg)](https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.8.1)
 [![](/assets/9104e043d60a8e06.svg)](https://github.com/LIghtJUNction/MagicNet/blob/f0a8f6a255b87245430e96fc2eb5783376ae7c9f/recipes/magicnet/BUILD_PROMPT.md)
 [![](/assets/47d376a103861b54.svg)](https://github.com/LIghtJUNction/MagicNet/blob/f0a8f6a255b87245430e96fc2eb5783376ae7c9f/LICENSE)
-[![](/assets/7f221b4ad894f12e.svg)](https://github.com/LIghtJUNction/MagicNet/commits/main)
+[![](/assets/89b819e24057f6c5.svg)](https://github.com/LIghtJUNction/MagicNet/commits/main)
 
 [English](https://github.com/LIghtJUNction/MagicNet/blob/f0a8f6a255b87245430e96fc2eb5783376ae7c9f/README.en.md) · [Русский](https://github.com/LIghtJUNction/MagicNet/blob/f0a8f6a255b87245430e96fc2eb5783376ae7c9f/README.ru.md) · [Download](https://github.com/LIghtJUNction/MagicNet/releases) · [Rebuild](#user-content-rebuild-from-the-recipe) · [Evidence](https://github.com/LIghtJUNction/MagicNet/blob/f0a8f6a255b87245430e96fc2eb5783376ae7c9f/recipes/magicnet/VERIFICATION.md)
 
