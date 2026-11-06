@@ -6,9 +6,9 @@
 [![](/assets/70c357c0b09adef4.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-%E5%AE%89%E8%A3%85)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/LICENSE)
 
-[English](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/README_EN.md) | 简体中文
+[English](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/README_EN.md) | 简体中文
 
 [特性](#user-content-%E7%89%B9%E6%80%A7) ｜ [界面预览](#user-content-%E7%95%8C%E9%9D%A2%E9%A2%84%E8%A7%88) ｜ [安装](#user-content-%E5%AE%89%E8%A3%85) ｜ [工作原理](#user-content-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86) ｜ [常见问题](#user-content-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98) ｜ [从源码构建](#user-content-%E4%BB%8E%E6%BA%90%E7%A0%81%E6%9E%84%E5%BB%BA) ｜ [致谢](#user-content-%E8%87%B4%E8%B0%A2)
 
@@ -21,14 +21,14 @@ WebUI 三页（概览 / 历史 / 设置）一览。截图中的电池数据为**
 历史 · 趋势
 设置
 
-[![](/assets/f6012c245bf18345.png)](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/.github/images/overview-zh.png)
-[![](/assets/d46eb582599968a1.png)](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/.github/images/history-zh.png)
-[![](/assets/ea6257f016d41db9.png)](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/.github/images/trends-zh.png)
-[![](/assets/06faefa6ec0d9319.png)](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/.github/images/settings-zh.png)
+[![](/assets/f6012c245bf18345.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/overview-zh.png)
+[![](/assets/d46eb582599968a1.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/history-zh.png)
+[![](/assets/ea6257f016d41db9.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/trends-zh.png)
+[![](/assets/06faefa6ec0d9319.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/settings-zh.png)
 
 ## 特性
 
-- **健康度与容量实时可见**：模块描述直接显示内核健康度、满充容量、设计容量与实测估算，不用打开任何 App。
+- **健康度与容量实时可见**：模块描述分两行显示内核/实测健康度与容量、循环次数与温度（带图标），并按屏幕宽度自动精简标签，窄屏也不折行，不用打开任何 App。
 
 - **三页 WebUI**：概览 / 历史 / 设置；概览显示当前电池温度，历史页按 7/30/90 天与充电/放电筛选，记录可分页，趋势图可点按放大并读取数值。
 
@@ -136,11 +136,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` 是随模块分发的原生可执行文件：`once` 刷新一次描述并打印读数（Action 按钮执行的就是它），`json` 输出概览/设置页快照，`history` 输出历史页分页数据，`diag` 输出脱敏诊断摘要（设置页「复制诊断」执行它）。开机常驻由 `service.sh` 启动 `batteryd daemon`；完整发版流程见 [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/AGENTS.md)。
+`bin/batteryd` 是随模块分发的原生可执行文件：`once` 刷新一次描述并打印读数（Action 按钮执行的就是它），`json` 输出概览/设置页快照，`history` 输出历史页分页数据，`diag` 输出脱敏诊断摘要（设置页「复制诊断」执行它）。开机常驻由 `service.sh` 启动 `batteryd daemon`；完整发版流程见 [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/AGENTS.md)。
 
 ## 论文支撑
 
-设计过程中参考过的论文（PDF 库见 [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/docs/)）：
+设计过程中参考过的论文（PDF 库见 [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/docs/)）：
 
 - He & Shin, ACM e-Energy '23 —— 静置电压指纹
 
@@ -185,6 +185,6 @@ ChargingRecord Evolution 生态由以下贡献者共同打造（排名不分先�
 
 ## License
 
-本项目以 [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/cfaeda44c67ee1cf423b00d6f6ea5d8e1a9a71de/LICENSE) 协议开源。
+本项目以 [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/LICENSE) 协议开源。
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

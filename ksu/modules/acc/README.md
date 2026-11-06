@@ -1,7 +1,7 @@
 **English** |
-  [Français](https://github.com/Infiniti151/acc-with-webui/blob/d3367a580fb859f86c7f07a4b30aec4ab037dace/install/translations/fr/README.md) |
-  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/d3367a580fb859f86c7f07a4b30aec4ab037dace/install/translations/ru/README.md) |
-  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/d3367a580fb859f86c7f07a4b30aec4ab037dace/install/translations/tr/README.md)
+  [Français](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/install/translations/fr/README.md) |
+  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/install/translations/ru/README.md) |
+  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/install/translations/tr/README.md)
 
 # Advanced Charging Controller (ACC) with WebUI
 
@@ -117,9 +117,9 @@ Translations are synchronized continuously to Crowdin, but languages are only in
 
 - [Google Pixel Devices](#user-content-google-pixel-devices)
 
-- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/d3367a580fb859f86c7f07a4b30aec4ab037dace/override_battery_mah_capacity)
+- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/override_battery_mah_capacity)
 
-- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/d3367a580fb859f86c7f07a4b30aec4ab037dace/override_broken_temperature_sensor)
+- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/override_broken_temperature_sensor)
 
 - [FREQUENTLY ASKED QUESTIONS (FAQ)](#user-content-frequently-asked-questions-faq)
 
@@ -1358,19 +1358,9 @@ Important
 
 These translations are not for backend ACC CLI.
 
-[![](/assets/5316d1209a909394.svg)](https://crowdin.com/project/acc-with-webui)
+[![](/assets/7959e4764b25458d.svg)](https://crowdin.com/project/acc-with-webui)
 
-**Language progress**
-
-[![](/assets/432e6bb9846d66c9.svg)](https://crowdin.com/project/acc-with-webui)
-[![](/assets/31a7765433da0665.svg)](https://crowdin.com/project/acc-with-webui)
-[![](/assets/7e7a47c213143ca4.svg)](https://crowdin.com/project/acc-with-webui)
-[![](/assets/894ec9f4331834d0.svg)](https://crowdin.com/project/acc-with-webui)
-
-[![](/assets/c97bb018ab283a72.svg)](https://crowdin.com/project/acc-with-webui)
-[![](/assets/cfdd5885c3073b31.svg)](https://crowdin.com/project/acc-with-webui)
-[![](/assets/f42ea810c7294f0d.svg)](https://crowdin.com/project/acc-with-webui)
-[![](/assets/5c4e21b814adad91.svg)](https://crowdin.com/project/acc-with-webui)
+![](/assets/06eb43506fd6c6a7.svg)
 
 [Help translate ACC on Crowdin](https://crowdin.com/project/acc-with-webui)
 

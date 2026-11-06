@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1793971293.452
+    "timestamp": 1794004105.647
   },
   "modules": [
     {
@@ -27,7 +27,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/26ef13138d9c44b8.png",
       "added": 1793897102,
-      "timestamp": 1793953755.804,
+      "timestamp": 1793988781.848,
       "size": 548317,
       "permissions": [],
       "features": {},
@@ -68,7 +68,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 93,
+      "stars": 94,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -433,11 +433,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1793456827.497,
+      "timestamp": 1793983902.874,
       "size": 3098213,
       "permissions": [],
       "features": {},
-      "stars": 17,
+      "stars": 18,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -494,7 +494,7 @@
       "size": 969705,
       "permissions": [],
       "features": {},
-      "stars": 866,
+      "stars": 868,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -533,7 +533,7 @@
       "size": 8198728,
       "permissions": [],
       "features": {},
-      "stars": 418,
+      "stars": 422,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792981018,
@@ -1215,11 +1215,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1793957478.709,
+      "timestamp": 1793981282.738,
       "size": 65461674,
       "permissions": [],
       "features": {},
-      "stars": 222,
+      "stars": 224,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792267431,
@@ -1410,7 +1410,7 @@
       "size": 27549353,
       "permissions": [],
       "features": {},
-      "stars": 1348,
+      "stars": 1387,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1927,7 +1927,7 @@
       "size": 147461,
       "permissions": [],
       "features": {},
-      "stars": 27,
+      "stars": 28,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791709999,
@@ -2028,8 +2028,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.3.0-10136",
-      "versionCode": 10136,
+      "version": "v0.3.0-10140",
+      "versionCode": 10140,
       "author": "Anatdx",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -2040,28 +2040,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1792874874,
-      "timestamp": 1793856123,
-      "size": 2909040,
+      "added": 1792984763,
+      "timestamp": 1794000287,
+      "size": 3362900,
       "permissions": [],
       "features": {},
-      "stars": 119,
+      "stars": 121,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792874874,
+        "added": 1792984763,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792874874,
-          "version": "v0.2.0-10117",
-          "versionCode": 10117,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-40131096223/YukiZygisk-v0.2.0-10117-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.2.0-10117.md",
-          "size": 3096835
-        },
         {
           "timestamp": 1792984763,
           "version": "v0.2.0-10122",
@@ -2133,6 +2125,14 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41973134583/YukiZygisk-v0.3.0-10136-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10136.md",
           "size": 2909040
+        },
+        {
+          "timestamp": 1794000287,
+          "version": "v0.3.0-10140",
+          "versionCode": 10140,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42295927561/YukiZygisk-v0.3.0-10140-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10140.md",
+          "size": 3362900
         }
       ]
     },
@@ -2272,7 +2272,7 @@
       "size": 1452547,
       "permissions": [],
       "features": {},
-      "stars": 14,
+      "stars": 15,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792041159,
@@ -2366,8 +2366,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.11.0 (273-3134a2f-release)",
-      "versionCode": 273,
+      "version": "v2.11.1 (299-fa1da0d-release)",
+      "versionCode": 299,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next module",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -2376,28 +2376,20 @@
       "categories": [
         "system"
       ],
-      "added": 1792912470,
-      "timestamp": 1793505001.835,
-      "size": 6818501,
+      "added": 1792926104,
+      "timestamp": 1793983879,
+      "size": 6874301,
       "permissions": [],
       "features": {},
-      "stars": 103,
+      "stars": 104,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792912470,
+        "added": 1792926104,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792912470,
-          "version": "v2.5.0 (231-8e48bf1-release)",
-          "versionCode": 231,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.5.0/ZNNext-v2.5.0-231-8e48bf1-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.5.0__231-8e48bf1-release_.md",
-          "size": 6496628
-        },
         {
           "timestamp": 1792926104,
           "version": "v2.6.0 (235-d2c08c7-release)",
@@ -2469,6 +2461,14 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.11.0/ZNNext-v2.11.0-273-3134a2f-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.11.0__273-3134a2f-release_.md",
           "size": 6818501
+        },
+        {
+          "timestamp": 1793983879,
+          "version": "v2.11.1 (299-fa1da0d-release)",
+          "versionCode": 299,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.11.1/ZNNext-v2.11.1-299-fa1da0d-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.11.1__299-fa1da0d-release_.md",
+          "size": 6874301
         }
       ]
     },
