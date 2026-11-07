@@ -6,12 +6,12 @@
 
   Subscriptions · app and domain routing · DNS · TUN/eBPF · sing-box-compatible runtime · web console
 
-[![](/assets/bc1be2d7d8533368.svg)](https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.8.4)
-[![](/assets/81a28046c172150c.svg)](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/BUILD_PROMPT.md)
-[![](/assets/47d376a103861b54.svg)](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/LICENSE)
+[![](/assets/2174f31eaf234681.svg)](https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.8.5)
+[![](/assets/81a28046c172150c.svg)](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/BUILD_PROMPT.md)
+[![](/assets/47d376a103861b54.svg)](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/LICENSE)
 [![](/assets/89b819e24057f6c5.svg)](https://github.com/LIghtJUNction/MagicNet/commits/main)
 
-[English](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/README.en.md) · [Русский](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/README.ru.md) · [Download](https://github.com/LIghtJUNction/MagicNet/releases) · [Rebuild](#user-content-rebuild-from-the-recipe) · [Evidence](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/VERIFICATION.md)
+[English](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/README.en.md) · [Русский](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/README.ru.md) · [Download](https://github.com/LIghtJUNction/MagicNet/releases) · [Rebuild](#user-content-rebuild-from-the-recipe) · [Evidence](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/VERIFICATION.md)
 
 ## Pick the path you need
 
@@ -19,16 +19,16 @@ Goal
 Entry point
 
 Install and use MagicNet
-[Releases](https://github.com/LIghtJUNction/MagicNet/releases) and [v1.8.4 installation notes](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/docs/releases/v1.8.4.md)
+[Releases](https://github.com/LIghtJUNction/MagicNet/releases) and [v1.8.5 installation notes](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/docs/releases/v1.8.5.md)
 
 Rebuild the product with a code agent
-[`recipes/magicnet/`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/) and the commands below
+[`recipes/magicnet/`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/) and the commands below
 
 Work on the maintained implementation
-[`generated/magicnet-android/`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/generated/magicnet-android/) or the [source repository](https://github.com/LIghtJUNction/magicnet-android)
+[`generated/magicnet-android/`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/generated/magicnet-android/) or the [source repository](https://github.com/LIghtJUNction/magicnet-android)
 
 Audit claims and limitations
-[Verification](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/VERIFICATION.md), [performance](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/PERFORMANCE.md) and [provenance](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/PROVENANCE.md)
+[Verification](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/VERIFICATION.md), [performance](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/PERFORMANCE.md) and [provenance](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/PROVENANCE.md)
 
 MagicNet separates the **product contract** from the **generated implementation**. The recipe says what must exist and how it is accepted; the source submodule is one concrete implementation; Releases contain the installable Android artifacts.
 
@@ -58,7 +58,7 @@ Layer
 Current state
 
 Published Android package
-[`v1.8.4 / 10612`](https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.8.4)
+[`v1.8.5 / 10613`](https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.8.5)
 
 Recipe
 `0.3.17`
@@ -72,11 +72,11 @@ Fixed sing-box core
 Unreleased source metadata
 `v1.8.5 / 10613` in the pinned tree: process handoff, PID validation, log-memory fixes, frontend refinement, per-source conversion guards, bounded subscription observation, upstream core synchronization, connection lifecycle fixes and mobile navigation/input improvements
 
-The fixed source commit contains work newer than the published Android package. A successful recipe check proves that the rebuild materials are complete; it does **not** prove that an APK/module was built, installed on a device or validated against real traffic. Those claims are recorded separately in [`VERIFICATION.md`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/VERIFICATION.md).
+The fixed source commit contains work newer than the published Android package. A successful recipe check proves that the rebuild materials are complete; it does **not** prove that an APK/module was built, installed on a device or validated against real traffic. Those claims are recorded separately in [`VERIFICATION.md`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/VERIFICATION.md).
 
-Recipe `0.3.17` records the split-repository release entry and the current source pin `af3930bd9860344688efa62684afdd7ba4ba25f5`. That pin includes the Issue recovery work, mksh for the full quality suite, checks for every workflow, an exact submodule trigger path, and a separate timeout budget for the successful ADB test fixture. These CI changes preserve Android runtime behavior and software versions. The [Issue and PR record](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/ISSUE_TRIAGE_2026-11-06.md) separates fixed mechanisms from remaining device and trusted-source work (#436, #440).
+Recipe `0.3.17` records the split-repository release entry and the current source pin `af3930bd9860344688efa62684afdd7ba4ba25f5`. That pin includes the Issue recovery work, mksh for the full quality suite, checks for every workflow, an exact submodule trigger path, and a separate timeout budget for the successful ADB test fixture. These CI changes preserve Android runtime behavior and software versions. The [Issue and PR record](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/ISSUE_TRIAGE_2026-11-06.md) separates fixed mechanisms from remaining device and trusted-source work (#436, #440).
 
-Recipe `0.3.3` adds the [core lifecycle contract](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet-packet-engine/CORE_LIFECYCLE.md): fixed upstream synchronization, handshake failure cleanup, and complete registration cleanup when flow attachment overlaps closure. It retains the subscription and recovery requirements from recipe `0.3.2`. The fixed core passed host tests, Linux amd64 and Android arm64 builds and final Linux configuration/DNS checks. Measured memory results apply to the specific sing-tun lifecycle experiment; Android RSS and device traffic remain unverified. Source identities, exclusions and original evidence are tracked in the verification record.
+Recipe `0.3.3` adds the [core lifecycle contract](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet-packet-engine/CORE_LIFECYCLE.md): fixed upstream synchronization, handshake failure cleanup, and complete registration cleanup when flow attachment overlaps closure. It retains the subscription and recovery requirements from recipe `0.3.2`. The fixed core passed host tests, Linux amd64 and Android arm64 builds and final Linux configuration/DNS checks. Measured memory results apply to the specific sing-tun lifecycle experiment; Android RSS and device traffic remain unverified. Source identities, exclusions and original evidence are tracked in the verification record.
 
 ## Install the published software
 
@@ -99,7 +99,7 @@ kam build -j 2
 
 ```
 
-See the [implementation build guide](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/generated/magicnet-android/docs/build.md) before treating a local archive as a release artifact.
+See the [implementation build guide](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/generated/magicnet-android/docs/build.md) before treating a local archive as a release artifact.
 
 ## Rebuild from the recipe
 
@@ -119,7 +119,7 @@ recipkg build "$recipe_tmp/magicnet-0.3.17.recipe.tar.gz" --lang zh-CN
 
 ```
 
-`recipkg build` produces a complete implementation prompt. It does not call a model or build the software itself. Give the full generated prompt to the implementation agent, then require it to execute every item in [`ACCEPTANCE.md`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/ACCEPTANCE.md) and record real results in [`VERIFICATION.md`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/VERIFICATION.md).
+`recipkg build` produces a complete implementation prompt. It does not call a model or build the software itself. Give the full generated prompt to the implementation agent, then require it to execute every item in [`ACCEPTANCE.md`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/ACCEPTANCE.md) and record real results in [`VERIFICATION.md`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/VERIFICATION.md).
 
 Do not hand `.env` files, subscriptions, credentials, device state or raw private logs to the agent or include them in a recipe archive.
 
@@ -155,7 +155,7 @@ gh workflow run release.yml \
 
 ```
 
-Choose `mode=verify` to run every release gate without publishing, or `mode=publish` to publish after successful checks. Set `bump=patch/minor/major`, or use `bump=none` with an exact `version` such as `1.9.0`. `version_code` is automatic unless supplied; `source_ref=main` explicitly selects the latest implementation and freezes its SHA. The stable updater changes only after successful publication. See the [release guide](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/docs/releasing.md) for the complete inputs, examples and recovery procedure.
+Choose `mode=verify` to run every release gate without publishing, or `mode=publish` to publish after successful checks. Set `bump=patch/minor/major`, or use `bump=none` with an exact `version` such as `1.9.0`. `version_code` is automatic unless supplied; `source_ref=main` explicitly selects the latest implementation and freezes its SHA. The stable updater changes only after successful publication. See the [release guide](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/docs/releasing.md) for the complete inputs, examples and recovery procedure.
 
 Local lightweight checks:
 
@@ -169,13 +169,13 @@ python3 scripts/test-check-recipes.py
 
 ## Evidence and limits
 
-- [`SOURCE_AUDIT.md`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/SOURCE_AUDIT.md) records which fixed source was inspected.
+- [`SOURCE_AUDIT.md`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/SOURCE_AUDIT.md) records which fixed source was inspected.
 
-- [`PERFORMANCE.md`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/PERFORMANCE.md) distinguishes measured baselines from targets and unknowns.
+- [`PERFORMANCE.md`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/PERFORMANCE.md) distinguishes measured baselines from targets and unknowns.
 
-- [`PROVENANCE.md`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/PROVENANCE.md) labels documentation, source evidence, measurements, inference and unknowns.
+- [`PROVENANCE.md`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/PROVENANCE.md) labels documentation, source evidence, measurements, inference and unknowns.
 
-- [`VERIFICATION.md`](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/recipes/magicnet/VERIFICATION.md) separates recipe checks, source tests, package checks and device validation.
+- [`VERIFICATION.md`](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/recipes/magicnet/VERIFICATION.md) separates recipe checks, source tests, package checks and device validation.
 
 Historical source anchors
 The initial observed source was fixed at `96993ea5c851b8d51cc562c3ca0766a2ca571210`. The source state after code PRs #420–#423 and README PR #416 was fixed at `ae4de1ce4d77f1a2a4c8d9656da8101c472fa3a0`. The v1.8.0 import baseline `0dca28dd984d82333707cbf4b222596934b4d847` has the same complete Git tree as the original `f13ca61b9c3477aee3b1380d71815c84b3a2a6bf` source tag.
@@ -184,4 +184,4 @@ These anchors preserve auditability; they are not claims that every later recipe
 
 ## License
 
-MagicNet is released under the [MIT License](https://github.com/LIghtJUNction/MagicNet/blob/09b79d322127e58ba09db614c02382c5c9b83380/LICENSE). Third-party implementations, rules and tools retain their own licenses as recorded by the recipe's provenance and external prerequisite documents.
+MagicNet is released under the [MIT License](https://github.com/LIghtJUNction/MagicNet/blob/26c8d0374ce3eecfdf457eee9f3ba14ed744242a/LICENSE). Third-party implementations, rules and tools retain their own licenses as recorded by the recipe's provenance and external prerequisite documents.

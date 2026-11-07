@@ -1,11 +1,11 @@
 **English** |
-  [Français](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/install/translations/fr/README.md) |
-  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/install/translations/ru/README.md) |
-  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/install/translations/tr/README.md)
+  [Français](https://github.com/Infiniti151/acc-with-webui/blob/0fade26ba73436b21ba7b491dec0407da8dfff00/install/translations/fr/README.md) |
+  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/0fade26ba73436b21ba7b491dec0407da8dfff00/install/translations/ru/README.md) |
+  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/0fade26ba73436b21ba7b491dec0407da8dfff00/install/translations/tr/README.md)
 
 # Advanced Charging Controller (ACC) with WebUI
 
-[![](/assets/370867252158af32.svg)](https://github.com/Infiniti151/acc-with-webui/actions/workflows/build.yml) [![](/assets/b7e1a850be6cf2b7.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/a6f359b42f361a5e.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/webui/package.json) [![](/assets/6539ffbee6645db7.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/License.md) [![](/assets/32a7d598c1787c6c.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/d9d8dbed4acb5760.svg)](https://crowdin.com/project/acc-with-webui)
+[![](/assets/370867252158af32.svg)](https://github.com/Infiniti151/acc-with-webui/actions/workflows/build.yml) [![](/assets/b7e1a850be6cf2b7.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/a6f359b42f361a5e.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/webui/package.json) [![](/assets/6539ffbee6645db7.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/License.md) [![](/assets/712e5fca945d7e97.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/d9d8dbed4acb5760.svg)](https://crowdin.com/project/acc-with-webui)
 
 Important
 
@@ -117,9 +117,9 @@ Translations are synchronized continuously to Crowdin, but languages are only in
 
 - [Google Pixel Devices](#user-content-google-pixel-devices)
 
-- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/override_battery_mah_capacity)
+- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/0fade26ba73436b21ba7b491dec0407da8dfff00/override_battery_mah_capacity)
 
-- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/03c6c52574252b4e5dfcb9a807780b04a6ac3224/override_broken_temperature_sensor)
+- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/0fade26ba73436b21ba7b491dec0407da8dfff00/override_broken_temperature_sensor)
 
 - [FREQUENTLY ASKED QUESTIONS (FAQ)](#user-content-frequently-asked-questions-faq)
 
@@ -1358,7 +1358,7 @@ Important
 
 These translations are not for backend ACC CLI.
 
-[![](/assets/7959e4764b25458d.svg)](https://crowdin.com/project/acc-with-webui)
+[![](/assets/f9fb6d30cc28ad2b.svg)](https://crowdin.com/project/acc-with-webui)
 
 ![](/assets/06eb43506fd6c6a7.svg)
 

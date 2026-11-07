@@ -1,6 +1,6 @@
 # KernelSU Tuner
 
-[English](https://github.com/ylh440104/KernelSU-Tuner/blob/12dc3479d7736a74d368f61342a468224ba5ff99/README.en.md) | 简体中文
+[English](https://github.com/ylh440104/KernelSU-Tuner/blob/fcd7135fe2c78c99050a837b32ac298dcc4cd724/README.en.md) | 简体中文
 
 给 KernelSU 写的一个调优模块。主要想解决两件事：把散在各个 `sysfs` / `proc` 节点的性能参数集中管起来，以及让这些参数能根据实际情况自己切换。
 
@@ -148,6 +148,8 @@ late-load 模式下 initrc 注入不可用（KernelSU 本身的限制），这�
 
 WebUI 在模块列表里点进去就行，动作按钮会按 `省电切档 → 智能驾驶 → 电池守护 → 应用追踪 → 关闭全部` 循环。
 
+界面右上角有个语言按钮，点一下在中文和英文之间切换，选择会记住。英文界面是 `webroot/index.en.html`，默认打开的仍然是中文的 `webroot/index.html`。
+
 ## 命令行
 
 不想开 WebUI 的话，脚本都能直接调。
@@ -293,7 +295,8 @@ SELinux 宽容，默认关
 │   └── init-apply.sh      initrc 调用的入口
 ├── sepolicy.rule          SELinux 规则
 └── webroot/
-    └── index.html         WebUI（单文件，无外部依赖）
+    ├── index.html         中文界面（管理器默认打开）
+    └── index.en.html      英文界面
 
 ```
 

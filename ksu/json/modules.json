@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794022177.257
+    "timestamp": 1794052786.684
   },
   "modules": [
     {
@@ -27,7 +27,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/26ef13138d9c44b8.png",
       "added": 1793897102,
-      "timestamp": 1793988781.848,
+      "timestamp": 1794032168.328,
       "size": 548317,
       "permissions": [],
       "features": {},
@@ -173,7 +173,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 138,
+      "stars": 139,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -541,7 +541,7 @@
       "size": 8198728,
       "permissions": [],
       "features": {},
-      "stars": 422,
+      "stars": 424,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792981018,
@@ -557,14 +557,6 @@
           "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.2.1-Stable/duck-toolbox-0.2.1-Stable.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable.md",
           "size": 8198728
-        },
-        {
-          "timestamp": 1793266161,
-          "version": "0.2.1-Stable (130-canary)",
-          "versionCode": 130,
-          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-eb1e232e-20261029T092918835407Z/duck-toolbox-0.2.1-Stable-130-canary.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__130-canary_.md",
-          "size": 8975300
         },
         {
           "timestamp": 1793268891,
@@ -629,6 +621,14 @@
           "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-75f78866-20261104T181659228848Z/duck-toolbox-0.2.1-Stable-150-canary.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__150-canary_.md",
           "size": 11429802
+        },
+        {
+          "timestamp": 1794049185,
+          "version": "0.2.1-Stable (151-canary)",
+          "versionCode": 151,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-11f6041c-20261107T105915528409Z/duck-toolbox-0.2.1-Stable-151-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__151-canary_.md",
+          "size": 11419127
         }
       ]
     },
@@ -952,8 +952,8 @@
     {
       "id": "KernelSU-Tuner",
       "name": "KernelSU Tuner",
-      "version": "v3.4.2",
-      "versionCode": 30042,
+      "version": "v3.5.5",
+      "versionCode": 30055,
       "author": "ylh440104",
       "description": "Kernel-level tuning for rooted Android. Performance profiles that switch themselves based on temperature, screen state and charging, plus charge limiting, per-app policies and a WebUI console.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/README.md",
@@ -968,44 +968,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/b5e57153d1e72350.png",
-      "added": 1791708335,
-      "timestamp": 1792972975,
-      "size": 53029,
+      "added": 1791723539,
+      "timestamp": 1794047342,
+      "size": 105451,
       "permissions": [],
       "features": {},
-      "stars": 17,
+      "stars": 18,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1791708335,
+        "added": 1791723539,
         "source": "https://github.com/ylh440104/KernelSU-Tuner",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1791708335,
-          "version": "v3.0.3",
-          "versionCode": 30003,
-          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.0.3/KernelSU-Tuner-30003-v3.0.3.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.0.3.md",
-          "size": 31324
-        },
-        {
-          "timestamp": 1791718961,
-          "version": "v3.1.0",
-          "versionCode": 30010,
-          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.1.0/KernelSU-Tuner-30010-v3.1.0.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.1.0.md",
-          "size": 36076
-        },
-        {
-          "timestamp": 1791722413,
-          "version": "v3.2.0",
-          "versionCode": 30020,
-          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.2.0/KernelSU-Tuner-30020-v3.2.0.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.2.0.md",
-          "size": 41138
-        },
         {
           "timestamp": 1791723539,
           "version": "v3.3.0",
@@ -1037,6 +1013,54 @@
           "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.4.2/KernelSU-Tuner-30042-v3.4.2.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.4.2.md",
           "size": 53029
+        },
+        {
+          "timestamp": 1794030223,
+          "version": "v3.5.0",
+          "versionCode": 30050,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.0/KernelSU-Tuner-30050-v3.5.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.0.md",
+          "size": 68732
+        },
+        {
+          "timestamp": 1794032147,
+          "version": "v3.5.1",
+          "versionCode": 30051,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.1/KernelSU-Tuner-30051-v3.5.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.1.md",
+          "size": 103259
+        },
+        {
+          "timestamp": 1794038512,
+          "version": "v3.5.2",
+          "versionCode": 30052,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.2/KernelSU-Tuner-30052-v3.5.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.2.md",
+          "size": 104021
+        },
+        {
+          "timestamp": 1794039853,
+          "version": "v3.5.3",
+          "versionCode": 30053,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.3/KernelSU-Tuner-30053-v3.5.3.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.3.md",
+          "size": 104741
+        },
+        {
+          "timestamp": 1794046617,
+          "version": "v3.5.4",
+          "versionCode": 30054,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.4/KernelSU-Tuner-30054-v3.5.4.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.4.md",
+          "size": 105059
+        },
+        {
+          "timestamp": 1794047342,
+          "version": "v3.5.5",
+          "versionCode": 30055,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.5/KernelSU-Tuner-30055-v3.5.5.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.5.md",
+          "size": 105451
         }
       ]
     },
@@ -1138,7 +1162,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 36,
+      "stars": 38,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1178,7 +1202,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 598,
+      "stars": 600,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1208,8 +1232,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.8.4",
-      "versionCode": 10612,
+      "version": "v1.8.5",
+      "versionCode": 10613,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1223,8 +1247,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1794021894.813,
-      "size": 65461674,
+      "timestamp": 1794038663.834,
+      "size": 68512250,
       "permissions": [],
       "features": {},
       "stars": 224,
@@ -1299,6 +1323,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.4/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.4.md",
           "size": 65461674
+        },
+        {
+          "timestamp": 1794038641,
+          "version": "v1.8.5",
+          "versionCode": 10613,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.5/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.5.md",
+          "size": 68512250
         }
       ]
     },
@@ -1493,7 +1525,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 632,
+      "stars": 638,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -1535,7 +1567,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 624,
+      "stars": 633,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -1717,7 +1749,7 @@
       "size": 13452089,
       "permissions": [],
       "features": {},
-      "stars": 18,
+      "stars": 19,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793604994,
@@ -2374,8 +2406,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.11.1 (299-fa1da0d-release)",
-      "versionCode": 299,
+      "version": "v2.13.0 (304-d2ebd23-release)",
+      "versionCode": 304,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next module",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -2384,36 +2416,20 @@
       "categories": [
         "system"
       ],
-      "added": 1792926104,
-      "timestamp": 1793983879,
-      "size": 6874301,
+      "added": 1793371344,
+      "timestamp": 1794040405,
+      "size": 7276254,
       "permissions": [],
       "features": {},
       "stars": 104,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792926104,
+        "added": 1793371344,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792926104,
-          "version": "v2.6.0 (235-d2c08c7-release)",
-          "versionCode": 235,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.6.0/ZNNext-v2.6.0-235-d2c08c7-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.6.0__235-d2c08c7-release_.md",
-          "size": 6592617
-        },
-        {
-          "timestamp": 1793363893,
-          "version": "v2.7.0 (253-9fb7a80-release)",
-          "versionCode": 253,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.7.0/ZNNext-v2.7.0-253-9fb7a80-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.7.0__253-9fb7a80-release_.md",
-          "size": 6604813
-        },
         {
           "timestamp": 1793371344,
           "version": "v2.7.1 (256-950ea9f-release)",
@@ -2477,6 +2493,22 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.11.1/ZNNext-v2.11.1-299-fa1da0d-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.11.1__299-fa1da0d-release_.md",
           "size": 6874301
+        },
+        {
+          "timestamp": 1794031542,
+          "version": "v2.12.0 (302-355c206-release)",
+          "versionCode": 302,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.12.0/ZNNext-v2.12.0-302-355c206-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.12.0__302-355c206-release_.md",
+          "size": 6884437
+        },
+        {
+          "timestamp": 1794040405,
+          "version": "v2.13.0 (304-d2ebd23-release)",
+          "versionCode": 304,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.13.0/ZNNext-v2.13.0-304-d2ebd23-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.13.0__304-d2ebd23-release_.md",
+          "size": 7276254
         }
       ]
     },
