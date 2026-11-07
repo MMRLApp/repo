@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794052786.684
+    "timestamp": 1794072581.99
   },
   "modules": [
     {
@@ -68,7 +68,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 94,
+      "stars": 97,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -433,11 +433,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1794021894.813,
+      "timestamp": 1794062983.913,
       "size": 3135517,
       "permissions": [],
       "features": {},
-      "stars": 18,
+      "stars": 19,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -502,7 +502,7 @@
       "size": 969705,
       "permissions": [],
       "features": {},
-      "stars": 868,
+      "stars": 870,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -735,7 +735,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 311,
+      "stars": 312,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -1450,7 +1450,7 @@
       "size": 27549353,
       "permissions": [],
       "features": {},
-      "stars": 1387,
+      "stars": 1389,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1668,7 +1668,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 63,
+      "stars": 64,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -1904,19 +1904,21 @@
     {
       "id": "susdock",
       "name": "SusDock",
-      "version": "0.3.6",
-      "versionCode": 306,
+      "version": "0.4.0",
+      "versionCode": 400,
       "author": "Nix24",
       "description": "A SuSFS Manager for LKM Setups",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/susdock/README.md",
       "support": "https://github.com/Nixie24/susdock/issues",
       "license": "GPL-2.0-only",
       "categories": [
+        "system",
         "tools"
       ],
+      "icon": "https://modules.kernelsu.org/assets/67136f7e6e0f80f8.svg",
       "added": 1793207635,
-      "timestamp": 1793957459,
-      "size": 30383,
+      "timestamp": 1794064606,
+      "size": 30505,
       "permissions": [],
       "features": {},
       "stars": 4,
@@ -1943,6 +1945,14 @@
           "zipUrl": "https://github.com/Nixie24/susdock/releases/download/v0.3.6-306/susdock-v0.3.6-306.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/susdock/changelogs/0.3.6.md",
           "size": 30383
+        },
+        {
+          "timestamp": 1794064606,
+          "version": "0.4.0",
+          "versionCode": 400,
+          "zipUrl": "https://github.com/Nixie24/susdock/releases/download/v0.4.0-400/susdock-v0.4.0-400.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/susdock/changelogs/0.4.0.md",
+          "size": 30505
         }
       ]
     },
@@ -2406,8 +2416,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.13.0 (304-d2ebd23-release)",
-      "versionCode": 304,
+      "version": "v2.15.0 (369-7cee6dd-release)",
+      "versionCode": 369,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next module",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -2416,44 +2426,20 @@
       "categories": [
         "system"
       ],
-      "added": 1793371344,
-      "timestamp": 1794040405,
-      "size": 7276254,
+      "added": 1793433899,
+      "timestamp": 1794070627.89,
+      "size": 7426684,
       "permissions": [],
       "features": {},
-      "stars": 104,
+      "stars": 105,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793371344,
+        "added": 1793433899,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793371344,
-          "version": "v2.7.1 (256-950ea9f-release)",
-          "versionCode": 256,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.7.1/ZNNext-v2.7.1-256-950ea9f-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.7.1__256-950ea9f-release_.md",
-          "size": 6620767
-        },
-        {
-          "timestamp": 1793417881,
-          "version": "v2.8.0 (258-301e92b-release)",
-          "versionCode": 258,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.8.0/ZNNext-v2.8.0-258-301e92b-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.8.0__258-301e92b-release_.md",
-          "size": 6647064
-        },
-        {
-          "timestamp": 1793431551,
-          "version": "v2.8.1 (260-891c32a-release)",
-          "versionCode": 260,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.8.1/ZNNext-v2.8.1-260-891c32a-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.8.1__260-891c32a-release_.md",
-          "size": 6650102
-        },
         {
           "timestamp": 1793433899,
           "version": "v2.9.0 (262-33d6a1e-release)",
@@ -2509,14 +2495,38 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.13.0/ZNNext-v2.13.0-304-d2ebd23-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.13.0__304-d2ebd23-release_.md",
           "size": 7276254
+        },
+        {
+          "timestamp": 1794057892,
+          "version": "v2.14.0 (306-1aa66b8-release)",
+          "versionCode": 306,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.14.0/ZNNext-v2.14.0-306-1aa66b8-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.14.0__306-1aa66b8-release_.md",
+          "size": 7273471
+        },
+        {
+          "timestamp": 1794068800,
+          "version": "v2.14.1 (367-0b8d6da-release)",
+          "versionCode": 367,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.14.1/ZNNext-v2.14.1-367-0b8d6da-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.14.1__367-0b8d6da-release_.md",
+          "size": 7314563
+        },
+        {
+          "timestamp": 1794070600,
+          "version": "v2.15.0 (369-7cee6dd-release)",
+          "versionCode": 369,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.15.0/ZNNext-v2.15.0-369-7cee6dd-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.15.0__369-7cee6dd-release_.md",
+          "size": 7426684
         }
       ]
     },
     {
       "id": "zygisksu",
       "name": "Zygisk Next",
-      "version": "1.5.2 (864-a4a72ce-release)",
-      "versionCode": 864,
+      "version": "1.5.3 (880-22a1bf5-release)",
+      "versionCode": 880,
       "author": "5ec1cff, Nullptr, Aviraxp, LSPosed Developers",
       "description": "Standalone implementation of Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/README.md",
@@ -2526,11 +2536,11 @@
         "zygisk-next"
       ],
       "added": 1789877990,
-      "timestamp": 1791901486,
-      "size": 6714344,
+      "timestamp": 1794069352,
+      "size": 6638473,
       "permissions": [],
       "features": {},
-      "stars": 1039,
+      "stars": 1052,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789877990,
@@ -2562,6 +2572,14 @@
           "zipUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.2/Zygisk-Next-1.5.2-864-a4a72ce-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/changelogs/1.5.2__864-a4a72ce-release_.md",
           "size": 6714344
+        },
+        {
+          "timestamp": 1794069352,
+          "version": "1.5.3 (880-22a1bf5-release)",
+          "versionCode": 880,
+          "zipUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.3/Zygisk-Next-1.5.3-880-22a1bf5-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/changelogs/1.5.3__880-22a1bf5-release_.md",
+          "size": 6638473
         }
       ]
     }

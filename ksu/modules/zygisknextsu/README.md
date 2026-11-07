@@ -85,7 +85,7 @@ Create a Pull Request.
 
 - [libcxx](https://github.com/LSPosed/prefab-libcxx): libc++/libc++abi statically linked into the loader
 
-- [LZMA SDK](https://www.7-zip.org/sdk.html) and [xz-embedded](https://github.com/tukaani-project/xz-embedded): `.gnu_debugdata` decompressor
+- [LZMA SDK](https://www.7-zip.org/sdk.html), [xz-embedded](https://github.com/tukaani-project/xz-embedded) and [libarchive](https://github.com/libarchive/libarchive): `.gnu_debugdata` decompressors
 
 - [KernelPatch](https://github.com/bmax121/KernelPatch): for KernelPatch Module
 
