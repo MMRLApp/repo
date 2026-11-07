@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794004105.647
+    "timestamp": 1794022177.257
   },
   "modules": [
     {
@@ -118,7 +118,7 @@
       "size": 4027697,
       "permissions": [],
       "features": {},
-      "stars": 36,
+      "stars": 37,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793534585,
@@ -371,7 +371,7 @@
       "size": 10546613,
       "permissions": [],
       "features": {},
-      "stars": 428,
+      "stars": 430,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -417,8 +417,8 @@
     {
       "id": "CRecordEvolution",
       "name": "ChargingRecord Evolution",
-      "version": "1.3.7",
-      "versionCode": 36,
+      "version": "1.3.8",
+      "versionCode": 37,
       "author": "f1owkang, hcnk3HrzQe",
       "description": "在 root 管理器的模块描述里实时显示电池健康度，内置 WebUI 估算曲线，刷入即用、零配置。 | Real-time battery health in your root manager's module description, with a built-in WebUI — flash and go, zero configuration.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CRecordEvolution/README.md",
@@ -433,8 +433,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1793983902.874,
-      "size": 3098213,
+      "timestamp": 1794021894.813,
+      "size": 3135517,
       "permissions": [],
       "features": {},
       "stars": 18,
@@ -469,6 +469,14 @@
           "zipUrl": "https://github.com/f1owkang/CRecordEvolution/releases/download/v1.3.7/CRecordEvolution-36-1.3.7.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CRecordEvolution/changelogs/1.3.7.md",
           "size": 3098213
+        },
+        {
+          "timestamp": 1794021876,
+          "version": "1.3.8",
+          "versionCode": 37,
+          "zipUrl": "https://github.com/f1owkang/CRecordEvolution/releases/download/v1.3.8/CRecordEvolution-37-1.3.8.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CRecordEvolution/changelogs/1.3.8.md",
+          "size": 3135517
         }
       ]
     },
@@ -859,7 +867,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1801,
+      "stars": 1803,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1215,7 +1223,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1793981282.738,
+      "timestamp": 1794021894.813,
       "size": 65461674,
       "permissions": [],
       "features": {},
@@ -1581,7 +1589,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4169,
+      "stars": 4174,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -1670,7 +1678,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 114,
+      "stars": 118,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2158,7 +2166,7 @@
       "size": 7677650,
       "permissions": [],
       "features": {},
-      "stars": 24,
+      "stars": 23,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792001757,
@@ -2490,7 +2498,7 @@
       "size": 6714344,
       "permissions": [],
       "features": {},
-      "stars": 1032,
+      "stars": 1039,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789877990,

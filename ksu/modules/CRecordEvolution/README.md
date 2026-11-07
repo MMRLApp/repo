@@ -3,12 +3,12 @@
 **把电池健康度写在 root 管理器模块描述里，刷入即用，零配置**
 
 [![](/assets/5478adfe2d3bb8ce.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
-[![](/assets/70c357c0b09adef4.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
+[![](/assets/a6f235f068eb65ee.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-%E5%AE%89%E8%A3%85)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/LICENSE)
 
-[English](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/README_EN.md) | 简体中文
+[English](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/README_EN.md) | 简体中文
 
 [特性](#user-content-%E7%89%B9%E6%80%A7) ｜ [界面预览](#user-content-%E7%95%8C%E9%9D%A2%E9%A2%84%E8%A7%88) ｜ [安装](#user-content-%E5%AE%89%E8%A3%85) ｜ [工作原理](#user-content-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86) ｜ [常见问题](#user-content-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98) ｜ [从源码构建](#user-content-%E4%BB%8E%E6%BA%90%E7%A0%81%E6%9E%84%E5%BB%BA) ｜ [致谢](#user-content-%E8%87%B4%E8%B0%A2)
 
@@ -21,14 +21,16 @@ WebUI 三页（概览 / 历史 / 设置）一览。截图中的电池数据为**
 历史 · 趋势
 设置
 
-[![](/assets/f6012c245bf18345.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/overview-zh.png)
-[![](/assets/d46eb582599968a1.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/history-zh.png)
-[![](/assets/ea6257f016d41db9.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/trends-zh.png)
-[![](/assets/06faefa6ec0d9319.png)](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/.github/images/settings-zh.png)
+[![](/assets/963ce5718ee1ffef.png)](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/.github/images/overview-zh.png)
+[![](/assets/1bf83b7840c77a61.png)](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/.github/images/history-zh.png)
+[![](/assets/e0d9eebc0b86473a.png)](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/.github/images/trends-zh.png)
+[![](/assets/5cff159c37186562.png)](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/.github/images/settings-zh.png)
 
 ## 特性
 
 - **健康度与容量实时可见**：模块描述分两行显示内核/实测健康度与容量、循环次数与温度（带图标），并按屏幕宽度自动精简标签，窄屏也不折行，不用打开任何 App。
+
+- **充电进度实时可见**：概览页在充电时显示实时电流 / 功率 / 电压、本次会话进度与预计充满时间，充电期间每 15 秒自动刷新（其余时间 60 秒）。
 
 - **三页 WebUI**：概览 / 历史 / 设置；概览显示当前电池温度，历史页按 7/30/90 天与充电/放电筛选，记录可分页，趋势图可点按放大并读取数值。
 
@@ -37,6 +39,8 @@ WebUI 三页（概览 / 历史 / 设置）一览。截图中的电池数据为**
 - **完全离线**：没有网络权限、没有遥测，数据只写入本机 `data/battery.db`，保留 90 天。
 
 - **多管理器支持**：Magisk v20.4+ / KernelSU / APatch / MMRL，仅 arm64；升级自动保留旧学习记录。
+
+- **升级自检**：升级后若旧的守护进程仍在运行，设置页会提示「已升级，重启后生效」，避免新旧口径混写数据。
 
 - **双语界面**：简体中文 / English，安装时可选，之后可在 WebUI 随时切换。
 
@@ -65,6 +69,8 @@ WebUI 三页（概览 / 历史 / 设置）一览。截图中的电池数据为**
 - 两个变体同 id、同名，互斥安装；ML 实验版靠模块描述前的 `[ML实验版]` 前缀区分；
 
 - 升级保留 `data/battery.db` 学习记录（安装器自动复制），无需手动备份；
+
+- 升级后请尽快重启：重启前旧守护进程仍在内存里按旧口径写库，设置页会提示「已升级，重启后生效」；
 
 - Magisk 低版本没有 Action 按钮，等重启刷新；
 
@@ -136,11 +142,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` 是随模块分发的原生可执行文件：`once` 刷新一次描述并打印读数（Action 按钮执行的就是它），`json` 输出概览/设置页快照，`history` 输出历史页分页数据，`diag` 输出脱敏诊断摘要（设置页「复制诊断」执行它）。开机常驻由 `service.sh` 启动 `batteryd daemon`；完整发版流程见 [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/AGENTS.md)。
+`bin/batteryd` 是随模块分发的原生可执行文件：`once` 刷新一次描述并打印读数（Action 按钮执行的就是它），`json` 输出概览/设置页快照，`history` 输出历史页分页数据，`diag` 输出脱敏诊断摘要（设置页「复制诊断」执行它）。开机常驻由 `service.sh` 启动 `batteryd daemon`；完整发版流程见 [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/AGENTS.md)。
 
 ## 论文支撑
 
-设计过程中参考过的论文（PDF 库见 [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/docs/)）：
+设计过程中参考过的论文（PDF 库见 [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/docs/)）：
 
 - He & Shin, ACM e-Energy '23 —— 静置电压指纹
 
@@ -185,6 +191,6 @@ ChargingRecord Evolution 生态由以下贡献者共同打造（排名不分先�
 
 ## License
 
-本项目以 [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/350d11794d03ef2d37fb4a11c120d2cbb6cfed31/LICENSE) 协议开源。
+本项目以 [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/ace9acc78904c4d12e83c13da3dcb0706397604d/LICENSE) 协议开源。
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**
