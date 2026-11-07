@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794072581.99
+    "timestamp": 1794085785.13
   },
   "modules": [
     {
@@ -169,11 +169,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/1e142f7a865af89d.jpg",
       "added": 1792766759,
-      "timestamp": 1793522586.942,
+      "timestamp": 1794077644.945,
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 139,
+      "stars": 140,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -774,7 +774,7 @@
       "size": 8877025,
       "permissions": [],
       "features": {},
-      "stars": 1,
+      "stars": 2,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793671130,
@@ -2302,8 +2302,8 @@
     {
       "id": "zygisk-sui",
       "name": "Zygisk - Sui",
-      "version": "v13.5.4.3 (576-3af0920-release)",
-      "versionCode": 576,
+      "version": "v13.5.4.3 (577-c5cbf06-release)",
+      "versionCode": 577,
       "author": "XiaoTong, RikkaW, Sui Contributors",
       "description": "Fork by XiaoTong. Modern super user interface implementation on Android.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/README.md",
@@ -2317,28 +2317,20 @@
         "sui",
         "zygisk"
       ],
-      "added": 1792041159,
-      "timestamp": 1793949381,
-      "size": 1452547,
+      "added": 1792054513,
+      "timestamp": 1794077621,
+      "size": 1453631,
       "permissions": [],
       "features": {},
       "stars": 15,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792041159,
+        "added": 1792054513,
         "source": "https://github.com/XiaoTong6666/zygisk-sui",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792041159,
-          "version": "v13.5.4.3 (563-a82856c-release)",
-          "versionCode": 563,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v563-a82856c/Sui-v13.5.4.3_563-a82856c-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__563-a82856c-release_.md",
-          "size": 1364551
-        },
         {
           "timestamp": 1792054513,
           "version": "v13.5.4.3 (564-e967423-release)",
@@ -2410,6 +2402,14 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v576-3af0920/Sui-v13.5.4.3_576-3af0920-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__576-3af0920-release_.md",
           "size": 1452547
+        },
+        {
+          "timestamp": 1794077621,
+          "version": "v13.5.4.3 (577-c5cbf06-release)",
+          "versionCode": 577,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v577-c5cbf06/Sui-v13.5.4.3_577-c5cbf06-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__577-c5cbf06-release_.md",
+          "size": 1453631
         }
       ]
     },

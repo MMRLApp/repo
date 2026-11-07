@@ -1360,7 +1360,7 @@ These translations are not for backend ACC CLI.
 
 [![](/assets/f9fb6d30cc28ad2b.svg)](https://crowdin.com/project/acc-with-webui)
 
-![](/assets/06eb43506fd6c6a7.svg)
+![](/assets/c5442909f205bb01.svg)
 
 [Help translate ACC on Crowdin](https://crowdin.com/project/acc-with-webui)
 
