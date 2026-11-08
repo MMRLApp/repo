@@ -5,7 +5,7 @@
 
 [![](/assets/c971bf401f8d3ef6.svg)](https://github.com/ahmed-alnassif/ReSuSFS/actions/workflows/release.yml)
 [![](/assets/7bad82291f0bf241.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
-[![](/assets/cb59ae656f07a5ec.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
+[![](/assets/7bdcc8f2446c3a85.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
 [![](/assets/4e0c19d01478f059.svg)](https://t.me/ahmed_alnassif_tg)
 [![](/assets/d78cdaa5efb26e9e.svg)](https://github.com/ahmed-alnassif/ReSuSFS/blob/cbca0e6a58b5fa48020fca4592d8fce99247b46e/LICENSE)
 [![](/assets/ad0e56fdd0adbd4e.svg)](https://gitlab.com/simonpunk/susfs4ksu)

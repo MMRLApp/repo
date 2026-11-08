@@ -5,7 +5,7 @@
 
 # Advanced Charging Controller (ACC) with WebUI
 
-[![](/assets/370867252158af32.svg)](https://github.com/Infiniti151/acc-with-webui/actions/workflows/build.yml) [![](/assets/b7e1a850be6cf2b7.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/a6f359b42f361a5e.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/webui/package.json) [![](/assets/6539ffbee6645db7.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/License.md) [![](/assets/712e5fca945d7e97.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/d9d8dbed4acb5760.svg)](https://crowdin.com/project/acc-with-webui)
+[![](/assets/370867252158af32.svg)](https://github.com/Infiniti151/acc-with-webui/actions/workflows/build.yml) [![](/assets/b7e1a850be6cf2b7.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/a6f359b42f361a5e.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/webui/package.json) [![](/assets/6539ffbee6645db7.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/License.md) [![](/assets/6fdb27b84b5a2da5.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/d9d8dbed4acb5760.svg)](https://crowdin.com/project/acc-with-webui)
 
 Important
 

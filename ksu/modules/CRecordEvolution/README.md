@@ -2,15 +2,15 @@
 
 **Battery health written right into your root manager's module description — flash and go, zero configuration**
 
-[![](/assets/5478adfe2d3bb8ce.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
-[![](/assets/a6f235f068eb65ee.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
+[![](/assets/1c66b25a88201003.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
+[![](/assets/35521ea104576f2d.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,10 +23,10 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/3af37f16e69eca4f.png)](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/.github/images/overview-en.png)
-[![](/assets/a334906d69fba887.png)](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/.github/images/history-en.png)
-[![](/assets/16b13d4a6638b45a.png)](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/.github/images/trends-en.png)
-[![](/assets/90cb69a14fd535d8.png)](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/.github/images/settings-en.png)
+[![](/assets/3af37f16e69eca4f.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/overview-en.png)
+[![](/assets/a334906d69fba887.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/history-en.png)
+[![](/assets/16b13d4a6638b45a.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/trends-en.png)
+[![](/assets/90cb69a14fd535d8.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/settings-en.png)
 
 ## Features
 
@@ -68,11 +68,13 @@ Online-learning algorithm, manual flash only
 
 ### Flashing
 
-Pick the zip in your manager and confirm the install with the volume keys (Volume Up = install, Volume Down = cancel, 30 s timeout = cancel); the UI language follows the phone language automatically. Reboot when done.
+Pick the zip in your manager. First installs, normal upgrades and reinstalls of the same build proceed without extra prompts — the manager already asks for its own confirmation. The installer only asks for a volume-key confirmation when it detects a **downgrade** or a **stable ↔ ML channel switch**, and shows the installed vs incoming version/channel first (Volume Up = continue, Volume Down = cancel, 30 s timeout = cancel). The UI language follows the phone language automatically. Reboot when done.
+
+If you flashed the wrong build but have not rebooted yet, simply flash the correct zip again: the wrong binary never starts, so you still only reboot once.
 
 ### Notes
 
-- Both variants share the same id and name, and are mutually exclusive; the ML build is marked by the `[ML experimental]` prefix on the module description;
+- Both variants share the same id and name, and are mutually exclusive; the ML build is marked by the `-ML` suffix in the module **Version** field (and by the asset name), so the module description stays identical to the stable build;
 
 - Upgrades keep the `data/battery.db` learning history (the installer copies the old data automatically), so no manual backup is needed;
 
@@ -148,11 +150,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -197,6 +199,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/218873b122544a7089ff0b87c05bd58a21fd472d/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**
