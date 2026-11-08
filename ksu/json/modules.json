@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794085785.13
+    "timestamp": 1794106713.764
   },
   "modules": [
     {
@@ -930,7 +930,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 12,
+      "stars": 13,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1251,7 +1251,7 @@
       "size": 68512250,
       "permissions": [],
       "features": {},
-      "stars": 224,
+      "stars": 226,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792267431,
@@ -1354,7 +1354,7 @@
       "size": 45222893,
       "permissions": [],
       "features": {},
-      "stars": 8,
+      "stars": 9,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792770944,
@@ -2078,9 +2078,9 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.3.0-10140",
-      "versionCode": 10140,
-      "author": "Anatdx",
+      "version": "v0.4.0-10146",
+      "versionCode": 10146,
+      "author": "Rouyashiki Developers",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
       "support": "https://github.com/Rouyashiki/YukiZygisk/issues",
@@ -2090,44 +2090,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1792984763,
-      "timestamp": 1794000287,
-      "size": 3362900,
+      "added": 1793489293,
+      "timestamp": 1794105735,
+      "size": 3392351,
       "permissions": [],
       "features": {},
-      "stars": 121,
+      "stars": 122,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792984763,
+        "added": 1793489293,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792984763,
-          "version": "v0.2.0-10122",
-          "versionCode": 10122,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-40263138076/YukiZygisk-v0.2.0-10122-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.2.0-10122.md",
-          "size": 3129773
-        },
-        {
-          "timestamp": 1793274059,
-          "version": "v0.2.0-10124",
-          "versionCode": 10124,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-40866698598/YukiZygisk-v0.2.0-10124-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.2.0-10124.md",
-          "size": 3124589
-        },
-        {
-          "timestamp": 1793291747,
-          "version": "v0.2.0-10126",
-          "versionCode": 10126,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-40911949456/YukiZygisk-v0.2.0-10126-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.2.0-10126.md",
-          "size": 3125732
-        },
         {
           "timestamp": 1793489293,
           "version": "v0.2.0-10127",
@@ -2183,6 +2159,30 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42295927561/YukiZygisk-v0.3.0-10140-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10140.md",
           "size": 3362900
+        },
+        {
+          "timestamp": 1794088116,
+          "version": "v0.3.0-10144",
+          "versionCode": 10144,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42417290425/YukiZygisk-v0.3.0-10144-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10144.md",
+          "size": 3391404
+        },
+        {
+          "timestamp": 1794095268,
+          "version": "v0.4.0-10145",
+          "versionCode": 10145,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42426535128/YukiZygisk-v0.4.0-10145-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10145.md",
+          "size": 3391702
+        },
+        {
+          "timestamp": 1794105735,
+          "version": "v0.4.0-10146",
+          "versionCode": 10146,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42439380654/YukiZygisk-v0.4.0-10146-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10146.md",
+          "size": 3392351
         }
       ]
     },

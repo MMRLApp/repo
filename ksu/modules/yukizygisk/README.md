@@ -1,7 +1,7 @@
 # YukiZygisk
 
 ![](/assets/d94a3e2e2ff6a17f.svg)
-**English** | [简体中文](https://github.com/Rouyashiki/YukiZygisk/blob/509417ca93a33fa5fbe4689c7837f09c37cfbb86/README.zh-CN.md)
+**English** | [简体中文](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/README.zh-CN.md)
 
 YukiZygisk is a standalone, kernel-based Zygisk implementation for rooted Android devices. It runs Zygisk and ZN native modules, with a built-in WebUI for checking status and changing settings.
 
@@ -51,4 +51,4 @@ If something goes wrong, [open an issue](https://github.com/Rouyashiki/YukiZygis
 
 ## License
 
-Original work is licensed under [Apache-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/509417ca93a33fa5fbe4689c7837f09c37cfbb86/LICENSE); [GPL-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/509417ca93a33fa5fbe4689c7837f09c37cfbb86/LICENSE-GPL-2.0) applies when used with the Linux kernel. Third-party components retain their original licenses. See [NOTICE](https://github.com/Rouyashiki/YukiZygisk/blob/509417ca93a33fa5fbe4689c7837f09c37cfbb86/NOTICE) for credits and details.
+Original work is licensed under [Apache-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/LICENSE); [GPL-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/LICENSE-GPL-2.0) applies when used with the Linux kernel. Third-party components retain their original licenses. See [NOTICE](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/NOTICE) for credits and details.
