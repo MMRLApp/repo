@@ -1,5 +1,5 @@
 {
-  "name": "KernelSU Modules Repository",
+  "name": "KernelSU Modules Repository (mirror)",
   "website": "https://modules.kernelsu.org",
   "donate": "https://github.com/sponsors/tiann",
   "cover": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/assets/ksu-cover.webp",
@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794140406.585
+    "timestamp": 1794173139.824
   },
   "modules": [
     {
@@ -510,7 +510,7 @@
       "size": 969705,
       "permissions": [],
       "features": {},
-      "stars": 870,
+      "stars": 873,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -549,7 +549,7 @@
       "size": 8198728,
       "permissions": [],
       "features": {},
-      "stars": 424,
+      "stars": 427,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792981018,
@@ -1255,11 +1255,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1794038663.834,
+      "timestamp": 1794155042.857,
       "size": 68512250,
       "permissions": [],
       "features": {},
-      "stars": 226,
+      "stars": 227,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792267431,
@@ -1458,7 +1458,7 @@
       "size": 27549353,
       "permissions": [],
       "features": {},
-      "stars": 1389,
+      "stars": 1390,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1676,7 +1676,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 64,
+      "stars": 65,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2064,7 +2064,7 @@
       "size": 32979,
       "permissions": [],
       "features": {},
-      "stars": 0,
+      "stars": 1,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793870109,
@@ -2086,8 +2086,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.4.0-10146",
-      "versionCode": 10146,
+      "version": "v0.4.0-10147",
+      "versionCode": 10147,
       "author": "Rouyashiki Developers",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -2098,28 +2098,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1793489293,
-      "timestamp": 1794105735,
-      "size": 3392351,
+      "added": 1793547403,
+      "timestamp": 1794163824,
+      "size": 3410924,
       "permissions": [],
       "features": {},
-      "stars": 122,
+      "stars": 121,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793489293,
+        "added": 1793547403,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793489293,
-          "version": "v0.2.0-10127",
-          "versionCode": 10127,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41252401185/YukiZygisk-v0.2.0-10127-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.2.0-10127.md",
-          "size": 3138544
-        },
         {
           "timestamp": 1793547403,
           "version": "v0.3.0-10131",
@@ -2191,14 +2183,22 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42439380654/YukiZygisk-v0.4.0-10146-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10146.md",
           "size": 3392351
+        },
+        {
+          "timestamp": 1794163824,
+          "version": "v0.4.0-10147",
+          "versionCode": 10147,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42511647457/YukiZygisk-v0.4.0-10147-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10147.md",
+          "size": 3410924
         }
       ]
     },
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.202 (202-34ca0ce-release)",
-      "versionCode": 202,
+      "version": "1.204 (204-d739791-release)",
+      "versionCode": 204,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -2211,28 +2211,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1792001757,
-      "timestamp": 1793807747,
+      "added": 1792306323,
+      "timestamp": 1794146091,
       "size": 7677650,
       "permissions": [],
       "features": {},
       "stars": 23,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792001757,
+        "added": 1792306323,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792001757,
-          "version": "1.188 (188-9d0104f-release)",
-          "versionCode": 188,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v188-9d0104f/FuseHide-1.188_188-9d0104f-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.188__188-9d0104f-release_.md",
-          "size": 7530211
-        },
         {
           "timestamp": 1792306323,
           "version": "1.189 (189-fac2421-release)",
@@ -2303,6 +2295,14 @@
           "versionCode": 202,
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v202-34ca0ce/FuseHide-1.202_202-34ca0ce-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.202__202-34ca0ce-release_.md",
+          "size": 7677650
+        },
+        {
+          "timestamp": 1794146091,
+          "version": "1.204 (204-d739791-release)",
+          "versionCode": 204,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v204-d739791/FuseHide-1.204_204-d739791-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.204__204-d739791-release_.md",
           "size": 7677650
         }
       ]
@@ -2548,7 +2548,7 @@
       "size": 6638473,
       "permissions": [],
       "features": {},
-      "stars": 1052,
+      "stars": 1062,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789877990,
