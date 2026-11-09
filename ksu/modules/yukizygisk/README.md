@@ -1,7 +1,7 @@
 # YukiZygisk
 
 ![](/assets/d94a3e2e2ff6a17f.svg)
-**English** | [简体中文](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/README.zh-CN.md)
+**English** | [简体中文](https://github.com/Rouyashiki/YukiZygisk/blob/2a767ad8f6de824895596619a16ff55eb2b0e58f/README.zh-CN.md)
 
 YukiZygisk is a standalone, kernel-based Zygisk implementation for rooted Android devices. It runs Zygisk and ZN native modules, with a built-in WebUI for checking status and changing settings.
 
@@ -47,8 +47,10 @@ Late-load does not inject into already running native services. ZN native target
 
 - Update, disable or uninstall YukiZygisk through your root manager, then reboot to apply the change.
 
+KernelSU-family managers that check `ZYGISK_ENABLED` receive `ZYGISK_ENABLED=1` in their own process after YukiZygisk specializes it. The manager is identified through KernelSU's registered manager UID, not its package name. No manual `export` is needed; this does not set a global shell variable or change other modules' script environments.
+
 If something goes wrong, [open an issue](https://github.com/Rouyashiki/YukiZygisk/issues) with your device model, Android and kernel versions, root implementation, steps to reproduce and the output from the Action button.
 
 ## License
 
-Original work is licensed under [Apache-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/LICENSE); [GPL-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/LICENSE-GPL-2.0) applies when used with the Linux kernel. Third-party components retain their original licenses. See [NOTICE](https://github.com/Rouyashiki/YukiZygisk/blob/221c83cb16591dfd7ef0d4fc65a4dee8e0a75643/NOTICE) for credits and details.
+Original work is licensed under [Apache-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/2a767ad8f6de824895596619a16ff55eb2b0e58f/LICENSE); [GPL-2.0](https://github.com/Rouyashiki/YukiZygisk/blob/2a767ad8f6de824895596619a16ff55eb2b0e58f/LICENSE-GPL-2.0) applies when used with the Linux kernel. Third-party components retain their original licenses. See [NOTICE](https://github.com/Rouyashiki/YukiZygisk/blob/2a767ad8f6de824895596619a16ff55eb2b0e58f/NOTICE) for credits and details.

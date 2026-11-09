@@ -6,6 +6,20 @@ compiled into one JSON CLI (`duckd`); the WebUI is a set of feature folders that
 discovers at build time. Features only meet through versioned contracts, so each one can be
 changed, removed or added on its own.
 
+## Full and Lite
+
+**Full** is the default for Stable, Canary, and the KernelSU Modules listing.
+**Lite** keeps the Tricky Store manager, RKP workbench and device RKP issuer. It
+ships without Zygisk injection libraries and uses the root manager for WebUI and
+module operations. The Tricky Store manager configures a separately installed
+keystore module.
+
+Install or update Lite manually with the `duck-lite-*.zip` asset from
+[GitHub Releases](https://github.com/eltavine/Duck-ToolBox/releases). Lite has its own
+module ID and data directory at `/data/adb/duck-toolbox-lite`. Switching editions
+requires uninstalling the current edition and rebooting first. Uninstall removes
+that edition's local profiles and output files, including exported keyboxes.
+
 ## Tools
 
 - 
@@ -15,7 +29,7 @@ diagnostics in the WebUI. It is disabled by default and requires explicit enabli
 saved enable settings are retained. Injection requires Zygisk and a saved nonempty
 configuration. Full-mode global scripts also wait for configuration; explicitly
 selected scripts-only mode can run without a fingerprint. A separate stop control works
-during tasks, invalid configuration and pending recovery; configuration is retained. The management code remains MIT; see [licensing boundaries](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/THIRD_PARTY_NOTICES.md).
+during tasks, invalid configuration and pending recovery; configuration is retained. The management code remains MIT; see [licensing boundaries](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/THIRD_PARTY_NOTICES.md).
 
 - 
 **Device Faker**: per-app device profiles and reusable templates from
@@ -30,7 +44,7 @@ with explicit callback ordering and parent disable/removal gates. Reboot after i
 Requires Zygisk and ARM64 apps. Global property/DPI options require acknowledgement;
 process-local changes require an app restart, and failed global cleanup needs reboot.
 Online template downloads are not embedded. Actual injection needs device validation.
-See [build, lifecycle and protocol](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/components/device-faker/README.md).
+See [build, lifecycle and protocol](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/components/device-faker/README.md).
 
 - 
 **Miscellaneous → Language spoofing**: per-app, per-Android-user language rules
@@ -38,7 +52,7 @@ for Java locale APIs, app/system resources and common native property reads.
 Requires working Zygisk; configuration and activation are separate. It leaves the
 device language unchanged. Restart target apps after changes. Native/custom language
 logic may bypass it and advertisement removal is not guaranteed. See the
-[component, build requirements and device validation procedure](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/components/language-spoof/README.md).
+[component, build requirements and device validation procedure](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/components/language-spoof/README.md).
 
 - 
 **Tricky Store manager**: a complete port of KOWX712's
@@ -92,7 +106,7 @@ explicit device and issuance configuration and never falls back to experimental 
 - Private output uses owner-only permissions, atomic publication and readback checks;
 installation through the Tricky Store manager remains a separate action.
 
-- See [input formats, supported combinations and verification limits](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/docs/rkp-materials.md).
+- See [input formats, supported combinations and verification limits](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/docs/rkp-materials.md).
 Synthetic server tests cover the local flow; real-material server acceptance and a
 successful production keybox export have **not** been verified for the import path.
 
@@ -186,7 +200,7 @@ the device's `libkphproxy.so`. Both paths auto-fill identifiers and support dry 
 TrustKernel prepares and writes `rkp_flag` and `attestation_ids`, with private request
 files, isolated vendor calls, timeouts and partial-write reports. Its existence check does not
 verify payload equality; MEID entries are explicitly reported as omitted on this path.
-See [backend contracts, ABI evidence and compatibility limits](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/docs/trustkernel-provisioning.md).
+See [backend contracts, ABI evidence and compatibility limits](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/docs/trustkernel-provisioning.md).
 
 - 
 **Kernel modules**: Linux kernel module inventory and runtime management.
@@ -216,7 +230,7 @@ A 30-second worker timeout reports an unknown outcome: terminating userspace can
 or reliably cancel a kernel init/exit routine. Missing or abnormal worker results also
 report an unknown outcome. Refresh before further action.
 
-- See [source contracts, interface guidance and verification limits](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/docs/kernel-modules.md).
+- See [source contracts, interface guidance and verification limits](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/docs/kernel-modules.md).
 
 - 
 **Linux environments**: import trusted ARM64 `.tar` / `.tar.gz` root filesystems,
@@ -224,14 +238,14 @@ start and stop them, copy a terminal entry command, configure foreground service
 read bounded logs and opt into boot startup. Private mounts use PID namespaces when
 available, with cgroup v2 cleanup on kernels without them. Commands run as ROOT and
 share Android's kernel and network; chroot is not a security sandbox. See
-[requirements, lifecycle and verification](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/docs/linux-env.md).
+[requirements, lifecycle and verification](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/docs/linux-env.md).
 
 - 
 **ZRAM & swap**: existing ZRAM swap devices, compression and physical-memory statistics,
 capacity/algorithm/priority changes, same-boot parameter restoration and opt-in boot plans.
 Runtime changes require confirmation and Android ARM64 root. Devices managed by mmd,
 using writeback/secondary compression, mounted or held by another block device are protected.
-Other swap areas are read-only. See [source contracts and verification limits](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/docs/zram.md).
+Other swap areas are read-only. See [source contracts and verification limits](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/docs/zram.md).
 
 - 
 **Module & updates**: version and device summary, stable and canary updates with
@@ -338,25 +352,26 @@ Opens the WebUI in KSUWebUIStandalone or WebUI X, installing KSUWebUIStandalone 
 `uninstall.sh`
 Removes entry links, flags, the boot hash and `/data/adb/duck-toolbox`.
 
-Saved data lives in `/data/adb/duck-toolbox/var`, outside the module directory, so updates
-keep it.
+Full stores saved data in `/data/adb/duck-toolbox/var`. Lite uses
+`/data/adb/duck-toolbox-lite/var`. Both paths sit outside the module directory so updates
+keep them.
 
 **Updates.** The stable channel follows `updateJson` in `module.prop`. The canary channel
 reads the newest CI artifact through nightly.link: CI uploads the module directory as
 `duck-toolbox-<version>-<commit count>-canary`, and the commit count is its `versionCode`.
-Each successful package on a `main` push or manual CI run also publishes the module ZIP
-as a GitHub prerelease. Tags use `nightly-<8-character commit hash>-<UTC timestamp>`
+Each successful package on a `main` push or manual CI run publishes Full and Lite
+together as a GitHub prerelease. Tags use `nightly-<8-character commit hash>-<UTC timestamp>`
 (for example, `nightly-1234abcd-20261011T120000123456Z`). These releases do not replace
 the latest stable release; Telegram uploads continue on push builds.
 Published module ZIPs include GitHub build-provenance and SBOM attestations, an SPDX
-inventory and checksums. See [release verification and inventory coverage](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/docs/supply-chain.md).
-The `*-verified` Actions artifact contains the exact release ZIP; the legacy
+inventory and checksums. See [release verification and inventory coverage](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/docs/supply-chain.md).
+The `*-verified` Actions artifact contains the exact ZIP for each edition. The legacy
 nightly.link directory archive is packaged separately and has a different digest.
 The **Stable** workflow runs when the `version` field changes in
 `module/module.prop` or through a manual request. Metadata-only edits skip publication.
 It reuses the CI checks and builds, preserves `version`
-and `versionCode` from `module/module.prop`, publishes `v<version>` as the latest
-non-prerelease release, and sends the same ZIP to Telegram with a `stable` label.
+and `versionCode` from `module/module.prop`, publishes both ZIPs under `v<version>`
+as the latest stable release, and sends the Full ZIP to Telegram with a `stable` label.
 Before running it on `main`, increase `versionCode` beyond all accepted releases and
 update `update.json` to match the version and `duck-toolbox-<version>.zip` asset.
 
@@ -495,13 +510,24 @@ python3 scripts/package-module.py --channel nightly
 
 Channel metadata is written into each ZIP without changing `module/module.prop`.
 Nightly packages use the repository's commit-count version code and `canary` suffix.
-Both release channels retain the GPLv3 license and dependency notices. The engine
+Full retains the GPLv3 license and dependency notices in both channels. The engine
 build records its exact Git commit, and packaging rejects a dirty or mismatched
 source checkout or WebUI source link. Both feature footers link to the source at
 the exact build commit, including the build scripts and dependency lockfiles.
 The pinned build/dependency script is `scripts/build-play-integrity.py`.
-See [the rule review](https://github.com/eltavine/Duck-ToolBox/blob/8d6a2470b1033c35946b72bb1f9bc56d8947dd63/components/play-integrity/RULES.md) for original sources
+See [the rule review](https://github.com/eltavine/Duck-ToolBox/blob/3e872632382357c91e0f94b5de6f028f0a6984b8/components/play-integrity/RULES.md) for original sources
 and required device validation.
+
+To build Lite using the Android backend prerequisites above:
+
+```
+cargo build --locked --release --package duckd --target aarch64-linux-android \
+  --target-dir target/lite --no-default-features --features lite
+(cd ui && pnpm build --mode lite)
+python3 scripts/package-module.py --variant lite \
+  --binary target/lite/aarch64-linux-android/release/duckd --channel nightly
+
+```
 
 The power control uses `duckd play-integrity disable` (standalone:
 `pif-engine request disable`) and `play-integrity power` for status. Disable

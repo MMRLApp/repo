@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794194436.997
+    "timestamp": 1794234710.82
   },
   "modules": [
     {
@@ -250,7 +250,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 48,
+      "stars": 49,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -290,7 +290,7 @@
       "size": 1504829,
       "permissions": [],
       "features": {},
-      "stars": 9,
+      "stars": 10,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791910273,
@@ -491,10 +491,10 @@
     {
       "id": "device_faker",
       "name": "Device Faker",
-      "version": "v1.6.0",
-      "versionCode": 20260926,
+      "version": "v1.7.0 (172-9ce1894-release)",
+      "versionCode": 20261109,
       "author": "瓦力喀 / Seyud",
-      "description": "基于 Zygisk 的机型伪装模块：为每个应用单独配置设备型号与系统属性，per-process 生效，无需重启系统。",
+      "description": "基于 Zygisk 的机型伪装模块：为每个应用单独配置设备型号与系统属性，只对配置的应用生效，无需重启系统。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/device_faker/README.md",
       "support": "https://github.com/Seyud/device_faker_release/issues",
       "license": "GPL-3.0-or-later",
@@ -506,11 +506,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f385b3354a656eab.png",
       "added": 1791799060,
-      "timestamp": 1791801898.332,
-      "size": 969705,
+      "timestamp": 1794220207.247,
+      "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 873,
+      "stars": 874,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -526,14 +526,22 @@
           "zipUrl": "https://github.com/Seyud/device_faker_release/releases/download/v1.6.0/device_faker_v1.6.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/device_faker/changelogs/v1.6.0.md",
           "size": 969705
+        },
+        {
+          "timestamp": 1794220186,
+          "version": "v1.7.0 (172-9ce1894-release)",
+          "versionCode": 20261109,
+          "zipUrl": "https://github.com/Seyud/device_faker_release/releases/download/v1.7.0/device_faker_v1.7.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/device_faker/changelogs/v1.7.0__172-9ce1894-release_.md",
+          "size": 928204
         }
       ]
     },
     {
       "id": "duck-toolbox",
       "name": "Duck ToolBox",
-      "version": "0.2.1-Stable",
-      "versionCode": 119,
+      "version": "0.2.2-Stable",
+      "versionCode": 155,
       "author": "Eltavine, KOW, MhmRdd",
       "description": "Android attestation toolbox with a Tricky Store, TEESimulator and OhMyKeymint manager, RKP workbench and Qualcomm device ID provisioning in one WebUI.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/README.md",
@@ -544,36 +552,20 @@
         "tools",
         "attestation"
       ],
-      "added": 1792981018,
-      "timestamp": 1793627202.972,
-      "size": 8198728,
+      "added": 1793433107,
+      "timestamp": 1794206803,
+      "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 427,
+      "stars": 431,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792981018,
+        "added": 1793433107,
         "source": "https://github.com/eltavine/Duck-ToolBox",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792981018,
-          "version": "0.2.1-Stable",
-          "versionCode": 119,
-          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.2.1-Stable/duck-toolbox-0.2.1-Stable.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable.md",
-          "size": 8198728
-        },
-        {
-          "timestamp": 1793268891,
-          "version": "0.2.1-Stable (131-canary)",
-          "versionCode": 131,
-          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-f48b9759-20261029T101447647539Z/duck-toolbox-0.2.1-Stable-131-canary.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__131-canary_.md",
-          "size": 8980370
-        },
         {
           "timestamp": 1793433107,
           "version": "0.2.1-Stable (135-canary)",
@@ -637,6 +629,22 @@
           "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-11f6041c-20261107T105915528409Z/duck-toolbox-0.2.1-Stable-151-canary.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__151-canary_.md",
           "size": 11419127
+        },
+        {
+          "timestamp": 1794206109,
+          "version": "0.2.1-Stable (154-canary)",
+          "versionCode": 154,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-3e872632-20261109T063409617364Z/duck-toolbox-0.2.1-Stable-154-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.1-Stable__154-canary_.md",
+          "size": 11455097
+        },
+        {
+          "timestamp": 1794206803,
+          "version": "0.2.2-Stable",
+          "versionCode": 155,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.2.2-Stable/duck-toolbox-0.2.2-Stable.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/duck-toolbox/changelogs/0.2.2-Stable.md",
+          "size": 11455471
         }
       ]
     },
@@ -663,7 +671,7 @@
       "size": 2208,
       "permissions": [],
       "features": {},
-      "stars": 123,
+      "stars": 124,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792015008,
@@ -875,7 +883,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1809,
+      "stars": 1817,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -915,6 +923,14 @@
           "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.2/Hybrid-Mount-6.2.6-rc.2-2154.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6-rc.2.md",
           "size": 5430516
+        },
+        {
+          "timestamp": 1794221348,
+          "version": "6.2.6-rc.4",
+          "versionCode": 602006304,
+          "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.4/Hybrid-Mount-6.2.6-rc.4-2162.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6-rc.4.md",
+          "size": 5427969
         }
       ]
     },
@@ -960,8 +976,8 @@
     {
       "id": "KernelSU-Tuner",
       "name": "KernelSU Tuner",
-      "version": "v3.5.7",
-      "versionCode": 30057,
+      "version": "v3.5.9",
+      "versionCode": 30059,
       "author": "ylh440104",
       "description": "Kernel-level tuning for rooted Android. Performance profiles that switch themselves based on temperature, screen state and charging, plus charge limiting, per-app policies and a WebUI console.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/README.md",
@@ -976,36 +992,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/b5e57153d1e72350.png",
-      "added": 1791888728,
-      "timestamp": 1794191879,
-      "size": 106441,
+      "added": 1794030223,
+      "timestamp": 1794200713,
+      "size": 107307,
       "permissions": [],
       "features": {},
       "stars": 21,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1791888728,
+        "added": 1794030223,
         "source": "https://github.com/ylh440104/KernelSU-Tuner",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1791888728,
-          "version": "v3.4.1",
-          "versionCode": 30041,
-          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.4.1/KernelSU-Tuner-30041-v3.4.1.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.4.1.md",
-          "size": 53024
-        },
-        {
-          "timestamp": 1792972975,
-          "version": "v3.4.2",
-          "versionCode": 30042,
-          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.4.2/KernelSU-Tuner-30042-v3.4.2.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.4.2.md",
-          "size": 53029
-        },
         {
           "timestamp": 1794030223,
           "version": "v3.5.0",
@@ -1069,6 +1069,22 @@
           "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.7/KernelSU-Tuner-30057-v3.5.7.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.7.md",
           "size": 106441
+        },
+        {
+          "timestamp": 1794200242,
+          "version": "v3.5.8",
+          "versionCode": 30058,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.8/KernelSU-Tuner-30058-v3.5.8.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.8.md",
+          "size": 106875
+        },
+        {
+          "timestamp": 1794200713,
+          "version": "v3.5.9",
+          "versionCode": 30059,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.9/KernelSU-Tuner-30059-v3.5.9.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.9.md",
+          "size": 107307
         }
       ]
     },
@@ -1170,7 +1186,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 40,
+      "stars": 41,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1210,7 +1226,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 603,
+      "stars": 604,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1255,11 +1271,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1794155042.857,
+      "timestamp": 1794234273.114,
       "size": 68512250,
       "permissions": [],
       "features": {},
-      "stars": 227,
+      "stars": 225,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792267431,
@@ -1362,7 +1378,7 @@
       "size": 45222893,
       "permissions": [],
       "features": {},
-      "stars": 9,
+      "stars": 10,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792770944,
@@ -1533,7 +1549,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 645,
+      "stars": 647,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -1575,7 +1591,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 644,
+      "stars": 648,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -1629,7 +1645,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4180,
+      "stars": 4181,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -1718,7 +1734,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 122,
+      "stars": 128,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -1757,7 +1773,7 @@
       "size": 13452089,
       "permissions": [],
       "features": {},
-      "stars": 20,
+      "stars": 21,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793604994,
@@ -1967,8 +1983,8 @@
     {
       "id": "SvcHub",
       "name": "SvcHub",
-      "version": "1.5.0",
-      "versionCode": 13,
+      "version": "1.5.1",
+      "versionCode": 14,
       "author": "LimpidMo",
       "description": "一个开机启动和保活 Termux 服务和二进制服务的管理模块，支持多种启停策略、二进制服务更新，并带有 WebUI 聚合管理",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/SvcHub/README.md",
@@ -1981,8 +1997,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/0a2dfed188db2b04.png",
       "added": 1791709999,
-      "timestamp": 1793595761.659,
-      "size": 147461,
+      "timestamp": 1794211320.967,
+      "size": 155681,
       "permissions": [],
       "features": {},
       "stars": 31,
@@ -2041,6 +2057,14 @@
           "zipUrl": "https://github.com/LimpidMo/SvcHub/releases/download/v1.5.0/SvcHub-13-1.5.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/SvcHub/changelogs/1.5.0.md",
           "size": 147461
+        },
+        {
+          "timestamp": 1794211300,
+          "version": "1.5.1",
+          "versionCode": 14,
+          "zipUrl": "https://github.com/LimpidMo/SvcHub/releases/download/v1.5.1/SvcHub-14-1.5.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/SvcHub/changelogs/1.5.1.md",
+          "size": 155681
         }
       ]
     },
@@ -2086,8 +2110,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.4.0-10147",
-      "versionCode": 10147,
+      "version": "v0.4.0-10148",
+      "versionCode": 10148,
       "author": "Rouyashiki Developers",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -2098,28 +2122,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1793547403,
-      "timestamp": 1794163824,
-      "size": 3410924,
+      "added": 1793551176,
+      "timestamp": 1794218869.089,
+      "size": 3411565,
       "permissions": [],
       "features": {},
-      "stars": 121,
+      "stars": 122,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793547403,
+        "added": 1793551176,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793547403,
-          "version": "v0.3.0-10131",
-          "versionCode": 10131,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41321817309/YukiZygisk-v0.3.0-10131-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10131.md",
-          "size": 2905364
-        },
         {
           "timestamp": 1793551176,
           "version": "v0.3.0-10132",
@@ -2191,6 +2207,14 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42511647457/YukiZygisk-v0.4.0-10147-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10147.md",
           "size": 3410924
+        },
+        {
+          "timestamp": 1794218844,
+          "version": "v0.4.0-10148",
+          "versionCode": 10148,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42598061682/YukiZygisk-v0.4.0-10148-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10148.md",
+          "size": 3411565
         }
       ]
     },
@@ -2435,7 +2459,7 @@
         "system"
       ],
       "added": 1793465422,
-      "timestamp": 1794126769,
+      "timestamp": 1794230041.369,
       "size": 9881610,
       "permissions": [],
       "features": {},
@@ -2527,67 +2551,6 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.16.0/ZNNext-v2.16.0-371-52b358c-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.16.0__371-52b358c-release_.md",
           "size": 9881610
-        }
-      ]
-    },
-    {
-      "id": "zygisksu",
-      "name": "Zygisk Next",
-      "version": "1.5.3 (880-22a1bf5-release)",
-      "versionCode": 880,
-      "author": "5ec1cff, Nullptr, Aviraxp, LSPosed Developers",
-      "description": "Standalone implementation of Zygisk",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/README.md",
-      "support": "https://github.com/LSPosed/ZygiskNext/issues",
-      "categories": [
-        "zygisk",
-        "zygisk-next"
-      ],
-      "added": 1789877990,
-      "timestamp": 1794069352,
-      "size": 6638473,
-      "permissions": [],
-      "features": {},
-      "stars": 1062,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1789877990,
-        "source": "https://github.com/LSPosed/ZygiskNext",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1789877990,
-          "version": "1.5.0 (843-5217106-release)",
-          "versionCode": 843,
-          "zipUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.0/Zygisk-Next-1.5.0-843-5217106-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/changelogs/1.5.0__843-5217106-release_.md",
-          "size": 7529581
-        },
-        {
-          "timestamp": 1791815695,
-          "version": "1.5.1 (862-56ae062-release)",
-          "versionCode": 862,
-          "zipUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.1/Zygisk-Next-1.5.1-862-56ae062-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/changelogs/1.5.1__862-56ae062-release_.md",
-          "size": 6682412
-        },
-        {
-          "timestamp": 1791901486,
-          "version": "1.5.2 (864-a4a72ce-release)",
-          "versionCode": 864,
-          "zipUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.2/Zygisk-Next-1.5.2-864-a4a72ce-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/changelogs/1.5.2__864-a4a72ce-release_.md",
-          "size": 6714344
-        },
-        {
-          "timestamp": 1794069352,
-          "version": "1.5.3 (880-22a1bf5-release)",
-          "versionCode": 880,
-          "zipUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.3/Zygisk-Next-1.5.3-880-22a1bf5-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisksu/changelogs/1.5.3__880-22a1bf5-release_.md",
-          "size": 6638473
         }
       ]
     }

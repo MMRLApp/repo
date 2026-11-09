@@ -2,7 +2,7 @@
 
 # SvcHub
 
-  [中文](https://github.com/LimpidMo/SvcHub/blob/39876bd27ea57f9698afc779b982732cb02bd925/README.md) | [English](https://github.com/LimpidMo/SvcHub/blob/39876bd27ea57f9698afc779b982732cb02bd925/README.en.md) 
+  [中文](https://github.com/LimpidMo/SvcHub/blob/3c49756e530b24f3bcfd7d84bac4b03a973e05a9/README.md) | [English](https://github.com/LimpidMo/SvcHub/blob/3c49756e530b24f3bcfd7d84bac4b03a973e05a9/README.en.md) 
   
     **一个 Termux / 二进制服务启动、保活和更新的管理模块，支持多种启停策略，WebUI 聚合管理**
   
@@ -21,7 +21,7 @@
       ![](/assets/ac0c2431c7f05b4d.svg)
     ](https://github.com/LimpidMo/SvcHub/blob/master/LICENSE)
     [
-      ![](/assets/6832822100fb8338.svg)
+      ![](/assets/2526e30569f1ae5c.svg)
     ](https://github.com/LimpidMo/SvcHub/releases)
     [
       ![](/assets/7c92d4cce456ec65.svg)
@@ -59,15 +59,15 @@
 
 ## 核心功能
 
-- **两类服务**：支持 **Termux 服务** 与 **二进制服务** 的启动配置及收尾命令管理。Termux 服务无需软件挂后台，可选以 root 执行。
+- **WebUI**：中英双语界面，统一管理服务启停、配置管理、查看服务日志及占用；网页访问支持 PWA 安装
 
-- **多种启停策略**：支持定时启停、亮屏启停、Wi-Fi 启停等策略满足多样化启停需求
+- **两类服务**：支持 **Termux 服务** 与 **二进制服务** 的启动配置及收尾命令管理。Termux 服务无需软件挂后台，可以 root 执行
 
-- **巡检保活**：默认 60 秒巡检一次（可选 10~84600 秒），自动拉起带有 `start` 标签的服务，日志自动轮转。
+- **多种启停策略**：支持定时窗口启停、亮屏启停、Wi-Fi 启停等策略满足多样化启停需求
 
-- **WebUI**：中英双语支持，统一界面管理服务启停、启动配置、查看日志。支持管理器内 WebUI 与浏览器网页直连双通道，支持 PWA 安装
+- **巡检保活**：默认 60 秒巡检一次（可配置 10~86400 秒），自动拉起带 `start` 标签的服务，日志自动轮转
 
-- **更新服务**：支持来源于 GitHub 仓库的二进制文件更新，可设每小时/天/周检查服务更新，可开启自动更新服务
+- **更新服务**：支持来源于 GitHub 仓库的二进制文件更新，可按每小时/天/周检查版本，可开启自动更新，替换失败自动回滚
 
 注：本模块默认不开启唤醒锁，如需减少锁屏 Doze 或 CPU 休眠的对巡检、更新检查等的影响，可在「基本设置」开启唤醒锁
 
@@ -97,8 +97,30 @@ Magisk 用户无管理器 WebUI 入口，首次安装默认开启外部访问；
 
 完整使用说明与开发文档见 [https://limpidmo.github.io/SvcHub](https://limpidmo.github.io/SvcHub)。
 
+**指南**
+
+- [简介](https://limpidmo.github.io/SvcHub/guide/) — 模块定位与基本概念
+
+- [启停功能](https://limpidmo.github.io/SvcHub/guide/features) — 定时 / 亮屏 / Wi-Fi 启停与优先级
+
+- [巡检保活](https://limpidmo.github.io/SvcHub/guide/keepalive) — 巡检间隔与服务保活机制
+
+- [服务配置示例](https://limpidmo.github.io/SvcHub/guide/examples) — Termux 服务与二进制服务配置范例
+
+- [Termux 服务](https://limpidmo.github.io/SvcHub/guide/termux) · [二进制服务](https://limpidmo.github.io/SvcHub/guide/binary) — 两类服务的配置参考
+
+- [注意事项](https://limpidmo.github.io/SvcHub/guide/notes) · [常见问题](https://limpidmo.github.io/SvcHub/guide/faq) — 使用须知与排错
+
+- [更新日志](https://limpidmo.github.io/SvcHub/guide/changelog) — 各版本变更记录
+
+**开发**
+
+- [本地开发联调](https://limpidmo.github.io/SvcHub/dev/) — 电脑沙盒运行真实脚本
+
+- [模块构建](https://limpidmo.github.io/SvcHub/dev/build) — 打包与校验流程
+
 ## 许可证
 
-[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) · 完整文本见 [LICENSE](https://github.com/LimpidMo/SvcHub/blob/39876bd27ea57f9698afc779b982732cb02bd925/LICENSE)
+[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) · 完整文本见 [LICENSE](https://github.com/LimpidMo/SvcHub/blob/3c49756e530b24f3bcfd7d84bac4b03a973e05a9/LICENSE)
 
 Copyright (C) 2026 LimpidMo

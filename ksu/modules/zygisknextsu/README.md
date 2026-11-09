@@ -16,15 +16,11 @@ A Zygisk Next module is a valid Magisk module. Starting with version v1.2.0—pr
 
 ## Supported Versions
 
-- Android 5.0 - 17 QPR3 Beta1
+- Android 5.0 or newer
 
 - Linux 3.17 or newer
 
-or
-
-- GrapheneOS
-
-- Linux 3.17 or newer
+- armv8, armv7, armv5, mips, mips64, riscv64, x86, x64
 
 Kernel event tracking is optional and uses whatever the kernel provides: tracefs
 `sched_process_exec` events first, then the proc connector and eBPF. A `/proc`

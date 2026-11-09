@@ -1,4 +1,4 @@
-**简体中文** | [English](https://github.com/Seyud/device_faker_release/blob/164ae0b7c38f5241e28b4c5f1ee43c7a66da5e8a/en/README.md) | [Türkçe](https://github.com/Seyud/device_faker_release/blob/164ae0b7c38f5241e28b4c5f1ee43c7a66da5e8a/tr/README.md)
+**简体中文** | [English](https://github.com/Seyud/device_faker_release/blob/a3a1a8aaba8cacef6e3545b061a9b2a8133f4aa5/en/README.md) | [Türkçe](https://github.com/Seyud/device_faker_release/blob/a3a1a8aaba8cacef6e3545b061a9b2a8133f4aa5/tr/README.md)
 
 # Device Faker 📱
 
@@ -6,7 +6,7 @@
 一个基于 Zygisk 的机型伪装模块，可以为不同的应用配置不同的设备型号。
 
 [![](/assets/962eecf1f1e458f5.svg)](https://github.com/Seyud/device_faker_release/releases/latest)
-[![](/assets/a1c8803c9a0642e3.svg)](https://github.com/Seyud/device_faker_release/releases)
+[![](/assets/d908c18a51df331f.svg)](https://github.com/Seyud/device_faker_release/releases)
 [![](/assets/7b1603d216671145.svg)](https://www.rust-lang.org/)
 [![](/assets/b721622d3dce1add.svg)](https://t.me/device_faker)
 [![](/assets/b92e3f28413f416e.svg)](https://qun.qq.com/universal-share/share?ac=1&authKey=ls4nlfcsF%2Bxp5SPnVsXRgpbeV1axPZb%2FmJCMXms6ZCHjgAwvOyl1LV%2BDNVL1btgL&busi_data=eyJncm91cENvZGUiOiI4NTQxODgyNTIiLCJ0b2tlbiI6IlE1WVVyZTZxUXVjZUtGUUxWSGFmbzkvMEd3UWNRSiszdklTZDhHejU0RDRyT0lWRTFqS3d4UGJSM1ltaXpkS3MiLCJ1aW4iOiIxMTA1NzgzMDMzIn0%3D&data=IbvhTKt9HwCSsCsl_610-rQ8p6H2NgLmxhEKkMcn-BMWPb86jygWBZJfWLQGm7J8LwpVV2yhPafxTMXYGkjRVA&svctype=4&tempid=h5_group_info)
@@ -29,7 +29,7 @@
 
 - 🎭 **统一执行流**: 无需选择模式，自动调度 JNI 字段伪装、COW 属性伪造与 companion 服务
 
-- 🔒 **COW 属性引擎**: mmap 写时复制伪造系统属性，per-process 隔离、模块零驻留
+- 🔒 **COW 属性引擎**: 进程私有属性区副本伪造系统属性，per-process 隔离、模块零驻留、不留写映射指纹
 
 - 🌐 **WebUI管理**: 提供图形化界面，方便配置管理
 
@@ -47,15 +47,15 @@ Device Faker 提供了现代化的 Web 管理界面
 
 ## 配置说明 ⚙️
 
-详细的配置说明请参考 [配置文档](https://github.com/Seyud/device_faker_release/blob/164ae0b7c38f5241e28b4c5f1ee43c7a66da5e8a/CONFIG.md)。
+详细的配置说明请参考 [配置文档](https://github.com/Seyud/device_faker_release/blob/a3a1a8aaba8cacef6e3545b061a9b2a8133f4aa5/CONFIG.md)。
 
 配置文件位于 `/data/adb/device_faker/config/config.toml`，使用 TOML 格式。修改配置后仅需重启对应应用即可生效，无需重启系统。
 
 ## 文档导航 📚
 
-- [配置说明](https://github.com/Seyud/device_faker_release/blob/164ae0b7c38f5241e28b4c5f1ee43c7a66da5e8a/CONFIG.md) - 应用/模板配置项、属性伪造机制与优先级
+- [配置说明](https://github.com/Seyud/device_faker_release/blob/a3a1a8aaba8cacef6e3545b061a9b2a8133f4aa5/CONFIG.md) - 应用/模板配置项、生效方式与优先级
 
-- [更新日志](https://github.com/Seyud/device_faker_release/blob/164ae0b7c38f5241e28b4c5f1ee43c7a66da5e8a/CHANGELOG.md) - 各版本变更记录
+- [更新日志](https://github.com/Seyud/device_faker_release/blob/a3a1a8aaba8cacef6e3545b061a9b2a8133f4aa5/CHANGELOG.md) - 各版本变更记录
 
 - [官方网站](https://seyud.github.io/device_faker/) - 使用指南与常见问题
 
