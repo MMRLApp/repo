@@ -6,11 +6,11 @@
 [![](/assets/874b6f3e740d5a8d.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,10 +23,10 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/3af37f16e69eca4f.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/overview-en.png)
-[![](/assets/a334906d69fba887.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/history-en.png)
-[![](/assets/16b13d4a6638b45a.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/trends-en.png)
-[![](/assets/90cb69a14fd535d8.png)](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/.github/images/settings-en.png)
+[![](/assets/991aba68d64c5a82.png)](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/.github/images/overview-en.png)
+[![](/assets/ddf01000831d53eb.png)](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/.github/images/history-en.png)
+[![](/assets/de42f89279372a14.png)](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/.github/images/trends-en.png)
+[![](/assets/784714fb07b1781a.png)](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/.github/images/settings-en.png)
 
 ## Features
 
@@ -43,6 +43,8 @@ Settings
 - **Multiple managers supported**: Magisk v20.4+ / KernelSU / APatch / MMRL, arm64 only; upgrades keep the previous learning history automatically.
 
 - **Theme options**: follow the system, or pick light / dark, plus an independent pure-black background switch for AMOLED screens (dark mode only); the bottom bar supports a floating pill or a Material 3 navigation bar.
+
+- **Material motion**: the top app bar starts with a large title and collapses smoothly while scrolling (and re-expands at the top); the bottom bar uses Material Symbols icons (outlined / filled for the active item). Reduced-motion settings are respected.
 
 - **Manager palette / Material You**: when the manager exposes a WebUI palette (KernelSU v3.0.0+ with a Monet color mode or Material UI, APatch build 11219+, MMRL / WebUI-X v212+), an extra "Dynamic" theme option follows the manager theme; managers without a palette simply hide it.
 
@@ -150,11 +152,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -199,6 +201,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/def32764f25b99fe01c3c52a578f1940331623ec/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/bbfb8bed246ef6a48b5a842e1e70a4216568d84b/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

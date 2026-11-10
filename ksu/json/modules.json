@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794234710.82
+    "timestamp": 1794272141.315
   },
   "modules": [
     {
@@ -351,8 +351,8 @@
     {
       "id": "COPG",
       "name": "COPG",
-      "version": "7.7.1",
-      "versionCode": 771,
+      "version": "7.7.2",
+      "versionCode": 772,
       "author": "AlirezaParsi",
       "description": "Advanced Android customization & spoofing — per-app device, CPU, GPU, Build, SIM, DRM and ID control with a WebUI.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/README.md",
@@ -367,11 +367,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4b6804c0f27f12f5.png",
       "added": 1792694429,
-      "timestamp": 1794125927,
-      "size": 10550305,
+      "timestamp": 1794235267,
+      "size": 10634913,
       "permissions": [],
       "features": {},
-      "stars": 430,
+      "stars": 431,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -419,12 +419,20 @@
           "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.1/COPG-v7.7.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.7.1.md",
           "size": 10550305
+        },
+        {
+          "timestamp": 1794235267,
+          "version": "7.7.2",
+          "versionCode": 772,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.2/COPG-v7.7.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.7.2.md",
+          "size": 10634913
         }
       ]
     },
     {
       "id": "CRecordEvolution",
-      "name": "ChargingRecord Evolution",
+      "name": "CRecord Evolution",
       "version": "1.3.8",
       "versionCode": 37,
       "author": "f1owkang, hcnk3HrzQe",
@@ -441,11 +449,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1794127820.065,
+      "timestamp": 1794235022.978,
       "size": 3135517,
       "permissions": [],
       "features": {},
-      "stars": 22,
+      "stars": 23,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -976,8 +984,8 @@
     {
       "id": "KernelSU-Tuner",
       "name": "KernelSU Tuner",
-      "version": "v3.5.9",
-      "versionCode": 30059,
+      "version": "v3.6.0",
+      "versionCode": 30060,
       "author": "ylh440104",
       "description": "Kernel-level tuning for rooted Android. Performance profiles that switch themselves based on temperature, screen state and charging, plus charge limiting, per-app policies and a WebUI console.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/README.md",
@@ -992,28 +1000,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/b5e57153d1e72350.png",
-      "added": 1794030223,
-      "timestamp": 1794200713,
-      "size": 107307,
+      "added": 1794032147,
+      "timestamp": 1794271059,
+      "size": 107758,
       "permissions": [],
       "features": {},
-      "stars": 21,
+      "stars": 22,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794030223,
+        "added": 1794032147,
         "source": "https://github.com/ylh440104/KernelSU-Tuner",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794030223,
-          "version": "v3.5.0",
-          "versionCode": 30050,
-          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.0/KernelSU-Tuner-30050-v3.5.0.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.0.md",
-          "size": 68732
-        },
         {
           "timestamp": 1794032147,
           "version": "v3.5.1",
@@ -1085,6 +1085,14 @@
           "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.5.9/KernelSU-Tuner-30059-v3.5.9.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.5.9.md",
           "size": 107307
+        },
+        {
+          "timestamp": 1794271059,
+          "version": "v3.6.0",
+          "versionCode": 30060,
+          "zipUrl": "https://github.com/ylh440104/KernelSU-Tuner/releases/download/v3.6.0/KernelSU-Tuner-30060-v3.6.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/KernelSU-Tuner/changelogs/v3.6.0.md",
+          "size": 107758
         }
       ]
     },
@@ -1271,7 +1279,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1794234273.114,
+      "timestamp": 1794253538.425,
       "size": 68512250,
       "permissions": [],
       "features": {},
@@ -1474,7 +1482,7 @@
       "size": 27549353,
       "permissions": [],
       "features": {},
-      "stars": 1390,
+      "stars": 1395,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1692,7 +1700,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 65,
+      "stars": 64,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -1945,7 +1953,7 @@
       "size": 30505,
       "permissions": [],
       "features": {},
-      "stars": 4,
+      "stars": 5,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793207635,
