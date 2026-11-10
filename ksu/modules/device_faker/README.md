@@ -5,8 +5,8 @@
 ![](/assets/03aadb019a96f95f.png)
 一个基于 Zygisk 的机型伪装模块，可以为不同的应用配置不同的设备型号。
 
-[![](/assets/962eecf1f1e458f5.svg)](https://github.com/Seyud/device_faker_release/releases/latest)
-[![](/assets/d908c18a51df331f.svg)](https://github.com/Seyud/device_faker_release/releases)
+[![](/assets/7ce0f3250c03e848.svg)](https://github.com/Seyud/device_faker_release/releases/latest)
+[![](/assets/1b77e3bf9f0dcc9e.svg)](https://github.com/Seyud/device_faker_release/releases)
 [![](/assets/7b1603d216671145.svg)](https://www.rust-lang.org/)
 [![](/assets/b721622d3dce1add.svg)](https://t.me/device_faker)
 [![](/assets/b92e3f28413f416e.svg)](https://qun.qq.com/universal-share/share?ac=1&authKey=ls4nlfcsF%2Bxp5SPnVsXRgpbeV1axPZb%2FmJCMXms6ZCHjgAwvOyl1LV%2BDNVL1btgL&busi_data=eyJncm91cENvZGUiOiI4NTQxODgyNTIiLCJ0b2tlbiI6IlE1WVVyZTZxUXVjZUtGUUxWSGFmbzkvMEd3UWNRSiszdklTZDhHejU0RDRyT0lWRTFqS3d4UGJSM1ltaXpkS3MiLCJ1aW4iOiIxMTA1NzgzMDMzIn0%3D&data=IbvhTKt9HwCSsCsl_610-rQ8p6H2NgLmxhEKkMcn-BMWPb86jygWBZJfWLQGm7J8LwpVV2yhPafxTMXYGkjRVA&svctype=4&tempid=h5_group_info)

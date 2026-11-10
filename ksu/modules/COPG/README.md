@@ -4,7 +4,7 @@
 
 **A powerful platform for device & app spoofing, system-level control, and advanced ROM capabilities.**
 
-[![](/assets/a2e623e88e36a9e1.svg)](https://github.com/AlirezaParsi/COPG/releases)
+[![](/assets/b4d72830ec051be7.svg)](https://github.com/AlirezaParsi/COPG/releases)
 [![](/assets/b1313ec045b74093.svg)](https://github.com/topjohnwu/Magisk)
 [![](/assets/964bcdcda941337b.svg)](https://www.android.com/)
 [![](/assets/05bd7216cce1059e.svg)](https://github.com/AlirezaParsi/COPG/releases)
@@ -344,7 +344,7 @@ Address
 
 ## 📈 Activity
 
-![](/assets/d02b25e8381ae949.svg)
+![](/assets/db5bb9e19f0e4d0a.svg)
 
 **If COPG leveled up your games or apps, drop a ⭐ — it really helps!**
 

@@ -4,7 +4,7 @@ English · [简体中文](https://github.com/PEMessage/tailscale-bindhosts/blob/
 
   [![](/assets/8e48dfa931f65567.svg)](https://github.com/PEMessage/tailscale-bindhosts)
   [![](/assets/bf647b7201768435.svg)](https://github.com/PEMessage/tailscale-bindhosts/commits/main)
-  [![](/assets/190e003beb72ebea.svg)](https://github.com/PEMessage/tailscale-bindhosts/releases)
+  [![](/assets/a26ebb75e8933d58.svg)](https://github.com/PEMessage/tailscale-bindhosts/releases)
   ![](/assets/6c4c0d3647110974.svg)
   [![](/assets/9c382a5a73fdd558.svg)](https://github.com/bindhosts/bindhosts)
 

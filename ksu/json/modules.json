@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794272141.315
+    "timestamp": 1794318771.812
   },
   "modules": [
     {
@@ -68,7 +68,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 99,
+      "stars": 100,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -250,7 +250,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 49,
+      "stars": 53,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -290,7 +290,7 @@
       "size": 1504829,
       "permissions": [],
       "features": {},
-      "stars": 10,
+      "stars": 9,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791910273,
@@ -518,7 +518,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 874,
+      "stars": 880,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -565,7 +565,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 431,
+      "stars": 433,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -891,7 +891,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1817,
+      "stars": 1819,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -962,7 +962,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 13,
+      "stars": 14,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1194,7 +1194,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 41,
+      "stars": 42,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1264,8 +1264,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.8.5",
-      "versionCode": 10613,
+      "version": "v1.8.6",
+      "versionCode": 10614,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1279,8 +1279,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792267431,
-      "timestamp": 1794253538.425,
-      "size": 68512250,
+      "timestamp": 1794312281.51,
+      "size": 68531953,
       "permissions": [],
       "features": {},
       "stars": 225,
@@ -1363,6 +1363,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.5/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.5.md",
           "size": 68512250
+        },
+        {
+          "timestamp": 1794312184,
+          "version": "v1.8.6",
+          "versionCode": 10614,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.6/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.6.md",
+          "size": 68531953
         }
       ]
     },
@@ -1557,7 +1565,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 647,
+      "stars": 653,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -1599,7 +1607,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 648,
+      "stars": 664,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -1653,7 +1661,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4181,
+      "stars": 4185,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -1742,7 +1750,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 128,
+      "stars": 130,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2118,8 +2126,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.4.0-10148",
-      "versionCode": 10148,
+      "version": "v0.4.0-10150",
+      "versionCode": 10150,
       "author": "Rouyashiki Developers",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -2130,28 +2138,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1793551176,
-      "timestamp": 1794218869.089,
-      "size": 3411565,
+      "added": 1793643628,
+      "timestamp": 1794281259,
+      "size": 3411996,
       "permissions": [],
       "features": {},
-      "stars": 122,
+      "stars": 125,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793551176,
+        "added": 1793643628,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793551176,
-          "version": "v0.3.0-10132",
-          "versionCode": 10132,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41327164966/YukiZygisk-v0.3.0-10132-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10132.md",
-          "size": 2905707
-        },
         {
           "timestamp": 1793643628,
           "version": "v0.3.0-10134",
@@ -2223,6 +2223,14 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42598061682/YukiZygisk-v0.4.0-10148-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10148.md",
           "size": 3411565
+        },
+        {
+          "timestamp": 1794281259,
+          "version": "v0.4.0-10150",
+          "versionCode": 10150,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42749029599/YukiZygisk-v0.4.0-10150-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10150.md",
+          "size": 3411996
         }
       ]
     },
