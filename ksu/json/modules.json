@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794402267.732
+    "timestamp": 1794440786.029
   },
   "modules": [
     {
@@ -68,7 +68,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 100,
+      "stars": 101,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -371,7 +371,7 @@
       "size": 10634913,
       "permissions": [],
       "features": {},
-      "stars": 432,
+      "stars": 434,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -449,7 +449,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1794327896.972,
+      "timestamp": 1794402542.269,
       "size": 3135517,
       "permissions": [],
       "features": {},
@@ -1194,7 +1194,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 42,
+      "stars": 43,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1234,7 +1234,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 605,
+      "stars": 604,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1377,8 +1377,8 @@
     {
       "id": "magisk-netbird",
       "name": "Magisk NetBird",
-      "version": "v1.4.12-0.82.0",
-      "versionCode": 10412,
+      "version": "v1.4.13-0.82.1",
+      "versionCode": 10413,
       "author": "ahsaboy",
       "description": "NetBird mesh VPN client for rooted Android devices",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magisk-netbird/README.md",
@@ -1390,8 +1390,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f02f1e5d4edd4fbe.png",
       "added": 1792770944,
-      "timestamp": 1793527020,
-      "size": 45222893,
+      "timestamp": 1794411049,
+      "size": 45255524,
       "permissions": [],
       "features": {},
       "stars": 10,
@@ -1434,6 +1434,14 @@
           "zipUrl": "https://github.com/ahsaboy/magisk-netbird/releases/download/v1.4.12/magisk-netbird-10412-v1.4.12-0.82.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magisk-netbird/changelogs/v1.4.12-0.82.0.md",
           "size": 45222893
+        },
+        {
+          "timestamp": 1794411049,
+          "version": "v1.4.13-0.82.1",
+          "versionCode": 10413,
+          "zipUrl": "https://github.com/ahsaboy/magisk-netbird/releases/download/v1.4.13/magisk-netbird-10413-v1.4.13-0.82.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magisk-netbird/changelogs/v1.4.13-0.82.1.md",
+          "size": 45255524
         }
       ]
     },
@@ -1490,7 +1498,7 @@
       "size": 27549353,
       "permissions": [],
       "features": {},
-      "stars": 1402,
+      "stars": 1406,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1708,7 +1716,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 65,
+      "stars": 66,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -1789,7 +1797,7 @@
       "size": 13456166,
       "permissions": [],
       "features": {},
-      "stars": 21,
+      "stars": 22,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793607023,
@@ -1898,7 +1906,7 @@
       "size": 1244756,
       "permissions": [],
       "features": {},
-      "stars": 40,
+      "stars": 41,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792763658,
@@ -2479,7 +2487,7 @@
       "size": 9881610,
       "permissions": [],
       "features": {},
-      "stars": 106,
+      "stars": 108,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793465422,

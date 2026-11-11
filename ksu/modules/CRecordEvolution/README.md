@@ -6,11 +6,11 @@
 [![](/assets/d30a0999b5908519.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,10 +23,10 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/5c937c72f524a410.png)](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/.github/images/overview-en.png)
-[![](/assets/cdd593fbdd7d3663.png)](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/.github/images/history-en.png)
-[![](/assets/1d176e87c5ba3e09.png)](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/.github/images/trends-en.png)
-[![](/assets/74d03e6e9c43bafd.png)](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/.github/images/settings-en.png)
+[![](/assets/1abdabfdcae6506f.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/overview-en.png)
+[![](/assets/59b6dc9b5f674185.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/history-en.png)
+[![](/assets/acd4f71b06900732.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/trends-en.png)
+[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/settings-en.png)
 
 ## Features
 
@@ -154,11 +154,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -203,6 +203,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/9722edcfe0e0dbb07af78ba97e1adb73dba38218/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

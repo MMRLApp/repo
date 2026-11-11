@@ -8,10 +8,10 @@
   ![](/assets/ae780e774072aafd.svg)
   ![](/assets/7998cf3848fad7aa.svg)
 
-**[English](https://github.com/ahsaboy/magisk-netbird/blob/4da7eab0de412f6d694308b32e575e152334ce40/README.md) · [中文](https://github.com/ahsaboy/magisk-netbird/blob/4da7eab0de412f6d694308b32e575e152334ce40/README.zh-CN.md)**
+**[English](https://github.com/ahsaboy/magisk-netbird/blob/6b6d86e6ae69a7f4dfaced3238da280b5b9199ca/README.md) · [中文](https://github.com/ahsaboy/magisk-netbird/blob/6b6d86e6ae69a7f4dfaced3238da280b5b9199ca/README.zh-CN.md)**
 
 Minimal Magisk module wrapper for the NetBird CLI daemon. Official NetBird
-binaries (currently v0.82.0) are bundled for three architectures.
+binaries (currently v0.82.1) are bundled for three architectures.
 
 DNS management is disabled by default when joining with `netbird.service up`.
 
