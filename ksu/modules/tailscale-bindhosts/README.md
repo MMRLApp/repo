@@ -1,11 +1,11 @@
 # tailscale-bindhosts
 
-English · [简体中文](https://github.com/PEMessage/tailscale-bindhosts/blob/c8761cf8ff8643fafb57a15e1c43b419377d31ea/README.zh.md)
+English · [简体中文](https://github.com/PEMessage/tailscale-bindhosts/blob/4799494b910c78566bc8ef24457cb9967d3852fe/README.zh.md)
 
   [![](/assets/8e48dfa931f65567.svg)](https://github.com/PEMessage/tailscale-bindhosts)
-  [![](/assets/bf647b7201768435.svg)](https://github.com/PEMessage/tailscale-bindhosts/commits/main)
-  [![](/assets/a26ebb75e8933d58.svg)](https://github.com/PEMessage/tailscale-bindhosts/releases)
-  ![](/assets/6c4c0d3647110974.svg)
+  [![](/assets/8de0b9022da7bd82.svg)](https://github.com/PEMessage/tailscale-bindhosts/commits/main)
+  [![](/assets/f68228a8e24eb35d.svg)](https://github.com/PEMessage/tailscale-bindhosts/releases)
+  ![](/assets/1c8caad1aa27c474.svg)
   [![](/assets/9c382a5a73fdd558.svg)](https://github.com/bindhosts/bindhosts)
 
 ## Why use this module
@@ -232,4 +232,4 @@ Requires `bash` and `zip`.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0. See [LICENSE](https://github.com/PEMessage/tailscale-bindhosts/blob/c8761cf8ff8643fafb57a15e1c43b419377d31ea/LICENSE).
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](https://github.com/PEMessage/tailscale-bindhosts/blob/4799494b910c78566bc8ef24457cb9967d3852fe/LICENSE).

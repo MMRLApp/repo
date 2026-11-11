@@ -7,7 +7,7 @@
   "description": "A decentralized ecosystem for sharing, distributing, and discovering Magisk modules.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794367764.919
+    "timestamp": 1794402266.269
   },
   "modules": [
     {
@@ -126,7 +126,7 @@
       "timestamp": 1788393600,
       "permissions": [],
       "features": {},
-      "stars": 238,
+      "stars": 239,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1772607080.237,
@@ -301,7 +301,7 @@
       "timestamp": 1787529600,
       "permissions": [],
       "features": {},
-      "stars": 693,
+      "stars": 694,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771846972.662,
@@ -413,8 +413,8 @@
     {
       "id": "com.dergoogler.mmrl.wx",
       "name": "WebUI X",
-      "version": "616",
-      "versionCode": 616,
+      "version": "648",
+      "versionCode": 648,
       "author": "Der_Googler",
       "description": "WebUI X from MMRL but portable!",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/1ieoQEbZFJj4/README.md",
@@ -425,7 +425,7 @@
       ],
       "verified": true,
       "added": 1773524551.091,
-      "timestamp": 1793491200,
+      "timestamp": 1794355200,
       "permissions": [],
       "features": {},
       "stars": 772,
@@ -583,14 +583,28 @@
           "versionCode": 612,
           "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v612/WebUI-X-v612-release-official.apk",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/1ieoQEbZFJj4/changelogs/612.md"
+        },
+        {
+          "timestamp": 1794383114.559,
+          "version": "648",
+          "versionCode": 648,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v648/WebUI-X-v648-release-official.apk",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/1ieoQEbZFJj4/changelogs/648_1.md"
+        },
+        {
+          "timestamp": 1794383114.565,
+          "version": "648",
+          "versionCode": 648,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v648/WebUI-X-v648-release-official.apk",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/1ieoQEbZFJj4/changelogs/648.md"
         }
       ]
     },
     {
       "id": "COPG",
       "name": "COPG SPOOF",
-      "version": "7.6.1",
-      "versionCode": 761,
+      "version": "7.7.2",
+      "versionCode": 772,
       "author": "AlirezaParsi",
       "description": "The most advanced device spoofer for Android",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/5D-pHr7UP3tn/README.md",
@@ -601,7 +615,7 @@
       ],
       "verified": false,
       "added": 1790193106.726,
-      "timestamp": 1793491200,
+      "timestamp": 1794355200,
       "permissions": [],
       "features": {},
       "stars": 89,
@@ -717,14 +731,42 @@
           "versionCode": 761,
           "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.6.1/COPG-v7.6.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.6.1.md"
+        },
+        {
+          "timestamp": 1794383100.901,
+          "version": "7.7.2",
+          "versionCode": 772,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.2/COPG-v7.7.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.7.2_3.md"
+        },
+        {
+          "timestamp": 1794383100.903,
+          "version": "7.7.2",
+          "versionCode": 772,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.2/COPG-v7.7.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.7.2.md"
+        },
+        {
+          "timestamp": 1794383100.906,
+          "version": "7.7.0",
+          "versionCode": 770,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.0/COPG-v7.7.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.7.0_1.md"
+        },
+        {
+          "timestamp": 1794383100.907,
+          "version": "7.7.0",
+          "versionCode": 770,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.0/COPG-v7.7.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/5D-pHr7UP3tn/changelogs/7.7.0.md"
         }
       ]
     },
     {
       "id": "duck-toolbox",
       "name": "Duck ToolBox",
-      "version": "0.2.1-Stable",
-      "versionCode": 21,
+      "version": "0.2.2-Stable",
+      "versionCode": 22,
       "author": "Eltavine",
       "description": "Toolbox: Tricky Store / TEESimulator / OhMyKeymint manager (a full Tricky Addon port), RKP workbench and Qualcomm device ID provisioning",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/README.md",
@@ -734,10 +776,10 @@
       ],
       "verified": false,
       "added": 1791802080.695,
-      "timestamp": 1793491200,
+      "timestamp": 1794355200,
       "permissions": [],
       "features": {},
-      "stars": 33,
+      "stars": 35,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791802080.695,
@@ -751,7 +793,7 @@
           "version": "0.1.2-stable",
           "versionCode": 12,
           "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.1.2-stable/duck-toolbox-0.1.2-stable.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/0.1.2-stable_12.md"
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/0.1.2-stable_26.md"
         },
         {
           "timestamp": 1791802100.796,
@@ -836,6 +878,104 @@
           "versionCode": 767202610,
           "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-d7afca67-20261026T170926178519Z/duck-toolbox-0.2.1-Stable-123-canary.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-d7afca67-20261026T170926178519Z.md"
+        },
+        {
+          "timestamp": 1794383117.295,
+          "version": "0.2.2-Stable",
+          "versionCode": 22,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.2.2-Stable/duck-lite-0.2.2-Stable.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/0.2.2-Stable_13.md"
+        },
+        {
+          "timestamp": 1794383117.298,
+          "version": "0.2.2-Stable",
+          "versionCode": 22,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.2.2-Stable/duck-lite-0.2.2-Stable.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/0.2.2-Stable.md"
+        },
+        {
+          "timestamp": 1794383117.306,
+          "version": "nightly-3e872632-20261109T063409617364Z",
+          "versionCode": 387263220,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-3e872632-20261109T063409617364Z/duck-lite-0.2.1-Stable-154-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-3e872632-20261109T063409617364Z_11.md"
+        },
+        {
+          "timestamp": 1794383117.307,
+          "version": "nightly-3e872632-20261109T063409617364Z",
+          "versionCode": 387263220,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-3e872632-20261109T063409617364Z/duck-lite-0.2.1-Stable-154-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-3e872632-20261109T063409617364Z.md"
+        },
+        {
+          "timestamp": 1794383117.309,
+          "version": "nightly-11f6041c-20261107T105915528409Z",
+          "versionCode": 116041202,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-11f6041c-20261107T105915528409Z/duck-toolbox-0.2.1-Stable-151-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-11f6041c-20261107T105915528409Z_9.md"
+        },
+        {
+          "timestamp": 1794383117.311,
+          "version": "nightly-11f6041c-20261107T105915528409Z",
+          "versionCode": 116041202,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-11f6041c-20261107T105915528409Z/duck-toolbox-0.2.1-Stable-151-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-11f6041c-20261107T105915528409Z.md"
+        },
+        {
+          "timestamp": 1794383117.312,
+          "version": "nightly-75f78866-20261104T181659228848Z",
+          "versionCode": 757886620,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-75f78866-20261104T181659228848Z/duck-toolbox-0.2.1-Stable-150-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-75f78866-20261104T181659228848Z_7.md"
+        },
+        {
+          "timestamp": 1794383117.316,
+          "version": "nightly-75f78866-20261104T181659228848Z",
+          "versionCode": 757886620,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-75f78866-20261104T181659228848Z/duck-toolbox-0.2.1-Stable-150-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-75f78866-20261104T181659228848Z.md"
+        },
+        {
+          "timestamp": 1794383117.317,
+          "version": "nightly-f4e23fc6-20261102T121502508354Z",
+          "versionCode": 423620261,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-f4e23fc6-20261102T121502508354Z/duck-toolbox-0.2.1-Stable-148-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-f4e23fc6-20261102T121502508354Z_5.md"
+        },
+        {
+          "timestamp": 1794383117.319,
+          "version": "nightly-f4e23fc6-20261102T121502508354Z",
+          "versionCode": 423620261,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-f4e23fc6-20261102T121502508354Z/duck-toolbox-0.2.1-Stable-148-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-f4e23fc6-20261102T121502508354Z.md"
+        },
+        {
+          "timestamp": 1794383117.325,
+          "version": "nightly-947bad2d-20261102T115752583417Z",
+          "versionCode": 947220261,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-947bad2d-20261102T115752583417Z/duck-toolbox-0.2.1-Stable-145-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-947bad2d-20261102T115752583417Z_3.md"
+        },
+        {
+          "timestamp": 1794383117.327,
+          "version": "nightly-947bad2d-20261102T115752583417Z",
+          "versionCode": 947220261,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-947bad2d-20261102T115752583417Z/duck-toolbox-0.2.1-Stable-145-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-947bad2d-20261102T115752583417Z.md"
+        },
+        {
+          "timestamp": 1794383117.329,
+          "version": "nightly-8d6a2470-20261102T134544799456Z",
+          "versionCode": 862470202,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-8d6a2470-20261102T134544799456Z/duck-toolbox-0.2.1-Stable-149-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-8d6a2470-20261102T134544799456Z_1.md"
+        },
+        {
+          "timestamp": 1794383117.33,
+          "version": "nightly-8d6a2470-20261102T134544799456Z",
+          "versionCode": 862470202,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-8d6a2470-20261102T134544799456Z/duck-toolbox-0.2.1-Stable-149-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-8d6a2470-20261102T134544799456Z.md"
         }
       ]
     },
@@ -955,8 +1095,8 @@
     {
       "id": "hybrid-mount",
       "name": "Hybrid Mount",
-      "version": "6.2.5",
-      "versionCode": 625,
+      "version": "6.2.6-rc.4",
+      "versionCode": 6264,
       "author": "Hybrid Mount Developers",
       "description": "Hybrid Mount is a mount logic metamodule implementation for KernelSU and APatch",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/README.md",
@@ -966,7 +1106,7 @@
       ],
       "verified": true,
       "added": 1771491136.52,
-      "timestamp": 1793491200,
+      "timestamp": 1794355200,
       "permissions": [],
       "features": {},
       "stars": 479,
@@ -1242,42 +1382,42 @@
           "version": "6.1.0",
           "versionCode": 610,
           "zipUrl": "https://github.com/KernelSU-Modules-Repo/hybrid_mount/releases/download/v6.1.0/Hybrid-Mount-6.1.0-1872.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.0_21.md"
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.0_24.md"
         },
         {
           "timestamp": 1788043258.539,
           "version": "6.1.2",
           "versionCode": 612,
           "zipUrl": "https://github.com/KernelSU-Modules-Repo/hybrid_mount/releases/download/v6.1.2/Hybrid-Mount-6.1.2-1898.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.2_20.md"
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.2_23.md"
         },
         {
           "timestamp": 1788043258.543,
           "version": "6.1.1",
           "versionCode": 611,
           "zipUrl": "https://github.com/KernelSU-Modules-Repo/hybrid_mount/releases/download/v6.1.1/Hybrid-Mount-6.1.0-1893.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.1_19.md"
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.1_22.md"
         },
         {
           "timestamp": 1788086461.886,
           "version": "6.1.3",
           "versionCode": 613,
           "zipUrl": "https://github.com/KernelSU-Modules-Repo/hybrid_mount/releases/download/v6.1.3/Hybrid-Mount-6.1.3-1907.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.3_18.md"
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.3_21.md"
         },
         {
           "timestamp": 1788496860.074,
           "version": "6.1.4",
           "versionCode": 614,
           "zipUrl": "https://github.com/KernelSU-Modules-Repo/hybrid_mount/releases/download/v6.1.4/Hybrid-Mount-6.1.4-1917.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.4_17.md"
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.1.4_20.md"
         },
         {
           "timestamp": 1789209676.54,
           "version": "6.2.0",
           "versionCode": 620,
           "zipUrl": "https://github.com/KernelSU-Modules-Repo/hybrid_mount/releases/download/v6.2.0/Hybrid-Mount-6.2.0-1929.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.2.0_16.md"
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.2.0_19.md"
         },
         {
           "timestamp": 1790172726.418,
@@ -1390,6 +1530,27 @@
           "versionCode": 623,
           "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.3/Hybrid-Mount-6.2.3-2090.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.2.3.md"
+        },
+        {
+          "timestamp": 1794383091.728,
+          "version": "6.2.6-rc.4",
+          "versionCode": 6264,
+          "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.4/Hybrid-Mount-6.2.6-rc.4-2162.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.2.6-rc.4.md"
+        },
+        {
+          "timestamp": 1794383091.732,
+          "version": "6.2.6-rc.2",
+          "versionCode": 6262,
+          "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.2/Hybrid-Mount-6.2.6-rc.2-2154.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.2.6-rc.2.md"
+        },
+        {
+          "timestamp": 1794383091.737,
+          "version": "6.2.6-rc.1",
+          "versionCode": 6261,
+          "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.1/Hybrid-Mount-6.2.6-rc.1-2139.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/BM8cG-gDofy0/changelogs/6.2.6-rc.1.md"
         }
       ]
     },
@@ -1831,7 +1992,7 @@
       "timestamp": 1793491200,
       "permissions": [],
       "features": {},
-      "stars": 213,
+      "stars": 215,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1772745246.753,
@@ -2181,8 +2342,8 @@
     {
       "id": "nextsusfs",
       "name": "NextSUSFS",
-      "version": "0.0.14",
-      "versionCode": 14,
+      "version": "0.0.17",
+      "versionCode": 17,
       "author": "IFOKNR",
       "description": "Kernel-level root hiding with SuSFS v2 for KernelSU. The kernel layer of the NEXT stack.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/README.md",
@@ -2193,7 +2354,7 @@
       ],
       "verified": false,
       "added": 1791412757.431,
-      "timestamp": 1793491200,
+      "timestamp": 1794355200,
       "permissions": [],
       "features": {},
       "stars": 15,
@@ -2288,6 +2449,62 @@
           "versionCode": 8,
           "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.8/NextSUSFS-v0.0.8.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.8.md"
+        },
+        {
+          "timestamp": 1794383105.018,
+          "version": "0.0.17",
+          "versionCode": 17,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.17/NextSUSFS-v0.0.17.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.17_7.md"
+        },
+        {
+          "timestamp": 1794383105.02,
+          "version": "0.0.17",
+          "versionCode": 17,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.17/NextSUSFS-v0.0.17.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.17.md"
+        },
+        {
+          "timestamp": 1794383105.022,
+          "version": "0.0.16",
+          "versionCode": 16,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.16/NextSUSFS-v0.0.16.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.16_5.md"
+        },
+        {
+          "timestamp": 1794383105.025,
+          "version": "0.0.16",
+          "versionCode": 16,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.16/NextSUSFS-v0.0.16.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.16.md"
+        },
+        {
+          "timestamp": 1794383105.026,
+          "version": "0.0.16-test.19",
+          "versionCode": 1619,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.16-test.19/NextSUSFS-v0.0.16-test.19.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.16-test.19_3.md"
+        },
+        {
+          "timestamp": 1794383105.029,
+          "version": "0.0.16-test.19",
+          "versionCode": 1619,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.16-test.19/NextSUSFS-v0.0.16-test.19.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.16-test.19.md"
+        },
+        {
+          "timestamp": 1794383105.032,
+          "version": "0.0.15",
+          "versionCode": 15,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.15/NextSUSFS-v0.0.15.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.15_1.md"
+        },
+        {
+          "timestamp": 1794383105.033,
+          "version": "0.0.15",
+          "versionCode": 15,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.15/NextSUSFS-v0.0.15.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/modules/rNDEi1ct-b17/changelogs/0.0.15.md"
         }
       ]
     },
@@ -2309,7 +2526,7 @@
       "timestamp": 1772236800,
       "permissions": [],
       "features": {},
-      "stars": 899,
+      "stars": 900,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1772285340.189,
@@ -2492,7 +2709,7 @@
       "timestamp": 1793491200,
       "permissions": [],
       "features": {},
-      "stars": 162,
+      "stars": 163,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771108173.19,
@@ -3032,7 +3249,7 @@
       "timestamp": 1776988800,
       "permissions": [],
       "features": {},
-      "stars": 191,
+      "stars": 192,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1777063578.328,

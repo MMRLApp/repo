@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794367766.759
+    "timestamp": 1794402267.732
   },
   "modules": [
     {
@@ -169,11 +169,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/1e142f7a865af89d.jpg",
       "added": 1792766759,
-      "timestamp": 1794077644.945,
+      "timestamp": 1794386283.013,
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 142,
+      "stars": 143,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -250,7 +250,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 53,
+      "stars": 54,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -518,7 +518,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 880,
+      "stars": 883,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -565,7 +565,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 433,
+      "stars": 438,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -759,7 +759,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 312,
+      "stars": 314,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -891,7 +891,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1819,
+      "stars": 1822,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -962,7 +962,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 14,
+      "stars": 15,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1264,8 +1264,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.8.6",
-      "versionCode": 10614,
+      "version": "v1.8.7",
+      "versionCode": 10615,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1278,28 +1278,20 @@
         "tools"
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
-      "added": 1792267431,
-      "timestamp": 1794312281.51,
-      "size": 68531953,
+      "added": 1792643606,
+      "timestamp": 1794386367.564,
+      "size": 68532114,
       "permissions": [],
       "features": {},
-      "stars": 226,
+      "stars": 227,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792267431,
+        "added": 1792643606,
         "source": "https://github.com/LIghtJUNction/MagicNet",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792267431,
-          "version": "v1.6.2",
-          "versionCode": 10602,
-          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.6.2/MagicNet-full.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.6.2.md",
-          "size": 65263801
-        },
         {
           "timestamp": 1792643606,
           "version": "v1.7.0",
@@ -1371,6 +1363,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.6/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.6.md",
           "size": 68531953
+        },
+        {
+          "timestamp": 1794386279,
+          "version": "v1.8.7",
+          "versionCode": 10615,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.7/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.7.md",
+          "size": 68532114
         }
       ]
     },
@@ -1565,7 +1565,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 653,
+      "stars": 656,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -1607,7 +1607,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 664,
+      "stars": 671,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -1661,7 +1661,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4185,
+      "stars": 4189,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -1750,7 +1750,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 130,
+      "stars": 138,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -1772,8 +1772,8 @@
     {
       "id": "shellscaled",
       "name": "Shellscaled",
-      "version": "1.104.5",
-      "versionCode": 110400502,
+      "version": "1.104.6",
+      "versionCode": 110400601,
       "author": "KyuubiRan",
       "description": "Run Tailscale natively on rooted Android, with a KernelSU WebUI and offline installation.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/README.md",
@@ -1784,42 +1784,26 @@
         "tailscale",
         "vpn"
       ],
-      "added": 1793604994,
-      "timestamp": 1793688713,
-      "size": 13452089,
+      "added": 1793607023,
+      "timestamp": 1794400364,
+      "size": 13456166,
       "permissions": [],
       "features": {},
       "stars": 21,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793604994,
+        "added": 1793607023,
         "source": "https://github.com/KyuubiRan/Shellscaled",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1793604994,
-          "version": "1.104.4",
-          "versionCode": 110400408,
-          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r8/Shellscaled-1.104.4-r8-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_9.md",
-          "size": 13328076
-        },
-        {
-          "timestamp": 1793605737,
-          "version": "1.104.4",
-          "versionCode": 110400409,
-          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r9/Shellscaled-1.104.4-r9-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_8.md",
-          "size": 13345850
-        },
-        {
           "timestamp": 1793607023,
           "version": "1.104.4",
           "versionCode": 110400410,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r10/Shellscaled-1.104.4-r10-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_7.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_9.md",
           "size": 13345852
         },
         {
@@ -1827,7 +1811,7 @@
           "version": "1.104.4",
           "versionCode": 110400411,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r11/Shellscaled-1.104.4-r11-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_6.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_8.md",
           "size": 13346226
         },
         {
@@ -1835,7 +1819,7 @@
           "version": "1.104.4",
           "versionCode": 110400412,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r12/Shellscaled-1.104.4-r12-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_5.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_7.md",
           "size": 13453130
         },
         {
@@ -1843,7 +1827,7 @@
           "version": "1.104.4",
           "versionCode": 110400413,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r13/Shellscaled-1.104.4-r13-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_4.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_6.md",
           "size": 13454017
         },
         {
@@ -1859,7 +1843,7 @@
           "version": "1.104.5",
           "versionCode": 110400500,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.5-r0/Shellscaled-1.104.5-r0-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_2.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_4.md",
           "size": 13452081
         },
         {
@@ -1867,7 +1851,7 @@
           "version": "1.104.5",
           "versionCode": 110400501,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.5-r1/Shellscaled-1.104.5-r1-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_1.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_3.md",
           "size": 13452077
         },
         {
@@ -1877,6 +1861,22 @@
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.5-r2/Shellscaled-1.104.5-r2-arm64.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5.md",
           "size": 13452089
+        },
+        {
+          "timestamp": 1794395752,
+          "version": "1.104.6",
+          "versionCode": 110400600,
+          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.6-r0/Shellscaled-1.104.6-r0-arm64.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.6_1.md",
+          "size": 13456164
+        },
+        {
+          "timestamp": 1794400364,
+          "version": "1.104.6",
+          "versionCode": 110400601,
+          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.6-r1/Shellscaled-1.104.6-r1-arm64.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.6.md",
+          "size": 13456166
         }
       ]
     },
@@ -2100,7 +2100,7 @@
         "dns"
       ],
       "added": 1793870109,
-      "timestamp": 1793942133.2,
+      "timestamp": 1794401811.21,
       "size": 32979,
       "permissions": [],
       "features": {},
@@ -2143,7 +2143,7 @@
       "size": 3411996,
       "permissions": [],
       "features": {},
-      "stars": 125,
+      "stars": 127,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793643628,

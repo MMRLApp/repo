@@ -1,129 +1,221 @@
 ![](/assets/5c50ecbf7b90d900.png)
 
   ![](/assets/d9b69f00f36c268e.svg)
-  ![](/assets/266e0d43fa8e7afe.svg)
+  ![](/assets/9d047b7163230935.svg)
   ![](/assets/ec17c291fa743cb0.svg)
 
-## ⚡ Overview / 概述
+## Overview
 
-**AZenith** is an All-In-One (AIO) system optimization module designed to enhance Android performance. By utilizing dynamic resource management and a dedicated app dashboard, it balances high-end gaming performance with daily battery efficiency and system stability.
+**AZenith** is an All-In-One (AIO) Universal Performance module for
+Android — built to work across devices and ROMs, and designed to
+respect your preferences: nothing is forced, every tweak is opt-in and
+stays fully under your control.
 
-**AZenith** 是一款旨在提升 Android 性能的一体化（AIO）系统优化模块。通过动态资源管理和专属 APP 仪表盘，它在高端游戏性能、日常电池效率和系统稳定性之间取得了平衡。
+It pairs two Rust daemons with a Material 3 Expressive manager app:
+**archdaemon** (profiles, bypass charging, FPS Recorder) and
+**sysdaemon** (pure-binder app monitor + FPS client). Together they
+auto-switch performance profiles when a game runs, tune kernel
+scheduling, record real frametime stats, and put an in-game Game Space
+overlay on screen — without shell-forking in the hot path.
 
-## 📖 Quick Guide / 快速指南
+## Features
 
-### 🤖 Optimization / 优化
+### Game Space
 
-- **Process Priority:** Prioritizes foreground games while intelligently freezing unnecessary background bloatware to free up resources.
+A landscape, gamepad-first shell built on Material 3 Expressive —
+smooth, playful UI with spring animations, dynamic colors and
+notification-style cards. Launched from the manager, then handed over
+to the overlay service for the rest of the session. Designed for
+gamepad users: D-Pad / joystick navigation, A select, B back, L1/R1
+switch tab, no touch required.
 
-**进程优先级：** 优先处理前台游戏，同时智能冻结不必要的后台冗余软件以释放资源。
+- **Perfect dashboard in one place** — game library tiles, app tiles,
+spotlight, BGM playlist with now-playing controls, wallpapers,
+status trophies, battery, service PID, games tracked, FPS, CPU/GPU
+load and temps all on one landscape screen
 
-- **Auto Profiles:** Seamlessly switches performance profiles when a game is detected.
+- **Ambient music** — customizable BGM playlist (shuffle / repeat /
+sequential) with volume control and long-press quick actions
 
-**自动模式：** 检测到游戏时无缝切换性能配置文件。
+- **Fun interface** — expressive shapes, dynamic Material You
+theming, spring micro-animations, boot hand-off sequence
+(linking, scan, tune, ready), quick toggles for profile,
+refresh rate and tweaks
 
-### 🌐 Core Features / 核心功能
+- Settings: appearance (sidepanel side / sensitivity / length /
+thickness / opacity / blur, custom images), audio, general (boost
+on launch, renderer, refresh rate, frame-rate target, resolution
+downscale), tweaks (FPSGO, GED, WAL, SFL, thermal, scheduler),
+and About
 
-- **Custom Profiles:** Manually toggle between **Performance**, **Balanced**, or **ECO Mode**. To use manual profiles, go to `AZenith Settings > Disable Auto Mode`.
+- Floating app windows on top of the game (open from inside the shell)
 
-**自定义配置文件：** 手动在**性能**、**均衡**或**节能模式**之间切换。要使用手动配置文件，请前往 `AZenith 设置 > 禁用自动模式`。
+- Crosshair reticle overlay
 
-- **Game Preload:** Preloads game libs right after a game opens.
+### Sidepanel + FPS Monitor
 
-**游戏预加载：** 游戏打开后立即预加载游戏库（libs）。
+Edge-bar + expandable Material 3 Expressive dock — every control
+you need lives right inside the game: profile switch, battery, temps
+and framerate without ever leaving the session.
 
-- **Custom CPU Governor:** Set the default CPU governor based on your preference.
+- Handle bar (swipe-in to expand, vertical drag to reposition,
+configurable length/thickness/side) — shown only for games in your
+configured list, app-lunch list, or when force-sidepanel is on
 
-**自定义 CPU 调速器：** 根据您的偏好设置默认 CPU 调速器。
+- **In-game access control** — switch profile, check battery and
+temps, and watch framerate live, all from the dock
 
-- **Custom I/O Scheduler:** Set the default I/O scheduler based on your preference.
+- **FPS Meter** with small `FPS` badge flush left of the number,
+frame time (`1000 / fps` ms) and estimated 1% Low
 
-**自定义 I/O 调度器：** 根据您的偏好设置默认 I/O 调度器。
+- **FPS Recorder** — one-tap Start / Stop (record pill with ripple,
+session timer); writes CSV + JSON summaries with real `ft_avg` /
+`ft_max` / `low1` / `low01` / `jank` from the frametime histogram
 
-- **CPU Freq Limiter:** Prevents device heating by limiting CPU frequency by percentage.
+- **Customizable layout** — widgets (FPS, CPU, GPU, temp, ping,
+battery, profile) with HUD offsets, global + per-app layouts
 
-**CPU 频率限制器：** 通过按百分比限制 CPU 频率，防止设备发热。
+- **Floating apps** — open other apps in floating windows on top of
+the game from inside the dock
 
-- **Thermalcore Service:** Intelligent throttling management that prevents overheating while maintaining a stable FPS floor.
+- Quick Apps row, brightness/volume sliders, auto-mode toggle,
+profile switcher, toasts
 
-**Thermalcore 服务：** 智能温控管理，在防止过热的同时保持稳定的帧率底线。
+### Per-App Tuning
 
-## 📦 Installation / 安装
+Per-app tweaks override every global setting for the selected game —
+set each parameter once per game and it applies on game focus,
+falling back to the global values otherwise:
 
-This is a **Magisk Module**, so you must install it through your preferred root manager.
+- Per-app Lite Mode (cap at ~90% CPU freq, mid-frequency ladder)
 
-这是一个 **Magisk 模块**，因此您必须通过您首选的 Root 管理器进行安装。
+- Per-app rendering (renderer override: default / SkiaVulkan /
+SkiaGLES / software)
 
-## 👨‍💻 For Developers (ROM Integration) / 开发者专区（ROM 集成）
+- Per-app refresh rate (target from the device's mode list)
 
-**ROM-Integrated AZenith** is designed for ROM developers and maintainers to integrate directly into their port ROMs or custom ROMs.
+- Per-app downscaler (resolution downscale 0–100% + target FPS slider)
 
-**ROM 集成版 AZenith** 专为 ROM 开发者和维护者设计，可直接集成到他们的移植 ROM 或定制 ROM 中。
+- Per-app DND (do-not-disturb during gaming)
 
-- **Repository / 仓库:** [RomIntegratedAZenith](https://github.com/Liliya2727/RomIntegratedAZenith)
+- App Priority (process priority boost)
 
-## 🛠️ Contributing & Bug Reports / 贡献与错误报告
+- Game Preload (libs + page-cache preload, with budget)
 
-We welcome contributions to make **AZenith** even better!
+- Resolution downscale badge always shows the live divider
 
-我们欢迎任何形式的贡献，让 **AZenith** 变得更好！
+*(Display config is not per-app — there is no per-app display filter.)*
 
-- 
-**Report Bugs:** If you find any issues, please open an [Issue](https://github.com/Liliya2727/AZenith/issues) and provide detailed logs.
+### Profiles
 
-**报告错误：** 如果您发现任何问题，请提交一个 [Issue](https://github.com/Liliya2727/AZenith/issues) 并提供详细的日志。
+AZenith switches profile automatically depending on what you need —
+gaming in foreground → Performance, battery saver on → ECO,
+everything else → Balanced (with a 10 s screen-off grace and 30 s
+foreground-away grace before dropping back).
 
-- 
-**Feature Requests:** Have an idea? Feel free to open an issue to discuss it.
+You can also take manual control: turn off **Auto Mode** in Settings
+and pick **Performance**, **Balanced** or **ECO** yourself whenever
+you want.
 
-**功能请求：** 有新想法？欢迎提交 Issue 共同讨论。
+### Custom Governor
 
-- 
-**Pull Requests:** Want to contribute to development?
+AZenith lets you set a custom CPU governor **per profile** — pick
+your own governor for Performance, Balanced and ECO instead of the
+stock defaults:
 
-**拉取请求（PR）：** 想要参与开发？
+- Custom CPU governor per profile (`custom_*_cpu_gov`)
 
-- Fork the repository. / Fork 本仓库。
+- Custom I/O scheduler per profile (`custom_*_IO`)
 
-- Create a new branch for your feature or fix. / 为您的功能或修复创建一个新分支。
+- Custom Mali GPU governor per profile (`custom_*_maligpu_gov`)
 
-- Submit a **Pull Request** with a clear description of your changes. / 提交 **Pull Request** 并附上您更改的清晰说明。
+- Stock defaults stay untouched unless you override them; `balanced`
+can also restore the saved baseline governor
 
-## 🙏 Credits & Acknowledgements / 贡献人员与鸣谢
+- `disabletweak` master switch
 
-### Core Developers / 核心开发者
+### Thermalcore
 
-Role / 角色
-Developer / 开发者
+Intelligent thermal throttling — watches CPU/GPU temps and adapts
+limits so you hold a stable FPS floor instead of thermal-crashing.
 
-**Author / 作者**
+### Bypass Charging
+
+Built-in bypass charging for supported devices:
+
+- Diagnostic check that tests whether your device actually supports
+the feature before enabling it
+
+- Adjustable charging threshold to match your battery health usage
+
+- Charging-state dynamic bypass while gaming
+
+### Preference Tweaks
+
+AZenith ships extra add-on tweaks you can enable or disable whenever
+you like — flip each one on/off from the tweaks screen and it applies
+immediately:
+
+- schedtunes, WALT tunes
+
+- FPSGO & GED parameters (MediaTek), Mali scheduler
+
+- SFL latency, display colour presets
+
+## Installation
+
+Magisk module — install through your root manager (KernelSU /
+Magisk):
+
+- Flash the release zip.
+
+- Reboot.
+
+- Enjoy
+
+## For Developers (ROM Integration)
+
+**ROM-Integrated AZenith**: system-level service for custom ROMs —
+single `vendor.azenith-service` binary, AIDL interface, init rc,
+sepolicy. See the
+[RomIntegratedAZenith](https://github.com/Liliya2727/RomIntegratedAZenith)
+repository.
+
+## Contributing & Bug Reports
+
+We welcome contributions!
+
+- **Report Bugs:** open an issue with a log.
+
+- **Feature Requests:** open an issue to discuss.
+
+- **Pull Requests:** fork, create a branch, submit a PR with a clear
+description.
+
+## Credits & Acknowledgements
+
+Role
+Developer
+
+**Author**
 [@Zexshia](https://github.com/Liliya2727)
 
-**Collaborator / 合作者**
-[@rianixia](https://github.com/ryanistr)
+**Collaborators**
+[@rianixia](https://github.com/ryanistr), [@kanaochar](https://github.com/kanaodnd)
 
-**Collaborator / 合作者**
-[@kanaochar](https://github.com/kanaodnd)
+Area
+Credits
 
-### Sources & References / 来源与参考
-
-Area / 领域
-Credits / 鸣谢
-
-**App Translation and Internationalization / 应用翻译与国际化**
+App Translation & Internationalization
 @YIDYIF
 
-**Tweak Sources / 优化来源**
+Tweak Sources
 @Rem01Gaming, @MiAzami, @KanagawaYamadaVTeacher, @ShiraXblood, @Laynsb, @Koneko_dev
 
-**Game Preload / 游戏预加载**
+Game Preload
 @HoyoSlave, @KutuMoba, @Feravolt, @iamlooper
 
-## 📢 Stay Updated / 保持关注
-
-Get the latest news, updates, and support by following our official channels.
-
-通过关注我们的官方频道，获取最新消息、更新和技术支持。
+## Stay Updated
 
   [
     ![](/assets/31fb752d9dcd5079.svg)
@@ -132,16 +224,8 @@ Get the latest news, updates, and support by following our official channels.
     ![](/assets/78a7be2438838a98.svg)
   ](https://t.me/Zexshia)
 
-*Feel free to report bugs or give suggestions via our Telegram community!*
+## License
 
-*欢迎通过我们的 Telegram 社区报告错误或提出建议！*
-
-## ⚖️ License / 许可证
-
-This project is licensed under the **GNU General Public License v3.0 only** (GPL-3.0-only).
-
-本项目采用 **GNU 通用公共许可证第 3.0 版（仅限）** (GPL-3.0-only)。
-
-This is **copyleft**: if you redistribute the project (in source or binary form), you must also make the Corresponding Source available under the same GPL v3 terms. You may not re-license it as proprietary or under a weaker permissive license without replacing all copyrighted contributions.
-
-See [LICENSE](https://github.com/Liliya2727/AZenith/blob/7112908d3ea602ffcb4cdbd3c353ee5285e58205/LICENSE) for the full text.
+This project is licensed under the **Apache License, Version 2.0** —
+see [LICENSE](https://github.com/Liliya2727/AZenith/blob/4f96533305572302d5bf333432d85f441b4b8629/LICENSE) for the full text and [NOTICE.md](https://github.com/Liliya2727/AZenith/blob/4f96533305572302d5bf333432d85f441b4b8629/NOTICE.md)
+for third-party notices.

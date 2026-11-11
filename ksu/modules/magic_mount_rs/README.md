@@ -5,7 +5,7 @@
 [![](/assets/0673dc5dc3007a72.svg)](https://t.me/mmrs_ci)
 
 [![](/assets/43b5deaae0f3ee71.svg)](https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/latest)
-[![](/assets/ec537edf39c2c6c6.svg)](https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/)
+[![](/assets/f513f5b84d4d9612.svg)](https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/)
 
 [English](https://github.com/Tools-cx-app/meta-magic_mount-rs/blob/f9cfa8b598e8f38eaa63c75cc2bee9b4d03be26f/docs/README_en.md) [Русский](https://github.com/Tools-cx-app/meta-magic_mount-rs/blob/f9cfa8b598e8f38eaa63c75cc2bee9b4d03be26f/docs/README_ru.md)
 
