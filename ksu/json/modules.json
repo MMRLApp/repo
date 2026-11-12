@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794440786.029
+    "timestamp": 1794458328.335
   },
   "modules": [
     {
@@ -2378,7 +2378,7 @@
       "size": 1453631,
       "permissions": [],
       "features": {},
-      "stars": 15,
+      "stars": 16,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792054513,
