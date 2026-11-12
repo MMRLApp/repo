@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794492437.778
+    "timestamp": 1794524162.65
   },
   "modules": [
     {
@@ -759,7 +759,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 314,
+      "stars": 315,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -820,10 +820,10 @@
     {
       "id": "gs_quick_reload",
       "name": "一键重载模块（Fold7）",
-      "version": "v2.2",
-      "versionCode": 4,
+      "version": "v2.4",
+      "versionCode": 6,
       "author": "CodeFishK",
-      "description": "专为三星 Galaxy Z Fold7（SM-F966B / One UI 9 / Android 17）调制：让 KernelSU 模块生效，但不执行 stop/start，只重启 zygote，折叠屏副屏不会掉，附带夜间模式自愈。基于 GhostSam 临时 root（https://github.com/snothin/GhostSam）实测。",
+      "description": "三星 Galaxy Z Fold7（Android 17）专用：一键重载 KernelSU 模块，只重启 zygote、跳过 stop/start，副屏不掉；附体检与夜间模式自愈。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/gs_quick_reload/README.md",
       "support": "https://github.com/CodeFishK/gs-quick-reload/issues",
       "license": "MIT",
@@ -837,8 +837,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/daf86036a0c05308.png",
       "added": 1793501212,
-      "timestamp": 1793630195.965,
-      "size": 22060,
+      "timestamp": 1794500851.507,
+      "size": 24672,
       "permissions": [],
       "features": {},
       "stars": 1,
@@ -865,6 +865,22 @@
           "zipUrl": "https://github.com/CodeFishK/gs-quick-reload/releases/download/v2.2.0/gs_quick_reload-4-v2.2.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/gs_quick_reload/changelogs/v2.2.md",
           "size": 22060
+        },
+        {
+          "timestamp": 1794499051,
+          "version": "v2.3",
+          "versionCode": 5,
+          "zipUrl": "https://github.com/CodeFishK/gs-quick-reload/releases/download/v2.3.0/gs_quick_reload-5-v2.3.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/gs_quick_reload/changelogs/v2.3.md",
+          "size": 23795
+        },
+        {
+          "timestamp": 1794500823,
+          "version": "v2.4",
+          "versionCode": 6,
+          "zipUrl": "https://github.com/CodeFishK/gs-quick-reload/releases/download/v2.4.0/gs_quick_reload-6-v2.4.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/gs_quick_reload/changelogs/v2.4.md",
+          "size": 24672
         }
       ]
     },
@@ -1805,7 +1821,7 @@
       "size": 13456166,
       "permissions": [],
       "features": {},
-      "stars": 22,
+      "stars": 23,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793607023,
@@ -2253,8 +2269,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.204 (204-d739791-release)",
-      "versionCode": 204,
+      "version": "1.205 (205-54d38de-release)",
+      "versionCode": 205,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -2267,28 +2283,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1792306323,
-      "timestamp": 1794146091,
+      "added": 1792307281,
+      "timestamp": 1794514426,
       "size": 7677650,
       "permissions": [],
       "features": {},
       "stars": 23,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792306323,
+        "added": 1792307281,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792306323,
-          "version": "1.189 (189-fac2421-release)",
-          "versionCode": 189,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v189-fac2421/FuseHide-1.189_189-fac2421-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.189__189-fac2421-release_.md",
-          "size": 7534307
-        },
         {
           "timestamp": 1792307281,
           "version": "1.190 (190-2ea586d-release)",
@@ -2359,6 +2367,14 @@
           "versionCode": 204,
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v204-d739791/FuseHide-1.204_204-d739791-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.204__204-d739791-release_.md",
+          "size": 7677650
+        },
+        {
+          "timestamp": 1794514426,
+          "version": "1.205 (205-54d38de-release)",
+          "versionCode": 205,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v205-54d38de/FuseHide-1.205_205-54d38de-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.205__205-54d38de-release_.md",
           "size": 7677650
         }
       ]
@@ -2483,7 +2499,7 @@
       "version": "v2.16.0 (371-52b358c-release)",
       "versionCode": 371,
       "author": "baaad",
-      "description": "A from-scratch, standalone implementation of the Zygisk Next module",
+      "description": "A from-scratch, standalone implementation of the Zygisk Next API",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
       "support": "https://github.com/VeryBaaad/ZNNext/issues",
       "license": "GPL-3.0-only",
@@ -2491,7 +2507,7 @@
         "system"
       ],
       "added": 1793465422,
-      "timestamp": 1794230041.369,
+      "timestamp": 1794493948.175,
       "size": 9881610,
       "permissions": [],
       "features": {},
