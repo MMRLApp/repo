@@ -21,7 +21,7 @@
       ![](/assets/ac0c2431c7f05b4d.svg)
     ](https://github.com/LimpidMo/SvcHub/blob/master/LICENSE)
     [
-      ![](/assets/b65e6b4d3ee6f3ab.svg)
+      ![](/assets/6d7d7ce86383d330.svg)
     ](https://github.com/LimpidMo/SvcHub/releases)
     [
       ![](/assets/c47065f115cda15e.svg)

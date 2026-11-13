@@ -7,9 +7,42 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794541885.097
+    "timestamp": 1794576711.185
   },
   "modules": [
+    {
+      "id": "A-STEPS",
+      "name": "A-智能步数管理［HyperOS］",
+      "version": "1110",
+      "versionCode": 20261110,
+      "author": "xiaoji0308",
+      "description": "自动增加步数",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/A-STEPS/README.md",
+      "support": "https://github.com/xiaoji0308/Steps",
+      "added": 1794280035,
+      "timestamp": 1794569610.324,
+      "size": 61224,
+      "permissions": [],
+      "features": {},
+      "stars": 16,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794280035,
+        "source": "https://github.com/xiaoji0308/Steps",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794280035,
+          "version": "1110",
+          "versionCode": 20261110,
+          "zipUrl": "https://github.com/xiaoji0308/Steps/releases/download/1110/26.1110.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/A-STEPS/changelogs/1110.md",
+          "size": 61224
+        }
+      ]
+    },
     {
       "id": "acc",
       "name": "Advanced Charging Controller (ACC) with WebUI",
@@ -329,7 +362,7 @@
       "size": 1750,
       "permissions": [],
       "features": {},
-      "stars": 0,
+      "stars": 1,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792481368,
@@ -345,6 +378,45 @@
           "zipUrl": "https://github.com/Buger2008/CloudDrive2-FuseFix/releases/download/v1.1/clouddrive2_fuse_fix-2-V1.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/clouddrive2_fuse_fix/changelogs/V1.1.md",
           "size": 1750
+        }
+      ]
+    },
+    {
+      "id": "coloros_wifi_sense",
+      "name": "ColorOS WIFI感知",
+      "version": "v1.5.0",
+      "versionCode": 8,
+      "author": "酷安@NVMEX夜莺",
+      "description": "弱信号时自动断开当前 Wi-Fi 接入点，可选原生流体云倒计时与手动断开。",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/README.md",
+      "support": "https://github.com/mazemingw/coloros-wifi-sense/issues",
+      "license": "Apache-2.0",
+      "categories": [
+        "network",
+        "wifi",
+        "coloros"
+      ],
+      "added": 1794480507,
+      "timestamp": 1794569682.971,
+      "size": 129191,
+      "permissions": [],
+      "features": {},
+      "stars": 10,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794480507,
+        "source": "https://github.com/mazemingw/coloros-wifi-sense",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794480507,
+          "version": "v1.5.0",
+          "versionCode": 8,
+          "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.5.0/coloros-wifi-sense-v1.5.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.5.0.md",
+          "size": 129191
         }
       ]
     },
@@ -371,7 +443,7 @@
       "size": 10634913,
       "permissions": [],
       "features": {},
-      "stars": 434,
+      "stars": 433,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -779,6 +851,45 @@
       ]
     },
     {
+      "id": "frida-ksu",
+      "name": "Frida Server (KernelSU)",
+      "version": "v17.24.3",
+      "versionCode": 172404,
+      "author": "reverser.id",
+      "description": "Frida server as a root daemon with auto-update and WebUI, by reverser.id",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/frida-ksu/README.md",
+      "support": "https://github.com/ReverserID/KSU_Frida/issues",
+      "categories": [
+        "frida",
+        "tools",
+        "debug"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/0c5eed5f45b6ed52.png",
+      "added": 1793104276,
+      "timestamp": 1794569485.145,
+      "size": 101044,
+      "permissions": [],
+      "features": {},
+      "stars": 0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1793104276,
+        "source": "https://github.com/ReverserID/KSU_Frida",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1793104276,
+          "version": "v17.24.3",
+          "versionCode": 172404,
+          "zipUrl": "https://github.com/ReverserID/KSU_Frida/releases/download/v17.24.3-2/frida-ksu-17.24.3.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/frida-ksu/changelogs/v17.24.3.md",
+          "size": 101044
+        }
+      ]
+    },
+    {
       "id": "genshin_bootanim",
       "name": "原神开机动画",
       "version": "1.0.3",
@@ -955,6 +1066,47 @@
           "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.4/Hybrid-Mount-6.2.6-rc.4-2162.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6-rc.4.md",
           "size": 5427969
+        }
+      ]
+    },
+    {
+      "id": "hypercool",
+      "name": "HyperCool - Heat & Battery Fix",
+      "version": "v2.2.5",
+      "versionCode": 225,
+      "author": "Yudharn",
+      "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
+      "support": "https://github.com/yudharn/HyperCool/issues",
+      "license": "GPL-3.0-or-later",
+      "categories": [
+        "battery",
+        "performance",
+        "thermal",
+        "webui"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
+      "added": 1794497430,
+      "timestamp": 1794569610.324,
+      "size": 328532,
+      "permissions": [],
+      "features": {},
+      "stars": 15,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794497430,
+        "source": "https://github.com/yudharn/HyperCool",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794497430,
+          "version": "v2.2.5",
+          "versionCode": 225,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.2.5/HyperCool_v2.2.5.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.2.5.md",
+          "size": 328532
         }
       ]
     },
@@ -1295,11 +1447,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792643606,
-      "timestamp": 1794386367.564,
+      "timestamp": 1794552075.659,
       "size": 68532114,
       "permissions": [],
       "features": {},
-      "stars": 229,
+      "stars": 227,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792643606,
@@ -1514,7 +1666,7 @@
       "size": 27525137,
       "permissions": [],
       "features": {},
-      "stars": 1421,
+      "stars": 1427,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1675,6 +1827,46 @@
       ]
     },
     {
+      "id": "oplus-cloud-block",
+      "name": "ColorOS 温控与云控",
+      "version": "1.7.13",
+      "versionCode": 184,
+      "author": "谋事在人成事在天",
+      "description": "解除 ColorOS/一加出厂 CPU 频率上限（大核 58%→100%），拦截 OTA 与云控，带温度保护与内存面板。",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/README.md",
+      "support": "https://github.com/706412584/ColorOS-thermal/issues",
+      "license": "MIT",
+      "categories": [
+        "performance",
+        "system",
+        "tools"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/560d9b835338b4aa.png",
+      "added": 1794161870,
+      "timestamp": 1794569748.625,
+      "size": 121016,
+      "permissions": [],
+      "features": {},
+      "stars": 3,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794161870,
+        "source": "https://github.com/706412584/ColorOS-thermal",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794161870,
+          "version": "1.7.13",
+          "versionCode": 184,
+          "zipUrl": "https://github.com/706412584/ColorOS-thermal/releases/download/v1.7.13/oplus-cloud-block-v1.7.13.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/changelogs/1.7.13.md",
+          "size": 121016
+        }
+      ]
+    },
+    {
       "id": "playintegrityfix",
       "name": "Play Integrity Fix",
       "version": "v4.9-inject-s",
@@ -1693,7 +1885,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4193,
+      "stars": 4197,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -1717,6 +1909,49 @@
           "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.9-inject-s/PlayIntegrityFix_v4.9-inject-s.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/playintegrityfix/changelogs/v4.9-inject-s.md",
           "size": 692511
+        }
+      ]
+    },
+    {
+      "id": "power11",
+      "name": "Power11",
+      "version": "v3.0.2",
+      "versionCode": 302,
+      "author": "Luigi Colantuono",
+      "description": "Bring back the old gem from Android 11. The classic AOSP power menu on HyperOS, with custom items, reboot entries and blur.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/power11/README.md",
+      "support": "https://github.com/LuigiColantuono/Power11/issues",
+      "license": "MIT",
+      "categories": [
+        "hyperos",
+        "miui",
+        "power-menu",
+        "systemui",
+        "aosp",
+        "xposed"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/ad128c7a9d17ce87.png",
+      "added": 1793064905,
+      "timestamp": 1794569545.479,
+      "size": 191673,
+      "permissions": [],
+      "features": {},
+      "stars": 1,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1793064905,
+        "source": "https://github.com/LuigiColantuono/Power11",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1793064905,
+          "version": "v3.0.2",
+          "versionCode": 302,
+          "zipUrl": "https://github.com/LuigiColantuono/Power11/releases/download/v3.0.2/Power11_v3.0.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/power11/changelogs/v3.0.2.md",
+          "size": 191673
         }
       ]
     },
@@ -1782,7 +2017,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 139,
+      "stars": 141,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2175,7 +2410,7 @@
       "size": 3411996,
       "permissions": [],
       "features": {},
-      "stars": 132,
+      "stars": 134,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793643628,
@@ -2511,7 +2746,7 @@
       "size": 9881610,
       "permissions": [],
       "features": {},
-      "stars": 108,
+      "stars": 107,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793465422,
