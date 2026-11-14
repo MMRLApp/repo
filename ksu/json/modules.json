@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794610682.989
+    "timestamp": 1794628211.641
   },
   "modules": [
     {
@@ -101,7 +101,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 102,
+      "stars": 103,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -1402,7 +1402,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 607,
+      "stars": 609,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1722,49 +1722,6 @@
           "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.0/netproxy-1100-v8.7.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.0.md",
           "size": 27525137
-        }
-      ]
-    },
-    {
-      "id": "nomount",
-      "name": "NoMount",
-      "version": "v2.2.0 (605)",
-      "versionCode": 605,
-      "author": "maxsteeel",
-      "description": "A kernel-level VFS path redirection metamodule for KernelSU and APatch.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/nomount/README.md",
-      "support": "https://github.com/maxsteeel/nomount/issues",
-      "license": "GPL-2.0-only for kernel; GPL-3.0-only for others",
-      "categories": [
-        "kernel",
-        "vfs",
-        "filesystem",
-        "system",
-        "metamodule"
-      ],
-      "added": 1792687379,
-      "timestamp": 1792689973.394,
-      "size": 468780,
-      "permissions": [],
-      "features": {
-        "metamodule": true
-      },
-      "stars": 664,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1792687379,
-        "source": "https://github.com/maxsteeel/nomount",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1792687379,
-          "version": "v2.2.0 (605)",
-          "versionCode": 605,
-          "zipUrl": "https://github.com/maxsteeel/nomount/releases/download/v2.2.0/NoMount-v2.2.0-release-605.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/nomount/changelogs/v2.2.0__605_.md",
-          "size": 468780
         }
       ]
     },
