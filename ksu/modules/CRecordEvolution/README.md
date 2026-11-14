@@ -6,11 +6,11 @@
 [![](/assets/e9e712f6fb131f03.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,10 +23,10 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/1abdabfdcae6506f.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/overview-en.png)
-[![](/assets/59b6dc9b5f674185.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/history-en.png)
-[![](/assets/acd4f71b06900732.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/trends-en.png)
-[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/.github/images/settings-en.png)
+[![](/assets/fa929c6ea48acd04.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/overview-en.png)
+[![](/assets/78388c9b30bfd237.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/history-en.png)
+[![](/assets/2db2ab33ebfafb66.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/trends-en.png)
+[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/settings-en.png)
 
 ## Features
 
@@ -38,7 +38,13 @@ Settings
 
 - **Cross-checked capacity paths**: kernel full charge, mid-stretch calibration, discharge differential and settled sessions each produce a value; a clear mismatch is flagged instead of trusting one path alone.
 
-- **Fully offline**: no network permission, no telemetry; data is written only to the local `data/battery.db`, kept for 90 days.
+- **Long-term capacity archive**: the History · Trends view keeps a permanent day-by-day capacity archive (the 90-day window only prunes raw detail), so the wear curve stays visible across seasons.
+
+- **Charging statistics**: the History summary shows total charged, average charge per session and average session length for the selected range.
+
+- **Wear outlook**: when the capacity trend is statistically significant, the Overview's trend cell estimates "about N months to 80%" at the current rate — it only appears when the data supports it.
+
+- **Fully offline**: no network permission, no telemetry; data is written only to the local `data/battery.db`, with raw detail kept for 90 days and the daily capacity archive kept indefinitely.
 
 - **Multiple managers supported**: Magisk v20.4+ / KernelSU / APatch / MMRL, arm64 only; upgrades keep the previous learning history automatically.
 
@@ -154,11 +160,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -203,6 +209,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/77a158a283b19df07ccdaed552386d589e0c5dbd/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

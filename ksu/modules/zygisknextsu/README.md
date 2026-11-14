@@ -5,7 +5,7 @@
 [![](/assets/53b2884d80c18287.svg)](https://github.com/VeryBaaad/ZNNext/actions/workflows/ci.yml?query=branch%3Amaster+event%3Apush)
 [![](/assets/1ab18c6b77d6637c.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
 [![](/assets/71d066a8071be99e.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
-[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/1efc580945967dbeceb49471cf842ac0edbd84f6/LICENSE)
+[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/13921632dfa4a2730541897800642dcf18d2ae67/LICENSE)
 
 Important
 
@@ -66,9 +66,15 @@ NOTE: The debug version is provided only in GitHub Actions.
 
 - Pull Requests: [Pull Requests](https://github.com/VeryBaaad/ZNNext/pulls/)
 
-### Community Discussion
-
 - GitHub discussions: [Discussions](https://github.com/VeryBaaad/ZNNext/discussions)
+
+### Version Naming
+
+v[Major].[Minor].[Patch][.Revision]
+
+- Major / Minor / Patch: same as semver.
+
+- Revision: when making a backward compatible-change that affects only internal behavior, without altering external behavior. (not MUST)
 
 ### Developer Resources
 
@@ -142,6 +148,10 @@ decompressors
 
 ### License
 
-ZNNext is licensed under the **GNU General Public License v3 (GPL-3)** ([http://www.gnu.org/copyleft/gpl.html](http://www.gnu.org/copyleft/gpl.html)).
+ZNNext is licensed under the:
+
+- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/13921632dfa4a2730541897800642dcf18d2ae67/LICENSE).
+
+- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/13921632dfa4a2730541897800642dcf18d2ae67/LICENSE-DCLPL).
 
 Third-party license texts are bundled verbatim under `licenses/` in the module zip.
