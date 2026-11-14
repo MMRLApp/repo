@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794628211.641
+    "timestamp": 1794659847.048
   },
   "modules": [
     {
@@ -401,7 +401,7 @@
       "size": 129191,
       "permissions": [],
       "features": {},
-      "stars": 10,
+      "stars": 12,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794480507,
@@ -443,7 +443,7 @@
       "size": 10634913,
       "permissions": [],
       "features": {},
-      "stars": 433,
+      "stars": 437,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -998,8 +998,8 @@
     {
       "id": "hybrid_mount",
       "name": "Hybrid Mount",
-      "version": "6.2.5",
-      "versionCode": 602005999,
+      "version": "6.2.6",
+      "versionCode": 602006999,
       "author": "Hybrid Mount Developers",
       "description": "Mix OverlayFS, Magic Mount, and VFS per module and path on KernelSU and APatch.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/README.md",
@@ -1012,13 +1012,13 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/b3a933b89393bb5f.png",
       "added": 1791694187,
-      "timestamp": 1793866569.821,
-      "size": 4959776,
+      "timestamp": 1794656396.348,
+      "size": 5453903,
       "permissions": [],
       "features": {
         "metamodule": true
       },
-      "stars": 1832,
+      "stars": 1836,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1066,6 +1066,14 @@
           "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6-rc.4/Hybrid-Mount-6.2.6-rc.4-2162.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6-rc.4.md",
           "size": 5427969
+        },
+        {
+          "timestamp": 1794656373,
+          "version": "6.2.6",
+          "versionCode": 602006999,
+          "zipUrl": "https://github.com/Hybrid-Mount/meta-hybrid_mount/releases/download/v6.2.6/Hybrid-Mount-6.2.6-2168.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hybrid_mount/changelogs/6.2.6.md",
+          "size": 5453903
         }
       ]
     },
@@ -1087,11 +1095,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1794596057.185,
+      "timestamp": 1794656396.348,
       "size": 328532,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 18,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794497430,
@@ -1562,7 +1570,7 @@
       "size": 45255524,
       "permissions": [],
       "features": {},
-      "stars": 10,
+      "stars": 11,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792770944,
@@ -1628,7 +1636,7 @@
       "size": 571640,
       "permissions": [],
       "features": {},
-      "stars": 4,
+      "stars": 5,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1788355788,
@@ -1666,7 +1674,7 @@
       "size": 27525137,
       "permissions": [],
       "features": {},
-      "stars": 1427,
+      "stars": 1429,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1842,7 +1850,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4197,
+      "stars": 4204,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -1974,7 +1982,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 141,
+      "stars": 143,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2013,7 +2021,7 @@
       "size": 13456166,
       "permissions": [],
       "features": {},
-      "stars": 23,
+      "stars": 24,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793607023,
@@ -2367,7 +2375,7 @@
       "size": 3411996,
       "permissions": [],
       "features": {},
-      "stars": 134,
+      "stars": 135,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793643628,
@@ -2480,7 +2488,7 @@
       "size": 7677650,
       "permissions": [],
       "features": {},
-      "stars": 24,
+      "stars": 25,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792605864,
@@ -2703,7 +2711,7 @@
       "size": 9881610,
       "permissions": [],
       "features": {},
-      "stars": 107,
+      "stars": 108,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793465422,

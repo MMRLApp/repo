@@ -3,8 +3,8 @@
 # Magisk NetBird
 
   ![](/assets/dc7dd632bf424c51.svg)
-  ![](/assets/830739d7803a7fdd.svg)
-  ![](/assets/8f0bd1ef069c947b.svg)
+  ![](/assets/f293d0e952227076.svg)
+  ![](/assets/d932e67d4af1afb1.svg)
   ![](/assets/ae780e774072aafd.svg)
   ![](/assets/7998cf3848fad7aa.svg)
 
