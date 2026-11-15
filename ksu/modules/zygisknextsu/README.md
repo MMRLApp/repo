@@ -5,7 +5,8 @@
 [![](/assets/ee245273888b189d.svg)](https://github.com/VeryBaaad/ZNNext/actions/workflows/ci.yml?query=branch%3Amaster+event%3Apush)
 [![](/assets/fdb8cbf4d00ced6e.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
 [![](/assets/71d066a8071be99e.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
-[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/926f55e11d1a71c48b40b0a6f2caec563e5dc087/LICENSE)
+[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/4192737fb72f6a88d946d3c71c08275a68398029/LICENSE)
+[![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/4192737fb72f6a88d946d3c71c08275a68398029/LICENSE-DCLPL)
 
 Important
 
@@ -161,8 +162,8 @@ decompressors
 
 ZNNext is licensed under the:
 
-- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/926f55e11d1a71c48b40b0a6f2caec563e5dc087/LICENSE).
+- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/4192737fb72f6a88d946d3c71c08275a68398029/LICENSE).
 
-- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/926f55e11d1a71c48b40b0a6f2caec563e5dc087/LICENSE-DCLPL).
+- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/4192737fb72f6a88d946d3c71c08275a68398029/LICENSE-DCLPL).
 
 Third-party license texts are bundled verbatim under `licenses/` in the module zip.
