@@ -5,10 +5,10 @@
 KernelSU / Magisk module for Qualcomm and MediaTek phones. Less heat, less battery drain, longer battery life.
 Focused on battery life, not peak performance.
 
-  [![](/assets/dae2a889476e330e.svg)](https://github.com/yudharn/HyperCool/releases)
+  [![](/assets/78eab0f7c13a2d96.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
-  [![](/assets/76ad9b1026680ea4.svg)](https://github.com/yudharn/HyperCool/releases/latest)
+  [![](/assets/dca6a75426620da9.svg)](https://github.com/yudharn/HyperCool/releases/latest)
 
 Everything is configured via WebUI and applied on the next boot. Only lightweight keepers run in the background, and only when enabled.
 
@@ -104,6 +104,8 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 `Every feature has its own ON/OFF switch in the WebUI. Changes apply once at boot, and turning a feature off (or uninstalling) restores the original values`
 
+`Unsupported features are skipped`
+
 **Heat control**
 
 - Big-core frequency cap (with lock)
@@ -141,6 +143,8 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 - Keep Wi-Fi on while the screen is off (turns it on again when the ROM switches it off; Wi-Fi you switch off yourself stays off)
 
 - Location and Bluetooth off after a long screen-off (both come back when the screen turns on; off by default)
+
+- Mobile data and NFC off during screen-off (back on when the screen turns on; waits during calls, audio and hotspot; off by default)
 
 - F2FS garbage collection with the screen off (Storage; frees space that only GC can give back; once a week at most, no charger needed; off by default)
 
@@ -216,9 +220,6 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Battery calibration: guided full cycle (5% → 100% → until charging finishes) so the battery % is accurate (optionally deletes batterystats.bin)
 
-Every feature shows what it changes and the result of the last boot.
-Turning a feature off puts the original value back. Unsupported features are skipped.
-
 ## Requirements
 
 - Android 11+
@@ -247,6 +248,10 @@ Turning a feature off puts the original value back. Unsupported features are ski
 
 - Xtreme Battery Saver (DethByte64), Universal GMS Doze, sysconfig-patcher
 
+- WebUI Mono theme: design inspired by Duck ToolBox by Eltavine (MIT)
+
+- WebUI reference: Specter by @dpejoh1
+
 ## Support
 
 Note
@@ -267,6 +272,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/018fcbfac9ebbe966ba510fba9cabf6779929288/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/0232ace594b59681795a1808c51f74321aa8a656/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

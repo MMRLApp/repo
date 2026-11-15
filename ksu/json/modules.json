@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794713401.642
+    "timestamp": 1794747815.333
   },
   "modules": [
     {
@@ -401,7 +401,7 @@
       "size": 129191,
       "permissions": [],
       "features": {},
-      "stars": 12,
+      "stars": 13,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794480507,
@@ -525,7 +525,7 @@
       "size": 3149975,
       "permissions": [],
       "features": {},
-      "stars": 26,
+      "stars": 27,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -1026,7 +1026,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1836,
+      "stars": 1837,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1088,8 +1088,8 @@
     {
       "id": "hypercool",
       "name": "HyperCool - Heat & Battery Fix",
-      "version": "v2.2.6",
-      "versionCode": 226,
+      "version": "v2.3.2",
+      "versionCode": 232,
       "author": "Yudharn",
       "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
@@ -1103,8 +1103,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1794713278,
-      "size": 328704,
+      "timestamp": 1794746903.023,
+      "size": 334072,
       "permissions": [],
       "features": {},
       "stars": 21,
@@ -1131,6 +1131,30 @@
           "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.2.6/HyperCool_v2.2.6.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.2.6.md",
           "size": 328704
+        },
+        {
+          "timestamp": 1794736696,
+          "version": "v2.3.0",
+          "versionCode": 230,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.0/HyperCool_v2.3.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.0.md",
+          "size": 333667
+        },
+        {
+          "timestamp": 1794740166,
+          "version": "v2.3.1",
+          "versionCode": 231,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.1/HyperCool_v2.3.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.1.md",
+          "size": 333819
+        },
+        {
+          "timestamp": 1794746772,
+          "version": "v2.3.2",
+          "versionCode": 232,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.2/HyperCool_v2.3.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.2.md",
+          "size": 334072
         }
       ]
     },
@@ -1471,11 +1495,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1792643606,
-      "timestamp": 1794596057.185,
+      "timestamp": 1794738760.513,
       "size": 68532114,
       "permissions": [],
       "features": {},
-      "stars": 228,
+      "stars": 229,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792643606,
@@ -1690,7 +1714,7 @@
       "size": 27525137,
       "permissions": [],
       "features": {},
-      "stars": 1429,
+      "stars": 1435,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1866,7 +1890,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4204,
+      "stars": 4207,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -1998,7 +2022,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 143,
+      "stars": 148,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2037,7 +2061,7 @@
       "size": 13456166,
       "permissions": [],
       "features": {},
-      "stars": 24,
+      "stars": 26,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793607023,
@@ -2374,8 +2398,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.4.0-10150",
-      "versionCode": 10150,
+      "version": "v0.4.0-10151",
+      "versionCode": 10151,
       "author": "Rouyashiki Developers",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -2386,28 +2410,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1793643628,
-      "timestamp": 1794281259,
-      "size": 3411996,
+      "added": 1793662553,
+      "timestamp": 1794742610,
+      "size": 3416152,
       "permissions": [],
       "features": {},
-      "stars": 135,
+      "stars": 137,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793643628,
+        "added": 1793662553,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793643628,
-          "version": "v0.3.0-10134",
-          "versionCode": 10134,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41498994298/YukiZygisk-v0.3.0-10134-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10134.md",
-          "size": 2908143
-        },
         {
           "timestamp": 1793662553,
           "version": "v0.3.0-10135",
@@ -2479,6 +2495,14 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42749029599/YukiZygisk-v0.4.0-10150-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10150.md",
           "size": 3411996
+        },
+        {
+          "timestamp": 1794742610,
+          "version": "v0.4.0-10151",
+          "versionCode": 10151,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-43709444414/YukiZygisk-v0.4.0-10151-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.4.0-10151.md",
+          "size": 3416152
         }
       ]
     },
@@ -2504,7 +2528,7 @@
       "size": 7677650,
       "permissions": [],
       "features": {},
-      "stars": 25,
+      "stars": 26,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792605864,
@@ -2712,8 +2736,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.16.0.1 (399-1392163-release)",
-      "versionCode": 399,
+      "version": "v2.18.0.1 (409-14c2bdd-release)",
+      "versionCode": 409,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next API",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -2722,44 +2746,20 @@
       "categories": [
         "system"
       ],
-      "added": 1793498195,
-      "timestamp": 1794676405.154,
-      "size": 9948152,
+      "added": 1794031542,
+      "timestamp": 1794747605.535,
+      "size": 6148462,
       "permissions": [],
       "features": {},
-      "stars": 108,
+      "stars": 110,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793498195,
+        "added": 1794031542,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793498195,
-          "version": "v2.10.1 (271-97484e1-release)",
-          "versionCode": 271,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.10.1/ZNNext-v2.10.1-271-97484e1-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.10.1__271-97484e1-release_.md",
-          "size": 6799396
-        },
-        {
-          "timestamp": 1793504982,
-          "version": "v2.11.0 (273-3134a2f-release)",
-          "versionCode": 273,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.11.0/ZNNext-v2.11.0-273-3134a2f-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.11.0__273-3134a2f-release_.md",
-          "size": 6818501
-        },
-        {
-          "timestamp": 1793983879,
-          "version": "v2.11.1 (299-fa1da0d-release)",
-          "versionCode": 299,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.11.1/ZNNext-v2.11.1-299-fa1da0d-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.11.1__299-fa1da0d-release_.md",
-          "size": 6874301
-        },
         {
           "timestamp": 1794031542,
           "version": "v2.12.0 (302-355c206-release)",
@@ -2815,6 +2815,30 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.16.0.1/ZNNext-v2.16.0.1-399-1392163-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.16.0.1__399-1392163-release_.md",
           "size": 9948152
+        },
+        {
+          "timestamp": 1794722596,
+          "version": "v2.17.0 (402-fdd9111-release)",
+          "versionCode": 402,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.17.0/ZNNext-v2.17.0-402-fdd9111-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.17.0__402-fdd9111-release_.md",
+          "size": 9969352
+        },
+        {
+          "timestamp": 1794738738,
+          "version": "v2.18.0 (406-a5d3ce6-release)",
+          "versionCode": 406,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.18.0/ZNNext-v2.18.0-406-a5d3ce6-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.18.0__406-a5d3ce6-release_.md",
+          "size": 11368756
+        },
+        {
+          "timestamp": 1794747577,
+          "version": "v2.18.0.1 (409-14c2bdd-release)",
+          "versionCode": 409,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.18.0.1/ZNNext-v2.18.0.1-409-14c2bdd-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.18.0.1__409-14c2bdd-release_.md",
+          "size": 6148462
         }
       ]
     }
