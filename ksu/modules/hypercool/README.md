@@ -5,15 +5,12 @@
 KernelSU / Magisk module for Qualcomm and MediaTek phones. Less heat, less battery drain, longer battery life.
 Focused on battery life, not peak performance.
 
-  [![](/assets/41bd0a813405481e.svg)](https://github.com/yudharn/HyperCool/releases)
+  [![](/assets/dae2a889476e330e.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
   [![](/assets/76ad9b1026680ea4.svg)](https://github.com/yudharn/HyperCool/releases/latest)
 
-Everything is set from the WebUI and applied once at the next boot. Nothing keeps running except
-small keepers (charge limit, screen-off keeper that also serves Keep Wi-Fi on, Compact background apps, Location and Bluetooth off, F2FS garbage collection and auto app optimization, auto cache clean, CPU keeper, adaptive refresh rate, battery calibration), and only if you turn them on.
-
-`Every feature has its own ON/OFF switch in the WebUI, changes apply once at boot, and turning a feature off (or uninstalling) puts the original values back`
+Everything is configured via WebUI and applied on the next boot. Only lightweight keepers run in the background, and only when enabled.
 
 ## Screenshots
 
@@ -104,6 +101,8 @@ small keepers (charge limit, screen-off keeper that also serves Keep Wi-Fi on, C
   
 
 ## Features
+
+`Every feature has its own ON/OFF switch in the WebUI. Changes apply once at boot, and turning a feature off (or uninstalling) restores the original values`
 
 **Heat control**
 
@@ -268,6 +267,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/28c9c6373d7765a11f82a98b6f3842e51ec9e0da/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/018fcbfac9ebbe966ba510fba9cabf6779929288/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

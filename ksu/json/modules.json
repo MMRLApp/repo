@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794692708.519
+    "timestamp": 1794713401.642
   },
   "modules": [
     {
@@ -101,7 +101,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 103,
+      "stars": 104,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -206,7 +206,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 143,
+      "stars": 145,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -283,7 +283,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 56,
+      "stars": 57,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -598,7 +598,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 891,
+      "stars": 898,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -645,7 +645,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 455,
+      "stars": 459,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1088,8 +1088,8 @@
     {
       "id": "hypercool",
       "name": "HyperCool - Heat & Battery Fix",
-      "version": "v2.2.5",
-      "versionCode": 225,
+      "version": "v2.2.6",
+      "versionCode": 226,
       "author": "Yudharn",
       "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
@@ -1103,11 +1103,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1794656396.348,
-      "size": 328532,
+      "timestamp": 1794713278,
+      "size": 328704,
       "permissions": [],
       "features": {},
-      "stars": 18,
+      "stars": 21,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794497430,
@@ -1123,6 +1123,14 @@
           "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.2.5/HyperCool_v2.2.5.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.2.5.md",
           "size": 328532
+        },
+        {
+          "timestamp": 1794713278,
+          "version": "v2.2.6",
+          "versionCode": 226,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.2.6/HyperCool_v2.2.6.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.2.6.md",
+          "size": 328704
         }
       ]
     },
@@ -1418,7 +1426,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 609,
+      "stars": 613,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1764,7 +1772,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 681,
+      "stars": 695,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
