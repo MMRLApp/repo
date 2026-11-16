@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794799775.899
+    "timestamp": 1794838100.107
   },
   "modules": [
     {
@@ -84,6 +84,87 @@
       ]
     },
     {
+      "id": "AD_Killer_By_NFQUEUE",
+      "name": "AD Killer (by NFQUEUE)",
+      "version": "v1.2.14",
+      "versionCode": 13401,
+      "author": "fengwenhua",
+      "description": "基于 NFQUEUE 的 Android 本地去广告模块，提供规则管理、应用名单和离线 WebUI。需要内核支持 NFQUEUE。",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/README.md",
+      "support": "https://github.com/fengwenhua/AD_Killer_By_NFQUEUE/issues",
+      "license": "MIT",
+      "categories": [
+        "ad-blocking",
+        "network",
+        "privacy"
+      ],
+      "added": 1794485636,
+      "timestamp": 1794831226.309,
+      "size": 813069,
+      "permissions": [],
+      "features": {},
+      "stars": 1,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794485636,
+        "source": "https://github.com/fengwenhua/AD_Killer_By_NFQUEUE",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794485636,
+          "version": "v1.2.14",
+          "versionCode": 13401,
+          "zipUrl": "https://github.com/fengwenhua/AD_Killer_By_NFQUEUE/releases/download/v1.2.14/AD_Killer_By_NFQUEUE-v1.2.14.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/changelogs/v1.2.14.md",
+          "size": 813069
+        }
+      ]
+    },
+    {
+      "id": "adbdisabler",
+      "name": "ADB Disabler",
+      "version": "1.0.1",
+      "versionCode": 10001,
+      "author": "Shuoh118",
+      "description": "开机禁用 adb、开发者选项和 OEM 解锁",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/README.md",
+      "support": "https://github.com/Shuoh118/ADB-Disabler",
+      "license": "GPL-3.0-or-later",
+      "added": 1794060061,
+      "timestamp": 1794835021.714,
+      "size": 2009,
+      "permissions": [],
+      "features": {},
+      "stars": 1,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794060061,
+        "source": "https://github.com/Shuoh118/ADB-Disabler",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794060061,
+          "version": "1.0.0",
+          "versionCode": 10000,
+          "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.0/ADB-Disabler-1.0.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.0.md",
+          "size": 22662
+        },
+        {
+          "timestamp": 1794832247,
+          "version": "1.0.1",
+          "versionCode": 10001,
+          "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.1/ADB-Disabler-1.0.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.1.md",
+          "size": 2009
+        }
+      ]
+    },
+    {
       "id": "altdb",
       "name": "altdb",
       "version": "v0.3.0",
@@ -101,7 +182,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 104,
+      "stars": 105,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -226,6 +307,49 @@
       ]
     },
     {
+      "id": "ByeBlur",
+      "name": "Bye Blur",
+      "version": "v9",
+      "versionCode": 9,
+      "author": "Lean",
+      "description": "Disable the blur effect, this improves performance by discarding this complex visual effect.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/ByeBlur/README.md",
+      "support": "https://t.me/modulostk",
+      "license": "MIT",
+      "categories": [
+        "blur",
+        "performance",
+        "reduce",
+        "smooth",
+        "disable",
+        "effect"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/6fc6bb874bb5ad22.jpg",
+      "added": 1794607075,
+      "timestamp": 1794819531.97,
+      "size": 629462,
+      "permissions": [],
+      "features": {},
+      "stars": 16,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794607075,
+        "source": "https://github.com/LeanxModulostk/Bye-Blur",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794607075,
+          "version": "v9",
+          "versionCode": 9,
+          "zipUrl": "https://github.com/LeanxModulostk/Bye-Blur/releases/download/v9/Bye.Blur-v9.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/ByeBlur/changelogs/v9.md",
+          "size": 629462
+        }
+      ]
+    },
+    {
       "id": "cacerts_bind_manager",
       "name": "System CA Manager",
       "version": "v1.0.0",
@@ -283,7 +407,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 57,
+      "stars": 58,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -299,6 +423,44 @@
           "zipUrl": "https://github.com/Eikeitsu/CertBridge/releases/download/v5.1.2/CertBridge_v5.1.2_arm64.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CertBridge/changelogs/v5.1.2.md",
           "size": 5606814
+        }
+      ]
+    },
+    {
+      "id": "chargebypasscap-pmi",
+      "name": "ChargeBypassCap PMI",
+      "version": "v1.10",
+      "versionCode": 12,
+      "author": "9M2PJU",
+      "description": "Adjustable charge cap for POCO X3 Pro via input_suspend.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/chargebypasscap-pmi/README.md",
+      "support": "https://github.com/9M2PJU/ChargeBypassCap-PMI/issues",
+      "license": "GPL-3.0-only",
+      "categories": [
+        "battery",
+        "charging"
+      ],
+      "added": 1793779095,
+      "timestamp": 1794831303.847,
+      "size": 31370,
+      "permissions": [],
+      "features": {},
+      "stars": 2,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1793779095,
+        "source": "https://github.com/9M2PJU/ChargeBypassCap-PMI",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1793779095,
+          "version": "v1.10",
+          "versionCode": 12,
+          "zipUrl": "https://github.com/9M2PJU/ChargeBypassCap-PMI/releases/download/v1.10/chargebypasscap-pmi-v1.10.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/chargebypasscap-pmi/changelogs/v1.10.md",
+          "size": 31370
         }
       ]
     },
@@ -362,7 +524,7 @@
       "size": 1750,
       "permissions": [],
       "features": {},
-      "stars": 1,
+      "stars": 2,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792481368,
@@ -483,14 +645,6 @@
           "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.0/COPG-v7.7.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.7.0.md",
           "size": 10546613
-        },
-        {
-          "timestamp": 1794125927,
-          "version": "7.7.1",
-          "versionCode": 771,
-          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.1/COPG-v7.7.1.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.7.1.md",
-          "size": 10550305
         },
         {
           "timestamp": 1794235267,
@@ -759,7 +913,7 @@
       "size": 2208,
       "permissions": [],
       "features": {},
-      "stars": 124,
+      "stars": 125,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792015008,
@@ -814,6 +968,45 @@
           "zipUrl": "https://github.com/KernelSU-Modules/example-closed-module-dist/releases/download/v1.0.0/example_closed_module_demo-100-v1.0.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/example_closed_module_demo/changelogs/v1.0.0.md",
           "size": 976
+        }
+      ]
+    },
+    {
+      "id": "example_module_demo",
+      "name": "Example Module Demo",
+      "version": "v1.0.0",
+      "versionCode": 100,
+      "author": "KernelSU-Modules contributors",
+      "description": "A minimal module that shows how to publish to KernelSU Modules",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/example_module_demo/README.md",
+      "support": "https://github.com/KernelSU-Modules/example-module/issues",
+      "license": "MIT",
+      "categories": [
+        "example",
+        "tools"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/2ebaa6f72c2ac3a7.png",
+      "added": 1791682018,
+      "timestamp": 1791682690.702,
+      "size": 965,
+      "permissions": [],
+      "features": {},
+      "stars": 4,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1791682018,
+        "source": "https://github.com/KernelSU-Modules/example-module",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1791682018,
+          "version": "v1.0.0",
+          "versionCode": 100,
+          "zipUrl": "https://github.com/KernelSU-Modules/example-module/releases/download/v1.0.0/example_module_demo-100-v1.0.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/example_module_demo/changelogs/v1.0.0.md",
+          "size": 965
         }
       ]
     },
@@ -894,6 +1087,46 @@
           "zipUrl": "https://github.com/ReverserID/KSU_Frida/releases/download/v17.24.3-2/frida-ksu-17.24.3.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/frida-ksu/changelogs/v17.24.3.md",
           "size": 101044
+        }
+      ]
+    },
+    {
+      "id": "galaxy_watch_nfc_provide",
+      "name": "Galaxy Watch NFC Provide",
+      "version": "1.0.8",
+      "versionCode": 108,
+      "author": "gohj99",
+      "description": "Editable device NFC configuration for KernelSU and BakaSU on Wear OS devices.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/galaxy_watch_nfc_provide/README.md",
+      "support": "https://github.com/gohj99/galaxy_watch_nfc_provide/issues",
+      "license": "GPL-3.0-or-later",
+      "categories": [
+        "nfc",
+        "wear-os",
+        "kernelsu",
+        "bakasu"
+      ],
+      "added": 1794669522,
+      "timestamp": 1794831303.847,
+      "size": 27301,
+      "permissions": [],
+      "features": {},
+      "stars": 1,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794669522,
+        "source": "https://github.com/gohj99/galaxy_watch_nfc_provide",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794669522,
+          "version": "1.0.8",
+          "versionCode": 108,
+          "zipUrl": "https://github.com/gohj99/galaxy_watch_nfc_provide/releases/download/v1.0.8/galaxy_watch_nfc_provide-v1.0.8.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/galaxy_watch_nfc_provide/changelogs/1.0.8.md",
+          "size": 27301
         }
       ]
     },
@@ -1026,7 +1259,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1837,
+      "stars": 1841,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1088,8 +1321,8 @@
     {
       "id": "hypercool",
       "name": "HyperCool - Heat & Battery Fix",
-      "version": "v2.3.2",
-      "versionCode": 232,
+      "version": "v2.3.3",
+      "versionCode": 233,
       "author": "Yudharn",
       "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
@@ -1103,8 +1336,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1794746903.023,
-      "size": 334072,
+      "timestamp": 1794835021.714,
+      "size": 342105,
       "permissions": [],
       "features": {},
       "stars": 24,
@@ -1155,6 +1388,14 @@
           "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.2/HyperCool_v2.3.2.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.2.md",
           "size": 334072
+        },
+        {
+          "timestamp": 1794826863,
+          "version": "v2.3.3",
+          "versionCode": 233,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.3/HyperCool_v2.3.3.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.3.md",
+          "size": 342105
         }
       ]
     },
@@ -1178,7 +1419,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 17,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1430,6 +1671,49 @@
       ]
     },
     {
+      "id": "Logd_Disabler_ColorOS16",
+      "name": "ColorOS16 优化版",
+      "version": "v2.3.29",
+      "versionCode": 62,
+      "author": "starlifezzz",
+      "description": "ColorOS 16（一加 / OPPO）系统精简与隐私优化。图形界面逐项关闭日志、遥测、云控域名与冗余服务，所有改动可一键还原。",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/Logd_Disabler_ColorOS16/README.md",
+      "support": "https://github.com/starlifezzz/Logd_Disabler_ColorOS16/issues",
+      "license": "CC-BY-NC-ND-4.0",
+      "categories": [
+        "coloros",
+        "oplus",
+        "oneplus",
+        "debloat",
+        "privacy",
+        "telemetry",
+        "logs"
+      ],
+      "added": 1794832620,
+      "timestamp": 1794833415.693,
+      "size": 642548,
+      "permissions": [],
+      "features": {},
+      "stars": 22,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794832620,
+        "source": "https://github.com/starlifezzz/Logd_Disabler_ColorOS16",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794832620,
+          "version": "v2.3.29",
+          "versionCode": 62,
+          "zipUrl": "https://github.com/starlifezzz/Logd_Disabler_ColorOS16/releases/download/v2.3.29/Logd_Disabler_ColorOS16-62-v2.3.29.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/Logd_Disabler_ColorOS16/changelogs/v2.3.29.md",
+          "size": 642548
+        }
+      ]
+    },
+    {
       "id": "magic_mount_rs",
       "name": "Magic Mount-rs",
       "version": "v4.1.12-959",
@@ -1450,7 +1734,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 613,
+      "stars": 618,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1662,6 +1946,121 @@
       ]
     },
     {
+      "id": "Mediatek_Mali_GPU_Governor",
+      "name": "天玑 GPU 调速器",
+      "version": "v2.12.5",
+      "versionCode": 20261012,
+      "author": "瓦力喀 / Seyud, Tools-cx-app",
+      "description": "适用于联发科 Mali GPU 的动态调速器：Rust 引擎实时监控 GPU 负载并动态调整频率，在游戏性能与功耗之间取得平衡。",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/Mediatek_Mali_GPU_Governor/README.md",
+      "support": "https://github.com/Seyud/Mediatek_Mali_GPU_Governor_release/issues",
+      "license": "GPL-3.0-or-later",
+      "categories": [
+        "gpu",
+        "governor",
+        "mali",
+        "mediatek"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/f784b1d7dff06d0a.png",
+      "added": 1791779976,
+      "timestamp": 1791796787.073,
+      "size": 975589,
+      "permissions": [],
+      "features": {},
+      "stars": 82,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1791779976,
+        "source": "https://github.com/Seyud/Mediatek_Mali_GPU_Governor_release",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1791779976,
+          "version": "v2.12.5",
+          "versionCode": 20261012,
+          "zipUrl": "https://github.com/Seyud/Mediatek_Mali_GPU_Governor_release/releases/download/v2.12.5/Mediatek_Mali_GPU_Governor_v2.12.5.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/Mediatek_Mali_GPU_Governor/changelogs/v2.12.5.md",
+          "size": 975589
+        }
+      ]
+    },
+    {
+      "id": "mirage_forge",
+      "name": "蜃楼工坊 · MirageForge",
+      "version": "1.2.0",
+      "versionCode": 120,
+      "author": "jjh138792",
+      "description": "千面万象，一念幻化 —— 基于 Zygisk 的应用级多机型伪装引擎。",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/mirage_forge/README.md",
+      "support": "https://github.com/jjh138792/MirageForge/issues",
+      "license": "GPL-3.0-only",
+      "categories": [
+        "spoofing",
+        "tweaks",
+        "webui",
+        "zygisk"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/bf87da9eba197fa7.png",
+      "added": 1794460579,
+      "timestamp": 1794831303.847,
+      "size": 2181768,
+      "permissions": [],
+      "features": {},
+      "stars": 2,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794460579,
+        "source": "https://github.com/jjh138792/MirageForge",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794460579,
+          "version": "1.2.0",
+          "versionCode": 120,
+          "zipUrl": "https://github.com/jjh138792/MirageForge/releases/download/1.2.0/MirageForge-Zygisk-1.2.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/mirage_forge/changelogs/1.2.0.md",
+          "size": 2181768
+        }
+      ]
+    },
+    {
+      "id": "motion_cues_port",
+      "name": "晕动舒缓显示（欧加通用）",
+      "version": "v7.2",
+      "versionCode": 72,
+      "author": "yibgt",
+      "description": "为缺少「晕动舒缓显示」的 OPPO/一加/realme ColorOS 16 机型补全原生防晕动圆点，驱动原厂渲染，免改分区",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/README.md",
+      "support": "https://github.com/yibgt/oplus-antidizzy-module",
+      "added": 1794816467,
+      "timestamp": 1794831303.847,
+      "size": 33593,
+      "permissions": [],
+      "features": {},
+      "stars": 2,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794816467,
+        "source": "https://github.com/yibgt/oplus-antidizzy-module",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794816467,
+          "version": "v7.2",
+          "versionCode": 72,
+          "zipUrl": "https://github.com/yibgt/oplus-antidizzy-module/releases/download/v7.2/oplus-antidizzy-module-v7.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/changelogs/v7.2.md",
+          "size": 33593
+        }
+      ]
+    },
+    {
       "id": "MoveCertificate",
       "name": "MoveCertificate",
       "version": "v1.6.2",
@@ -1714,7 +2113,7 @@
       "size": 27525137,
       "permissions": [],
       "features": {},
-      "stars": 1435,
+      "stars": 1441,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -1770,6 +2169,49 @@
           "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.0/netproxy-1100-v8.7.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.0.md",
           "size": 27525137
+        }
+      ]
+    },
+    {
+      "id": "nomount",
+      "name": "NoMount",
+      "version": "v2.2.0 (605)",
+      "versionCode": 605,
+      "author": "maxsteeel",
+      "description": "A kernel-level VFS path redirection metamodule for KernelSU and APatch.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/nomount/README.md",
+      "support": "https://github.com/maxsteeel/nomount/issues",
+      "license": "GPL-2.0-only for kernel; GPL-3.0-only for others",
+      "categories": [
+        "kernel",
+        "vfs",
+        "filesystem",
+        "system",
+        "metamodule"
+      ],
+      "added": 1792687379,
+      "timestamp": 1794610902.3,
+      "size": 468780,
+      "permissions": [],
+      "features": {
+        "metamodule": true
+      },
+      "stars": 689,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1792687379,
+        "source": "https://github.com/maxsteeel/nomount",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1792687379,
+          "version": "v2.2.0 (605)",
+          "versionCode": 605,
+          "zipUrl": "https://github.com/maxsteeel/nomount/releases/download/v2.2.0/NoMount-v2.2.0-release-605.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/nomount/changelogs/v2.2.0__605_.md",
+          "size": 468780
         }
       ]
     },
@@ -1834,8 +2276,8 @@
     {
       "id": "oplus-cloud-block",
       "name": "ColorOS 温控与云控",
-      "version": "1.7.13",
-      "versionCode": 184,
+      "version": "01.7.74",
+      "versionCode": 185,
       "author": "谋事在人成事在天",
       "description": "解除 ColorOS/一加出厂 CPU 频率上限（大核 58%→100%），拦截 OTA 与云控，带温度保护与内存面板。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/README.md",
@@ -1848,8 +2290,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/560d9b835338b4aa.png",
       "added": 1794161870,
-      "timestamp": 1794569748.625,
-      "size": 121016,
+      "timestamp": 1794814388,
+      "size": 138225,
       "permissions": [],
       "features": {},
       "stars": 3,
@@ -1868,6 +2310,14 @@
           "zipUrl": "https://github.com/706412584/ColorOS-thermal/releases/download/v1.7.13/oplus-cloud-block-v1.7.13.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/changelogs/1.7.13.md",
           "size": 121016
+        },
+        {
+          "timestamp": 1794814388,
+          "version": "01.7.74",
+          "versionCode": 185,
+          "zipUrl": "https://github.com/706412584/ColorOS-thermal/releases/download/v01.7.74/oplus-cloud-block-v01.7.74.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/changelogs/01.7.74.md",
+          "size": 138225
         }
       ]
     },
@@ -1890,7 +2340,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4207,
+      "stars": 4212,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2022,7 +2472,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 148,
+      "stars": 153,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2376,7 +2826,7 @@
       "size": 32979,
       "permissions": [],
       "features": {},
-      "stars": 2,
+      "stars": 3,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793870109,
@@ -2392,6 +2842,47 @@
           "zipUrl": "https://github.com/PEMessage/tailscale-bindhosts/releases/download/v1.0.0/tailscale-bindhosts-1-v1.0.0.zip",
           "changelog": "",
           "size": 32979
+        }
+      ]
+    },
+    {
+      "id": "VanadiumWebviewManager",
+      "name": "Vanadium WebView Manager",
+      "version": "3.1",
+      "versionCode": 31,
+      "author": "Lean",
+      "description": "Vanadium GrapheneOS hardened Chromium-based browser and WebView, focused on security and privacy. Installs and updates WebView, Browser and Config, with WebUI.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/VanadiumWebviewManager/README.md",
+      "support": "https://t.me/modulostk",
+      "license": "MIT",
+      "categories": [
+        "webview",
+        "privacy",
+        "security",
+        "webui"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/6fc6bb874bb5ad22.jpg",
+      "added": 1794605486,
+      "timestamp": 1794819596.855,
+      "size": 4060477,
+      "permissions": [],
+      "features": {},
+      "stars": 15,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794605486,
+        "source": "https://github.com/LeanxModulostk/VanadiumWebviewManager",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794605486,
+          "version": "3.1",
+          "versionCode": 31,
+          "zipUrl": "https://github.com/LeanxModulostk/VanadiumWebviewManager/releases/download/v31/Vanadium_Webview_Manager_v3.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/VanadiumWebviewManager/changelogs/3.1.md",
+          "size": 4060477
         }
       ]
     },
@@ -2450,7 +2941,7 @@
       "size": 3416152,
       "permissions": [],
       "features": {},
-      "stars": 137,
+      "stars": 141,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793662553,
@@ -2563,7 +3054,7 @@
       "size": 7677650,
       "permissions": [],
       "features": {},
-      "stars": 26,
+      "stars": 27,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792605864,
