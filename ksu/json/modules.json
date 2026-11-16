@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794780716.393
+    "timestamp": 1794799775.899
   },
   "modules": [
     {
@@ -64,7 +64,7 @@
       "size": 548317,
       "permissions": [],
       "features": {},
-      "stars": 8,
+      "stars": 9,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793897102,
@@ -206,7 +206,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 145,
+      "stars": 146,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -598,7 +598,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 898,
+      "stars": 900,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -645,7 +645,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 459,
+      "stars": 464,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1107,7 +1107,7 @@
       "size": 334072,
       "permissions": [],
       "features": {},
-      "stars": 21,
+      "stars": 24,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794497430,
@@ -1410,7 +1410,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 43,
+      "stars": 42,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1796,7 +1796,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 695,
+      "stars": 714,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2392,6 +2392,41 @@
           "zipUrl": "https://github.com/PEMessage/tailscale-bindhosts/releases/download/v1.0.0/tailscale-bindhosts-1-v1.0.0.zip",
           "changelog": "",
           "size": 32979
+        }
+      ]
+    },
+    {
+      "id": "wipe_cache",
+      "name": "ClearBox",
+      "version": "V5.2.2",
+      "versionCode": 102,
+      "author": "FlyCome",
+      "description": "A Magisk module dedicated to automatic cleaning and optimization of Android",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/wipe_cache/README.md",
+      "support": "https://github.com/FLYCOM-E/ClearBox/issues",
+      "license": "GPL-3.0-only",
+      "icon": "https://modules.kernelsu.org/assets/91029961db5df320.png",
+      "added": 1794790380,
+      "timestamp": 1794790380,
+      "size": 3283835,
+      "permissions": [],
+      "features": {},
+      "stars": 56,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794790380,
+        "source": "https://github.com/FLYCOM-E/ClearBox",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794790380,
+          "version": "V5.2.2",
+          "versionCode": 102,
+          "zipUrl": "https://github.com/FLYCOM-E/ClearBox/releases/download/102-V5.2.2/ClearBox-V5.2.2-102.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/wipe_cache/changelogs/V5.2.2.md",
+          "size": 3283835
         }
       ]
     },

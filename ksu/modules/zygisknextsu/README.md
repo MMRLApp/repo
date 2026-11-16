@@ -3,8 +3,8 @@
 **A from-scratch, standalone implementation of the Zygisk Next API.**
 
 [![](/assets/ee245273888b189d.svg)](https://github.com/VeryBaaad/ZNNext/actions/workflows/ci.yml?query=branch%3Amaster+event%3Apush)
-[![](/assets/fdb8cbf4d00ced6e.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
-[![](/assets/71d066a8071be99e.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
+[![](/assets/6e4cac696941a521.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
+[![](/assets/2d2dcf1b643c0395.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
 [![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/4192737fb72f6a88d946d3c71c08275a68398029/LICENSE)
 [![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/4192737fb72f6a88d946d3c71c08275a68398029/LICENSE-DCLPL)
 
