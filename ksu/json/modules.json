@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794877969.406
+    "timestamp": 1794927688.552
   },
   "modules": [
     {
@@ -24,7 +24,7 @@
       "size": 61224,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 17,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794280035,
@@ -103,7 +103,7 @@
       "size": 813069,
       "permissions": [],
       "features": {},
-      "stars": 1,
+      "stars": 2,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794485636,
@@ -407,7 +407,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 58,
+      "stars": 59,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -485,7 +485,7 @@
       "size": 1504829,
       "permissions": [],
       "features": {},
-      "stars": 9,
+      "stars": 10,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791910273,
@@ -605,7 +605,7 @@
       "size": 10634913,
       "permissions": [],
       "features": {},
-      "stars": 437,
+      "stars": 436,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -752,7 +752,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 900,
+      "stars": 902,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -799,7 +799,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 464,
+      "stars": 462,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1259,7 +1259,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1841,
+      "stars": 1845,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1321,8 +1321,8 @@
     {
       "id": "hypercool",
       "name": "HyperCool - Heat & Battery Fix",
-      "version": "v2.3.3",
-      "versionCode": 233,
+      "version": "v2.3.6",
+      "versionCode": 236,
       "author": "Yudharn",
       "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
@@ -1336,11 +1336,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1794835021.714,
-      "size": 342105,
+      "timestamp": 1794926949.459,
+      "size": 361956,
       "permissions": [],
       "features": {},
-      "stars": 24,
+      "stars": 26,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794497430,
@@ -1396,6 +1396,30 @@
           "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.3/HyperCool_v2.3.3.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.3.md",
           "size": 342105
+        },
+        {
+          "timestamp": 1794883488,
+          "version": "v2.3.4",
+          "versionCode": 234,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.4/HyperCool_v2.3.4.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.4.md",
+          "size": 352486
+        },
+        {
+          "timestamp": 1794898766,
+          "version": "v2.3.5",
+          "versionCode": 235,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.5/HyperCool_v2.3.5.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.5.md",
+          "size": 358890
+        },
+        {
+          "timestamp": 1794926926,
+          "version": "v2.3.6",
+          "versionCode": 236,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.6/HyperCool_v2.3.6.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.6.md",
+          "size": 361956
         }
       ]
     },
@@ -1419,7 +1443,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 17,
+      "stars": 16,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1694,7 +1718,7 @@
       "size": 642548,
       "permissions": [],
       "features": {},
-      "stars": 22,
+      "stars": 24,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794832620,
@@ -1734,7 +1758,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 618,
+      "stars": 622,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1783,7 +1807,7 @@
       "size": 61366576,
       "permissions": [],
       "features": {},
-      "stars": 233,
+      "stars": 234,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792813511,
@@ -2004,11 +2028,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/bf87da9eba197fa7.png",
       "added": 1794460579,
-      "timestamp": 1794831303.847,
+      "timestamp": 1794914378.116,
       "size": 2181768,
       "permissions": [],
       "features": {},
-      "stars": 2,
+      "stars": 4,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794460579,
@@ -2030,15 +2054,15 @@
     {
       "id": "motion_cues_port",
       "name": "晕动舒缓显示（欧加通用）",
-      "version": "v7.4",
-      "versionCode": 74,
+      "version": "v7.5",
+      "versionCode": 75,
       "author": "MieAiiii",
       "description": "为缺少「晕动舒缓显示」的 OPPO/一加/realme ColorOS 16 机型补全原生防晕动圆点，驱动原厂渲染，免改分区",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/README.md",
       "support": "https://github.com/MieAiiii/oplus-antidizzy-module",
       "added": 1794816467,
-      "timestamp": 1794854230.908,
-      "size": 34491,
+      "timestamp": 1794926582.594,
+      "size": 35100,
       "permissions": [],
       "features": {},
       "stars": 2,
@@ -2073,6 +2097,14 @@
           "zipUrl": "https://github.com/MieAiiii/oplus-antidizzy-module/releases/download/v7.4/oplus-antidizzy-module-v7.4.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/changelogs/v7.4.md",
           "size": 34491
+        },
+        {
+          "timestamp": 1794926542,
+          "version": "v7.5",
+          "versionCode": 75,
+          "zipUrl": "https://github.com/MieAiiii/oplus-antidizzy-module/releases/download/v7.5/oplus-antidizzy-module-v7.5.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/changelogs/v7.5.md",
+          "size": 35100
         }
       ]
     },
@@ -2129,7 +2161,7 @@
       "size": 27525137,
       "permissions": [],
       "features": {},
-      "stars": 1441,
+      "stars": 1445,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2212,7 +2244,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 689,
+      "stars": 694,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2254,7 +2286,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 714,
+      "stars": 723,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2356,7 +2388,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4212,
+      "stars": 4218,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2488,7 +2520,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 153,
+      "stars": 154,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2842,7 +2874,7 @@
       "size": 32979,
       "permissions": [],
       "features": {},
-      "stars": 3,
+      "stars": 4,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793870109,
@@ -2883,7 +2915,7 @@
       "size": 4060477,
       "permissions": [],
       "features": {},
-      "stars": 15,
+      "stars": 16,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794605486,
@@ -2918,7 +2950,7 @@
       "size": 3283835,
       "permissions": [],
       "features": {},
-      "stars": 56,
+      "stars": 57,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794790380,
@@ -2957,7 +2989,7 @@
       "size": 3416152,
       "permissions": [],
       "features": {},
-      "stars": 141,
+      "stars": 146,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793662553,
@@ -3070,7 +3102,7 @@
       "size": 7677650,
       "permissions": [],
       "features": {},
-      "stars": 27,
+      "stars": 28,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792605864,

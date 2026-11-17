@@ -5,10 +5,10 @@
 KernelSU / Magisk module for Qualcomm and MediaTek phones. Less heat, less battery drain, longer battery life.
 Focused on battery life, not peak performance.
 
-  [![](/assets/6e34ba9d1742374e.svg)](https://github.com/yudharn/HyperCool/releases)
+  [![](/assets/fd9108f5f84a79b7.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
-  [![](/assets/145de5e8ec66e0c2.svg)](https://github.com/yudharn/HyperCool/releases/latest)
+  [![](/assets/37d6025bc86dd977.svg)](https://github.com/yudharn/HyperCool/releases/latest)
 
 Everything is configured via WebUI and applied on the next boot. Only lightweight keepers run in the background, and only when enabled.
 
@@ -108,9 +108,9 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 **Heat control**
 
-- Big-core frequency cap (with lock)
+- CPU big-core frequency cap (with lock)
 
-- Little-core frequency cap (default off, with lock)
+- CPU little-core frequency cap (default off, with lock)
 
 - GPU frequency cap (from your own GPU table, with lock)
 
@@ -145,6 +145,12 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 - Location and Bluetooth off after a long screen-off (both come back when the screen turns on; off by default)
 
 - Mobile data and NFC off during screen-off (back on when the screen turns on; waits during calls, audio and hotspot; off by default)
+
+- Heat guard (experimental, off by default): lower refresh rate and big-core limit while the battery is hot, back after it cools down
+
+- Recent activity on Home: the 3 newest events, and Show all with filters (All, Keepers, Manual, Idle drain) for the last 50: boot result with the features that failed, saved setting changes, cache clean, app optimization, F2FS cleanup, heat guard, keepers that stopped and why, Revert and restore, screen-off drain per period and daily idle drain from Android's battery stats. High drain and failed work are coloured
+
+- Keeper status on Home: a small table (tap to open) with every background keeper, Running / Off / Not running / Skipped / Failed, its pid, state and last event
 
 - F2FS garbage collection with the screen off (Storage; frees space that only GC can give back; once a week at most, no charger needed; off by default)
 
@@ -272,6 +278,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/e67db03ed893483aea9a132b7336173e0319e54b/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/be14ef361e2c9820391caa19c016f597cfb013d5/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

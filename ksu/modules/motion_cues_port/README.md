@@ -90,6 +90,26 @@ LSPosed 注入 system_server，用标准传感器喂数据
 
 ## 更新日志
 
+### v7.5
+
+**省电优化：传感器改为按需注册，关闭后彻底停止上报**
+
+- 修复问题：此前传感器监听器只在启动时注册一次、从不注销——即使关闭功能开关，线性加速度计（100Hz）、陀螺仪（50Hz）、重力传感器（50Hz）仍在 system_server 中持续回调
+
+- 现在按「功能开关 + 显示模式 + 车辆状态」动态管理传感器生命周期：
+
+- **功能关闭** → 全部传感器注销，零上报、零算法开销（同时立即隐藏圆点浮层）
+
+- **常驻显示** → 加速度 100Hz；**陀螺仪注销**（圆点渲染不使用陀螺数据，这是常驻场景的耗电大头）
+
+- **仅车辆运动 · 车外** → 加速度降至 20Hz 低频巡逻，进车后自动回升 100Hz
+
+- 仅在状态变化时重新注册，避免频繁开关传感器
+
+- 日志新增 `sens=100Hz/off` 字段，可直接查看当前传感器采样状态
+
+- 常驻模式下「车辆识别」状态改为显示「常驻模式（不判定）」（该模式不做车辆判定，避免误读）
+
 ### v7.4
 
 - 布局回归紧凑：选项行 56dp、上下内距 12dp、组标题与滑杆间距收紧，信息密度更高
@@ -206,11 +226,11 @@ tools/dalvik.py    DEX 反汇编工具（逆向时用）
 
 ## 文档
 
-- [技术文档](https://github.com/MieAiiii/oplus-antidizzy-module/blob/d7e106548b532b73518d3de5badffe4b72efbef5/docs/technical-notes.md)：完整的逆向结论、算法原理、调试命令、调参表
+- [技术文档](https://github.com/MieAiiii/oplus-antidizzy-module/blob/35da8ec655b6ac0899042ac77be3d802e8f701ac/docs/technical-notes.md)：完整的逆向结论、算法原理、调试命令、调参表
 
-- [维护与发布](https://github.com/MieAiiii/oplus-antidizzy-module/blob/d7e106548b532b73518d3de5badffe4b72efbef5/docs/RELEASING.md)：日常改动、发版流程、CI 与签名密钥说明
+- [维护与发布](https://github.com/MieAiiii/oplus-antidizzy-module/blob/35da8ec655b6ac0899042ac77be3d802e8f701ac/docs/RELEASING.md)：日常改动、发版流程、CI 与签名密钥说明
 
-- [论坛文案（精简）](https://github.com/MieAiiii/oplus-antidizzy-module/blob/d7e106548b532b73518d3de5badffe4b72efbef5/docs/promo-short.md) / [（详细）](https://github.com/MieAiiii/oplus-antidizzy-module/blob/d7e106548b532b73518d3de5badffe4b72efbef5/docs/promo-detailed.md) / [（v7.1 发布版）](https://github.com/MieAiiii/oplus-antidizzy-module/blob/d7e106548b532b73518d3de5badffe4b72efbef5/docs/promo-v7.md)
+- [论坛文案（精简）](https://github.com/MieAiiii/oplus-antidizzy-module/blob/35da8ec655b6ac0899042ac77be3d802e8f701ac/docs/promo-short.md) / [（详细）](https://github.com/MieAiiii/oplus-antidizzy-module/blob/35da8ec655b6ac0899042ac77be3d802e8f701ac/docs/promo-detailed.md) / [（v7.1 发布版）](https://github.com/MieAiiii/oplus-antidizzy-module/blob/35da8ec655b6ac0899042ac77be3d802e8f701ac/docs/promo-v7.md)
 
 ## 免责声明
 
@@ -220,4 +240,4 @@ tools/dalvik.py    DEX 反汇编工具（逆向时用）
 
 ## License
 
-[MIT](https://github.com/MieAiiii/oplus-antidizzy-module/blob/d7e106548b532b73518d3de5badffe4b72efbef5/LICENSE)
+[MIT](https://github.com/MieAiiii/oplus-antidizzy-module/blob/35da8ec655b6ac0899042ac77be3d802e8f701ac/LICENSE)

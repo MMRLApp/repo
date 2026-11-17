@@ -3,7 +3,7 @@
 # ClearBox
 
 [![](/assets/e05f50066193640e.svg)](https://github.com/FLYCOM-E/ClearBox/blob/a8de1f7f6d70121d154a5a290261e53546bd2742/LICENSE)
-[![](/assets/d2d08917f929f08d.svg)](https://github.com/FLYCOM-E/ClearBox/releases)
+[![](/assets/ebb83b8890acd683.svg)](https://github.com/FLYCOM-E/ClearBox/releases)
 
 [![](/assets/7946b9d9fbca350a.svg)](https://t.me/clearbox_update)
 [![](/assets/e126907470e0b5eb.svg)](https://qm.qq.com/q/GpE08mrl2G)
@@ -239,4 +239,4 @@ The module **ClearBox App** is made using the [**Kr-Script**](https://github.com
 
 # Star History
 
-![](/assets/598a06d4ff0c7949.svg)
+![](/assets/d7fedcfec8f4e609.svg)

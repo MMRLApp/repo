@@ -7,9 +7,9 @@
 [![](/assets/a432db6e5d4b9ccb.svg)](https://github.com/jjh138792/MirageForge/releases)
 [![](/assets/783410204390b7d7.svg)](https://github.com/topjohnwu/zygisk-module-sample)
 [![](/assets/19e71ed3d3f573f6.svg)](https://www.rust-lang.org/)
-[![](/assets/aa88e61953f732fc.svg)](https://github.com/jjh138792/MirageForge/blob/dfa3e893dc9c7e5d03dfade9da46aaf69898f714/LICENSE)
+[![](/assets/aa88e61953f732fc.svg)](https://github.com/jjh138792/MirageForge/blob/1c30d1461b0ef2cb9c933e889d3c270b8e8f5f94/LICENSE)
 
-**简体中文** | **[English](https://github.com/jjh138792/MirageForge/blob/dfa3e893dc9c7e5d03dfade9da46aaf69898f714/docs/en_README.md)**
+**简体中文** | **[English](https://github.com/jjh138792/MirageForge/blob/1c30d1461b0ef2cb9c933e889d3c270b8e8f5f94/docs/en_README.md)**
 
 ## 📖 写在前面
 
@@ -117,6 +117,10 @@ su -c "mirageforge_cli probe list --limit 30"
 
 为了保持诚实：**这份看起来人模狗样的 README 文档（以及项目里相当一部分被我折磨出来的代码重构）是由 Google Gemini 写的**。如果没有 AI 帮我收拾烂摊子，这篇文档大概真的就只有最开始那三行字。
 
+### 致谢
+
+- [device_faker](https://github.com/Seyud/device_faker) —— 本项目的部分功能条目与更新文案参考了该项目。
+
 ## 📄 开源协议
 
-本项目基于 **[GPL-3.0-only](https://github.com/jjh138792/MirageForge/blob/dfa3e893dc9c7e5d03dfade9da46aaf69898f714/LICENSE)** 协议开源。欢迎自由使用、修改与分享，但衍生作品必须同样保持开源。
+本项目基于 **[GPL-3.0-only](https://github.com/jjh138792/MirageForge/blob/1c30d1461b0ef2cb9c933e889d3c270b8e8f5f94/LICENSE)** 协议开源。欢迎自由使用、修改与分享，但衍生作品必须同样保持开源。
