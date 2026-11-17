@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794838100.107
+    "timestamp": 1794877969.406
   },
   "modules": [
     {
@@ -60,7 +60,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/26ef13138d9c44b8.png",
       "added": 1793897102,
-      "timestamp": 1794032168.328,
+      "timestamp": 1794852900.058,
       "size": 548317,
       "permissions": [],
       "features": {},
@@ -232,7 +232,7 @@
       "size": 4027697,
       "permissions": [],
       "features": {},
-      "stars": 39,
+      "stars": 40,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793534585,
@@ -563,7 +563,7 @@
       "size": 129191,
       "permissions": [],
       "features": {},
-      "stars": 13,
+      "stars": 14,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794480507,
@@ -1032,7 +1032,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 316,
+      "stars": 317,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -1573,7 +1573,7 @@
       "size": 291063,
       "permissions": [],
       "features": {},
-      "stars": 64,
+      "stars": 63,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792829886,
@@ -1764,8 +1764,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.8.7",
-      "versionCode": 10615,
+      "version": "v1.8.9",
+      "versionCode": 10617,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1778,28 +1778,20 @@
         "tools"
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
-      "added": 1792643606,
-      "timestamp": 1794759440.46,
-      "size": 68532114,
+      "added": 1792813511,
+      "timestamp": 1794858608.822,
+      "size": 61366576,
       "permissions": [],
       "features": {},
       "stars": 233,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792643606,
+        "added": 1792813511,
         "source": "https://github.com/LIghtJUNction/MagicNet",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792643606,
-          "version": "v1.7.0",
-          "versionCode": 10605,
-          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.7.0/MagicNet-full.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.7.0.md",
-          "size": 65307679
-        },
         {
           "timestamp": 1792813511,
           "version": "v1.7.2",
@@ -1871,6 +1863,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.7/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.7.md",
           "size": 68532114
+        },
+        {
+          "timestamp": 1794858599,
+          "version": "v1.8.9",
+          "versionCode": 10617,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.9/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.9.md",
+          "size": 61366576
         }
       ]
     },
@@ -2030,22 +2030,22 @@
     {
       "id": "motion_cues_port",
       "name": "晕动舒缓显示（欧加通用）",
-      "version": "v7.2",
-      "versionCode": 72,
-      "author": "yibgt",
+      "version": "v7.4",
+      "versionCode": 74,
+      "author": "MieAiiii",
       "description": "为缺少「晕动舒缓显示」的 OPPO/一加/realme ColorOS 16 机型补全原生防晕动圆点，驱动原厂渲染，免改分区",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/README.md",
-      "support": "https://github.com/yibgt/oplus-antidizzy-module",
+      "support": "https://github.com/MieAiiii/oplus-antidizzy-module",
       "added": 1794816467,
-      "timestamp": 1794831303.847,
-      "size": 33593,
+      "timestamp": 1794854230.908,
+      "size": 34491,
       "permissions": [],
       "features": {},
       "stars": 2,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794816467,
-        "source": "https://github.com/yibgt/oplus-antidizzy-module",
+        "source": "https://github.com/MieAiiii/oplus-antidizzy-module",
         "antifeatures": null,
         "build_metadata": null
       },
@@ -2057,6 +2057,22 @@
           "zipUrl": "https://github.com/yibgt/oplus-antidizzy-module/releases/download/v7.2/oplus-antidizzy-module-v7.2.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/changelogs/v7.2.md",
           "size": 33593
+        },
+        {
+          "timestamp": 1794852876,
+          "version": "v7.3",
+          "versionCode": 73,
+          "zipUrl": "https://github.com/MieAiiii/oplus-antidizzy-module/releases/download/v7.3/oplus-antidizzy-module-v7.3.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/changelogs/v7.3.md",
+          "size": 34489
+        },
+        {
+          "timestamp": 1794854206,
+          "version": "v7.4",
+          "versionCode": 74,
+          "zipUrl": "https://github.com/MieAiiii/oplus-antidizzy-module/releases/download/v7.4/oplus-antidizzy-module-v7.4.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/motion_cues_port/changelogs/v7.4.md",
+          "size": 34491
         }
       ]
     },
@@ -2683,7 +2699,7 @@
       "size": 30505,
       "permissions": [],
       "features": {},
-      "stars": 6,
+      "stars": 7,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793207635,
@@ -3277,7 +3293,7 @@
       "size": 6148462,
       "permissions": [],
       "features": {},
-      "stars": 109,
+      "stars": 112,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794031542,
