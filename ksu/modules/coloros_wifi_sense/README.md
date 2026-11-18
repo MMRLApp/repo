@@ -16,11 +16,13 @@
 
 ## Web 管理面板
 
+页面首位的「暂停自动断开」可设 **1–1440 分钟**，默认 30 分钟。暂停时停止弱信号和通网检测，到期自动恢复，也可提前恢复。开启流体云时，通知中心会显示暂停卡片，可点「恢复检测」。
+
 在支持模块 WebUI 的 KernelSU/兼容管理器中打开模块页面，可调整 −100 至 −20 dBm 阈值、1–300 秒自动断开倒计时、流体云通知、仅 5GHz、SSID 暂避和通网检测，并查看状态与累计运行指标。保存倒计时立即生效，正在进行的倒计时重新开始，流体云进度条同步使用新时长。仅核心安装没有流体云 DEX，面板会提示重新安装后才能开启通知。原有模块「操作」按钮继续切换阈值。
 
 页面只在打开或手动刷新时请求状态，不启动 HTTP 服务，不后台轮询。普通 Magisk 管理器需使用兼容的 WebUI 宿主；命令行与操作按钮继续可用。
 
-本次自动测试、手机测试边界与功耗分析见 [低功耗优化报告](https://github.com/mazemingw/coloros-wifi-sense/blob/0c4f4662018746cbe91306b0ec337632357b1fb4/docs/low-power/REPORT.md)。本地运行 `./test.ps1` 验证策略、生命周期、竞态与 WebUI。操作计数和 CPU ticks 不能直接换算为 mAh。
+本次自动测试、手机测试边界与功耗分析见 [低功耗优化报告](https://github.com/mazemingw/coloros-wifi-sense/blob/0f03cb3cea2cf1b070084ebb3433a5c0c6ba9a72/docs/low-power/REPORT.md)。本地运行 `./test.ps1` 验证策略、生命周期、竞态与 WebUI。操作计数和 CPU ticks 不能直接换算为 mAh。
 
 ### 断开后暂避此 SSID（v1.4.0）
 
@@ -45,7 +47,7 @@ su -c 'sh /data/adb/modules/coloros_wifi_sense/webctl.sh restoreautojoin'
 
 安装并启用流体云后，断网请求提示「WIFI无法联网，正在断开…」，收到网络丢失确认后显示「WIFI无法联网，已自动断开。」并保留 15 秒；系统拒绝或未确认时提示未能确认断开。仅核心模式不启动通知进程。
 
-本次编译、自动测试和实机验证边界见 [v1.4.0 说明](https://github.com/mazemingw/coloros-wifi-sense/blob/0c4f4662018746cbe91306b0ec337632357b1fb4/docs/ssid-probe/REPORT.md)。
+本次编译、自动测试和实机验证边界见 [v1.4.0 说明](https://github.com/mazemingw/coloros-wifi-sense/blob/0f03cb3cea2cf1b070084ebb3433a5c0c6ba9a72/docs/ssid-probe/REPORT.md)。
 
 ### 仅使用 5GHz
 
@@ -53,7 +55,7 @@ su -c 'sh /data/adb/modules/coloros_wifi_sense/webctl.sh restoreautojoin'
 
 模块记录还原信息；重新亮屏或新 Wi-Fi 连接出现时按需重新应用，停用或卸载时尝试还原。息屏不轮询或反复设置频段；显式选择的频段限制在息屏时继续保持。驱动暂不可读时会保留还原记录并提示，恢复后重试。该接口可能作用于整张 Wi-Fi 网卡，其他机型、热点/双 Wi-Fi 并用仍需验证。
 
-本机已验证实时频段 `7 → 1 → 7` 与关闭还原。图片里的 `BandCapability=2` 是另一套配置枚举，不能直接当作运行时命令参数。[v1.3.0 验证范围](https://github.com/mazemingw/coloros-wifi-sense/blob/0c4f4662018746cbe91306b0ec337632357b1fb4/docs/5ghz-countdown/REPORT.md)
+本机已验证实时频段 `7 → 1 → 7` 与关闭还原。图片里的 `BandCapability=2` 是另一套配置枚举，不能直接当作运行时命令参数。[v1.3.0 验证范围](https://github.com/mazemingw/coloros-wifi-sense/blob/0f03cb3cea2cf1b070084ebb3433a5c0c6ba9a72/docs/5ghz-countdown/REPORT.md)
 
 ## 流体云与测试
 

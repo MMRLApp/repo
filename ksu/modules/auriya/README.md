@@ -1,31 +1,34 @@
-![](/assets/fb56ff3906426e3d.svg)
-  [![](/assets/50c9e65b99fcf07e.svg)](https://auriya.pages.dev/)
+![](/assets/ea2dc01924a53089.png)
+
+  ![](/assets/fb56ff3906426e3d.svg)
+  [![](/assets/4b62a2ff5299ebfb.svg)](https://auriya.pages.dev/)
   [![](/assets/4a70a80ef3967d6b.svg)](https://github.com/pavelc4/auriya/releases)
-  [![](/assets/dbce25fb06bbbb81.svg)](https://github.com/pavelc4/auriya/blob/cd10b39d93702b6139d5f690246d36449a7b012a/LICENSE)
+  [![](/assets/66d7de426345e345.svg)](https://crowdin.com/project/auriya)
+  [![](/assets/dbce25fb06bbbb81.svg)](https://github.com/pavelc4/auriya/blob/eefcf2b58725c20fc47f09af99463c172c269483/LICENSE)
 
 ## About Auriya
 
-**Auriya** is a rooted Android performance optimization daemon written in Rust, paired with a modern Jetpack Compose manager application and native Binder IPC.
+Auriya is an Android performance optimization daemon written in Rust, with a Jetpack Compose manager app and native Binder IPC.
 
-Visit the [Official Documentation](https://auriya.pages.dev/) for detailed guides and configuration references.
+Documentation is available at [auriya.pages.dev](https://auriya.pages.dev/).
 
 Note
 
-**Disclaimer**: This module is an experimental hobbyist project. Features and system tuning behaviors may evolve across releases.
+This module is an experimental project for rooted devices. Features and tuning behaviors may change between releases.
 
 ## Features
 
-- **Rust Native Daemon**: Background service handling system tweaks, performance tuning, and profile switching.
+- Native Rust daemon for system tuning and profile management
 
-- **Dynamic Frame-Aware Scheduling**: Dynamically adjusts CPU frequencies based on real-time frametimes.
+- Dynamic frame-aware scheduling based on real-time frametimes
 
-- **Per-Game Profiles**: Custom target FPS, refresh rates, CPU modes, and automated Do Not Disturb per application.
+- Per-game profiles for target FPS, refresh rates, and automated Do Not Disturb
 
-- **Live Benchmark and Telemetry**: Real-time FPS, temperature, and battery monitoring with session recording.
+- Telemetry and session recording for FPS, temperature, and battery metrics
 
-- **Manager App and Floating HUD**: Jetpack Compose manager interface and real-time on-screen telemetry overlay.
+- Compose app with an optional floating HUD overlay
 
-- **Command-Line Interface (`auriyactl`)**: Terminal utility for status monitoring and profile management.
+- `auriyactl` CLI for terminal monitoring and profile switching
 
 ## Screenshots
 
@@ -55,9 +58,7 @@ Settings
 
 ## Documentation
 
-Detailed guides, architectural references, and API documentation are available:
-
-- [auriyactl CLI Reference](https://github.com/pavelc4/auriya/blob/cd10b39d93702b6139d5f690246d36449a7b012a/doc/auriyactl.md)
+- [auriyactl CLI Reference](https://github.com/pavelc4/auriya/blob/eefcf2b58725c20fc47f09af99463c172c269483/doc/auriyactl.md)
 
 - [Installation Guide](https://auriya.pages.dev/getting-started/installation/)
 
@@ -67,21 +68,15 @@ Detailed guides, architectural references, and API documentation are available:
 
 - [Architecture Overview](https://auriya.pages.dev/architecture/overview/)
 
-## Supported Root Managers
-
-- [Magisk](https://github.com/topjohnwu/Magisk)
-
-- [KernelSU](https://github.com/tiann/KernelSU)
-
-- [APatch](https://github.com/bmax121/APatch)
-
 ## Resources
 
-- [Documentation Website](https://auriya.pages.dev/)
+- [Releases](https://github.com/pavelc4/auriya/releases)
 
-- [Releases](https://github.com/pavelc4/auriya/releases) (flashable module ZIP packages and release notes)
+- [Issue Tracker](https://github.com/pavelc4/auriya/issues)
 
-- [Issues](https://github.com/pavelc4/auriya/issues) (bug reports and tracking)
+## Translation
+
+Auriya translations are managed on [Crowdin](https://crowdin.com/project/auriya). Contributions for existing and new languages are welcome.
 
 ## Support
 
@@ -89,4 +84,4 @@ If you find Auriya useful, consider starring the repository on GitHub.
 
 ## License
 
-Auriya is open-sourced software licensed under the [GNU General Public License v3.0](https://github.com/pavelc4/auriya/blob/cd10b39d93702b6139d5f690246d36449a7b012a/LICENSE).
+Auriya is open-source software licensed under [GPLv3](https://github.com/pavelc4/auriya/blob/eefcf2b58725c20fc47f09af99463c172c269483/LICENSE).

@@ -2,7 +2,7 @@
 
 # SvcHub
 
-  [中文](https://github.com/LimpidMo/SvcHub/blob/3c49756e530b24f3bcfd7d84bac4b03a973e05a9/README.md) | [English](https://github.com/LimpidMo/SvcHub/blob/3c49756e530b24f3bcfd7d84bac4b03a973e05a9/README.en.md) 
+  [中文](https://github.com/LimpidMo/SvcHub/blob/a3a0be4cf2621730451d38bd7e59ece339293956/README.md) | [English](https://github.com/LimpidMo/SvcHub/blob/a3a0be4cf2621730451d38bd7e59ece339293956/README.en.md) 
   
     **一个 Termux / 二进制服务启动、保活和更新的管理模块，支持多种启停策略，WebUI 聚合管理**
   
@@ -109,6 +109,8 @@ Magisk 用户无管理器 WebUI 入口，首次安装默认开启外部访问；
 
 - [Termux 服务](https://limpidmo.github.io/SvcHub/guide/termux) · [二进制服务](https://limpidmo.github.io/SvcHub/guide/binary) — 两类服务的配置参考
 
+- [更新配置](https://limpidmo.github.io/SvcHub/guide/update) — 二进制服务更新 JSON 配置
+
 - [注意事项](https://limpidmo.github.io/SvcHub/guide/notes) · [常见问题](https://limpidmo.github.io/SvcHub/guide/faq) — 使用须知与排错
 
 - [更新日志](https://limpidmo.github.io/SvcHub/guide/changelog) — 各版本变更记录
@@ -121,6 +123,6 @@ Magisk 用户无管理器 WebUI 入口，首次安装默认开启外部访问；
 
 ## 许可证
 
-[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) · 完整文本见 [LICENSE](https://github.com/LimpidMo/SvcHub/blob/3c49756e530b24f3bcfd7d84bac4b03a973e05a9/LICENSE)
+[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) · 完整文本见 [LICENSE](https://github.com/LimpidMo/SvcHub/blob/a3a0be4cf2621730451d38bd7e59ece339293956/LICENSE)
 
 Copyright (C) 2026 LimpidMo

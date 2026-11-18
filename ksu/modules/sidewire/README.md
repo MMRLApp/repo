@@ -1,6 +1,6 @@
 # SideWire
 
-[한국어](https://github.com/mzggr0914/sidewire/blob/5544bb664f056e0bc0fbb9575babe460af97cc4e/README.ko.md)
+[한국어](https://github.com/mzggr0914/sidewire/blob/2573960d2d02ac52d886ec58b4df6d879e486e46/README.ko.md)
 
 KernelSU Module URL: [https://modules.kernelsu.org/en/modules/sidewire/](https://modules.kernelsu.org/en/modules/sidewire/)
 
@@ -75,6 +75,10 @@ sidewire exec --as root id
 
 ```
 
+Interactive shells use the Android shell's line editing, history, and Tab completion.
+On Windows, this also keeps pasted input and shell prompts in the same output stream.
+The `--raw` option remains available for compatibility and uses the same interactive mode.
+
 ## Clipboard and files
 
 ```
@@ -109,7 +113,7 @@ Secure mode uses SPAKE2 for the short-lived pairing PIN and Noise for authentica
 
 Plaintext mode exists for trusted development networks, but both sides must explicitly opt into it. Secure connections never silently downgrade.
 
-See [SECURITY.md](https://github.com/mzggr0914/sidewire/blob/5544bb664f056e0bc0fbb9575babe460af97cc4e/SECURITY.md) for vulnerability reporting.
+See [SECURITY.md](https://github.com/mzggr0914/sidewire/blob/2573960d2d02ac52d886ec58b4df6d879e486e46/SECURITY.md) for vulnerability reporting.
 
 ## Building
 
@@ -147,4 +151,4 @@ The wire protocol is currently `1.2` with capability negotiation for optional fe
 
 ## License
 
-GNU General Public License v3.0 (`GPL-3.0-only`). See [LICENSE](https://github.com/mzggr0914/sidewire/blob/5544bb664f056e0bc0fbb9575babe460af97cc4e/LICENSE).
+GNU General Public License v3.0 (`GPL-3.0-only`). See [LICENSE](https://github.com/mzggr0914/sidewire/blob/2573960d2d02ac52d886ec58b4df6d879e486e46/LICENSE).

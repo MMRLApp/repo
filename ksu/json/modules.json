@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794960403.905
+    "timestamp": 1795012915.193
   },
   "modules": [
     {
@@ -228,7 +228,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/fa21522f92290d3d.png",
       "added": 1793534585,
-      "timestamp": 1793714570,
+      "timestamp": 1794964995.169,
       "size": 4027697,
       "permissions": [],
       "features": {},
@@ -546,8 +546,8 @@
     {
       "id": "coloros_wifi_sense",
       "name": "ColorOS WIFI感知",
-      "version": "v1.5.0",
-      "versionCode": 8,
+      "version": "v1.6.1",
+      "versionCode": 10,
       "author": "酷安@NVMEX夜莺",
       "description": "弱信号时自动断开当前 Wi-Fi 接入点，可选原生流体云倒计时与手动断开。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/README.md",
@@ -559,8 +559,8 @@
         "coloros"
       ],
       "added": 1794480507,
-      "timestamp": 1794569682.971,
-      "size": 129191,
+      "timestamp": 1795001581.829,
+      "size": 133950,
       "permissions": [],
       "features": {},
       "stars": 14,
@@ -579,6 +579,22 @@
           "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.5.0/coloros-wifi-sense-v1.5.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.5.0.md",
           "size": 129191
+        },
+        {
+          "timestamp": 1794964956,
+          "version": "v1.6.0",
+          "versionCode": 9,
+          "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.6.0/coloros-wifi-sense-v1.6.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.6.0.md",
+          "size": 131647
+        },
+        {
+          "timestamp": 1795001560,
+          "version": "v1.6.1",
+          "versionCode": 10,
+          "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.6.1/coloros-wifi-sense-v1.6.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.6.1.md",
+          "size": 133950
         }
       ]
     },
@@ -605,7 +621,7 @@
       "size": 10634913,
       "permissions": [],
       "features": {},
-      "stars": 436,
+      "stars": 439,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -752,7 +768,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 902,
+      "stars": 905,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -799,7 +815,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 462,
+      "stars": 466,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1486,7 +1502,7 @@
       "size": 107758,
       "permissions": [],
       "features": {},
-      "stars": 24,
+      "stars": 25,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794032147,
@@ -1758,7 +1774,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 622,
+      "stars": 621,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1788,8 +1804,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.9.0",
-      "versionCode": 10618,
+      "version": "v1.9.1",
+      "versionCode": 10619,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1802,28 +1818,20 @@
         "tools"
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
-      "added": 1793189221,
-      "timestamp": 1794951779.976,
-      "size": 61422854,
+      "added": 1793283701,
+      "timestamp": 1795001581.829,
+      "size": 61429074,
       "permissions": [],
       "features": {},
-      "stars": 234,
+      "stars": 235,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793189221,
+        "added": 1793283701,
         "source": "https://github.com/LIghtJUNction/MagicNet",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793189221,
-          "version": "v1.8.0",
-          "versionCode": 10608,
-          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.0/MagicNet-full.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.0.md",
-          "size": 65241348
-        },
         {
           "timestamp": 1793283701,
           "version": "v1.8.1",
@@ -1895,6 +1903,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.0/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.9.0.md",
           "size": 61422854
+        },
+        {
+          "timestamp": 1795000968,
+          "version": "v1.9.1",
+          "versionCode": 10619,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.1/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.9.1.md",
+          "size": 61429074
         }
       ]
     },
@@ -2028,7 +2044,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/bf87da9eba197fa7.png",
       "added": 1794460579,
-      "timestamp": 1794914378.116,
+      "timestamp": 1794994216.639,
       "size": 2181768,
       "permissions": [],
       "features": {},
@@ -2244,7 +2260,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 694,
+      "stars": 700,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2286,7 +2302,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 723,
+      "stars": 735,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2559,7 +2575,7 @@
       "size": 13456166,
       "permissions": [],
       "features": {},
-      "stars": 26,
+      "stars": 29,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793607023,
@@ -2653,8 +2669,8 @@
     {
       "id": "sidewire",
       "name": "sidewire",
-      "version": "1.0.7",
-      "versionCode": 34,
+      "version": "1.0.8",
+      "versionCode": 35,
       "author": "mzggr0914",
       "description": "native bridge for controlling rooted Android devices from Windows, macOS, or Linux. It does not rely on ADB.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/sidewire/README.md",
@@ -2664,11 +2680,11 @@
         "tools"
       ],
       "added": 1792763658,
-      "timestamp": 1793261085,
-      "size": 1244756,
+      "timestamp": 1794994216.639,
+      "size": 1217661,
       "permissions": [],
       "features": {},
-      "stars": 42,
+      "stars": 43,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792763658,
@@ -2708,6 +2724,14 @@
           "zipUrl": "https://github.com/mzggr0914/sidewire/releases/download/v1.0.7/SideWire-KernelSU-v1.0.7-arm64.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/sidewire/changelogs/1.0.7.md",
           "size": 1244756
+        },
+        {
+          "timestamp": 1794994181,
+          "version": "1.0.8",
+          "versionCode": 35,
+          "zipUrl": "https://github.com/mzggr0914/sidewire/releases/download/v1.0.8/SideWire-KernelSU-v1.0.8-arm64.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/sidewire/changelogs/1.0.8.md",
+          "size": 1217661
         }
       ]
     },
@@ -2825,11 +2849,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/0a2dfed188db2b04.png",
       "added": 1791709999,
-      "timestamp": 1794211320.967,
+      "timestamp": 1794964995.169,
       "size": 155681,
       "permissions": [],
       "features": {},
-      "stars": 33,
+      "stars": 34,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791709999,
@@ -2992,7 +3016,7 @@
       "size": 3283835,
       "permissions": [],
       "features": {},
-      "stars": 57,
+      "stars": 59,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794790380,

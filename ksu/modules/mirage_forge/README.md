@@ -6,10 +6,9 @@
 
 [![](/assets/a432db6e5d4b9ccb.svg)](https://github.com/jjh138792/MirageForge/releases)
 [![](/assets/783410204390b7d7.svg)](https://github.com/topjohnwu/zygisk-module-sample)
-[![](/assets/19e71ed3d3f573f6.svg)](https://www.rust-lang.org/)
-[![](/assets/aa88e61953f732fc.svg)](https://github.com/jjh138792/MirageForge/blob/1c30d1461b0ef2cb9c933e889d3c270b8e8f5f94/LICENSE)
+[![](/assets/aa88e61953f732fc.svg)](https://github.com/jjh138792/MirageForge/blob/74bd8718f0c0bbbd60437d26d6253b861de3a385/LICENSE)
 
-**简体中文** | **[English](https://github.com/jjh138792/MirageForge/blob/1c30d1461b0ef2cb9c933e889d3c270b8e8f5f94/docs/en_README.md)**
+**简体中文** | **[English](https://github.com/jjh138792/MirageForge/blob/74bd8718f0c0bbbd60437d26d6253b861de3a385/docs/en_README.md)**
 
 ## 📖 写在前面
 
@@ -37,21 +36,17 @@
 
 - **运行内存（RAM）**：支持同时伪装**已安装的物理内存规格**（如 `16GB LPDDR5X`、`24GB LPDDR5T`）与**系统可用内存大小**。
 
-### 3. 按应用独立调整 DPI（屏幕缩放）
-
-- 不需要修改系统全局 DPI，可以单独为某一款游戏或应用设置独立的屏幕密度（比如单独把某个应用设为 `320` 或 `480` DPI），改完重启该应用即可生效。
-
-### 4. 一键导入 `build.prop` 生成配置
+### 3. 一键导入 `build.prop` 生成配置
 
 - 懒得手动填几十个参数？直接把从别的手机或 ROM 提取出来的 `build.prop` 文件导入 WebUI，模块会自动提取里面的机型、指纹、安全补丁、DPI，并自动推导出配套的处理器频率和显卡参数，一键生成可用的机型模板。
 
-### 5. 硬件探测抓包（探针雷达）
+### 4. 硬件探测抓包（探针雷达）
 
 - 遇到某个应用伪装后还是识别不对？可以在分流列表里单独给它打开 **「📡 探针与调用栈」** 开关。
 
 - 打开应用跑几秒，回到面板就能清楚看到它刚才偷偷读取了哪些系统属性、访问了哪些硬件文件、甚至具体是哪个 `.so` 库发起的调用。如果发现它读了模板里没配的冷门属性，点一下 **「+ 捕获入库」** 就能直接加进模板里。
 
-### 6. 干净省心，不改的绝对不碰
+### 5. 干净省心，不改的绝对不碰
 
 - **按需开关**：每个应用下面都有独立的功能开关（改属性、改显卡、改 CPU/内存文件、开探针、改 SDK 版本）。**没开启的选项、或者没配置伪装的应用，模块完全不会去动它**，不拖慢日常应用启动速度。
 
@@ -123,4 +118,4 @@ su -c "mirageforge_cli probe list --limit 30"
 
 ## 📄 开源协议
 
-本项目基于 **[GPL-3.0-only](https://github.com/jjh138792/MirageForge/blob/1c30d1461b0ef2cb9c933e889d3c270b8e8f5f94/LICENSE)** 协议开源。欢迎自由使用、修改与分享，但衍生作品必须同样保持开源。
+本项目基于 **[GPL-3.0-only](https://github.com/jjh138792/MirageForge/blob/74bd8718f0c0bbbd60437d26d6253b861de3a385/LICENSE)** 协议开源。欢迎自由使用、修改与分享，但衍生作品必须同样保持开源。
