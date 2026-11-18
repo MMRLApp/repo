@@ -1,7 +1,7 @@
 **English** |
-  [Français](https://github.com/Infiniti151/acc-with-webui/blob/c3e6b7148ead83938e19ce0e677fcd1579c1ce80/install/translations/fr/README.md) |
-  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/c3e6b7148ead83938e19ce0e677fcd1579c1ce80/install/translations/ru/README.md) |
-  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/c3e6b7148ead83938e19ce0e677fcd1579c1ce80/install/translations/tr/README.md)
+  [Français](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/install/translations/fr/README.md) |
+  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/install/translations/ru/README.md) |
+  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/install/translations/tr/README.md)
 
 # Advanced Charging Controller (ACC) with WebUI
 
@@ -117,9 +117,9 @@ Translations are synchronized continuously to Crowdin, but languages are only in
 
 - [Google Pixel Devices](#user-content-google-pixel-devices)
 
-- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/c3e6b7148ead83938e19ce0e677fcd1579c1ce80/override_battery_mah_capacity)
+- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/override_battery_mah_capacity)
 
-- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/c3e6b7148ead83938e19ce0e677fcd1579c1ce80/override_broken_temperature_sensor)
+- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/override_broken_temperature_sensor)
 
 - [FREQUENTLY ASKED QUESTIONS (FAQ)](#user-content-frequently-asked-questions-faq)
 
@@ -258,6 +258,9 @@ or `curl -L#  https://github.com/Infiniti151/acc-with-webui/archive/master.tar.g
 
 - 
 `sh build.sh` (or double-click `build.bat` on Windows 10+, if you have Windows subsystem for Linux (with zip) installed)
+
+- 
+`sh build.sh -i|--install [k] [adb device]` (for optionally pushing the built zip via ADB and installing with apd/ksud/magisk. k is for KaiOS. Specify the ADB device only if multiple devices are connected)
 
 #### Notes
 

@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1794927688.552
+    "timestamp": 1794960403.905
   },
   "modules": [
     {
@@ -60,7 +60,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/26ef13138d9c44b8.png",
       "added": 1793897102,
-      "timestamp": 1794852900.058,
+      "timestamp": 1794940077.012,
       "size": 548317,
       "permissions": [],
       "features": {},
@@ -182,7 +182,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 105,
+      "stars": 106,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -232,7 +232,7 @@
       "size": 4027697,
       "permissions": [],
       "features": {},
-      "stars": 40,
+      "stars": 39,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793534585,
@@ -1032,7 +1032,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 317,
+      "stars": 320,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -1788,8 +1788,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.8.9",
-      "versionCode": 10617,
+      "version": "v1.9.0",
+      "versionCode": 10618,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1802,28 +1802,20 @@
         "tools"
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
-      "added": 1792813511,
-      "timestamp": 1794858608.822,
-      "size": 61366576,
+      "added": 1793189221,
+      "timestamp": 1794951779.976,
+      "size": 61422854,
       "permissions": [],
       "features": {},
       "stars": 234,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792813511,
+        "added": 1793189221,
         "source": "https://github.com/LIghtJUNction/MagicNet",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792813511,
-          "version": "v1.7.2",
-          "versionCode": 10607,
-          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.7.2/MagicNet-full.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.7.2.md",
-          "size": 65316432
-        },
         {
           "timestamp": 1793189221,
           "version": "v1.8.0",
@@ -1895,6 +1887,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.9/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.9.md",
           "size": 61366576
+        },
+        {
+          "timestamp": 1794951721,
+          "version": "v1.9.0",
+          "versionCode": 10618,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.0/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.9.0.md",
+          "size": 61422854
         }
       ]
     },
@@ -2342,7 +2342,7 @@
       "size": 138225,
       "permissions": [],
       "features": {},
-      "stars": 3,
+      "stars": 4,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794161870,
@@ -2708,6 +2708,48 @@
           "zipUrl": "https://github.com/mzggr0914/sidewire/releases/download/v1.0.7/SideWire-KernelSU-v1.0.7-arm64.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/sidewire/changelogs/1.0.7.md",
           "size": 1244756
+        }
+      ]
+    },
+    {
+      "id": "smallbattery",
+      "name": "Small Battery",
+      "version": "v2",
+      "versionCode": 2,
+      "author": "Lean",
+      "description": "This module makes the system think that it has a smaller battery than normal, which will apply more precise adjustments to save battery.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/smallbattery/README.md",
+      "support": "https://t.me/modulostk",
+      "license": "MIT",
+      "categories": [
+        "battery",
+        "reduce",
+        "disable",
+        "save",
+        "drain"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/d0edba7d345331fb.jpg",
+      "added": 1794842549,
+      "timestamp": 1794940077.012,
+      "size": 984132,
+      "permissions": [],
+      "features": {},
+      "stars": 23,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1794842549,
+        "source": "https://github.com/LeanxModulostk/SmallBattery",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1794842549,
+          "version": "v2",
+          "versionCode": 2,
+          "zipUrl": "https://github.com/LeanxModulostk/SmallBattery/releases/download/v2/Small-Battery-v2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/smallbattery/changelogs/v2.md",
+          "size": 984132
         }
       ]
     },
@@ -3083,8 +3125,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.206 (206-b7e36d0-release)",
-      "versionCode": 206,
+      "version": "1.208 (208-0379a9c-release)",
+      "versionCode": 208,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -3097,28 +3139,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1792605864,
-      "timestamp": 1794596037,
-      "size": 7677650,
+      "added": 1792923406,
+      "timestamp": 1794928289,
+      "size": 7759570,
       "permissions": [],
       "features": {},
       "stars": 28,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792605864,
+        "added": 1792923406,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792605864,
-          "version": "1.191 (191-a1d3c7a-release)",
-          "versionCode": 191,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v191-a1d3c7a/FuseHide-1.191_191-a1d3c7a-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.191__191-a1d3c7a-release_.md",
-          "size": 7690069
-        },
         {
           "timestamp": 1792923406,
           "version": "1.193 (193-9e0aee5-release)",
@@ -3190,6 +3224,14 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v206-b7e36d0/FuseHide-1.206_206-b7e36d0-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.206__206-b7e36d0-release_.md",
           "size": 7677650
+        },
+        {
+          "timestamp": 1794928289,
+          "version": "1.208 (208-0379a9c-release)",
+          "versionCode": 208,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v208-0379a9c/FuseHide-1.208_208-0379a9c-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.208__208-0379a9c-release_.md",
+          "size": 7759570
         }
       ]
     },
@@ -3216,7 +3258,7 @@
       "size": 1453631,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 17,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792054513,
@@ -3310,8 +3352,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.18.0.1 (409-14c2bdd-release)",
-      "versionCode": 409,
+      "version": "v2.18.0.2 (424-770efca-release)",
+      "versionCode": 424,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next API",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -3320,28 +3362,20 @@
       "categories": [
         "system"
       ],
-      "added": 1794031542,
-      "timestamp": 1794750575.592,
-      "size": 6148462,
+      "added": 1794040405,
+      "timestamp": 1794932194.316,
+      "size": 6146217,
       "permissions": [],
       "features": {},
-      "stars": 112,
+      "stars": 113,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794031542,
+        "added": 1794040405,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794031542,
-          "version": "v2.12.0 (302-355c206-release)",
-          "versionCode": 302,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.12.0/ZNNext-v2.12.0-302-355c206-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.12.0__302-355c206-release_.md",
-          "size": 6884437
-        },
         {
           "timestamp": 1794040405,
           "version": "v2.13.0 (304-d2ebd23-release)",
@@ -3413,6 +3447,14 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.18.0.1/ZNNext-v2.18.0.1-409-14c2bdd-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.18.0.1__409-14c2bdd-release_.md",
           "size": 6148462
+        },
+        {
+          "timestamp": 1794932172,
+          "version": "v2.18.0.2 (424-770efca-release)",
+          "versionCode": 424,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.18.0.2/ZNNext-v2.18.0.2-424-770efca-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.18.0.2__424-770efca-release_.md",
+          "size": 6146217
         }
       ]
     }
