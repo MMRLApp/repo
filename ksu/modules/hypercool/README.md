@@ -5,7 +5,7 @@
 KernelSU / Magisk module for Qualcomm and MediaTek phones. Less heat, less battery drain, longer battery life.
 Focused on battery life, not peak performance.
 
-  [![](/assets/eaf3a240cecc6600.svg)](https://github.com/yudharn/HyperCool/releases)
+  [![](/assets/96a74744cb4c2078.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
   [![](/assets/37d6025bc86dd977.svg)](https://github.com/yudharn/HyperCool/releases/latest)
@@ -224,6 +224,10 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Battery check: health, capacity, cycle count, temperature and more
 
+- Wake sources: which wakeup sources kept the CPU awake or cut its sleep short, in plain names (Mobile data, Wi-Fi, Apps and Android…), with how much of the time the phone was awake since "Mark start"; "Apps and Android" opens the apps that held wake locks (Android battery stats, read with `dumpsys batterystats -c`; read only)
+
+- CPU use now: the busiest processes over 3 seconds as a share of the whole CPU, in plain names; the measurement and the root manager are left out (read only)
+
 - Battery calibration: guided full cycle (5% → 100% → until charging finishes) so the battery % is accurate (optionally deletes batterystats.bin)
 
 ## Requirements
@@ -278,6 +282,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/8c076b4af0887c4e0311604ad0641068712e9d60/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/19958bd6519529a2b719e7b65f93b61bf98fa22b/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

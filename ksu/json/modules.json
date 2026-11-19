@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795063675.561
+    "timestamp": 1795099733.431
   },
   "modules": [
     {
@@ -287,7 +287,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 146,
+      "stars": 147,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -768,7 +768,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 905,
+      "stars": 913,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -815,7 +815,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 466,
+      "stars": 471,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1352,11 +1352,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1795053858.515,
+      "timestamp": 1795095442.413,
       "size": 361956,
       "permissions": [],
       "features": {},
-      "stars": 27,
+      "stars": 28,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794497430,
@@ -1459,7 +1459,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 17,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1774,7 +1774,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 621,
+      "stars": 623,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1804,8 +1804,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.9.1",
-      "versionCode": 10619,
+      "version": "v1.9.2",
+      "versionCode": 10620,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1818,28 +1818,20 @@
         "tools"
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
-      "added": 1793283701,
-      "timestamp": 1795053858.515,
-      "size": 61429074,
+      "added": 1793532927,
+      "timestamp": 1795091734.799,
+      "size": 61442927,
       "permissions": [],
       "features": {},
       "stars": 236,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793283701,
+        "added": 1793532927,
         "source": "https://github.com/LIghtJUNction/MagicNet",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793283701,
-          "version": "v1.8.1",
-          "versionCode": 10609,
-          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.1/MagicNet-full.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.1.md",
-          "size": 65389729
-        },
         {
           "timestamp": 1793532927,
           "version": "v1.8.2",
@@ -1911,6 +1903,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.1/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.9.1.md",
           "size": 61429074
+        },
+        {
+          "timestamp": 1795091662,
+          "version": "v1.9.2",
+          "versionCode": 10620,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.2/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.9.2.md",
+          "size": 61442927
         }
       ]
     },
@@ -2048,7 +2048,7 @@
       "size": 2181768,
       "permissions": [],
       "features": {},
-      "stars": 4,
+      "stars": 5,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794460579,
@@ -2161,8 +2161,8 @@
     {
       "id": "netproxy",
       "name": "NetProxy",
-      "version": "v8.7.0",
-      "versionCode": 1100,
+      "version": "v8.7.1",
+      "versionCode": 1107,
       "author": "Fanju",
       "description": "Android sing-box 透明代理模块，支持 eBPF、TUN、节点订阅和应用代理。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/README.md",
@@ -2173,11 +2173,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4bef947f9024d913.png",
       "added": 1791728886,
-      "timestamp": 1794472868,
-      "size": 27525137,
+      "timestamp": 1795069312,
+      "size": 27751684,
       "permissions": [],
       "features": {},
-      "stars": 1451,
+      "stars": 1453,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2233,6 +2233,14 @@
           "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.0/netproxy-1100-v8.7.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.0.md",
           "size": 27525137
+        },
+        {
+          "timestamp": 1795069312,
+          "version": "v8.7.1",
+          "versionCode": 1107,
+          "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.1/netproxy-1107-v8.7.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.1.md",
+          "size": 27751684
         }
       ]
     },
@@ -2260,7 +2268,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 700,
+      "stars": 703,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2575,7 +2583,7 @@
       "size": 13456166,
       "permissions": [],
       "features": {},
-      "stars": 29,
+      "stars": 31,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793607023,
@@ -2684,7 +2692,7 @@
       "size": 1217661,
       "permissions": [],
       "features": {},
-      "stars": 43,
+      "stars": 44,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792763658,
@@ -2940,7 +2948,7 @@
       "size": 32979,
       "permissions": [],
       "features": {},
-      "stars": 4,
+      "stars": 5,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793870109,
@@ -3016,7 +3024,7 @@
       "size": 3283835,
       "permissions": [],
       "features": {},
-      "stars": 59,
+      "stars": 62,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794790380,
@@ -3262,8 +3270,8 @@
     {
       "id": "zygisk-sui",
       "name": "Zygisk - Sui",
-      "version": "v13.5.4.3 (577-c5cbf06-release)",
-      "versionCode": 577,
+      "version": "v13.5.4.3 (586-a672eb8-release)",
+      "versionCode": 586,
       "author": "XiaoTong, RikkaW, Sui Contributors",
       "description": "Fork by XiaoTong. Modern super user interface implementation on Android.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/README.md",
@@ -3277,52 +3285,20 @@
         "sui",
         "zygisk"
       ],
-      "added": 1792054513,
-      "timestamp": 1794077621,
-      "size": 1453631,
+      "added": 1792659135,
+      "timestamp": 1795099110,
+      "size": 1505712,
       "permissions": [],
       "features": {},
-      "stars": 17,
+      "stars": 19,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792054513,
+        "added": 1792659135,
         "source": "https://github.com/XiaoTong6666/zygisk-sui",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792054513,
-          "version": "v13.5.4.3 (564-e967423-release)",
-          "versionCode": 564,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v564-e967423/Sui-v13.5.4.3_564-e967423-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__564-e967423-release_.md",
-          "size": 1364750
-        },
-        {
-          "timestamp": 1792121412,
-          "version": "v13.5.4.3 (566-099cb89-release)",
-          "versionCode": 566,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v566-099cb89/Sui-v13.5.4.3_566-099cb89-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__566-099cb89-release_.md",
-          "size": 1435616
-        },
-        {
-          "timestamp": 1792246988,
-          "version": "v13.5.4.3 (567-ff78053-release)",
-          "versionCode": 567,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v567-ff78053/Sui-v13.5.4.3_567-ff78053-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__567-ff78053-release_.md",
-          "size": 1435612
-        },
-        {
-          "timestamp": 1792391613,
-          "version": "v13.5.4.3 (568-d92eb95-release)",
-          "versionCode": 568,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v568-d92eb95/Sui-v13.5.4.3_568-d92eb95-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__568-d92eb95-release_.md",
-          "size": 1438623
-        },
         {
           "timestamp": 1792659135,
           "version": "v13.5.4.3 (569-8d2392a-release)",
@@ -3370,6 +3346,38 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v577-c5cbf06/Sui-v13.5.4.3_577-c5cbf06-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__577-c5cbf06-release_.md",
           "size": 1453631
+        },
+        {
+          "timestamp": 1795069227,
+          "version": "v13.5.4.3 (578-95f3a92-release)",
+          "versionCode": 578,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v578-95f3a92/Sui-v13.5.4.3_578-95f3a92-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__578-95f3a92-release_.md",
+          "size": 1505774
+        },
+        {
+          "timestamp": 1795071135,
+          "version": "v13.5.4.3 (584-6905910-release)",
+          "versionCode": 584,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v584-6905910/Sui-v13.5.4.3_584-6905910-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__584-6905910-release_.md",
+          "size": 1505782
+        },
+        {
+          "timestamp": 1795095418,
+          "version": "v13.5.4.3 (585-2d81fb2-release)",
+          "versionCode": 585,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v585-2d81fb2/Sui-v13.5.4.3_585-2d81fb2-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__585-2d81fb2-release_.md",
+          "size": 1505597
+        },
+        {
+          "timestamp": 1795099110,
+          "version": "v13.5.4.3 (586-a672eb8-release)",
+          "versionCode": 586,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v586-a672eb8/Sui-v13.5.4.3_586-a672eb8-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__586-a672eb8-release_.md",
+          "size": 1505712
         }
       ]
     },

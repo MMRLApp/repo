@@ -3,8 +3,8 @@
 English · [简体中文](https://github.com/PEMessage/tailscale-bindhosts/blob/4799494b910c78566bc8ef24457cb9967d3852fe/README.zh.md)
 
   [![](/assets/8e48dfa931f65567.svg)](https://github.com/PEMessage/tailscale-bindhosts)
-  [![](/assets/8de0b9022da7bd82.svg)](https://github.com/PEMessage/tailscale-bindhosts/commits/main)
-  [![](/assets/ac86edfd7823893b.svg)](https://github.com/PEMessage/tailscale-bindhosts/releases)
+  [![](/assets/c1e65b6d98d03f5a.svg)](https://github.com/PEMessage/tailscale-bindhosts/commits/main)
+  [![](/assets/cf3cbcd470543bc6.svg)](https://github.com/PEMessage/tailscale-bindhosts/releases)
   ![](/assets/1c8caad1aa27c474.svg)
   [![](/assets/9c382a5a73fdd558.svg)](https://github.com/bindhosts/bindhosts)
 
