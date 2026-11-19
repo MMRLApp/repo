@@ -12,13 +12,13 @@ In theory, this would make it harder for detectors to identify behavior inconsis
 
 ## Install and configure
 
-**Android 12 or above required.**
+**Android 13 or above required.**
 
 - 
 Install this module.
 
 - 
-[Configure OMK](https://github.com/qwq233/OhMyKeymint/blob/7ef41b037e1ac0554ec6b6d1c38f6db457b00684/docs/CONFIGURATION.md) if needed.
+[Configure OMK](https://github.com/qwq233/OhMyKeymint/blob/e1b5e67856a2ff49f48ad9d2c71611ef074a3f1e/docs/CONFIGURATION.md) if needed.
 
 - 
 Replace template keybox.xml (if you need)
@@ -27,7 +27,7 @@ The keybox file should be a **valid** XML file with at least the EC chain; when 
 
 The active files are `/data/misc/keystore/omk/config.toml` and
 `/data/misc/keystore/omk/injector.toml`. Read the
-[Configuration Guide](https://github.com/qwq233/OhMyKeymint/blob/7ef41b037e1ac0554ec6b6d1c38f6db457b00684/docs/CONFIGURATION.md) for complete annotated examples,
+[Configuration Guide](https://github.com/qwq233/OhMyKeymint/blob/e1b5e67856a2ff49f48ad9d2c71611ef074a3f1e/docs/CONFIGURATION.md) for complete annotated examples,
 field-by-field explanations, safety notes, and restart requirements.
 
 ## Restarting keymint and injector
@@ -42,7 +42,7 @@ touch /data/adb/omk/restart.all
 
 ```
 
-See the [Configuration Guide](https://github.com/qwq233/OhMyKeymint/blob/7ef41b037e1ac0554ec6b6d1c38f6db457b00684/docs/CONFIGURATION.md#how-changes-are-loaded) for
+See the [Configuration Guide](https://github.com/qwq233/OhMyKeymint/blob/e1b5e67856a2ff49f48ad9d2c71611ef074a3f1e/docs/CONFIGURATION.md#how-changes-are-loaded) for
 which changes need a component restart or a full device reboot.
 
 ## How do i submit issue report?
@@ -51,8 +51,8 @@ Use an [Issue form](https://github.com/qwq233/OhMyKeymint/issues/new/choose) and
 complete every required field and checkbox. Non-template issues are
 automatically closed. Write issues yourself; do not use an LLM to create them
 or copy LLM-generated descriptions or phrasing. Read the
-[Issue rules](https://github.com/qwq233/OhMyKeymint/blob/7ef41b037e1ac0554ec6b6d1c38f6db457b00684/docs/CONTRIBUTING.md#issues) and
-[AI policy](https://github.com/qwq233/OhMyKeymint/blob/7ef41b037e1ac0554ec6b6d1c38f6db457b00684/docs/AI-Policy.md#issues-must-be-written-without-llms) first.
+[Issue rules](https://github.com/qwq233/OhMyKeymint/blob/e1b5e67856a2ff49f48ad9d2c71611ef074a3f1e/docs/CONTRIBUTING.md#issues) and
+[AI policy](https://github.com/qwq233/OhMyKeymint/blob/e1b5e67856a2ff49f48ad9d2c71611ef074a3f1e/docs/AI-Policy.md#issues-must-be-written-without-llms) first.
 
 ## License
 
