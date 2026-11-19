@@ -226,7 +226,7 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Wake sources: which wakeup sources kept the CPU awake or cut its sleep short, in plain names (Mobile data, Wi-Fi, Apps and Android…), with how much of the time the phone was awake since "Mark start"; "Apps and Android" opens the apps that held wake locks (Android battery stats, read with `dumpsys batterystats -c`; read only)
 
-- CPU use now: the busiest processes over 3 seconds as a share of the whole CPU, in plain names; the measurement and the root manager are left out (read only)
+- CPU use now: the busiest processes over 2 seconds as a share of the whole CPU, in plain names; the measurement and the root manager are left out (read only)
 
 - Battery calibration: guided full cycle (5% → 100% → until charging finishes) so the battery % is accurate (optionally deletes batterystats.bin)
 
@@ -282,6 +282,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/19958bd6519529a2b719e7b65f93b61bf98fa22b/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/e774e3afe67a777a1077bbbc05ecf101cad8edce/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

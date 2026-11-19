@@ -8,11 +8,13 @@
 
 模块需要 Android 10 或更新版本，守护进程在开机后独立运行。使用模块时可关闭欧加网络助手里的弱信号断开开关，避免两边重复触发。
 
-默认阈值为 **−80 dBm**。只有一个 Wi-Fi 连接时才检测。系统事件触发检查，并保留 **7 秒兜底读取**，不主动扫描。默认息屏暂停。打开 WebUI 的「息屏也可断开」后，息屏仍可检测弱信号和已开启的通网检测，并按原条件断开。息屏隐藏流体云。系统进入深度休眠时，检查可能推迟到 CPU 恢复运行。
+默认阈值为 **−80 dBm**。连接 Wi-Fi 后检测；双 WLAN 时检测系统主 Wi-Fi。系统事件触发检查，并保留 **7 秒兜底读取**，不主动扫描。默认息屏暂停。打开 WebUI 的「息屏也可断开」后，息屏仍可检测弱信号和已开启的通网检测，并按原条件断开。息屏隐藏流体云。系统进入深度休眠时，检查可能推迟到 CPU 恢复运行。
 
 信号降到阈值时开始倒计时，**默认 7 秒，可调为 1–300 秒**，期间每秒复查。信号回升至「断开阈值 + 回升余量」才取消倒计时，余量可设 **1–10 dB，默认 3 dB**。例如阈值 −80 dBm 时，−77 dBm 才算恢复。启用流体云时可点「立即断开」。切换接入点、修改弱信号设置或网络断开会取消当前判断。
 
-倒计时结束或用户手动操作时，重新核对运行设置、当前网络、BSSID、RSSI 和冷却时间，再请求断开。Wi-Fi 总开关保持开启，可通过 SSID 暂避避免立即连回原网络。每次断开请求后冷却至少 60 秒。多个 Wi-Fi 网络、无 Wi-Fi 或仅移动数据时暂停采样。
+倒计时结束或用户手动操作时，重新核对运行设置、当前网络、BSSID、RSSI 和冷却时间，再请求断开。Wi-Fi 总开关保持开启，可通过 SSID 暂避避免立即连回原网络。每次断开请求后冷却至少 60 秒。无 Wi-Fi 或仅移动数据时暂停采样。
+
+双 WLAN 下，弱信号判断和通网检测都针对主 Wi-Fi；副连接变化不重置主连接倒计时。主副角色切换后从新主连接重新判断。系统未提供足够信息来区分连接时，会跳过断开。模块不单独管理副 Wi-Fi。
 
 ## Web 管理面板
 
@@ -22,7 +24,7 @@
 
 页面只在打开或手动刷新时请求状态，不启动 HTTP 服务，不后台轮询。普通 Magisk 管理器需使用兼容的 WebUI 宿主；命令行与操作按钮继续可用。
 
-本次自动测试、手机测试边界与功耗分析见 [低功耗优化报告](https://github.com/mazemingw/coloros-wifi-sense/blob/0f03cb3cea2cf1b070084ebb3433a5c0c6ba9a72/docs/low-power/REPORT.md)。本地运行 `./test.ps1` 验证策略、生命周期、竞态与 WebUI。操作计数和 CPU ticks 不能直接换算为 mAh。
+本次自动测试、手机测试边界与功耗分析见 [低功耗优化报告](https://github.com/mazemingw/coloros-wifi-sense/blob/0c3d34c3e0be124b2d712e31db41ec46a2ea97ee/docs/low-power/REPORT.md)。本地运行 `./test.ps1` 验证策略、生命周期、竞态与 WebUI。操作计数和 CPU ticks 不能直接换算为 mAh。
 
 ### 断开后暂避此 SSID（v1.4.0）
 
@@ -47,7 +49,7 @@ su -c 'sh /data/adb/modules/coloros_wifi_sense/webctl.sh restoreautojoin'
 
 安装并启用流体云后，断网请求提示「WIFI无法联网，正在断开…」，收到网络丢失确认后显示「WIFI无法联网，已自动断开。」并保留 15 秒；系统拒绝或未确认时提示未能确认断开。仅核心模式不启动通知进程。
 
-本次编译、自动测试和实机验证边界见 [v1.4.0 说明](https://github.com/mazemingw/coloros-wifi-sense/blob/0f03cb3cea2cf1b070084ebb3433a5c0c6ba9a72/docs/ssid-probe/REPORT.md)。
+本次编译、自动测试和实机验证边界见 [v1.4.0 说明](https://github.com/mazemingw/coloros-wifi-sense/blob/0c3d34c3e0be124b2d712e31db41ec46a2ea97ee/docs/ssid-probe/REPORT.md)。
 
 ### 仅使用 5GHz
 
@@ -55,7 +57,7 @@ su -c 'sh /data/adb/modules/coloros_wifi_sense/webctl.sh restoreautojoin'
 
 模块记录还原信息；重新亮屏或新 Wi-Fi 连接出现时按需重新应用，停用或卸载时尝试还原。息屏不轮询或反复设置频段；显式选择的频段限制在息屏时继续保持。驱动暂不可读时会保留还原记录并提示，恢复后重试。该接口可能作用于整张 Wi-Fi 网卡，其他机型、热点/双 Wi-Fi 并用仍需验证。
 
-本机已验证实时频段 `7 → 1 → 7` 与关闭还原。图片里的 `BandCapability=2` 是另一套配置枚举，不能直接当作运行时命令参数。[v1.3.0 验证范围](https://github.com/mazemingw/coloros-wifi-sense/blob/0f03cb3cea2cf1b070084ebb3433a5c0c6ba9a72/docs/5ghz-countdown/REPORT.md)
+本机已验证实时频段 `7 → 1 → 7` 与关闭还原。图片里的 `BandCapability=2` 是另一套配置枚举，不能直接当作运行时命令参数。[v1.3.0 验证范围](https://github.com/mazemingw/coloros-wifi-sense/blob/0c3d34c3e0be124b2d712e31db41ec46a2ea97ee/docs/5ghz-countdown/REPORT.md)
 
 ## 流体云与测试
 

@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795099733.431
+    "timestamp": 1795132696.729
   },
   "modules": [
     {
@@ -546,8 +546,8 @@
     {
       "id": "coloros_wifi_sense",
       "name": "ColorOS WIFI感知",
-      "version": "v1.6.1",
-      "versionCode": 10,
+      "version": "v1.6.2",
+      "versionCode": 11,
       "author": "酷安@NVMEX夜莺",
       "description": "弱信号时自动断开当前 Wi-Fi 接入点，可选原生流体云倒计时与手动断开。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/README.md",
@@ -559,8 +559,8 @@
         "coloros"
       ],
       "added": 1794480507,
-      "timestamp": 1795001581.829,
-      "size": 133950,
+      "timestamp": 1795110246.023,
+      "size": 136853,
       "permissions": [],
       "features": {},
       "stars": 14,
@@ -595,6 +595,14 @@
           "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.6.1/coloros-wifi-sense-v1.6.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.6.1.md",
           "size": 133950
+        },
+        {
+          "timestamp": 1795110218,
+          "version": "v1.6.2",
+          "versionCode": 11,
+          "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.6.2/coloros-wifi-sense-v1.6.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.6.2.md",
+          "size": 136853
         }
       ]
     },
@@ -621,7 +629,7 @@
       "size": 10634913,
       "permissions": [],
       "features": {},
-      "stars": 439,
+      "stars": 438,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -695,7 +703,7 @@
       "size": 3149975,
       "permissions": [],
       "features": {},
-      "stars": 27,
+      "stars": 28,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -1352,7 +1360,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1795095442.413,
+      "timestamp": 1795110246.023,
       "size": 361956,
       "permissions": [],
       "features": {},
@@ -2247,8 +2255,8 @@
     {
       "id": "nomount",
       "name": "NoMount",
-      "version": "v2.2.0 (605)",
-      "versionCode": 605,
+      "version": "v2.3.1 (785)",
+      "versionCode": 785,
       "author": "maxsteeel",
       "description": "A kernel-level VFS path redirection metamodule for KernelSU and APatch.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/nomount/README.md",
@@ -2262,8 +2270,8 @@
         "metamodule"
       ],
       "added": 1792687379,
-      "timestamp": 1794610902.3,
-      "size": 468780,
+      "timestamp": 1795116918,
+      "size": 588142,
       "permissions": [],
       "features": {
         "metamodule": true
@@ -2284,6 +2292,14 @@
           "zipUrl": "https://github.com/maxsteeel/nomount/releases/download/v2.2.0/NoMount-v2.2.0-release-605.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/nomount/changelogs/v2.2.0__605_.md",
           "size": 468780
+        },
+        {
+          "timestamp": 1795116918,
+          "version": "v2.3.1 (785)",
+          "versionCode": 785,
+          "zipUrl": "https://github.com/maxsteeel/nomount/releases/download/v2.3.1/NoMount-v2.3.1-release-785.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/nomount/changelogs/v2.3.1__785_.md",
+          "size": 588142
         }
       ]
     },
@@ -2463,7 +2479,7 @@
       "size": 191673,
       "permissions": [],
       "features": {},
-      "stars": 1,
+      "stars": 2,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793064905,
@@ -3157,8 +3173,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.208 (208-0379a9c-release)",
-      "versionCode": 208,
+      "version": "1.212 (212-c3020ab-release)",
+      "versionCode": 212,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -3171,28 +3187,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1792923406,
-      "timestamp": 1794928289,
+      "added": 1793338445,
+      "timestamp": 1795100154,
       "size": 7759570,
       "permissions": [],
       "features": {},
       "stars": 30,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792923406,
+        "added": 1793338445,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792923406,
-          "version": "1.193 (193-9e0aee5-release)",
-          "versionCode": 193,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v193-9e0aee5/FuseHide-1.193_193-9e0aee5-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.193__193-9e0aee5-release_.md",
-          "size": 7690069
-        },
         {
           "timestamp": 1793338445,
           "version": "1.196 (196-43ec341-release)",
@@ -3263,6 +3271,14 @@
           "versionCode": 208,
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v208-0379a9c/FuseHide-1.208_208-0379a9c-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.208__208-0379a9c-release_.md",
+          "size": 7759570
+        },
+        {
+          "timestamp": 1795100154,
+          "version": "1.212 (212-c3020ab-release)",
+          "versionCode": 212,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v212-c3020ab/FuseHide-1.212_212-c3020ab-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.212__212-c3020ab-release_.md",
           "size": 7759570
         }
       ]
