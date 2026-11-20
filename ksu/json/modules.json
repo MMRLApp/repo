@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795184996.325
+    "timestamp": 1795217231.122
   },
   "modules": [
     {
@@ -699,7 +699,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1794659841.288,
+      "timestamp": 1795189403.15,
       "size": 3149975,
       "permissions": [],
       "features": {},
@@ -1360,11 +1360,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1795154446.219,
+      "timestamp": 1795189403.15,
       "size": 380354,
       "permissions": [],
       "features": {},
-      "stars": 28,
+      "stars": 29,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794497430,
@@ -1707,7 +1707,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 43,
+      "stars": 44,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -3330,7 +3330,7 @@
       "size": 1505712,
       "permissions": [],
       "features": {},
-      "stars": 19,
+      "stars": 20,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659135,

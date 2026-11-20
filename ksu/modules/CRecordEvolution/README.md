@@ -6,11 +6,11 @@
 [![](/assets/746f490744012f12.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,10 +23,10 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/fa929c6ea48acd04.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/overview-en.png)
-[![](/assets/78388c9b30bfd237.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/history-en.png)
-[![](/assets/2db2ab33ebfafb66.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/trends-en.png)
-[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/.github/images/settings-en.png)
+[![](/assets/fa929c6ea48acd04.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/overview-en.png)
+[![](/assets/78388c9b30bfd237.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/history-en.png)
+[![](/assets/2db2ab33ebfafb66.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/trends-en.png)
+[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/settings-en.png)
 
 ## Features
 
@@ -89,6 +89,10 @@ If you flashed the wrong build but have not rebooted yet, simply flash the corre
 - Upgrades keep the `data/battery.db` learning history (the installer copies the old data automatically), so no manual backup is needed;
 
 - Reboot soon after upgrading: until then the old daemon keeps writing with the old units, and Settings shows "Updated — restart to apply";
+
+- Bypass charging is recorded too: when the status stays **Full** but the fuel gauge is actually dropping (charger connected, heavy load), the discharge session follows the gauge direction instead of `current_now`'s sign; a segment with no reported % drop only accumulates usage and produces no history row;
+
+- Duplicate sessions left by an old multi-daemon install are cleaned automatically and re-checked while an old daemon is still detected; charging-session duplicates also inflate the cycle equivalent, so Settings notes "may be inflated" when that happened. Capacity estimates are not affected;
 
 - Older Magisk versions have no Action button; wait for a reboot;
 
@@ -160,11 +164,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -209,6 +213,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/bc38e59031faa5a7641da0f9452f75a27b8394d0/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

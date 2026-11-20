@@ -5,10 +5,10 @@
 KernelSU / Magisk module for Qualcomm and MediaTek phones. Less heat, less battery drain, longer battery life.
 Focused on battery life, not peak performance.
 
-  [![](/assets/96a74744cb4c2078.svg)](https://github.com/yudharn/HyperCool/releases)
+  [![](/assets/9d9f8babe521d975.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
-  [![](/assets/37d6025bc86dd977.svg)](https://github.com/yudharn/HyperCool/releases/latest)
+  [![](/assets/0099d3669ffdec85.svg)](https://github.com/yudharn/HyperCool/releases/latest)
 
 Everything is configured via WebUI and applied on the next boot. Only lightweight keepers run in the background, and only when enabled.
 
@@ -284,6 +284,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/1bc67ef1277648f34847faa183a5b1ebe8a7a21b/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/e0a31fc29a1dc58ff0ba8ebb1296cf699ccc338a/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).
