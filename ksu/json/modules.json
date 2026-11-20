@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795152805.846
+    "timestamp": 1795184996.325
   },
   "modules": [
     {
@@ -103,7 +103,7 @@
       "size": 813069,
       "permissions": [],
       "features": {},
-      "stars": 2,
+      "stars": 3,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794485636,
@@ -287,7 +287,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 147,
+      "stars": 148,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -563,7 +563,7 @@
       "size": 136853,
       "permissions": [],
       "features": {},
-      "stars": 14,
+      "stars": 15,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794480507,
@@ -776,7 +776,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 913,
+      "stars": 915,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -823,7 +823,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 471,
+      "stars": 474,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1217,7 +1217,7 @@
       "size": 24672,
       "permissions": [],
       "features": {},
-      "stars": 1,
+      "stars": 2,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793501212,
@@ -1345,8 +1345,8 @@
     {
       "id": "hypercool",
       "name": "HyperCool - Heat & Battery Fix",
-      "version": "v2.3.6",
-      "versionCode": 236,
+      "version": "v2.3.7",
+      "versionCode": 237,
       "author": "Yudharn",
       "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
@@ -1360,8 +1360,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1795144711.071,
-      "size": 361956,
+      "timestamp": 1795154446.219,
+      "size": 380354,
       "permissions": [],
       "features": {},
       "stars": 28,
@@ -1444,6 +1444,14 @@
           "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.6/HyperCool_v2.3.6.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.6.md",
           "size": 361956
+        },
+        {
+          "timestamp": 1795154422,
+          "version": "v2.3.7",
+          "versionCode": 237,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.7/HyperCool_v2.3.7.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.7.md",
+          "size": 380354
         }
       ]
     },
@@ -1467,7 +1475,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 17,
+      "stars": 19,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1782,7 +1790,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 623,
+      "stars": 625,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1831,7 +1839,7 @@
       "size": 61442927,
       "permissions": [],
       "features": {},
-      "stars": 236,
+      "stars": 237,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793532927,
@@ -2193,7 +2201,7 @@
       "size": 27751684,
       "permissions": [],
       "features": {},
-      "stars": 1453,
+      "stars": 1458,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2284,7 +2292,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 703,
+      "stars": 710,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2607,7 +2615,7 @@
       "size": 13456166,
       "permissions": [],
       "features": {},
-      "stars": 31,
+      "stars": 32,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793607023,
@@ -2980,7 +2988,7 @@
       "size": 32979,
       "permissions": [],
       "features": {},
-      "stars": 5,
+      "stars": 6,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793870109,
@@ -3056,7 +3064,7 @@
       "size": 3283835,
       "permissions": [],
       "features": {},
-      "stars": 62,
+      "stars": 64,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794790380,
@@ -3095,7 +3103,7 @@
       "size": 3416152,
       "permissions": [],
       "features": {},
-      "stars": 147,
+      "stars": 148,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793662553,
@@ -3189,8 +3197,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.212 (212-c3020ab-release)",
-      "versionCode": 212,
+      "version": "1.214 (214-15b30cf-release)",
+      "versionCode": 214,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -3203,36 +3211,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1793338445,
-      "timestamp": 1795100154,
+      "added": 1793798682,
+      "timestamp": 1795165059,
       "size": 7759570,
       "permissions": [],
       "features": {},
       "stars": 31,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793338445,
+        "added": 1793798682,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793338445,
-          "version": "1.196 (196-43ec341-release)",
-          "versionCode": 196,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v196-43ec341/FuseHide-1.196_196-43ec341-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.196__196-43ec341-release_.md",
-          "size": 7657170
-        },
-        {
-          "timestamp": 1793780826,
-          "version": "1.197 (197-c59a62b-release)",
-          "versionCode": 197,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v197-c59a62b/FuseHide-1.197_197-c59a62b-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.197__197-c59a62b-release_.md",
-          "size": 7657170
-        },
         {
           "timestamp": 1793798682,
           "version": "1.199 (199-a6e1d36-release)",
@@ -3295,6 +3287,22 @@
           "versionCode": 212,
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v212-c3020ab/FuseHide-1.212_212-c3020ab-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.212__212-c3020ab-release_.md",
+          "size": 7759570
+        },
+        {
+          "timestamp": 1795155877,
+          "version": "1.213 (213-8be0b7e-release)",
+          "versionCode": 213,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v213-8be0b7e/FuseHide-1.213_213-8be0b7e-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.213__213-8be0b7e-release_.md",
+          "size": 7759570
+        },
+        {
+          "timestamp": 1795165059,
+          "version": "1.214 (214-15b30cf-release)",
+          "versionCode": 214,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v214-15b30cf/FuseHide-1.214_214-15b30cf-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.214__214-15b30cf-release_.md",
           "size": 7759570
         }
       ]

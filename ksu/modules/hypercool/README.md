@@ -146,7 +146,7 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Mobile data and NFC off during screen-off (back on when the screen turns on; waits during calls, audio and hotspot; off by default)
 
-- Screen-off drain check: the drain of each screen-off period of 30 min or more in Recent activity, a notification when it is high (1 h or more, 2% or more lost, from the rate you pick), and, when the drain was 1%/h or more, the user app that held wake locks the longest, with a button to block it in the background; periods with the charger plugged in part of the time are left out (on by default)
+- Screen-off drain check: the drain of each screen-off period of 30 min or more in Recent activity, a notification when it is high (1 h or more, 2% or more lost, from the rate you pick), and, when the drain was 1%/h or more, the user app that held wake locks the longest, with a button to block it in the background; periods with the charger plugged in part of the time are left out (off by default)
 
 - Heat guard (experimental, off by default): lower refresh rate and big-core limit while the battery is hot, back after it cools down
 
@@ -284,6 +284,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/7e9fd3f490ac8957d0b96895831bde3610ac21d2/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/1bc67ef1277648f34847faa183a5b1ebe8a7a21b/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

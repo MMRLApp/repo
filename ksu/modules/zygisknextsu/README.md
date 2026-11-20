@@ -4,7 +4,7 @@
 
 [![](/assets/ee245273888b189d.svg)](https://github.com/VeryBaaad/ZNNext/actions/workflows/ci.yml?query=branch%3Amaster+event%3Apush)
 [![](/assets/b59f727a02489b6b.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
-[![](/assets/82fb8e5a673ef8df.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
+[![](/assets/6b1ca45629204cd5.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
 [![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/LICENSE)
 [![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/LICENSE-DCLPL)
 
