@@ -146,6 +146,8 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Mobile data and NFC off during screen-off (back on when the screen turns on; waits during calls, audio and hotspot; off by default)
 
+- Screen-off drain check: the drain of each screen-off period of 30 min or more in Recent activity, a notification when it is high (1 h or more, 2% or more lost, from the rate you pick), and, when the drain was 1%/h or more, the user app that held wake locks the longest, with a button to block it in the background; periods with the charger plugged in part of the time are left out (on by default)
+
 - Heat guard (experimental, off by default): lower refresh rate and big-core limit while the battery is hot, back after it cools down
 
 - Recent activity on Home: the 3 newest events, and Show all with filters (All, Keepers, Manual, Idle drain) for the last 50: boot result with the features that failed, saved setting changes, cache clean, app optimization, F2FS cleanup, heat guard, keepers that stopped and why, Revert and restore, screen-off drain per period and daily idle drain from Android's battery stats. High drain and failed work are coloured
@@ -224,7 +226,7 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Battery check: health, capacity, cycle count, temperature and more
 
-- Wake sources: which wakeup sources kept the CPU awake or cut its sleep short, in plain names (Mobile data, Wi-Fi, Apps and Android…), with how much of the time the phone was awake since "Mark start"; "Apps and Android" opens the apps that held wake locks (Android battery stats, read with `dumpsys batterystats -c`; read only)
+- Wake sources: which wakeup sources kept the CPU awake or cut its sleep short, in plain names (Mobile data, Wi-Fi, Apps and Android, Android system, Alarms and timers…), with how much of the time the phone was awake since "Mark start"; "Apps and Android" opens the apps that held wake locks (Android battery stats, read with `dumpsys batterystats --charged`, without the battery history), each with a button to block it in the background
 
 - CPU use now: the busiest processes over 2 seconds as a share of the whole CPU, in plain names; the measurement and the root manager are left out (read only)
 
@@ -282,6 +284,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/e774e3afe67a777a1077bbbc05ecf101cad8edce/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/7e9fd3f490ac8957d0b96895831bde3610ac21d2/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

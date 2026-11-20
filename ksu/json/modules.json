@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795132696.729
+    "timestamp": 1795152805.846
   },
   "modules": [
     {
@@ -64,7 +64,7 @@
       "size": 548317,
       "permissions": [],
       "features": {},
-      "stars": 10,
+      "stars": 11,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793897102,
@@ -232,7 +232,7 @@
       "size": 4027697,
       "permissions": [],
       "features": {},
-      "stars": 40,
+      "stars": 41,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793534585,
@@ -407,7 +407,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 61,
+      "stars": 63,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -1283,7 +1283,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1850,
+      "stars": 1855,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1360,7 +1360,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1795110246.023,
+      "timestamp": 1795144711.071,
       "size": 361956,
       "permissions": [],
       "features": {},
@@ -1510,7 +1510,7 @@
       "size": 107758,
       "permissions": [],
       "features": {},
-      "stars": 26,
+      "stars": 27,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794032147,
@@ -1827,7 +1827,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1793532927,
-      "timestamp": 1795091734.799,
+      "timestamp": 1795138704.668,
       "size": 61442927,
       "permissions": [],
       "features": {},
@@ -1925,8 +1925,8 @@
     {
       "id": "magisk-netbird",
       "name": "Magisk NetBird",
-      "version": "v1.4.13-0.82.1",
-      "versionCode": 10413,
+      "version": "v1.5.0-0.83.1",
+      "versionCode": 10500,
       "author": "ahsaboy",
       "description": "NetBird mesh VPN client for rooted Android devices",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magisk-netbird/README.md",
@@ -1938,8 +1938,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f02f1e5d4edd4fbe.png",
       "added": 1792770944,
-      "timestamp": 1794411049,
-      "size": 45255524,
+      "timestamp": 1795143278.554,
+      "size": 49143265,
       "permissions": [],
       "features": {},
       "stars": 11,
@@ -1990,6 +1990,14 @@
           "zipUrl": "https://github.com/ahsaboy/magisk-netbird/releases/download/v1.4.13/magisk-netbird-10413-v1.4.13-0.82.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magisk-netbird/changelogs/v1.4.13-0.82.1.md",
           "size": 45255524
+        },
+        {
+          "timestamp": 1795143256,
+          "version": "v1.5.0-0.83.1",
+          "versionCode": 10500,
+          "zipUrl": "https://github.com/ahsaboy/magisk-netbird/releases/download/v1.5.0/magisk-netbird-10500-v1.5.0-0.83.1.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magisk-netbird/changelogs/v1.5.0-0.83.1.md",
+          "size": 49143265
         }
       ]
     },
@@ -2326,7 +2334,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 736,
+      "stars": 738,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2428,7 +2436,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4225,
+      "stars": 4228,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2518,7 +2526,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 67,
+      "stars": 68,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2560,7 +2568,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 160,
+      "stars": 162,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2693,8 +2701,8 @@
     {
       "id": "sidewire",
       "name": "sidewire",
-      "version": "1.0.8",
-      "versionCode": 35,
+      "version": "1.1.0",
+      "versionCode": 36,
       "author": "mzggr0914",
       "description": "native bridge for controlling rooted Android devices from Windows, macOS, or Linux. It does not rely on ADB.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/sidewire/README.md",
@@ -2704,11 +2712,11 @@
         "tools"
       ],
       "added": 1792763658,
-      "timestamp": 1794994216.639,
-      "size": 1217661,
+      "timestamp": 1795144711.071,
+      "size": 1178399,
       "permissions": [],
       "features": {},
-      "stars": 44,
+      "stars": 45,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792763658,
@@ -2756,6 +2764,14 @@
           "zipUrl": "https://github.com/mzggr0914/sidewire/releases/download/v1.0.8/SideWire-KernelSU-v1.0.8-arm64.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/sidewire/changelogs/1.0.8.md",
           "size": 1217661
+        },
+        {
+          "timestamp": 1795138679,
+          "version": "1.1.0",
+          "versionCode": 36,
+          "zipUrl": "https://github.com/mzggr0914/sidewire/releases/download/v1.1.0/SideWire-KernelSU-v1.1.0-arm64.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/sidewire/changelogs/1.1.0.md",
+          "size": 1178399
         }
       ]
     },
@@ -3192,7 +3208,7 @@
       "size": 7759570,
       "permissions": [],
       "features": {},
-      "stars": 30,
+      "stars": 31,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793338445,

@@ -1,6 +1,6 @@
 # SideWire
 
-[한국어](https://github.com/mzggr0914/sidewire/blob/2573960d2d02ac52d886ec58b4df6d879e486e46/README.ko.md)
+[한국어](https://github.com/mzggr0914/sidewire/blob/750c21b8afc310e15efaf1ab346b59913580a37d/README.ko.md)
 
 KernelSU Module URL: [https://modules.kernelsu.org/en/modules/sidewire/](https://modules.kernelsu.org/en/modules/sidewire/)
 
@@ -10,7 +10,7 @@ It provides a Rust daemon installed as a KernelSU module and a Rust CLI/server o
 
 Secure connections are the default, and normal traffic is authenticated and encrypted after pairing.
 
-It supports most of the workflows you would normally use ADB for, but ADB is not used internally, so SideWire does not show up as an ADB session.
+SideWire connections do not appear as ADB sessions. Under Android’s default security policy with SELinux in enforcing mode, ordinary apps running in the `untrusted_app` domain cannot directly check whether the SideWire daemon (`sidewired`) is running.
 
 ## What it does
 
@@ -20,7 +20,7 @@ It supports most of the workflows you would normally use ADB for, but ADB is not
 
 - recursive file push and pull
 
-- PC and Android text clipboard
+- read, write, and clear the Android text clipboard
 
 - TCP forward and reverse tunnels
 
@@ -79,18 +79,27 @@ Interactive shells use the Android shell's line editing, history, and Tab comple
 On Windows, this also keeps pasted input and shell prompts in the same output stream.
 The `--raw` option remains available for compatibility and uses the same interactive mode.
 
-## Clipboard and files
+## Android clipboard
 
 ```
-sidewire clipboard push
-sidewire clipboard pull
+sidewire clipboard get
+sidewire clipboard set "Hello from SideWire"
+sidewire clipboard clear
+
+```
+
+`clipboard get` writes the Android clipboard text to standard output as-is, without adding a newline.
+
+## File transfers
+
+```
 sidewire push .\build /data/local/tmp/build
 sidewire pull /sdcard/Download/report.txt ./
 sidewire pull /sdcard/MyFolder .\MyFolder
 
 ```
 
-`clipboard push` copies the PC clipboard to Android; `pull` does the reverse. Recursive `push`/`pull` transfers use up to 4 concurrent files by default; use `--jobs 1..16` to tune concurrency. Protocol 1.2 peers also apply receive-window flow control to file chunks, while older peers keep the existing fallback behavior.
+Recursive `push`/`pull` transfers use up to 4 concurrent files by default; use `--jobs 1..16` to tune concurrency. Protocol 1.2 peers also apply receive-window flow control to file chunks, while older peers keep the existing fallback behavior.
 
 For a single-file `pull`, an existing local directory keeps the remote file name. Otherwise, the destination is used as the output file path. An existing output file is overwritten.
 
@@ -113,28 +122,34 @@ Secure mode uses SPAKE2 for the short-lived pairing PIN and Noise for authentica
 
 Plaintext mode exists for trusted development networks, but both sides must explicitly opt into it. Secure connections never silently downgrade.
 
-See [SECURITY.md](https://github.com/mzggr0914/sidewire/blob/2573960d2d02ac52d886ec58b4df6d879e486e46/SECURITY.md) for vulnerability reporting.
+See [SECURITY.md](https://github.com/mzggr0914/sidewire/blob/750c21b8afc310e15efaf1ab346b59913580a37d/SECURITY.md) for vulnerability reporting.
 
 ## Building
 
-Windows + WebUI + Android:
+On Linux or WSL, build the Linux CLI and the KernelSU module components for development:
 
 ```
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build.ps1
-
-```
-
-macOS host CLI:
-
-```
-bash ./scripts/build-macos.sh
+bash scripts/build.sh
 
 ```
 
-Linux host CLI:
+To build and package release artifacts in `dist/`, run:
 
 ```
-bash ./scripts/build-linux.sh
+bash scripts/release.sh
+
+```
+
+Both scripts accept `--host-only` for the Linux CLI or `--android-only` for the KernelSU module. If you already built the selected targets, pass `--skip-build` to `release.sh` to package the existing outputs.
+
+For a Linux host build, install Rust and a C toolchain. Android builds also need Node.js 24 (for example via `fnm`), the pnpm version pinned in `webui/package.json`, Linux Android NDK r30, and `cargo-ndk`. Install the Rust target with `rustup target add aarch64-linux-android` and cargo-ndk with `cargo install cargo-ndk --locked`. Set `ANDROID_NDK_HOME` if the NDK is outside the SDK's default location.
+
+The clipboard helper needs a JDK and `sha256sum`, plus `curl` on the first build to download D8. CI uses JDK 21, which is also recommended for local builds. KernelSU ZIP packaging additionally needs `zip` and `unzip`.
+
+Build the Windows CLI with `cargo build --release --locked -p sidewire` from a native Windows Rust/MSVC environment. On macOS, build the CLI with:
+
+```
+bash scripts/build-macos.sh
 
 ```
 
@@ -151,4 +166,4 @@ The wire protocol is currently `1.2` with capability negotiation for optional fe
 
 ## License
 
-GNU General Public License v3.0 (`GPL-3.0-only`). See [LICENSE](https://github.com/mzggr0914/sidewire/blob/2573960d2d02ac52d886ec58b4df6d879e486e46/LICENSE).
+GNU General Public License v3.0 (`GPL-3.0-only`). See [LICENSE](https://github.com/mzggr0914/sidewire/blob/750c21b8afc310e15efaf1ab346b59913580a37d/LICENSE).
