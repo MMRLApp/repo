@@ -5,7 +5,7 @@
 KernelSU / Magisk module for Qualcomm and MediaTek phones. Less heat, less battery drain, longer battery life.
 Focused on battery life, not peak performance.
 
-  [![](/assets/9d9f8babe521d975.svg)](https://github.com/yudharn/HyperCool/releases)
+  [![](/assets/5d95652b60a36642.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
   [![](/assets/0099d3669ffdec85.svg)](https://github.com/yudharn/HyperCool/releases/latest)
@@ -146,6 +146,8 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Mobile data and NFC off during screen-off (back on when the screen turns on; waits during calls, audio and hotspot; off by default)
 
+- Hibernate background apps: a few minutes after the screen goes off, apps still running in the background (user apps and preinstalled apps with a launcher icon, such as Chrome, YouTube or Gallery) are stopped until you open them (or only their background processes closed); Protected apps, launcher, keyboard, phone, SMS, accessibility, VPN, alarm clocks, the last app and anything playing are skipped, never while charging (off by default); Hibernate apps now on Home does the same at any time
+
 - Screen-off drain check: the drain of each screen-off period of 30 min or more in Recent activity, a notification when it is high (1 h or more, 2% or more lost, from the rate you pick), and, when the drain was 1%/h or more, the user app that held wake locks the longest, with a button to block it in the background; periods with the charger plugged in part of the time are left out (off by default)
 
 - Heat guard (experimental, off by default): lower refresh rate and big-core limit while the battery is hot, back after it cools down
@@ -284,6 +286,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/e0a31fc29a1dc58ff0ba8ebb1296cf699ccc338a/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/5fa45f8769475e49a07951aa6de0c229b4fee0f4/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

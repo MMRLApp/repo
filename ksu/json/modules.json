@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795235545.671
+    "timestamp": 1795268946.026
   },
   "modules": [
     {
@@ -64,7 +64,7 @@
       "size": 548317,
       "permissions": [],
       "features": {},
-      "stars": 11,
+      "stars": 12,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793897102,
@@ -287,7 +287,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 148,
+      "stars": 149,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -625,7 +625,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4b6804c0f27f12f5.png",
       "added": 1792694429,
-      "timestamp": 1794235267,
+      "timestamp": 1795267141.726,
       "size": 10634913,
       "permissions": [],
       "features": {},
@@ -823,7 +823,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 474,
+      "stars": 479,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1360,7 +1360,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794497430,
-      "timestamp": 1795189403.15,
+      "timestamp": 1795267984.86,
       "size": 380354,
       "permissions": [],
       "features": {},
@@ -1612,8 +1612,8 @@
     {
       "id": "ksuGrantToast",
       "name": "KernelSU Grant Toast",
-      "version": "2.4",
-      "versionCode": 15,
+      "version": "2.5",
+      "versionCode": 16,
       "author": "NativeStar",
       "description": "Show a root granted toast like Magisk.让KSU像Magisk一样显示超级用户授权Toast.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/ksuGrantToast/README.md",
@@ -1625,8 +1625,8 @@
         "notify"
       ],
       "added": 1792829886,
-      "timestamp": 1793527949.247,
-      "size": 291063,
+      "timestamp": 1795264668,
+      "size": 642554,
       "permissions": [],
       "features": {},
       "stars": 63,
@@ -1645,6 +1645,14 @@
           "zipUrl": "https://github.com/NativeStar/KernelSUGrantToast/releases/download/2.4/KernelSUGrantToast.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/ksuGrantToast/changelogs/2.4.md",
           "size": 291063
+        },
+        {
+          "timestamp": 1795264668,
+          "version": "2.5",
+          "versionCode": 16,
+          "zipUrl": "https://github.com/NativeStar/KernelSUGrantToast/releases/download/2.5/KernelSUGrantToast.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/ksuGrantToast/changelogs/2.5.md",
+          "size": 642554
         }
       ]
     },
@@ -1790,7 +1798,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 625,
+      "stars": 627,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1839,7 +1847,7 @@
       "size": 61442927,
       "permissions": [],
       "features": {},
-      "stars": 237,
+      "stars": 236,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793532927,
@@ -2209,7 +2217,7 @@
       "size": 27751684,
       "permissions": [],
       "features": {},
-      "stars": 1458,
+      "stars": 1460,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2300,7 +2308,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 710,
+      "stars": 719,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2350,7 +2358,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 741,
+      "stars": 743,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2606,8 +2614,8 @@
     {
       "id": "shellscaled",
       "name": "Shellscaled",
-      "version": "1.104.6",
-      "versionCode": 110400601,
+      "version": "1.104.7",
+      "versionCode": 110400700,
       "author": "KyuubiRan",
       "description": "Run Tailscale natively on rooted Android, with a KernelSU WebUI and offline installation.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/README.md",
@@ -2618,34 +2626,26 @@
         "tailscale",
         "vpn"
       ],
-      "added": 1793607023,
-      "timestamp": 1794400364,
-      "size": 13456166,
+      "added": 1793622726,
+      "timestamp": 1795267119,
+      "size": 13457214,
       "permissions": [],
       "features": {},
-      "stars": 32,
+      "stars": 34,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793607023,
+        "added": 1793622726,
         "source": "https://github.com/KyuubiRan/Shellscaled",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1793607023,
-          "version": "1.104.4",
-          "versionCode": 110400410,
-          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r10/Shellscaled-1.104.4-r10-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_9.md",
-          "size": 13345852
-        },
-        {
           "timestamp": 1793622726,
           "version": "1.104.4",
           "versionCode": 110400411,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r11/Shellscaled-1.104.4-r11-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_8.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_9.md",
           "size": 13346226
         },
         {
@@ -2653,7 +2653,7 @@
           "version": "1.104.4",
           "versionCode": 110400412,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r12/Shellscaled-1.104.4-r12-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_7.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_8.md",
           "size": 13453130
         },
         {
@@ -2661,7 +2661,7 @@
           "version": "1.104.4",
           "versionCode": 110400413,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r13/Shellscaled-1.104.4-r13-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_6.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_7.md",
           "size": 13454017
         },
         {
@@ -2677,7 +2677,7 @@
           "version": "1.104.5",
           "versionCode": 110400500,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.5-r0/Shellscaled-1.104.5-r0-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_4.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_5.md",
           "size": 13452081
         },
         {
@@ -2685,7 +2685,7 @@
           "version": "1.104.5",
           "versionCode": 110400501,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.5-r1/Shellscaled-1.104.5-r1-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_3.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_4.md",
           "size": 13452077
         },
         {
@@ -2701,7 +2701,7 @@
           "version": "1.104.6",
           "versionCode": 110400600,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.6-r0/Shellscaled-1.104.6-r0-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.6_1.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.6_2.md",
           "size": 13456164
         },
         {
@@ -2711,6 +2711,14 @@
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.6-r1/Shellscaled-1.104.6-r1-arm64.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.6.md",
           "size": 13456166
+        },
+        {
+          "timestamp": 1795267119,
+          "version": "1.104.7",
+          "versionCode": 110400700,
+          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.7-r0/Shellscaled-1.104.7-r0-arm64.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.7.md",
+          "size": 13457214
         }
       ]
     },
@@ -3111,7 +3119,7 @@
       "size": 3416152,
       "permissions": [],
       "features": {},
-      "stars": 148,
+      "stars": 150,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793662553,
@@ -3318,8 +3326,8 @@
     {
       "id": "zygisk-sui",
       "name": "Zygisk - Sui",
-      "version": "v13.5.4.3 (586-a672eb8-release)",
-      "versionCode": 586,
+      "version": "v13.5.4.3 (587-f7dd660-release)",
+      "versionCode": 587,
       "author": "XiaoTong, RikkaW, Sui Contributors",
       "description": "Fork by XiaoTong. Modern super user interface implementation on Android.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/README.md",
@@ -3333,28 +3341,20 @@
         "sui",
         "zygisk"
       ],
-      "added": 1792659135,
-      "timestamp": 1795099110,
-      "size": 1505712,
+      "added": 1792923926,
+      "timestamp": 1795263497,
+      "size": 1505875,
       "permissions": [],
       "features": {},
       "stars": 20,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1792659135,
+        "added": 1792923926,
         "source": "https://github.com/XiaoTong6666/zygisk-sui",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1792659135,
-          "version": "v13.5.4.3 (569-8d2392a-release)",
-          "versionCode": 569,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v569-8d2392a/Sui-v13.5.4.3_569-8d2392a-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__569-8d2392a-release_.md",
-          "size": 1454699
-        },
         {
           "timestamp": 1792923926,
           "version": "v13.5.4.3 (571-af5447f-release)",
@@ -3426,6 +3426,14 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v586-a672eb8/Sui-v13.5.4.3_586-a672eb8-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__586-a672eb8-release_.md",
           "size": 1505712
+        },
+        {
+          "timestamp": 1795263497,
+          "version": "v13.5.4.3 (587-f7dd660-release)",
+          "versionCode": 587,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v587-f7dd660/Sui-v13.5.4.3_587-f7dd660-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__587-f7dd660-release_.md",
+          "size": 1505875
         }
       ]
     },

@@ -8,7 +8,7 @@
 [![](/assets/b1313ec045b74093.svg)](https://github.com/topjohnwu/Magisk)
 [![](/assets/964bcdcda941337b.svg)](https://www.android.com/)
 [![](/assets/08bec01f9f6e70bd.svg)](https://github.com/AlirezaParsi/COPG/releases)
-[![](/assets/645662f215fa9272.svg)](https://github.com/AlirezaParsi/COPG/blob/2b7889f3f864138b2d89097228e921c4c8cbeea7/LICENSE)
+[![](/assets/645662f215fa9272.svg)](https://github.com/AlirezaParsi/COPG/blob/b0d19e65c59041d0edbcb011a8c958bd4a5ce070/LICENSE)
 
 [![](/assets/0ad92c2d0b5f1b92.svg)](#user-content--installation)
 [![](/assets/9fd0b1577341be05.svg)](#user-content--webui)
@@ -19,7 +19,7 @@
 
 **🌐 Official website — download COPG free & buy COPG PRO: [vendors.copg.my](https://vendors.copg.my/)**
 
-🌐 Languages / 语言：**English** · [简体中文](https://github.com/AlirezaParsi/COPG/blob/2b7889f3f864138b2d89097228e921c4c8cbeea7/README.zh.md)
+🌐 Languages / 语言：**English** · [简体中文](https://github.com/AlirezaParsi/COPG/blob/b0d19e65c59041d0edbcb011a8c958bd4a5ce070/README.zh.md)
 
 ## ✨ Why COPG?
 
@@ -59,13 +59,17 @@ are otherwise gated to specific hardware. It pairs that with a **CPU spoofer**, 
 
 - **Boot ID** `PRO` ⚠️ — a per-app `/proc` boot_id, so a value meant to be unique-per-boot stops linking your accounts across apps.
 
-- **Randomize IDs Each Launch** `PRO` — re-roll every derived ID (Android ID, serial, Advertising ID, App Set ID, IMEI, boot ID, MAC) on every cold launch; pair with the Random device profile for a brand-new identity each time.
+- **Randomize IDs Each Launch** `PRO` — re-roll every derived ID (Android ID, serial, Advertising ID, App Set ID, GSF ID, OAID, IMEI, boot ID, MAC) on every cold launch; pair with the Random device profile for a brand-new identity each time.
 
 - **DRM / Widevine** `PRO` — report a higher Widevine security level (L1 / L2 / L3) and spoof the DRM device & system ID.
 
 - **Advertising ID** `PRO` — each app its own Google Advertising ID (auto per-app, or pin a UUID).
 
 - **App Set ID** `PRO` ⚠️ — each app its own Google App Set ID (auto per-app, or pin a UUID).
+
+- **GSF ID** `PRO` ⚠️ — each app its own Google Services Framework (GSF) ID, the 64-bit check-in anchor separate from Android ID (auto per-app, or pin a value).
+
+- **OAID** `PRO` ⚠️ — each app its own OAID, the Chinese-ecosystem MSA advertising / tracking ID read from Huawei / Xiaomi / vivo / OPPO / ASUS / Lenovo identifier providers (auto per-app, or pin a UUID).
 
 - **Wallpaper ID** `PRO` — a per-app wallpaper ID, a data-clear-surviving link signal fraud SDKs read. *(stealth, system_server)*
 
@@ -282,7 +286,7 @@ The WebUI is the recommended way to manage profiles, but you can also edit
 
 Package **tags** are colon suffixes — e.g. `:cpu=<model>` (CPU spoof + pick the chip),
 `:gpu=<model>` (GPU spoof + pick the GPU), `:cow` (prop spoof), `:aid` (Android ID),
-`:serial` (per‑app serial), `:gaid` (Advertising ID), `:appset` (App Set ID), `:drm` (Widevine),
+`:serial` (per‑app serial), `:gaid` (Advertising ID), `:appset` (App Set ID), `:gsf` (GSF ID), `:oaid` (OAID), `:drm` (Widevine),
 `:imei` (IMEI), `:sim=<carrier>` / `:simx=<carrier>` (SIM · safe / aggressive), `:tz=<zone>` (timezone),
 `:lang=<bcp47>` (language / region), `:ua=<profile>` (WebView User‑Agent), `:uptime=<sec>` (fake uptime),
 `:sensor` (sensor‑roster spoof), `:webfp` (WebView canvas spoof), `:tensorfeat` (Pixel Tensor features),
