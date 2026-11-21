@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795217231.122
+    "timestamp": 1795235545.671
   },
   "modules": [
     {
@@ -232,7 +232,7 @@
       "size": 4027697,
       "permissions": [],
       "features": {},
-      "stars": 41,
+      "stars": 40,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793534585,
@@ -1283,7 +1283,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1855,
+      "stars": 1856,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -2088,6 +2088,14 @@
           "zipUrl": "https://github.com/jjh138792/MirageForge/releases/download/1.2.0/MirageForge-Zygisk-1.2.0.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/mirage_forge/changelogs/1.2.0.md",
           "size": 2181768
+        },
+        {
+          "timestamp": 1795231008,
+          "version": "1.3.0-Canary-fbace66",
+          "versionCode": 999,
+          "zipUrl": "https://github.com/jjh138792/MirageForge/releases/download/1.3.0-Canary-fbace66/MirageForge-Zygisk-1.3.0-Canary-fbace66.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/mirage_forge/changelogs/1.3.0-Canary-fbace66.md",
+          "size": 2275027
         }
       ]
     },
@@ -2342,7 +2350,7 @@
       "size": 4930351,
       "permissions": [],
       "features": {},
-      "stars": 738,
+      "stars": 741,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2444,7 +2452,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4228,
+      "stars": 4238,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2534,7 +2542,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 68,
+      "stars": 69,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2576,7 +2584,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 162,
+      "stars": 163,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2806,7 +2814,7 @@
       "size": 984132,
       "permissions": [],
       "features": {},
-      "stars": 23,
+      "stars": 24,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794842549,
@@ -2901,7 +2909,7 @@
       "size": 155681,
       "permissions": [],
       "features": {},
-      "stars": 34,
+      "stars": 35,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791709999,
