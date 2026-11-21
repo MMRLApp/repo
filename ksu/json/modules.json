@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795268946.026
+    "timestamp": 1795300271.24
   },
   "modules": [
     {
@@ -137,7 +137,7 @@
       "size": 2009,
       "permissions": [],
       "features": {},
-      "stars": 1,
+      "stars": 2,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794060061,
@@ -407,7 +407,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 63,
+      "stars": 64,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -609,8 +609,8 @@
     {
       "id": "COPG",
       "name": "COPG",
-      "version": "7.7.2",
-      "versionCode": 772,
+      "version": "7.8.2",
+      "versionCode": 782,
       "author": "AlirezaParsi",
       "description": "Advanced Android customization & spoofing — per-app device, CPU, GPU, Build, SIM, DRM and ID control with a WebUI.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/README.md",
@@ -625,8 +625,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4b6804c0f27f12f5.png",
       "added": 1792694429,
-      "timestamp": 1795267141.726,
-      "size": 10634913,
+      "timestamp": 1795269771,
+      "size": 11548251,
       "permissions": [],
       "features": {},
       "stars": 438,
@@ -677,6 +677,14 @@
           "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.7.2/COPG-v7.7.2.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.7.2.md",
           "size": 10634913
+        },
+        {
+          "timestamp": 1795269771,
+          "version": "7.8.2",
+          "versionCode": 782,
+          "zipUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.8.2/COPG-v7.8.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/COPG/changelogs/7.8.2.md",
+          "size": 11548251
         }
       ]
     },
@@ -703,7 +711,7 @@
       "size": 3149975,
       "permissions": [],
       "features": {},
-      "stars": 28,
+      "stars": 29,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -776,7 +784,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 915,
+      "stars": 916,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -1345,8 +1353,8 @@
     {
       "id": "hypercool",
       "name": "HyperCool - Heat & Battery Fix",
-      "version": "v2.3.7",
-      "versionCode": 237,
+      "version": "v2.3.8",
+      "versionCode": 238,
       "author": "Yudharn",
       "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
@@ -1359,28 +1367,20 @@
         "webui"
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
-      "added": 1794497430,
-      "timestamp": 1795267984.86,
-      "size": 380354,
+      "added": 1794713278,
+      "timestamp": 1795279487.155,
+      "size": 390304,
       "permissions": [],
       "features": {},
-      "stars": 29,
+      "stars": 30,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794497430,
+        "added": 1794713278,
         "source": "https://github.com/yudharn/HyperCool",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794497430,
-          "version": "v2.2.5",
-          "versionCode": 225,
-          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.2.5/HyperCool_v2.2.5.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.2.5.md",
-          "size": 328532
-        },
         {
           "timestamp": 1794713278,
           "version": "v2.2.6",
@@ -1452,6 +1452,14 @@
           "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.7/HyperCool_v2.3.7.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.7.md",
           "size": 380354
+        },
+        {
+          "timestamp": 1795268921,
+          "version": "v2.3.8",
+          "versionCode": 238,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.8/HyperCool_v2.3.8.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.8.md",
+          "size": 390304
         }
       ]
     },
@@ -1475,7 +1483,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 19,
+      "stars": 20,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1715,7 +1723,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 44,
+      "stars": 46,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1958,7 +1966,7 @@
       "size": 49143265,
       "permissions": [],
       "features": {},
-      "stars": 11,
+      "stars": 12,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792770944,
@@ -2626,34 +2634,26 @@
         "tailscale",
         "vpn"
       ],
-      "added": 1793622726,
-      "timestamp": 1795267119,
+      "added": 1793622993,
+      "timestamp": 1795269860,
       "size": 13457214,
       "permissions": [],
       "features": {},
       "stars": 34,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793622726,
+        "added": 1793622993,
         "source": "https://github.com/KyuubiRan/Shellscaled",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1793622726,
-          "version": "1.104.4",
-          "versionCode": 110400411,
-          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r11/Shellscaled-1.104.4-r11-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_9.md",
-          "size": 13346226
-        },
-        {
           "timestamp": 1793622993,
           "version": "1.104.4",
           "versionCode": 110400412,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r12/Shellscaled-1.104.4-r12-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_8.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_9.md",
           "size": 13453130
         },
         {
@@ -2661,7 +2661,7 @@
           "version": "1.104.4",
           "versionCode": 110400413,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.4-r13/Shellscaled-1.104.4-r13-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_7.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.4_8.md",
           "size": 13454017
         },
         {
@@ -2677,7 +2677,7 @@
           "version": "1.104.5",
           "versionCode": 110400500,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.5-r0/Shellscaled-1.104.5-r0-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_5.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_6.md",
           "size": 13452081
         },
         {
@@ -2685,7 +2685,7 @@
           "version": "1.104.5",
           "versionCode": 110400501,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.5-r1/Shellscaled-1.104.5-r1-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_4.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.5_5.md",
           "size": 13452077
         },
         {
@@ -2701,7 +2701,7 @@
           "version": "1.104.6",
           "versionCode": 110400600,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.6-r0/Shellscaled-1.104.6-r0-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.6_2.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.6_3.md",
           "size": 13456164
         },
         {
@@ -2717,8 +2717,16 @@
           "version": "1.104.7",
           "versionCode": 110400700,
           "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.7-r0/Shellscaled-1.104.7-r0-arm64.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.7.md",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.7_1.md",
           "size": 13457214
+        },
+        {
+          "timestamp": 1795269860,
+          "version": "1.104.7",
+          "versionCode": 110400701,
+          "zipUrl": "https://github.com/KyuubiRan/Shellscaled/releases/download/v1.104.7-r1/Shellscaled-1.104.7-r1-arm64.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/shellscaled/changelogs/1.104.7.md",
+          "size": 13457252
         }
       ]
     },
@@ -2740,7 +2748,7 @@
       "size": 1178399,
       "permissions": [],
       "features": {},
-      "stars": 45,
+      "stars": 46,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792763658,
@@ -3045,7 +3053,7 @@
       "size": 4060477,
       "permissions": [],
       "features": {},
-      "stars": 17,
+      "stars": 18,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794605486,
@@ -3232,7 +3240,7 @@
       "size": 7759570,
       "permissions": [],
       "features": {},
-      "stars": 31,
+      "stars": 32,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793798682,
@@ -3346,7 +3354,7 @@
       "size": 1505875,
       "permissions": [],
       "features": {},
-      "stars": 20,
+      "stars": 21,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792923926,
