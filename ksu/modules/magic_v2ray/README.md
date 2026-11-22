@@ -1,6 +1,6 @@
 # Magic V2Ray
 
-[English](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README.md) | [Tiếng Việt](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_vi.md) | [Русский](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_ru.md) | [简体中文](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_zh-CN.md) | [繁體中文（台灣）](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_zh-TW.md) | [繁體中文（香港）](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_zh-HK.md)
+[English](https://github.com/vincentng295/Magic_V2Ray/blob/6f3cdcffba0ce5a9175d2c53b9894e63baf3ee21/docs/README.md) | [Tiếng Việt](https://github.com/vincentng295/Magic_V2Ray/blob/6f3cdcffba0ce5a9175d2c53b9894e63baf3ee21/docs/README_vi.md) | [Русский](https://github.com/vincentng295/Magic_V2Ray/blob/6f3cdcffba0ce5a9175d2c53b9894e63baf3ee21/docs/README_ru.md) | [简体中文](https://github.com/vincentng295/Magic_V2Ray/blob/6f3cdcffba0ce5a9175d2c53b9894e63baf3ee21/docs/README_zh-CN.md) | [繁體中文（台灣）](https://github.com/vincentng295/Magic_V2Ray/blob/6f3cdcffba0ce5a9175d2c53b9894e63baf3ee21/docs/README_zh-TW.md) | [繁體中文（香港）](https://github.com/vincentng295/Magic_V2Ray/blob/6f3cdcffba0ce5a9175d2c53b9894e63baf3ee21/docs/README_zh-HK.md)
 
 ![](/assets/5dcc076b0ad0fda2.jpg)
 
@@ -59,6 +59,10 @@ Starting with **v2.0**, devices without root access can run Magic V2Ray seamless
 ## Installation & Usage
 
 Magic V2Ray is distributed as a standalone Android application (`.apk`), which also doubles as a flashable root module zip.
+
+Important
+
+The `.zip` downloaded from [modules.kernelsu.org](https://modules.kernelsu.org/) is **only an installer**, not the APK. To get the APK, download it from the [repo's Releases page](https://github.com/vincentng295/Magic_V2Ray/releases).
 
 ### Non-Root Users
 
@@ -370,6 +374,6 @@ The Web UI assets are located at `app/src/main/assets/webroot`. The app exposes 
 
 ## License
 
-By using this project, you agree to the terms and conditions set forth in the license. For more details, please refer to the [LICENSE](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/LICENSE) file in this repository.
+By using this project, you agree to the terms and conditions set forth in the license. For more details, please refer to the [LICENSE](https://github.com/vincentng295/Magic_V2Ray/blob/6f3cdcffba0ce5a9175d2c53b9894e63baf3ee21/docs/LICENSE) file in this repository.
 
 Essentially, you are free to use, modify, and distribute this software, provided that you include the same license and source code availability in your own project. Moreover, using its source code or replicating its features within closed-source software may constitute a violation of the license terms.

@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795354948.727
+    "timestamp": 1795388048.134
   },
   "modules": [
     {
@@ -125,16 +125,17 @@
     {
       "id": "adbdisabler",
       "name": "ADB Disabler",
-      "version": "1.0.3",
-      "versionCode": 10003,
+      "version": "1.0.4",
+      "versionCode": 10004,
       "author": "Shuoh118",
       "description": "Blocks adb,dev options,OEM unlock at boot",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/README.md",
-      "support": "https://github.com/Shuoh118/ADB-Disabler",
+      "support": "https://github.com/Shuoh118/ADB-Disabler/issues",
       "license": "GPL-3.0-or-later",
+      "icon": "https://modules.kernelsu.org/assets/e7734a970891d0f7.png",
       "added": 1794060061,
-      "timestamp": 1795354665,
-      "size": 10102,
+      "timestamp": 1795355318.371,
+      "size": 10083,
       "permissions": [],
       "features": {},
       "stars": 2,
@@ -177,6 +178,14 @@
           "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.3/ADB-Disabler-1.0.3.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.3.md",
           "size": 10102
+        },
+        {
+          "timestamp": 1795355302,
+          "version": "1.0.4",
+          "versionCode": 10004,
+          "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.4/ADB-Disabler-1.0.4.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.4.md",
+          "size": 10083
         }
       ]
     },
@@ -423,7 +432,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 64,
+      "stars": 65,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -768,7 +777,7 @@
       "size": 3149975,
       "permissions": [],
       "features": {},
-      "stars": 29,
+      "stars": 30,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -841,7 +850,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 916,
+      "stars": 918,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -1410,8 +1419,8 @@
     {
       "id": "hypercool",
       "name": "HyperCool - Heat & Battery Fix",
-      "version": "v2.3.8",
-      "versionCode": 238,
+      "version": "v2.4.0",
+      "versionCode": 240,
       "author": "Yudharn",
       "description": "Cuts overheating and battery drain on Qualcomm and MediaTek phones, with a built-in WebUI to choose what runs.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/README.md",
@@ -1424,28 +1433,20 @@
         "webui"
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
-      "added": 1794713278,
-      "timestamp": 1795354591.07,
-      "size": 390304,
+      "added": 1794736696,
+      "timestamp": 1795379135.712,
+      "size": 413096,
       "permissions": [],
       "features": {},
       "stars": 31,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794713278,
+        "added": 1794736696,
         "source": "https://github.com/yudharn/HyperCool",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794713278,
-          "version": "v2.2.6",
-          "versionCode": 226,
-          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.2.6/HyperCool_v2.2.6.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.2.6.md",
-          "size": 328704
-        },
         {
           "timestamp": 1794736696,
           "version": "v2.3.0",
@@ -1517,6 +1518,14 @@
           "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.3.8/HyperCool_v2.3.8.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.3.8.md",
           "size": 390304
+        },
+        {
+          "timestamp": 1795379110,
+          "version": "v2.4.0",
+          "versionCode": 240,
+          "zipUrl": "https://github.com/yudharn/HyperCool/releases/download/v2.4.0/HyperCool_v2.4.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/hypercool/changelogs/v2.4.0.md",
+          "size": 413096
         }
       ]
     },
@@ -1909,7 +1918,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/807cc18fde6f9e5f.png",
       "added": 1795337241,
-      "timestamp": 1795337241,
+      "timestamp": 1795368545.659,
       "size": 3291,
       "permissions": [],
       "features": {},
@@ -1935,8 +1944,8 @@
     {
       "id": "MagicNet",
       "name": "MagicNet",
-      "version": "v1.9.2",
-      "versionCode": 10620,
+      "version": "v1.9.3",
+      "versionCode": 10621,
       "author": "LIghtJUNction",
       "description": "Android root 设备上的 sing-box 透明网络工作台，支持 TUN、eBPF、订阅导入、应用与热点分流，以及 WebUI、CLI 和 MCP。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/README.md",
@@ -1949,28 +1958,20 @@
         "tools"
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
-      "added": 1793532927,
-      "timestamp": 1795138704.668,
-      "size": 61442927,
+      "added": 1793666890,
+      "timestamp": 1795371265.013,
+      "size": 61447585,
       "permissions": [],
       "features": {},
-      "stars": 236,
+      "stars": 235,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793532927,
+        "added": 1793666890,
         "source": "https://github.com/LIghtJUNction/MagicNet",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793532927,
-          "version": "v1.8.2",
-          "versionCode": 10610,
-          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.2/MagicNet-full.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.8.2.md",
-          "size": 65459204
-        },
         {
           "timestamp": 1793666890,
           "version": "v1.8.3",
@@ -2042,6 +2043,14 @@
           "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.2/MagicNet-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.9.2.md",
           "size": 61442927
+        },
+        {
+          "timestamp": 1795371200,
+          "version": "v1.9.3",
+          "versionCode": 10621,
+          "zipUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.3/MagicNet-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/MagicNet/changelogs/v1.9.3.md",
+          "size": 61447585
         }
       ]
     },
@@ -3336,8 +3345,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.214 (214-15b30cf-release)",
-      "versionCode": 214,
+      "version": "1.215 (215-d21bd79-release)",
+      "versionCode": 215,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -3350,28 +3359,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1793798682,
-      "timestamp": 1795165059,
+      "added": 1793803236,
+      "timestamp": 1795368525,
       "size": 7759570,
       "permissions": [],
       "features": {},
-      "stars": 32,
+      "stars": 34,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793798682,
+        "added": 1793803236,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793798682,
-          "version": "1.199 (199-a6e1d36-release)",
-          "versionCode": 199,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v199-a6e1d36/FuseHide-1.199_199-a6e1d36-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.199__199-a6e1d36-release_.md",
-          "size": 7657170
-        },
         {
           "timestamp": 1793803236,
           "version": "1.201 (201-33b2011-release)",
@@ -3442,6 +3443,14 @@
           "versionCode": 214,
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v214-15b30cf/FuseHide-1.214_214-15b30cf-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.214__214-15b30cf-release_.md",
+          "size": 7759570
+        },
+        {
+          "timestamp": 1795368525,
+          "version": "1.215 (215-d21bd79-release)",
+          "versionCode": 215,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v215-d21bd79/FuseHide-1.215_215-d21bd79-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.215__215-d21bd79-release_.md",
           "size": 7759570
         }
       ]

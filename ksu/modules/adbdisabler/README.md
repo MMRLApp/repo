@@ -1,6 +1,6 @@
 ## ADB Disabler
 
-[简体中文](https://github.com/Shuoh118/ADB-Disabler/blob/39bf202a7ebec6ac2bcb1663b12fa2f9f3f32d1f/README_zh.md)
+[简体中文](https://github.com/Shuoh118/ADB-Disabler/blob/252ffa945007b6dda9471f77217a3d8ef94e340c/README_zh.md)
 
 - Works on Magisk / KernelSU / APatch
 
@@ -8,7 +8,7 @@
 
 ## Install
 
-Download `ADB-Disabler-1.0.2.zip`, flash it in your manager, reboot.
+Download `ADB-Disabler-1.0.4.zip`, flash it in your manager, reboot.
 
 Manager
 Version

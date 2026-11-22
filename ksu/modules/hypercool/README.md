@@ -8,7 +8,7 @@ Focused on battery life, not peak performance.
   [![](/assets/82553c22e4a05a92.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
-  [![](/assets/aea4a90fd0d29ff5.svg)](https://github.com/yudharn/HyperCool/releases/latest)
+  [![](/assets/25e6da21dcaae94e.svg)](https://github.com/yudharn/HyperCool/releases/latest)
 
 Everything is configured via WebUI and applied on the next boot. Only lightweight keepers run in the background, and only when enabled.
 
@@ -106,7 +106,7 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 **Heat control**
 
-- Big / little core and GPU frequency caps (with lock), GPU power collapse
+- Big / little core, GPU and memory bus frequency caps (with lock), GPU power collapse
 
 - Calmer CPU governor (WALT / schedutil), kernel touch boost off
 
@@ -114,9 +114,13 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - CPU keeper: puts the caps back when the ROM undoes them
 
-- UI blur off, cooler charging and ~80% charge limit (Xiaomi)
+- UI blur off and cooler charging
 
 - Heat guard (experimental): lower refresh rate and big-core limit while the battery is hot
+
+- Pause / bypass charging when hot, at a level or while gaming (charging switch, 0 mA current limit or charger input off; Qualcomm and MediaTek), battery temperature warning
+
+- Game battery mode: Android Game Mode with a 60 FPS cap and lower render resolution for games
 
 **Battery drain (kernel)**
 
@@ -131,6 +135,8 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 - Screen-off drain check: drain per screen-off, alert when high, and the app that kept the phone awake
 
 - F2FS cleanup and app optimization (dex2oat) once a week with the screen off
+
+- Battery history: 48 h chart of level, temperature and screen-on / screen-off drain
 
 **Apps**
 
@@ -150,7 +156,7 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Stronger Battery Saver with auto level, screen dimming, Smart Pixels
 
-- Refresh rate cap, adaptive refresh rate, animation scale
+- Refresh rate cap, adaptive refresh rate, animation scale, lower screen resolution
 
 **Extras**
 
@@ -162,17 +168,17 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - GMS ads / analytics freeze, log cleanup, vendor diagnostics off
 
-- Kernel power saving, Energy Aware Scheduler, idle USB / I2C / SPI power saving
+- Kernel power saving, Energy Aware Scheduler (C-state aware), idle USB / I2C / SPI power saving
 
 - Fewer background jobs, compact background apps when RAM is low
 
-- Auto app cache clean, on-demand app optimization, boot notification
+- Auto app cache clean, on-demand app optimization, leftover app folder cleanup, boot notification
 
 **Home**
 
 - Search, Recent activity and Keeper status
 
-- Idle drain, battery check and battery calibration
+- Idle drain, battery check, battery history and battery calibration
 
 - Top battery use, Wake sources (with the apps holding wake locks), CPU use now
 
@@ -228,6 +234,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/cf7df19fd5d0e7ecd1de847d0bca3f8c0d52ea61/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/22a127d0e90f7089e0654e3aee754808f327b93a/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).
