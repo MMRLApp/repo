@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795319204.028
+    "timestamp": 1795354948.727
   },
   "modules": [
     {
@@ -60,7 +60,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/26ef13138d9c44b8.png",
       "added": 1793897102,
-      "timestamp": 1794940077.012,
+      "timestamp": 1795346750.729,
       "size": 548317,
       "permissions": [],
       "features": {},
@@ -125,16 +125,16 @@
     {
       "id": "adbdisabler",
       "name": "ADB Disabler",
-      "version": "1.0.1",
-      "versionCode": 10001,
+      "version": "1.0.3",
+      "versionCode": 10003,
       "author": "Shuoh118",
-      "description": "开机禁用 adb、开发者选项和 OEM 解锁",
+      "description": "Blocks adb,dev options,OEM unlock at boot",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/README.md",
       "support": "https://github.com/Shuoh118/ADB-Disabler",
       "license": "GPL-3.0-or-later",
       "added": 1794060061,
-      "timestamp": 1794835021.714,
-      "size": 2009,
+      "timestamp": 1795354665,
+      "size": 10102,
       "permissions": [],
       "features": {},
       "stars": 2,
@@ -161,6 +161,22 @@
           "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.1/ADB-Disabler-1.0.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.1.md",
           "size": 2009
+        },
+        {
+          "timestamp": 1795346834,
+          "version": "1.0.2",
+          "versionCode": 10002,
+          "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.2/ADB-Disabler-1.0.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.2.md",
+          "size": 10025
+        },
+        {
+          "timestamp": 1795354665,
+          "version": "1.0.3",
+          "versionCode": 10003,
+          "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.3/ADB-Disabler-1.0.3.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.3.md",
+          "size": 10102
         }
       ]
     },
@@ -287,7 +303,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 149,
+      "stars": 150,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -461,6 +477,47 @@
           "zipUrl": "https://github.com/9M2PJU/ChargeBypassCap-PMI/releases/download/v1.10/chargebypasscap-pmi-v1.10.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/chargebypasscap-pmi/changelogs/v1.10.md",
           "size": 31370
+        }
+      ]
+    },
+    {
+      "id": "Clear_Rubbish",
+      "name": "AutoPurge Pro",
+      "version": "4.4.4",
+      "versionCode": 444,
+      "author": "liancan",
+      "description": "面向 Android Root 设备的智能清理、文件整理与自动维护模块，提供 WebUI 可视化管理、规则控制和定时任务。",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/Clear_Rubbish/README.md",
+      "support": "https://github.com/yunyu614/AutoPurge-Pro/issues",
+      "categories": [
+        "android",
+        "root",
+        "cleaner",
+        "file-management",
+        "automation",
+        "webui"
+      ],
+      "added": 1795296234,
+      "timestamp": 1795332560.095,
+      "size": 3533394,
+      "permissions": [],
+      "features": {},
+      "stars": 14,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1795296234,
+        "source": "https://github.com/yunyu614/AutoPurge-Pro",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1795296234,
+          "version": "4.4.4",
+          "versionCode": 444,
+          "zipUrl": "https://github.com/yunyu614/AutoPurge-Pro/releases/download/v4.4.4/Clear_Rubbish-444-4.4.4.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/Clear_Rubbish/changelogs/4.4.4.md",
+          "size": 3533394
         }
       ]
     },
@@ -831,7 +888,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 479,
+      "stars": 480,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1368,11 +1425,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794713278,
-      "timestamp": 1795279487.155,
+      "timestamp": 1795354591.07,
       "size": 390304,
       "permissions": [],
       "features": {},
-      "stars": 30,
+      "stars": 31,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794713278,
@@ -1806,7 +1863,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 627,
+      "stars": 628,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1830,6 +1887,48 @@
           "zipUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.1.12/magic_mount_rs-4.1.12-959-universal.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magic_mount_rs/changelogs/v4.1.12-959.md",
           "size": 5755243
+        }
+      ]
+    },
+    {
+      "id": "magic_v2ray",
+      "name": "Magic V2Ray",
+      "version": "v3.4",
+      "versionCode": 211,
+      "author": "HuskyDG, vincentng295",
+      "description": "System-level transparent proxy for rooted Android, built on Xray-core, with a full management app. Tap Action after installing to get the app.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magic_v2ray/README.md",
+      "support": "https://github.com/vincentng295/Magic_V2Ray/issues",
+      "license": "GPL-3.0-or-later",
+      "categories": [
+        "proxy",
+        "vpn",
+        "network",
+        "xray",
+        "tproxy"
+      ],
+      "icon": "https://modules.kernelsu.org/assets/807cc18fde6f9e5f.png",
+      "added": 1795337241,
+      "timestamp": 1795337241,
+      "size": 3291,
+      "permissions": [],
+      "features": {},
+      "stars": 67,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1795337241,
+        "source": "https://github.com/vincentng295/Magic_V2Ray",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1795337241,
+          "version": "v3.4",
+          "versionCode": 211,
+          "zipUrl": "https://github.com/vincentng295/Magic_V2Ray/releases/download/v3.4/magic_v2ray-v3.4-stub.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magic_v2ray/changelogs/v3.4.md",
+          "size": 3291
         }
       ]
     },
@@ -2209,8 +2308,8 @@
     {
       "id": "netproxy",
       "name": "NetProxy",
-      "version": "v8.7.1",
-      "versionCode": 1107,
+      "version": "v8.7.2",
+      "versionCode": 1115,
       "author": "Fanju",
       "description": "Android sing-box 透明代理模块，支持 eBPF、TUN、节点订阅和应用代理。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/README.md",
@@ -2221,11 +2320,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4bef947f9024d913.png",
       "added": 1791728886,
-      "timestamp": 1795069312,
-      "size": 27751684,
+      "timestamp": 1795322457,
+      "size": 27804816,
       "permissions": [],
       "features": {},
-      "stars": 1460,
+      "stars": 1461,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2289,6 +2388,14 @@
           "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.1/netproxy-1107-v8.7.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.1.md",
           "size": 27751684
+        },
+        {
+          "timestamp": 1795322457,
+          "version": "v8.7.2",
+          "versionCode": 1115,
+          "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.2/netproxy-1115-v8.7.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.2.md",
+          "size": 27804816
         }
       ]
     },
@@ -2316,7 +2423,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 719,
+      "stars": 725,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2346,8 +2453,8 @@
     {
       "id": "oh_my_keymint",
       "name": "Oh My Keymint",
-      "version": "1.2.6-9069c6c",
-      "versionCode": 180,
+      "version": "1.3.0-7742865",
+      "versionCode": 182,
       "author": "James Clef",
       "description": "Custom keystore implementation for Android Keystore Spoofer",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oh_my_keymint/README.md",
@@ -2362,11 +2469,11 @@
         "integrity"
       ],
       "added": 1789532214,
-      "timestamp": 1795053858.515,
-      "size": 4930351,
+      "timestamp": 1795339529,
+      "size": 4511524,
       "permissions": [],
       "features": {},
-      "stars": 743,
+      "stars": 747,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2398,6 +2505,14 @@
           "zipUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/1.2.6-9069c6c/OhMyKeymint-release-arm64-v8a-1.2.6-9069c6c.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oh_my_keymint/changelogs/1.2.6-9069c6c.md",
           "size": 4930351
+        },
+        {
+          "timestamp": 1795339529,
+          "version": "1.3.0-7742865",
+          "versionCode": 182,
+          "zipUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/1.3.0-7742865/OhMyKeymint-release-arm64-v8a-1.3.0-7742865.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oh_my_keymint/changelogs/1.3.0-7742865.md",
+          "size": 4511524
         }
       ]
     },
@@ -2639,7 +2754,7 @@
       "size": 13457214,
       "permissions": [],
       "features": {},
-      "stars": 34,
+      "stars": 36,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793622993,
@@ -2869,7 +2984,7 @@
       "size": 30505,
       "permissions": [],
       "features": {},
-      "stars": 7,
+      "stars": 8,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793207635,
@@ -3127,7 +3242,7 @@
       "size": 3416152,
       "permissions": [],
       "features": {},
-      "stars": 150,
+      "stars": 154,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793662553,
@@ -3448,8 +3563,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.18.0.2 (424-770efca-release)",
-      "versionCode": 424,
+      "version": "v2.18.0.3 (432-ffcf6b8-release)",
+      "versionCode": 432,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next API",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -3458,28 +3573,20 @@
       "categories": [
         "system"
       ],
-      "added": 1794040405,
-      "timestamp": 1794932194.316,
-      "size": 6146217,
+      "added": 1794057892,
+      "timestamp": 1795345100,
+      "size": 6144330,
       "permissions": [],
       "features": {},
-      "stars": 117,
+      "stars": 119,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794040405,
+        "added": 1794057892,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794040405,
-          "version": "v2.13.0 (304-d2ebd23-release)",
-          "versionCode": 304,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.13.0/ZNNext-v2.13.0-304-d2ebd23-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.13.0__304-d2ebd23-release_.md",
-          "size": 7276254
-        },
         {
           "timestamp": 1794057892,
           "version": "v2.14.0 (306-1aa66b8-release)",
@@ -3551,6 +3658,14 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.18.0.2/ZNNext-v2.18.0.2-424-770efca-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.18.0.2__424-770efca-release_.md",
           "size": 6146217
+        },
+        {
+          "timestamp": 1795345100,
+          "version": "v2.18.0.3 (432-ffcf6b8-release)",
+          "versionCode": 432,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.18.0.3/ZNNext-v2.18.0.3-432-ffcf6b8-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.18.0.3__432-ffcf6b8-release_.md",
+          "size": 6144330
         }
       ]
     }

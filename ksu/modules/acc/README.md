@@ -1,11 +1,11 @@
 **English** |
-  [Français](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/install/translations/fr/README.md) |
-  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/install/translations/ru/README.md) |
-  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/install/translations/tr/README.md)
+  [Français](https://github.com/Infiniti151/acc-with-webui/blob/a0ef692c374df62462f0531b6d03892f48693a52/install/translations/fr/README.md) |
+  [Русский](https://github.com/Infiniti151/acc-with-webui/blob/a0ef692c374df62462f0531b6d03892f48693a52/install/translations/ru/README.md) |
+  [Türkçe](https://github.com/Infiniti151/acc-with-webui/blob/a0ef692c374df62462f0531b6d03892f48693a52/install/translations/tr/README.md)
 
 # Advanced Charging Controller (ACC) with WebUI
 
-[![](/assets/370867252158af32.svg)](https://github.com/Infiniti151/acc-with-webui/actions/workflows/build.yml) [![](/assets/b7e1a850be6cf2b7.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/a6f359b42f361a5e.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/webui/package.json) [![](/assets/6539ffbee6645db7.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/License.md) [![](/assets/4dfdeaf96126fb39.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/d9d8dbed4acb5760.svg)](https://crowdin.com/project/acc-with-webui)
+[![](/assets/370867252158af32.svg)](https://github.com/Infiniti151/acc-with-webui/actions/workflows/build.yml) [![](/assets/b7e1a850be6cf2b7.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/a6f359b42f361a5e.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/webui/package.json) [![](/assets/6539ffbee6645db7.svg)](https://github.com/Infiniti151/acc-with-webui/blob/dev/License.md) [![](/assets/81a2f80395330d24.svg)](https://github.com/Infiniti151/acc-with-webui/releases) [![](/assets/d9d8dbed4acb5760.svg)](https://crowdin.com/project/acc-with-webui)
 
 Important
 
@@ -117,9 +117,9 @@ Translations are synchronized continuously to Crowdin, but languages are only in
 
 - [Google Pixel Devices](#user-content-google-pixel-devices)
 
-- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/override_battery_mah_capacity)
+- [Override Battery mAh Capacity](https://github.com/Infiniti151/acc-with-webui/blob/a0ef692c374df62462f0531b6d03892f48693a52/override_battery_mah_capacity)
 
-- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/1c4b794afd8fc30232c33b0499f9fbe3dd60a6f4/override_broken_temperature_sensor)
+- [Override Broken Temperature Sensor](https://github.com/Infiniti151/acc-with-webui/blob/a0ef692c374df62462f0531b6d03892f48693a52/override_broken_temperature_sensor)
 
 - [FREQUENTLY ASKED QUESTIONS (FAQ)](#user-content-frequently-asked-questions-faq)
 
@@ -246,27 +246,29 @@ The initialization script is `/data/adb/vr25/acc/service.sh`.
 
 - zip
 
+- Node.js 22.12.0+ (Node.js 26 LTS strongly recommended)
+
 ### Build Tarballs and Flashable Zips
 
 - 
 Download and extract the source code: `git clone https://github.com/Infiniti151/acc-with-webui.git`
-or `wget  https://github.com/Infiniti151/acc-with-webui/archive/master.tar.gz -O - | tar -xz`
-or `curl -L#  https://github.com/Infiniti151/acc-with-webui/archive/master.tar.gz | tar -xz`
+or `wget https://github.com/Infiniti151/acc-with-webui/archive/refs/heads/dev.tar.gz -O - | tar -xz`
+or `curl -L# https://github.com/Infiniti151/acc-with-webui/archive/refs/heads/dev.tar.gz | tar -xz`
 
 - 
 `cd acc*`
 
 - 
-`sh build.sh` (or double-click `build.bat` on Windows 10+, if you have Windows subsystem for Linux (with zip) installed)
+`sh ./build.sh` (or double-click `build.bat` on Windows 10+, if you have Windows subsystem for Linux (with zip) installed)
 
 - 
-`sh build.sh -i|--install [k] [adb device]` (for optionally pushing the built zip via ADB and installing with apd/ksud/magisk. k is for KaiOS. Specify the ADB device only if multiple devices are connected)
+`sh ./build.sh -i|--install [k] [adb device]` (for optionally pushing the built zip via ADB and installing with apd/ksud/magisk. k is for KaiOS. Specify the ADB device only if multiple devices are connected)
 
 #### Notes
 
 - 
 `build.sh` automatically sets/corrects `id=*` in `*.sh` and `update-binary` files.
-To skip generating archives, run the build script with a random argument (e.g. `sh build.sh h`).
+To skip generating archives, run the build script with an unrecognized argument (e.g., `./build.sh h` or `sh ./build.sh h`).
 
 - 
 To update the local source code, run `git pull --force` or re-download it (with `wget`/`curl`) as described above.

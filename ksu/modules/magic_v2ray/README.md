@@ -1,0 +1,375 @@
+# Magic V2Ray
+
+[English](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README.md) | [Tiếng Việt](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_vi.md) | [Русский](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_ru.md) | [简体中文](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_zh-CN.md) | [繁體中文（台灣）](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_zh-TW.md) | [繁體中文（香港）](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/README_zh-HK.md)
+
+![](/assets/5dcc076b0ad0fda2.jpg)
+
+A powerful, modern internet proxy manager for Android devices (supporting both Rooted and Non-Rooted environments). It routes system and application traffic through high-performance proxy cores to secure your connection, bypass network restrictions, and share your connection with other devices.
+
+## What is Magic V2Ray?
+
+**Magic V2Ray** is an advanced network client for Android. Built as a standalone Android app, it packages management tools and proxy cores natively to create a seamless network connection across your device.
+
+Starting with **v2.0**, Magic V2Ray introduces a **Non-Root Mode** powered by Android's `VpnService`, allowing non-rooted users to run the proxy engine smoothly. Rooted users continue to enjoy kernel-level daemon routing, persistent background processing, and low-level packet marking.
+
+It features a clean Web UI to organize proxy configurations, manage subscriptions, and monitor your network with ease.
+
+## Key Highlights & Operation Modes
+
+### 1. Root Mode (Daemon Engine)
+
+Designed for maximum stability and advanced network routing on rooted devices (Magisk, KernelSU, APatch):
+
+- **Immortal Connection:** Operates as a root-level system daemon. The OS Low Memory Killer (LMK) will not kill the process under heavy memory pressure.
+
+- **Deep Routing Coverage:** Intercepts traffic at the Netfilter layer, enabling transparent proxying for system UIDs that standard VPNs cannot reach.
+
+- **No System VPN Slot Consumed:** Works without taking up the standard Android VPN slot—no permanent VPN key icon in the status bar, and no conflicts with per-app VPNs.
+
+- **Native Hotspot / Tethering:** Intercepts traffic at `PREROUTING` to route tethered devices (Wi-Fi Hotspot, USB Tethering) through the proxy tunnel automatically.
+
+- **Dynamic Reconnects:** Listens directly to kernel network events (`ip monitor`) for instant Wi-Fi ↔ Cellular handovers.
+
+### 2. Non-Root Mode (VpnService)
+
+Starting with **v2.0**, devices without root access can run Magic V2Ray seamlessly using Android's native `VpnService` engine:
+
+- Safe, standard user-space proxy routing.
+
+- No root or custom kernel modules required.
+
+## Additional Features
+
+- **Quick Settings Tile:** Toggle the proxy engine directly from your notification shade. Long-pressing the tile opens the app.
+
+- **Live Module Updates:** Fully supports live updates for version 176 and newer—upgrade the service on the fly without rebooting your device.
+
+- **Category Organization:** Group your proxy servers into custom folders/categories.
+
+- **Smart Subscription Import:** Easily paste subscription URLs, raw configurations, or mixed text codes.
+
+- **One-Click Auto-Reload:** Keep your subscriptions up-to-date with a single tap.
+
+- **Hotspot Sharing without root:** in Non-Root mode, Shizuku can share the proxy with hotspot / USB clients (Android 13+).
+
+- **Hotspot Sharing:** Share your proxied connection with laptops, consoles, or other phones via IPv4/IPv6 Wi-Fi Hotspot.
+
+- **Provider Websites:** Add a VPN seller's website as a category, open it in a built-in mini browser, tap its Sync button to import nodes, and pin a home-screen shortcut to it. See [Deep Links](#user-content-deep-links-for-providers).
+
+## Installation & Usage
+
+Magic V2Ray is distributed as a standalone Android application (`.apk`), which also doubles as a flashable root module zip.
+
+### Non-Root Users
+
+- Download and install `magic_v2ray-*-arm64-v8a.apk` (or `-x86_64.apk`).
+
+- Open the app, select **Non-Root (VpnService) Mode**, grant the VPN permission, and start the connection.
+
+### Root Users (Magisk / KernelSU / APatch)
+
+**Option A: Install via Root Manager (Module + App)**
+
+- Rename `magic_v2ray-*.apk` to `magic_v2ray-*.zip`.
+
+- Flash it in Magisk / KernelSU / APatch (Modules → Install from storage). It installs the background module and runs `pm install` for the app interface.
+
+- Reboot, or open the app directly.
+
+**Option B: Standard APK Installation**
+
+- Install `magic_v2ray-*-arm64-v8a.apk` and open it.
+
+- Grant Root permissions. The app automatically checks and sets up the root daemon engine in `/data/adb/modules/magic_v2ray` (user settings are preserved in `/data/adb/magic_v2ray`).
+
+*Note: The module's **Action** button (Magisk 27+ / KernelSU / APatch) launches the app directly, installing `app.apk` automatically if it is not present.*
+
+## Deep Links for Providers
+
+Magic V2Ray registers the schemes `magicv2ray://` and `v2rayng://`. VPN sellers can put these links on their website or in their bot messages so customers can set up with one tap. Links opened from outside the app ask the user to confirm before anything is added; only the Sync link inside a provider's own mini browser imports directly.
+
+### Add the provider itself: `magicv2ray://add-provider`
+
+```
+magicv2ray://add-provider?url=<website>&remark=<display name>
+
+```
+
+Parameter
+Required
+Description
+
+`url`
+yes
+The provider website. `https://` is added when missing; only `https` sites are accepted.
+
+`remark`
+no
+Category name (`name` also works). Defaults to the site's hostname. If the name is taken, `(2)`, `(3)`... is appended.
+
+Example (URL-encode the values):
+
+```
+magicv2ray://add-provider?url=vless4gtiktok.duckdns.org&remark=Free%20Server%20VLESS
+
+```
+
+After the user confirms, the app creates a category, fetches the site's `<title>` and icon, and opens the site in the mini browser. `add-privider` is accepted as an alias of `add-provider`.
+
+### Sync nodes from the provider website
+
+Inside the mini browser, a link like the following imports the subscription into **that provider's category** (nodes are replaced, the URL is kept for Reload / auto-update) and returns to the app:
+
+```
+v2rayng://install-config?url=<URL-encoded subscription URL>
+
+```
+
+`v2rayng://install-sub?...` and `magicv2ray://install-config?...` / `magicv2ray://install-sub?...` work the same. Notes for website authors:
+
+- Encode the subscription URL with `encodeURIComponent` (it must be `http(s)://`). An unencoded `&` cuts the URL.
+
+- Put the link behind a normal button or `<a href>`; JavaScript `location.href = ...` also works.
+
+- Links to other domains (Telegram login, payment pages...) and `tg:`, `mailto:`, `tel:` open outside the mini browser. Other schemes are blocked.
+
+### Add a subscription without a provider category
+
+Outside the mini browser (any browser or app), the same install links add a plain subscription after the user confirms:
+
+```
+v2rayng://install-config?url=https%3A%2F%2Fexample.com%2Fsub%2Ftoken
+magicv2ray://install-sub?url=https%3A%2F%2Fexample.com%2Fsub%2Ftoken
+
+```
+
+### Example snippet for a provider website
+
+```
+<a href="magicv2ray://add-provider?url=example.com&remark=My%20VPN">Add to Magic V2Ray</a>
+
+<script>
+  const sub = 'https://example.com/sub/USER_TOKEN';
+  document.getElementById('sync').href =
+    'v2rayng://install-config?url=' + encodeURIComponent(sub);
+</script>
+<a id="sync">Sync</a>
+
+```
+
+## Connect from other apps and websites
+
+Any app or website can ask Magic V2Ray to route traffic through a server for a while. The server is **temporary**: your own nodes are not touched, and ending the connection brings your previously selected node back (running again if it was running before).
+
+How
+Format
+
+Link
+`magicv2ray://connect?uri=<urlencoded uri>&name=<name>&exclude=<package,package>`
+
+Link
+`magicv2ray://disconnect`
+
+Native app
+`startActivity` with the action `com.huskydg.magicv2ray.action.CONNECT` / `.DISCONNECT` and the extras `uri`, `name`, `exclude`
+
+Native app
+`sendBroadcast` with the same action and extras (a connect shows a "tap to review" notification, because Android 10+ blocks opening the confirmation from the background)
+
+- **Local SOCKS5**: send `uri=socks://127.0.0.1:4311`. No new mechanism is needed, SOCKS nodes are already supported.
+
+- **Display name** (status chip, notification, tile: `RUNNING - <name>`): the `name` parameter, then the calling app's name, then the remark of the uri, then its host. It is only a label, nothing is trusted because of it.
+
+- **Loop prevention**: an app that serves the SOCKS5 port and reaches the internet through this device must be kept out of the VPN, otherwise its traffic loops back into it. Pass `exclude=<package>`; a verified native caller that serves a local address is excluded automatically. Non-root mode uses the VPN's disallowed-apps list, root mode adds the uid to the `XRAY_EXCLUDE_APP` iptables chain. Both apply only while the connection lasts, whatever the Exclude Apps switch says.
+
+- **Ending it**: `magicv2ray://disconnect`, the notification button, the Quick Settings tile, the Stop / Disconnect buttons in the app. A reboot also ends it.
+
+- **Security**: any website can fire a `connect` link, so every connect is confirmed, showing the full uri, the caller and the excluded apps. The caller is only "verified" when Android supplies it (never the spoofable `EXTRA_REFERRER`) and it is not a browser. A plaintext VLESS / Trojan node keeps its existing warning. The **Access permissions** tab lists the apps set to "always trust"; that option is only offered for explicit intents from verified native apps (never links or browsers) and is tied to the app's signing certificate. Even a trusted app is confirmed for plaintext nodes and for exclusions other than itself.
+
+### Info and state events (API level 1)
+
+Apps can ask what is running and be told when the proxy **disconnects** (or connects), however it happened: the app that asked, the tile, the notification button, a crash, the root service.
+
+**1. Info** (version, supported API, current state)
+
+```
+// A) ContentProvider: synchronous, no UI, works from any thread
+Bundle b = getContentResolver().call(Uri.parse("content://com.huskydg.magicv2ray.api"), "getInfo", null, null);
+String json = b.getString("json");        // full JSON below
+int apiLevel = b.getInt("apiLevel");      // also: versionName, versionCode, mode, connected, known
+// "getState" returns only the state. query(content://com.huskydg.magicv2ray.api/info | /state) gives one row.
+
+// B) Ordered broadcast: the reply is the JSON (result data) + extras json / versionName / apiLevel
+Intent i = new Intent("com.huskydg.magicv2ray.action.GET_INFO").setPackage("com.huskydg.magicv2ray");
+sendOrderedBroadcast(i, null, new BroadcastReceiver() {
+    @Override public void onReceive(Context c, Intent r) { String json = getResultData(); }   // null = not installed
+}, null, Activity.RESULT_CANCELED, null, null);
+
+```
+
+Android 11+: add `<queries><package android:name="com.huskydg.magicv2ray"/></queries>` to your manifest.
+
+```
+{ "app": "Magic V2Ray", "package": "com.huskydg.magicv2ray", "versionName": "v2.5-alpha", "versionCode": 192, "mode": "root",
+  "api": { "level": 1,
+           "actions": ["com.huskydg.magicv2ray.action.CONNECT", "...DISCONNECT", "...GET_INFO"],
+           "schemes": ["magicv2ray://connect", "magicv2ray://disconnect"],
+           "events": ["com.huskydg.magicv2ray.event.STATE_CHANGED"],
+           "extras": ["uri", "name", "exclude", "overrides"],
+           "overrides": ["traffic", "network", "exclude", "routing", "hosts"],
+           "provider": { "authority": "com.huskydg.magicv2ray.api", "methods": ["getInfo", "getState"], "uris": ["..."] },
+           "features": ["connect", "disconnect", "overrides", "exclude", "info", "state_events", "state_provider"] },
+  "state": { "connected": true, "known": true, "mode": "root",
+             "session": { "active": true, "name": "My server", "caller": "com.example.app", "startedAt": 1731670000000 } } }
+
+```
+
+`api.level` grows when something is added: test for it (or for a name in `features`) instead of the app version. No server address and no settings are ever included.
+
+**2. State events**: broadcast `com.huskydg.magicv2ray.event.STATE_CHANGED`
+
+Extra
+Value
+
+`state` / `connected`
+`"connected"` / `"disconnected"` and `true` / `false`
+
+`reason`
+`started`, `session_started`, `session_ended` (the external session ended), `stopped`, `error`, `crashed`
+
+`session`, `sessionName`, `caller`
+an external session is involved / its name / the package that started it
+
+`mode`, `time`, `seq`
+`root` / `nonroot`, epoch ms, counter (per process of Magic V2Ray)
+
+```
+registerReceiver(new BroadcastReceiver() {
+    @Override public void onReceive(Context c, Intent i) {
+        if (!i.getBooleanExtra("connected", false)) onMagicV2RayDisconnected(i.getStringExtra("reason"));
+    }
+}, new IntentFilter("com.huskydg.magicv2ray.event.STATE_CHANGED"), Context.RECEIVER_EXPORTED);
+
+```
+
+- Receivers registered at run time get it as a normal broadcast. The app that owns the session also gets an explicit copy, so a run-time receiver may see the same event twice: drop duplicates by `seq` + `time`. The app that owns the external session also gets it **explicitly**, so a receiver declared in its manifest works (Android 14+ for broadcast-started sessions only when the caller is known, otherwise use a run-time receiver or the observer below).
+
+- Observer instead of a receiver: `registerContentObserver(Uri.parse("content://com.huskydg.magicv2ray.api/state"), false, observer)`, then read `getState`.
+
+- A disconnect is announced after 2 s if the engine is still down, so a restart or reload does not look like a disconnect. Ending a session is announced at once.
+
+- Root mode: the service tells the app through `am broadcast ... ENGINE_CHANGED`, which makes it re-read the real status. The same broadcast from anyone else can do no more than that.
+
+- If the Magic V2Ray process is killed in non-root mode the VPN dies with it and nothing can be sent: poll `getState` when it matters.
+
+### Using it from Termux (or any shell)
+
+A shell cannot register a receiver or use the provider without root, so it uses `am`. These commands follow from how the API works; the info and poll commands depend on Termux's `am` printing the broadcast result like the system `am`.
+
+```
+# Info: `am broadcast` is an ordered broadcast and prints the reply as data="<json>"
+am broadcast -a com.huskydg.magicv2ray.action.GET_INFO -p com.huskydg.magicv2ray
+# With root, the provider can be called directly:
+su -c 'content call --uri content://com.huskydg.magicv2ray.api --method getInfo'
+
+# Connect / disconnect (the user still confirms a connect)
+am start -a com.huskydg.magicv2ray.action.CONNECT -p com.huskydg.magicv2ray \
+  --es uri 'socks://127.0.0.1:5353' --es name 'Termux' --es exclude com.termux
+am start -a com.huskydg.magicv2ray.action.DISCONNECT -p com.huskydg.magicv2ray
+
+```
+
+A shell cannot receive `STATE_CHANGED`, so poll the info instead. This script checks the API level, then reports every change until Magic V2Ray disconnects:
+
+```
+#!/data/data/com.termux/files/usr/bin/sh
+info() { am broadcast -a com.huskydg.magicv2ray.action.GET_INFO -p com.huskydg.magicv2ray 2>/dev/null \
+         | sed -n 's/.*data="\(.*\)".*/\1/p'; }
+J=$(info)
+[ -n "$J" ] || { echo "Magic V2Ray is not installed or too old (no API level 1)"; exit 1; }
+echo "$J" | jq -r '"Magic V2Ray \(.versionName), API \(.api.level), \(.mode)"'
+last=
+while sleep 2; do
+  c=$(info | jq -r '.state.connected')
+  [ "$c" = "$last" ] || { echo "connected=$c"; last=$c; }
+  [ "$c" = "false" ] && break
+done
+echo "Magic V2Ray disconnected"
+
+```
+
+Notes: `am start` from the background needs the "Display over other apps" permission for Termux on Android 10+. Whether Magic V2Ray can identify Termux as the caller (and so offer "Always trust") depends on what Android reports for `am`; an unknown caller is always confirmed. Install `jq` with `pkg install jq`.
+
+### Temporary settings (`overrides`)
+
+Besides a node, `connect` can carry an `overrides` parameter that **temporarily changes** Traffic settings, Network settings, Excluded apps, Routing and Custom hosts while connected. `uri` is optional when `overrides` is present (the node you selected is then used).
+
+- Link: `magicv2ray://connect?uri=...&overrides=<base64url of the JSON>`; intent / broadcast: the `overrides` extra is a JSON string.
+
+- Only whitelisted keys of the right type and range are accepted, everything else is dropped (see `ExternalSession.sanitizeOverrides`). Not overridable: `exposeSocks*`, professional mode, language / theme. Routing rules only accept `outboundTag` `proxy`, `direct` or `block`.
+
+```
+{
+  "traffic": { "mux": true, "mtu": 1400, "directDns": "quic+local://223.5.5.5" },
+  "network": { "networkMode": 1, "allowTether": false, "bypassIfaces": ["tailscale0"], "bypassVpnService": true },
+  "exclude": { "apps": ["com.example.app"], "mode": "add", "enabled": true },
+  "routing": { "domainStrategy": "IPIfNonMatch", "mode": "prepend",
+               "rules": [ { "domain": "geosite:google", "outboundTag": "proxy", "remarks": "temp" } ] },
+  "hosts":   { "mode": "merge", "entries": { "example.com": "1.2.3.4", "b.com": ["::1", "10.0.0.1"] } }
+}
+
+```
+
+**Privacy: temporary settings are NEVER saved.**
+
+Mode
+Session lives in
+Never written to
+
+Root
+`/mnt/runtime/magicv2ray/run/override/` (tmpfs, gone at reboot)
+`/data/adb/magic_v2ray`
+
+Non-root
+`cache/override/`
+`files/data/` (not even `config.v2.json`)
+
+- The engine reads `config.v2.json`, `settings.base64`, `excludelist.txt` and `bypassIface.txt` from the session directory **instead of** your file of the same name; your files are only read, never modified. Disconnecting deletes the session directory and restarts the engine on your own setup.
+
+- The pending request is kept in memory only; the session stores metadata (name, caller, exclusion list) but neither the server nor any overridden value.
+
+- A session **never resumes after a reboot** (root: `/mnt/runtime` is wiped and the service clears the directory at start; non-root: the VpnService is `START_NOT_STICKY` and a stale session is dropped when the app opens). An app that wants it again must send `connect` after each boot. A temporary session also never changes the `enabled` flag that decides what resumes at boot.
+
+- A request with `overrides` is confirmed (the dialog lists what changes). An app set to "always trust" is **not asked again while it sends the same `overrides` it was last allowed with**. If they differ (new or changed), the dialog comes back saying the app wants to apply NEW settings. **Always allow** remembers the new set; **Allow once** does not. Only a SHA-256 fingerprint of the overrides is stored, never their values. Links and browsers can never be trusted.
+
+## Building from Source
+
+```
+./build.sh          # Outputs APKs (arm64-v8a, x86_64, universal) -> dist/
+                    # (Each APK can also be renamed to .zip to serve as a module installer)
+
+```
+
+**Requirements:**
+
+- JDK 17+
+
+- Gradle 8.7+ (8.9 recommended)
+
+- Android SDK (`ANDROID_HOME`, target platform `android-35`)
+
+- Android NDK (for native helpers)
+
+The Web UI assets are located at `app/src/main/assets/webroot`. The app exposes a `window.ksu`-compatible bridge (`exec`, `listPackages`, `getPackagesInfo`).
+
+## Acknowledgments & Credits
+
+- **[Xray-core](https://github.com/XTLS/Xray-core):** The underlying engine handling next-generation proxy protocols.
+
+- **[curl-android](https://github.com/vvb2060/curl-android):** Pre-built `curl` command-line tool and `libcurl` static library prefab.
+
+## License
+
+By using this project, you agree to the terms and conditions set forth in the license. For more details, please refer to the [LICENSE](https://github.com/vincentng295/Magic_V2Ray/blob/db9417d1f67026dceb4996b48122bd85a92ba114/docs/LICENSE) file in this repository.
+
+Essentially, you are free to use, modify, and distribute this software, provided that you include the same license and source code availability in your own project. Moreover, using its source code or replicating its features within closed-source software may constitute a violation of the license terms.
