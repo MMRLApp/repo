@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795300271.24
+    "timestamp": 1795319204.028
   },
   "modules": [
     {
@@ -232,7 +232,7 @@
       "size": 4027697,
       "permissions": [],
       "features": {},
-      "stars": 40,
+      "stars": 41,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793534585,
@@ -945,7 +945,7 @@
       "size": 2208,
       "permissions": [],
       "features": {},
-      "stars": 126,
+      "stars": 127,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792015008,
@@ -1182,7 +1182,7 @@
       "size": 8877025,
       "permissions": [],
       "features": {},
-      "stars": 2,
+      "stars": 3,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793671130,
@@ -1291,7 +1291,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1856,
+      "stars": 1859,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -2468,7 +2468,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4238,
+      "stars": 4239,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2558,7 +2558,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 69,
+      "stars": 70,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2600,7 +2600,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 163,
+      "stars": 165,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2830,7 +2830,7 @@
       "size": 984132,
       "permissions": [],
       "features": {},
-      "stars": 24,
+      "stars": 25,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794842549,
@@ -3463,7 +3463,7 @@
       "size": 6146217,
       "permissions": [],
       "features": {},
-      "stars": 116,
+      "stars": 117,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794040405,
