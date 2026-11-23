@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795388048.134
+    "timestamp": 1795407863.945
   },
   "modules": [
     {
@@ -612,8 +612,8 @@
     {
       "id": "coloros_wifi_sense",
       "name": "ColorOS WIFI感知",
-      "version": "v1.6.2",
-      "versionCode": 11,
+      "version": "v1.7.0",
+      "versionCode": 12,
       "author": "酷安@NVMEX夜莺",
       "description": "弱信号时自动断开当前 Wi-Fi 接入点，可选原生流体云倒计时与手动断开。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/README.md",
@@ -625,8 +625,8 @@
         "coloros"
       ],
       "added": 1794480507,
-      "timestamp": 1795110246.023,
-      "size": 136853,
+      "timestamp": 1795400448.2,
+      "size": 141595,
       "permissions": [],
       "features": {},
       "stars": 15,
@@ -669,6 +669,14 @@
           "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.6.2/coloros-wifi-sense-v1.6.2.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.6.2.md",
           "size": 136853
+        },
+        {
+          "timestamp": 1795400424,
+          "version": "v1.7.0",
+          "versionCode": 12,
+          "zipUrl": "https://github.com/mazemingw/coloros-wifi-sense/releases/download/v1.7.0/coloros-wifi-sense-v1.7.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/coloros_wifi_sense/changelogs/v1.7.0.md",
+          "size": 141595
         }
       ]
     },
@@ -1789,7 +1797,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 46,
+      "stars": 45,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -2592,7 +2600,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4239,
+      "stars": 4244,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2682,7 +2690,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 70,
+      "stars": 71,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2724,7 +2732,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 165,
+      "stars": 168,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -3345,8 +3353,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.215 (215-d21bd79-release)",
-      "versionCode": 215,
+      "version": "1.218 (218-11d7059-release)",
+      "versionCode": 218,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -3359,44 +3367,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1793803236,
-      "timestamp": 1795368525,
-      "size": 7759570,
+      "added": 1794514426,
+      "timestamp": 1795406760,
+      "size": 7801426,
       "permissions": [],
       "features": {},
       "stars": 34,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793803236,
+        "added": 1794514426,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793803236,
-          "version": "1.201 (201-33b2011-release)",
-          "versionCode": 201,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v201-33b2011/FuseHide-1.201_201-33b2011-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.201__201-33b2011-release_.md",
-          "size": 7677650
-        },
-        {
-          "timestamp": 1793807747,
-          "version": "1.202 (202-34ca0ce-release)",
-          "versionCode": 202,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v202-34ca0ce/FuseHide-1.202_202-34ca0ce-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.202__202-34ca0ce-release_.md",
-          "size": 7677650
-        },
-        {
-          "timestamp": 1794146091,
-          "version": "1.204 (204-d739791-release)",
-          "versionCode": 204,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v204-d739791/FuseHide-1.204_204-d739791-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.204__204-d739791-release_.md",
-          "size": 7677650
-        },
         {
           "timestamp": 1794514426,
           "version": "1.205 (205-54d38de-release)",
@@ -3452,6 +3436,30 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v215-d21bd79/FuseHide-1.215_215-d21bd79-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.215__215-d21bd79-release_.md",
           "size": 7759570
+        },
+        {
+          "timestamp": 1795402351,
+          "version": "1.216 (216-1840166-release)",
+          "versionCode": 216,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v216-1840166/FuseHide-1.216_216-1840166-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.216__216-1840166-release_.md",
+          "size": 7801314
+        },
+        {
+          "timestamp": 1795403495,
+          "version": "1.217 (217-31d6fa2-release)",
+          "versionCode": 217,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v217-31d6fa2/FuseHide-1.217_217-31d6fa2-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.217__217-31d6fa2-release_.md",
+          "size": 7801426
+        },
+        {
+          "timestamp": 1795406760,
+          "version": "1.218 (218-11d7059-release)",
+          "versionCode": 218,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v218-11d7059/FuseHide-1.218_218-11d7059-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.218__218-11d7059-release_.md",
+          "size": 7801426
         }
       ]
     },
@@ -3478,7 +3486,7 @@
       "size": 1505875,
       "permissions": [],
       "features": {},
-      "stars": 21,
+      "stars": 22,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792923926,

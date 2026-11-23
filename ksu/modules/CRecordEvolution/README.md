@@ -3,7 +3,7 @@
 **Battery health written right into your root manager's module description — flash and go, zero configuration**
 
 [![](/assets/ed94b9af23bd53cd.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
-[![](/assets/746f490744012f12.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
+[![](/assets/8587f6636a1fd087.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
 [![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/LICENSE)
