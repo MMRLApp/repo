@@ -4,12 +4,12 @@
 
 把 Reqable、ProxyPin、自定义 PEM 合并进 Android 系统信任库——不改写系统分区。
 
-[English](https://github.com/Eikeitsu/CertBridge/blob/5487b58937039a8e9910525b397188222d8acdb0/README.md) · [文档](https://eikeitsu.github.io/CertBridge/) · [Releases](https://github.com/Eikeitsu/CertBridge/releases)
+[English](https://github.com/Eikeitsu/CertBridge/blob/358929bdba0011e0d5eaf0dd62c16aad44a5eb37/README.md) · [文档](https://eikeitsu.github.io/CertBridge/) · [Releases](https://github.com/Eikeitsu/CertBridge/releases)
 
 [![](/assets/fe855e24b834a612.svg)](https://github.com/Eikeitsu/CertBridge/releases)
-[![](/assets/cecc17898a4dbc70.svg)](https://eikeitsu.github.io/CertBridge/guide/install)
+[![](/assets/aa58ac1347e63573.svg)](https://eikeitsu.github.io/CertBridge/guide/install)
 [![](/assets/c820843dfc367c03.svg)](https://eikeitsu.github.io/CertBridge/)
-[![](/assets/aaa729390ea15b3d.svg)](https://github.com/Eikeitsu/CertBridge/blob/5487b58937039a8e9910525b397188222d8acdb0/LICENSE)
+[![](/assets/aaa729390ea15b3d.svg)](https://github.com/Eikeitsu/CertBridge/blob/358929bdba0011e0d5eaf0dd62c16aad44a5eb37/LICENSE)
 
 ![](/assets/1b563cffb0b0ca45.svg)
 
@@ -112,7 +112,7 @@ legacy/       旧版 WebUI 归档
 
 ```
 
-构建与发版：[docs-dev/BUILD.md](https://github.com/Eikeitsu/CertBridge/blob/5487b58937039a8e9910525b397188222d8acdb0/docs-dev/BUILD.md) · [docs-dev/RELEASE.md](https://github.com/Eikeitsu/CertBridge/blob/5487b58937039a8e9910525b397188222d8acdb0/docs-dev/RELEASE.md)
+构建与发版：[docs-dev/BUILD.md](https://github.com/Eikeitsu/CertBridge/blob/358929bdba0011e0d5eaf0dd62c16aad44a5eb37/docs-dev/BUILD.md) · [docs-dev/RELEASE.md](https://github.com/Eikeitsu/CertBridge/blob/358929bdba0011e0d5eaf0dd62c16aad44a5eb37/docs-dev/RELEASE.md)
 
 ## 链接
 
