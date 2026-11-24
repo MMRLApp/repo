@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795452082.098
+    "timestamp": 1795491168.48
   },
   "modules": [
     {
@@ -215,7 +215,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 106,
+      "stars": 107,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -320,7 +320,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 150,
+      "stars": 151,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -363,7 +363,7 @@
       "size": 629462,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 17,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794607075,
@@ -440,7 +440,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 65,
+      "stars": 66,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -519,7 +519,7 @@
       "size": 3533394,
       "permissions": [],
       "features": {},
-      "stars": 14,
+      "stars": 15,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1795296234,
@@ -793,7 +793,7 @@
       "size": 3149975,
       "permissions": [],
       "features": {},
-      "stars": 30,
+      "stars": 31,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -866,7 +866,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 918,
+      "stars": 921,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -1146,7 +1146,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 320,
+      "stars": 321,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -1450,11 +1450,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794736696,
-      "timestamp": 1795379135.712,
+      "timestamp": 1795455112.806,
       "size": 413096,
       "permissions": [],
       "features": {},
-      "stars": 31,
+      "stars": 33,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794736696,
@@ -1888,7 +1888,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 628,
+      "stars": 630,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -1979,7 +1979,7 @@
       "size": 61447585,
       "permissions": [],
       "features": {},
-      "stars": 235,
+      "stars": 236,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793666890,
@@ -2208,11 +2208,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/bf87da9eba197fa7.png",
       "added": 1794460579,
-      "timestamp": 1795434840,
+      "timestamp": 1795490514.153,
       "size": 2306088,
       "permissions": [],
       "features": {},
-      "stars": 5,
+      "stars": 6,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794460579,
@@ -2448,7 +2448,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 725,
+      "stars": 731,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2544,8 +2544,8 @@
     {
       "id": "oplus-cloud-block",
       "name": "ColorOS 温控与云控",
-      "version": "01.7.74",
-      "versionCode": 185,
+      "version": "01.7.75",
+      "versionCode": 186,
       "author": "谋事在人成事在天",
       "description": "解除 ColorOS/一加出厂 CPU 频率上限（大核 58%→100%），拦截 OTA 与云控，带温度保护与内存面板。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/README.md",
@@ -2558,8 +2558,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/560d9b835338b4aa.png",
       "added": 1794161870,
-      "timestamp": 1794814388,
-      "size": 138225,
+      "timestamp": 1795455070,
+      "size": 153928,
       "permissions": [],
       "features": {},
       "stars": 4,
@@ -2586,6 +2586,14 @@
           "zipUrl": "https://github.com/706412584/ColorOS-thermal/releases/download/v01.7.74/oplus-cloud-block-v01.7.74.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/changelogs/01.7.74.md",
           "size": 138225
+        },
+        {
+          "timestamp": 1795455070,
+          "version": "01.7.75",
+          "versionCode": 186,
+          "zipUrl": "https://github.com/706412584/ColorOS-thermal/releases/download/v01.7.75/oplus-cloud-block-v01.7.75.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/changelogs/01.7.75.md",
+          "size": 153928
         }
       ]
     },
@@ -2608,7 +2616,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4244,
+      "stars": 4251,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2698,7 +2706,7 @@
       "size": 4604817,
       "permissions": [],
       "features": {},
-      "stars": 71,
+      "stars": 73,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2740,7 +2748,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 168,
+      "stars": 169,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -2779,7 +2787,7 @@
       "size": 13457214,
       "permissions": [],
       "features": {},
-      "stars": 36,
+      "stars": 37,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793622993,
@@ -2888,7 +2896,7 @@
       "size": 1178399,
       "permissions": [],
       "features": {},
-      "stars": 46,
+      "stars": 47,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792763658,
@@ -3228,7 +3236,7 @@
       "size": 3283835,
       "permissions": [],
       "features": {},
-      "stars": 64,
+      "stars": 65,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794790380,
@@ -3603,7 +3611,7 @@
       "size": 6144330,
       "permissions": [],
       "features": {},
-      "stars": 119,
+      "stars": 120,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794057892,

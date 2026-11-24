@@ -4,11 +4,11 @@
 
 **「千面万象，一念幻化」—— 基于 Zygisk 的按应用机型与硬件信息伪装模块**
 
-[![](/assets/a432db6e5d4b9ccb.svg)](https://github.com/jjh138792/MirageForge/releases)
+[![](/assets/2de0ee68c814ed37.svg)](https://github.com/jjh138792/MirageForge/releases)
 [![](/assets/783410204390b7d7.svg)](https://github.com/topjohnwu/zygisk-module-sample)
-[![](/assets/aa88e61953f732fc.svg)](https://github.com/jjh138792/MirageForge/blob/74bd8718f0c0bbbd60437d26d6253b861de3a385/LICENSE)
+[![](/assets/aa88e61953f732fc.svg)](https://github.com/jjh138792/MirageForge/blob/fd9e65a95d85299444d67923944dc4fe0d53ad8f/LICENSE)
 
-**简体中文** | **[English](https://github.com/jjh138792/MirageForge/blob/74bd8718f0c0bbbd60437d26d6253b861de3a385/docs/en_README.md)**
+**简体中文** | **[English](https://github.com/jjh138792/MirageForge/blob/fd9e65a95d85299444d67923944dc4fe0d53ad8f/docs/en_README.md)**
 
 ## 📖 写在前面
 
@@ -74,7 +74,7 @@
 
 - **属性炼金**：上传或粘贴 `build.prop` 文件内容，自动解析成机型模板。
 
-- **分流矩阵**：搜索你要伪装的应用，在下拉框里选好机型模板，按需调整下方的功能开关或独立 DPI，点一下右侧的 ⚡ 按钮重启应用即可生效。
+- **分流矩阵**：搜索你要伪装的应用，在下拉框里选好机型模板，按需调整下方的功能开关，点一下右侧的 ⚡ 按钮重启应用即可生效。
 
 - **幻境探针**：查看应用启动遥测记录、崩溃诊断日志，以及开启探针后的属性与文件读取抓包记录。
 
@@ -118,4 +118,4 @@ su -c "mirageforge_cli probe list --limit 30"
 
 ## 📄 开源协议
 
-本项目基于 **[GPL-3.0-only](https://github.com/jjh138792/MirageForge/blob/74bd8718f0c0bbbd60437d26d6253b861de3a385/LICENSE)** 协议开源。欢迎自由使用、修改与分享，但衍生作品必须同样保持开源。
+本项目基于 **[GPL-3.0-only](https://github.com/jjh138792/MirageForge/blob/fd9e65a95d85299444d67923944dc4fe0d53ad8f/LICENSE)** 协议开源。欢迎自由使用、修改与分享，但衍生作品必须同样保持开源。

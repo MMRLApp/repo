@@ -5,7 +5,7 @@
 KernelSU / Magisk module for Qualcomm and MediaTek phones. Less heat, less battery drain, longer battery life.
 Focused on battery life, not peak performance.
 
-  [![](/assets/82553c22e4a05a92.svg)](https://github.com/yudharn/HyperCool/releases)
+  [![](/assets/3f2f5288823b63f0.svg)](https://github.com/yudharn/HyperCool/releases)
   [![](/assets/2311ddf26bde6ebe.svg)](https://github.com/yudharn/HyperCool/stargazers)
   ![](/assets/f00e750980c4236b.svg)
   [![](/assets/25e6da21dcaae94e.svg)](https://github.com/yudharn/HyperCool/releases/latest)
@@ -234,6 +234,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/22a127d0e90f7089e0654e3aee754808f327b93a/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/ed90b4461d2b1349398561f5793fb7cf3c338f6b/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).
