@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795491168.48
+    "timestamp": 1795538258.347
   },
   "modules": [
     {
@@ -86,8 +86,8 @@
     {
       "id": "AD_Killer_By_NFQUEUE",
       "name": "AD Killer (by NFQUEUE)",
-      "version": "v1.2.15",
-      "versionCode": 13501,
+      "version": "v1.2.16",
+      "versionCode": 13601,
       "author": "fengwenhua",
       "description": "基于 NFQUEUE 的 Android 本地去广告模块，提供规则管理、应用名单和离线 WebUI。需要内核支持 NFQUEUE。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/README.md",
@@ -99,11 +99,11 @@
         "privacy"
       ],
       "added": 1794485636,
-      "timestamp": 1795414621.988,
-      "size": 817933,
+      "timestamp": 1795502067,
+      "size": 828331,
       "permissions": [],
       "features": {},
-      "stars": 4,
+      "stars": 5,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794485636,
@@ -127,6 +127,14 @@
           "zipUrl": "https://github.com/fengwenhua/AD_Killer_By_NFQUEUE/releases/download/v1.2.15/AD_Killer_By_NFQUEUE-v1.2.15.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/changelogs/v1.2.15.md",
           "size": 817933
+        },
+        {
+          "timestamp": 1795502067,
+          "version": "v1.2.16",
+          "versionCode": 13601,
+          "zipUrl": "https://github.com/fengwenhua/AD_Killer_By_NFQUEUE/releases/download/v1.2.16/AD_Killer_By_NFQUEUE-v1.2.16.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/changelogs/v1.2.16.md",
+          "size": 828331
         }
       ]
     },
@@ -711,7 +719,7 @@
       "size": 11548251,
       "permissions": [],
       "features": {},
-      "stars": 439,
+      "stars": 438,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -913,7 +921,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 484,
+      "stars": 493,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1373,7 +1381,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1860,
+      "stars": 1863,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1565,7 +1573,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 19,
+      "stars": 20,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1608,7 +1616,7 @@
       "size": 107758,
       "permissions": [],
       "features": {},
-      "stars": 27,
+      "stars": 28,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794032147,
@@ -1934,11 +1942,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/807cc18fde6f9e5f.png",
       "added": 1795337241,
-      "timestamp": 1795368545.659,
+      "timestamp": 1795505088.412,
       "size": 3291,
       "permissions": [],
       "features": {},
-      "stars": 68,
+      "stars": 69,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1795337241,
@@ -2349,7 +2357,7 @@
       "size": 27804816,
       "permissions": [],
       "features": {},
-      "stars": 1469,
+      "stars": 1472,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2498,7 +2506,7 @@
       "size": 4511524,
       "permissions": [],
       "features": {},
-      "stars": 749,
+      "stars": 752,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2689,8 +2697,8 @@
     {
       "id": "QSC_Battery",
       "name": "充电控制",
-      "version": "2026.10.12",
-      "versionCode": 2026101201,
+      "version": "2026.11.24",
+      "versionCode": 2026112401,
       "author": "top大佬, 许小墨",
       "description": "电量/温度停充与可选电流控制，附 WebUI、伴侣 APP 与可选守护进程。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/QSC_Battery/README.md",
@@ -2702,8 +2710,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4f63d92c815e1177.png",
       "added": 1791776363,
-      "timestamp": 1791776774.857,
-      "size": 4604817,
+      "timestamp": 1795511088,
+      "size": 4630840,
       "permissions": [],
       "features": {},
       "stars": 73,
@@ -2722,6 +2730,14 @@
           "zipUrl": "https://github.com/Eikeitsu/QSC-Battery/releases/download/v2026.10.12/QSC-Battery_v2026.10.12-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/QSC_Battery/changelogs/2026.10.12.md",
           "size": 4604817
+        },
+        {
+          "timestamp": 1795511088,
+          "version": "2026.11.24",
+          "versionCode": 2026112401,
+          "zipUrl": "https://github.com/Eikeitsu/QSC-Battery/releases/download/v2026.11.24/QSC-Battery_v2026.11.24-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/QSC_Battery/changelogs/2026.11.24.md",
+          "size": 4630840
         }
       ]
     },
@@ -3258,8 +3274,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.5.0-10158",
-      "versionCode": 10158,
+      "version": "v0.5.0-10159",
+      "versionCode": 10159,
       "author": "Rouyashiki Developers",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -3270,28 +3286,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1793856123,
-      "timestamp": 1795429110,
-      "size": 3576001,
+      "added": 1794000287,
+      "timestamp": 1795505068,
+      "size": 3549917,
       "permissions": [],
       "features": {},
       "stars": 156,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793856123,
+        "added": 1794000287,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793856123,
-          "version": "v0.3.0-10136",
-          "versionCode": 10136,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-41973134583/YukiZygisk-v0.3.0-10136-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10136.md",
-          "size": 2909040
-        },
         {
           "timestamp": 1794000287,
           "version": "v0.3.0-10140",
@@ -3363,6 +3371,14 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-45154188178/YukiZygisk-v0.5.0-10158-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.5.0-10158.md",
           "size": 3576001
+        },
+        {
+          "timestamp": 1795505068,
+          "version": "v0.5.0-10159",
+          "versionCode": 10159,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-45347236241/YukiZygisk-v0.5.0-10159-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.5.0-10159.md",
+          "size": 3549917
         }
       ]
     },
@@ -3596,8 +3612,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.18.0.3 (432-ffcf6b8-release)",
-      "versionCode": 432,
+      "version": "v2.20.0 (442-c15b67b-release)",
+      "versionCode": 442,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next API",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -3606,36 +3622,20 @@
       "categories": [
         "system"
       ],
-      "added": 1794057892,
-      "timestamp": 1795345100,
-      "size": 6144330,
+      "added": 1794070600,
+      "timestamp": 1795525760,
+      "size": 6214032,
       "permissions": [],
       "features": {},
-      "stars": 120,
+      "stars": 121,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794057892,
+        "added": 1794070600,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794057892,
-          "version": "v2.14.0 (306-1aa66b8-release)",
-          "versionCode": 306,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.14.0/ZNNext-v2.14.0-306-1aa66b8-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.14.0__306-1aa66b8-release_.md",
-          "size": 7273471
-        },
-        {
-          "timestamp": 1794068800,
-          "version": "v2.14.1 (367-0b8d6da-release)",
-          "versionCode": 367,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.14.1/ZNNext-v2.14.1-367-0b8d6da-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.14.1__367-0b8d6da-release_.md",
-          "size": 7314563
-        },
         {
           "timestamp": 1794070600,
           "version": "v2.15.0 (369-7cee6dd-release)",
@@ -3699,6 +3699,22 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.18.0.3/ZNNext-v2.18.0.3-432-ffcf6b8-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.18.0.3__432-ffcf6b8-release_.md",
           "size": 6144330
+        },
+        {
+          "timestamp": 1795522331,
+          "version": "v2.19.0 (440-3d5c8e9-release)",
+          "versionCode": 440,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.19.0/ZNNext-v2.19.0-440-3d5c8e9-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.19.0__440-3d5c8e9-release_.md",
+          "size": 6170795
+        },
+        {
+          "timestamp": 1795525760,
+          "version": "v2.20.0 (442-c15b67b-release)",
+          "versionCode": 442,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.20.0/ZNNext-v2.20.0-442-c15b67b-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.20.0__442-c15b67b-release_.md",
+          "size": 6214032
         }
       ]
     }
