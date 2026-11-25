@@ -5,7 +5,7 @@
 [![](/assets/0673dc5dc3007a72.svg)](https://t.me/mmrs_ci)
 
 [![](/assets/43b5deaae0f3ee71.svg)](https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/latest)
-[![](/assets/50f743749c7eac70.svg)](https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/)
+[![](/assets/79e71b53d5e2411c.svg)](https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/)
 
 [English](https://github.com/Tools-cx-app/meta-magic_mount-rs/blob/f9cfa8b598e8f38eaa63c75cc2bee9b4d03be26f/docs/README_en.md) [Русский](https://github.com/Tools-cx-app/meta-magic_mount-rs/blob/f9cfa8b598e8f38eaa63c75cc2bee9b4d03be26f/docs/README_ru.md)
 
@@ -156,6 +156,6 @@ Android lint 与最低支持的 API 26 对齐：
  
    
    
-   ![](/assets/cba486115390ed9c.svg)
+   ![](/assets/8d18b792d1fa1c78.svg)
  
 ](https://star-history.dera.page/#Tools-cx-app/meta-magic_mount-rs)

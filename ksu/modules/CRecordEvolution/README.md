@@ -6,11 +6,11 @@
 [![](/assets/8587f6636a1fd087.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,10 +23,10 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/fa929c6ea48acd04.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/overview-en.png)
-[![](/assets/78388c9b30bfd237.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/history-en.png)
-[![](/assets/2db2ab33ebfafb66.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/trends-en.png)
-[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/.github/images/settings-en.png)
+[![](/assets/fa929c6ea48acd04.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/overview-en.png)
+[![](/assets/78388c9b30bfd237.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/history-en.png)
+[![](/assets/2db2ab33ebfafb66.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/trends-en.png)
+[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/settings-en.png)
 
 ## Features
 
@@ -135,7 +135,23 @@ Known inaccuracies:
 
 - Using the phone while charging can count load current as charge input, so readings run high; screen-off charging is the most accurate (prolonged high-load use after reaching full is detected and stopped);
 
-- Devices without `cycle_count` / `charge_full_design` have the corresponding fields omitted or read the design capacity from the device tree; nothing else is affected.
+- Devices without `cycle_count` have that field omitted; a design capacity that disagrees with the fuel gauge is cross-checked against the device tree (see "Design capacity" below).
+
+### Design capacity
+
+Health is measured full-charge capacity ÷ design capacity, so both sides must use the same basis. Some vivo/iQOO dual-cell kernels put the *battery label* capacity (e.g. 4508 mAh at the label voltage) into `charge_full_design`, while `charge_full` / `charge_counter` report the single-cell charge of the series pack (e.g. 3220 mAh) — dividing them puts a healthy battery at ~60%. The module therefore cross-checks the sysfs value against the `vivo,bat-capacity-mah` device-tree property (same basis as the fuel gauge) and, when the two disagree by more than 20%, keeps the one closer to the measured full charge; a value that would imply more than 110% health is rejected. The chosen number feeds the health percentage, the plausible-capacity window, the cycle equivalent and the "weeks to 80%" projection.
+
+If both sources are wrong for your device, write the correct single-cell design capacity (mAh) to `data/design_mah` and restart the module; delete the file to go back to automatic detection:
+
+```
+# use 3220 mAh as the (single-cell) design capacity
+echo 3220 > /data/adb/modules/CRecordEvolution/data/design_mah
+# remove the override and go back to automatic detection
+rm /data/adb/modules/CRecordEvolution/data/design_mah
+
+```
+
+`batteryd diag` prints which source was used (`design=src=…`).
 
 ## FAQ
 
@@ -164,11 +180,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -213,6 +229,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/7db4535ce05279de6e87971793aa53a4181add10/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

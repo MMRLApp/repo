@@ -75,7 +75,7 @@ mv cacert.der 02e06844.0
 
 ## Star History
 
-[![](/assets/813881a2ab903e9b.svg)](https://star-history.dera.page/#ys1231/MoveCertificate&Date)
+[![](/assets/3eda63e3ca9161ef.svg)](https://star-history.dera.page/#ys1231/MoveCertificate&Date)
 
 # 参考链接:
 

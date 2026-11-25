@@ -3,12 +3,12 @@
 **A from-scratch, standalone implementation of the Zygisk Next API.**
 
 [![](/assets/ee245273888b189d.svg)](https://github.com/VeryBaaad/ZNNext/actions/workflows/ci.yml?query=branch%3Amaster+event%3Apush)
-[![](/assets/ca74f15ebd39899b.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
+[![](/assets/471d50f65c9035a3.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
 [![](/assets/c6b03f3d2e04e4ff.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
-[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/LICENSE)
-[![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/LICENSE-DCLPL)
+[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE)
+[![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE-DCLPL)
 
-[中文（简体）](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/README_zh-CN.md) [文言（華夏）](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/README_lzh.md)
+[中文（简体）](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/README_zh-CN.md) [文言（華夏）](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/README_lzh.md)
 
 Important
 
@@ -130,6 +130,8 @@ used for inline hooking
 
 - [SandHook](https://github.com/asLody/SandHook): Android ART Hook/Native Inline Hook/Single Instruction Hook - support 4.4 - 11.0 32/64 bit - Xposed API Compat
 
+- [srx_inline_hook](https://github.com/Kindness-Kismet/srx_inline_hook): Rust inline hook
+
 used for plt hooking
 
 - [LSPlt](https://github.com/LSPosed/LSPlt): Simple PLT hook for Android
@@ -164,8 +166,8 @@ decompressors
 
 ZNNext is licensed under the:
 
-- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/LICENSE).
+- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE).
 
-- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/770efca8c4ac2f1ab491962b1529f535807d9c21/LICENSE-DCLPL).
+- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE-DCLPL).
 
 Third-party license texts are bundled verbatim under `licenses/` in the module zip.

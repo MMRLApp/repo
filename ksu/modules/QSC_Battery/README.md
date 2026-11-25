@@ -4,7 +4,7 @@
 
 模块显示名：**充电控制** · 模块 id：`QSC_Battery` · 仓库：[Eikeitsu/QSC-Battery](https://github.com/Eikeitsu/QSC-Battery)
 
-[![](/assets/1fdc709b4ee98844.svg)](https://github.com/Eikeitsu/QSC-Battery/releases)
+[![](/assets/b06eb5f68e6a8bfc.svg)](https://github.com/Eikeitsu/QSC-Battery/releases)
 [![](/assets/75d42b84bdf0c1ff.svg)](https://eikeitsu.github.io/QSC-Battery/)
 [![](/assets/f62f07277012061d.svg)](https://eikeitsu.github.io/QSC-Battery/)
 [![](/assets/0ebf541534d7b669.svg)](https://eikeitsu.github.io/QSC-Battery/)

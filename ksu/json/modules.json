@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795570907.571
+    "timestamp": 1795623585.344
   },
   "modules": [
     {
@@ -86,8 +86,8 @@
     {
       "id": "AD_Killer_By_NFQUEUE",
       "name": "AD Killer (by NFQUEUE)",
-      "version": "v1.2.16",
-      "versionCode": 13601,
+      "version": "v1.2.17",
+      "versionCode": 13701,
       "author": "fengwenhua",
       "description": "基于 NFQUEUE 的 Android 本地去广告模块，提供规则管理、应用名单和离线 WebUI。需要内核支持 NFQUEUE。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/README.md",
@@ -99,11 +99,11 @@
         "privacy"
       ],
       "added": 1794485636,
-      "timestamp": 1795502067,
-      "size": 828331,
+      "timestamp": 1795571205,
+      "size": 828351,
       "permissions": [],
       "features": {},
-      "stars": 5,
+      "stars": 6,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794485636,
@@ -135,6 +135,14 @@
           "zipUrl": "https://github.com/fengwenhua/AD_Killer_By_NFQUEUE/releases/download/v1.2.16/AD_Killer_By_NFQUEUE-v1.2.16.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/changelogs/v1.2.16.md",
           "size": 828331
+        },
+        {
+          "timestamp": 1795571205,
+          "version": "v1.2.17",
+          "versionCode": 13701,
+          "zipUrl": "https://github.com/fengwenhua/AD_Killer_By_NFQUEUE/releases/download/v1.2.17/AD_Killer_By_NFQUEUE-v1.2.17.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/AD_Killer_By_NFQUEUE/changelogs/v1.2.17.md",
+          "size": 828351
         }
       ]
     },
@@ -223,7 +231,7 @@
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 107,
+      "stars": 106,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -486,7 +494,7 @@
       "size": 31370,
       "permissions": [],
       "features": {},
-      "stars": 2,
+      "stars": 1,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793779095,
@@ -567,7 +575,7 @@
       "size": 1504829,
       "permissions": [],
       "features": {},
-      "stars": 10,
+      "stars": 11,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791910273,
@@ -719,7 +727,7 @@
       "size": 11548251,
       "permissions": [],
       "features": {},
-      "stars": 438,
+      "stars": 440,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -797,11 +805,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1795189403.15,
+      "timestamp": 1795605990.739,
       "size": 3149975,
       "permissions": [],
       "features": {},
-      "stars": 31,
+      "stars": 32,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792338984,
@@ -921,7 +929,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 493,
+      "stars": 495,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1035,7 +1043,7 @@
       "size": 2208,
       "permissions": [],
       "features": {},
-      "stars": 128,
+      "stars": 129,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792015008,
@@ -1381,7 +1389,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1863,
+      "stars": 1867,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1458,11 +1466,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794736696,
-      "timestamp": 1795540595.339,
+      "timestamp": 1795619588.981,
       "size": 413096,
       "permissions": [],
       "features": {},
-      "stars": 34,
+      "stars": 36,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794736696,
@@ -1616,7 +1624,7 @@
       "size": 107758,
       "permissions": [],
       "features": {},
-      "stars": 28,
+      "stars": 29,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794032147,
@@ -1926,8 +1934,8 @@
     {
       "id": "magic_v2ray",
       "name": "Magic V2Ray",
-      "version": "v3.4",
-      "versionCode": 211,
+      "version": "v4.0",
+      "versionCode": 213,
       "author": "HuskyDG, vincentng295",
       "description": "System-level transparent proxy for rooted Android, built on Xray-core, with a full management app. Tap Action after installing to get the app.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magic_v2ray/README.md",
@@ -1942,11 +1950,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/807cc18fde6f9e5f.png",
       "added": 1795337241,
-      "timestamp": 1795505088.412,
-      "size": 3291,
+      "timestamp": 1795590794,
+      "size": 3292,
       "permissions": [],
       "features": {},
-      "stars": 69,
+      "stars": 70,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1795337241,
@@ -1962,6 +1970,14 @@
           "zipUrl": "https://github.com/vincentng295/Magic_V2Ray/releases/download/v3.4/magic_v2ray-v3.4-stub.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magic_v2ray/changelogs/v3.4.md",
           "size": 3291
+        },
+        {
+          "timestamp": 1795590794,
+          "version": "v4.0",
+          "versionCode": 213,
+          "zipUrl": "https://github.com/vincentng295/Magic_V2Ray/releases/download/v4.0/magic_v2ray-v4.0-stub.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/magic_v2ray/changelogs/v4.0.md",
+          "size": 3292
         }
       ]
     },
@@ -1983,11 +1999,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1793666890,
-      "timestamp": 1795371265.013,
+      "timestamp": 1795605831.766,
       "size": 61447585,
       "permissions": [],
       "features": {},
-      "stars": 236,
+      "stars": 238,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793666890,
@@ -2201,8 +2217,8 @@
     {
       "id": "mirage_forge",
       "name": "蜃楼工坊 · MirageForge",
-      "version": "1.2.1",
-      "versionCode": 1210,
+      "version": "1.2.2",
+      "versionCode": 1220,
       "author": "jjh138792",
       "description": "千面万象，一念幻化 —— 基于 Zygisk 的应用级多机型伪装引擎。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/mirage_forge/README.md",
@@ -2216,11 +2232,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/bf87da9eba197fa7.png",
       "added": 1794460579,
-      "timestamp": 1795490514.153,
-      "size": 2306088,
+      "timestamp": 1795608680.693,
+      "size": 2428904,
       "permissions": [],
       "features": {},
-      "stars": 7,
+      "stars": 8,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794460579,
@@ -2244,6 +2260,14 @@
           "zipUrl": "https://github.com/jjh138792/MirageForge/releases/download/1.2.1/MirageForge-Zygisk-1.2.1.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/mirage_forge/changelogs/1.2.1.md",
           "size": 2306088
+        },
+        {
+          "timestamp": 1795608637,
+          "version": "1.2.2",
+          "versionCode": 1220,
+          "zipUrl": "https://github.com/jjh138792/MirageForge/releases/download/1.2.2/MirageForge-Zygisk-1.2.2.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/mirage_forge/changelogs/1.2.2.md",
+          "size": 2428904
         }
       ]
     },
@@ -2341,8 +2365,8 @@
     {
       "id": "netproxy",
       "name": "NetProxy",
-      "version": "v8.7.2",
-      "versionCode": 1115,
+      "version": "v8.7.3",
+      "versionCode": 1128,
       "author": "Fanju",
       "description": "Android sing-box 透明代理模块，支持 eBPF、TUN、节点订阅和应用代理。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/README.md",
@@ -2353,11 +2377,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4bef947f9024d913.png",
       "added": 1791728886,
-      "timestamp": 1795322457,
-      "size": 27804816,
+      "timestamp": 1795591874,
+      "size": 28062712,
       "permissions": [],
       "features": {},
-      "stars": 1472,
+      "stars": 1477,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2429,6 +2453,14 @@
           "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.2/netproxy-1115-v8.7.2.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.2.md",
           "size": 27804816
+        },
+        {
+          "timestamp": 1795591874,
+          "version": "v8.7.3",
+          "versionCode": 1128,
+          "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.3/netproxy-1128-v8.7.3.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.3.md",
+          "size": 28062712
         }
       ]
     },
@@ -2506,7 +2538,7 @@
       "size": 4511524,
       "permissions": [],
       "features": {},
-      "stars": 752,
+      "stars": 758,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2552,8 +2584,8 @@
     {
       "id": "oplus-cloud-block",
       "name": "ColorOS 温控与云控",
-      "version": "01.7.75",
-      "versionCode": 186,
+      "version": "01.7.76",
+      "versionCode": 187,
       "author": "谋事在人成事在天",
       "description": "解除 ColorOS/一加出厂 CPU 频率上限（大核 58%→100%），拦截 OTA 与云控，带温度保护与内存面板。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/README.md",
@@ -2566,8 +2598,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/560d9b835338b4aa.png",
       "added": 1794161870,
-      "timestamp": 1795455070,
-      "size": 153928,
+      "timestamp": 1795583898,
+      "size": 168486,
       "permissions": [],
       "features": {},
       "stars": 5,
@@ -2602,6 +2634,14 @@
           "zipUrl": "https://github.com/706412584/ColorOS-thermal/releases/download/v01.7.75/oplus-cloud-block-v01.7.75.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/changelogs/01.7.75.md",
           "size": 153928
+        },
+        {
+          "timestamp": 1795583898,
+          "version": "01.7.76",
+          "versionCode": 187,
+          "zipUrl": "https://github.com/706412584/ColorOS-thermal/releases/download/v01.7.76/oplus-cloud-block-v01.7.76.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/oplus-cloud-block/changelogs/01.7.76.md",
+          "size": 168486
         }
       ]
     },
@@ -2624,7 +2664,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4251,
+      "stars": 4253,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2714,7 +2754,7 @@
       "size": 4630840,
       "permissions": [],
       "features": {},
-      "stars": 73,
+      "stars": 75,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2764,7 +2804,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 169,
+      "stars": 172,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -3291,7 +3331,7 @@
       "size": 3549917,
       "permissions": [],
       "features": {},
-      "stars": 156,
+      "stars": 158,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794000287,
@@ -3518,7 +3558,7 @@
       "size": 1505878,
       "permissions": [],
       "features": {},
-      "stars": 23,
+      "stars": 24,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793337827,
@@ -3612,8 +3652,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.20.0 (442-c15b67b-release)",
-      "versionCode": 442,
+      "version": "v2.21.0 (451-eed9487-release)",
+      "versionCode": 451,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next API",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -3622,44 +3662,20 @@
       "categories": [
         "system"
       ],
-      "added": 1794070600,
-      "timestamp": 1795525760,
-      "size": 6214032,
+      "added": 1794722596,
+      "timestamp": 1795616996.17,
+      "size": 6330406,
       "permissions": [],
       "features": {},
-      "stars": 121,
+      "stars": 122,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794070600,
+        "added": 1794722596,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794070600,
-          "version": "v2.15.0 (369-7cee6dd-release)",
-          "versionCode": 369,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.15.0/ZNNext-v2.15.0-369-7cee6dd-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.15.0__369-7cee6dd-release_.md",
-          "size": 7426684
-        },
-        {
-          "timestamp": 1794126769,
-          "version": "v2.16.0 (371-52b358c-release)",
-          "versionCode": 371,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.16.0/ZNNext-v2.16.0-371-52b358c-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.16.0__371-52b358c-release_.md",
-          "size": 9881610
-        },
-        {
-          "timestamp": 1794676384,
-          "version": "v2.16.0.1 (399-1392163-release)",
-          "versionCode": 399,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.16.0.1/ZNNext-v2.16.0.1-399-1392163-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.16.0.1__399-1392163-release_.md",
-          "size": 9948152
-        },
         {
           "timestamp": 1794722596,
           "version": "v2.17.0 (402-fdd9111-release)",
@@ -3715,6 +3731,30 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.20.0/ZNNext-v2.20.0-442-c15b67b-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.20.0__442-c15b67b-release_.md",
           "size": 6214032
+        },
+        {
+          "timestamp": 1795605807,
+          "version": "v2.20.1 (445-e86fc56-release)",
+          "versionCode": 445,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.20.1/ZNNext-v2.20.1-445-e86fc56-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.20.1__445-e86fc56-release_.md",
+          "size": 6227679
+        },
+        {
+          "timestamp": 1795611747,
+          "version": "v2.20.2 (449-74cadee-release)",
+          "versionCode": 449,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.20.2/ZNNext-v2.20.2-449-74cadee-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.20.2__449-74cadee-release_.md",
+          "size": 6234635
+        },
+        {
+          "timestamp": 1795616972,
+          "version": "v2.21.0 (451-eed9487-release)",
+          "versionCode": 451,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.21.0/ZNNext-v2.21.0-451-eed9487-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.21.0__451-eed9487-release_.md",
+          "size": 6330406
         }
       ]
     }
