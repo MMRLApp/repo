@@ -118,7 +118,7 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Heat guard (experimental): lower refresh rate and big-core limit while the battery is hot
 
-- Pause / bypass charging when hot, at a level or while gaming (charging switch, 0 mA current limit or charger input off; Qualcomm and MediaTek), battery temperature warning
+- Pause / bypass charging when hot, at a level or while gaming (charging switch, 0 mA current limit or charger input off; Qualcomm and MediaTek), battery temperature warning that names the busiest app
 
 - Game battery mode: Android Game Mode with a 60 FPS cap and lower render resolution for games
 
@@ -129,6 +129,8 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 - Fewer writeback wakeups, kernel debug off, kernel wakelock blocker
 
 - Screen-off: keep Wi-Fi on, Location / Bluetooth off, mobile data / NFC off (back on at screen-on)
+
+- 5G off (4G kept) during screen-off and / or while Heat guard cools the phone
 
 - Hibernate background apps a few minutes after the screen goes off (Protected, default and in-use apps are skipped), plus Hibernate apps now on Home
 
@@ -156,7 +158,7 @@ Everything is configured via WebUI and applied on the next boot. Only lightweigh
 
 - Stronger Battery Saver with auto level, screen dimming, Smart Pixels
 
-- Refresh rate cap, adaptive refresh rate, animation scale, lower screen resolution
+- Refresh rate cap, adaptive refresh rate, lower rate for chosen apps, animation scale, lower screen resolution
 
 **Extras**
 
@@ -234,6 +236,6 @@ misbehaves. Provided without any warranty (see the GPL).
 
 ## License
 
-GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/8e5f34add10cb17d675fe3dd705041f7e59668e5/LICENSE).
+GPL-3.0-or-later. Copyright (C) 2026 Yudharn. See [LICENSE](https://github.com/yudharn/HyperCool/blob/b1072b8d3f4300e9074e5c2a8fd08f89483694e2/LICENSE).
 Modified versions must stay GPL-3.0, keep the source open and keep this copyright notice.
 Google Sans font: SIL Open Font License (`webroot/GoogleSans-OFL.txt`).

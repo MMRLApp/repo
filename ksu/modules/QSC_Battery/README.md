@@ -4,7 +4,7 @@
 
 模块显示名：**充电控制** · 模块 id：`QSC_Battery` · 仓库：[Eikeitsu/QSC-Battery](https://github.com/Eikeitsu/QSC-Battery)
 
-[![](/assets/b06eb5f68e6a8bfc.svg)](https://github.com/Eikeitsu/QSC-Battery/releases)
+[![](/assets/c26e18568b09f2ac.svg)](https://github.com/Eikeitsu/QSC-Battery/releases)
 [![](/assets/75d42b84bdf0c1ff.svg)](https://eikeitsu.github.io/QSC-Battery/)
 [![](/assets/f62f07277012061d.svg)](https://eikeitsu.github.io/QSC-Battery/)
 [![](/assets/0ebf541534d7b669.svg)](https://eikeitsu.github.io/QSC-Battery/)
@@ -25,19 +25,19 @@
 
 Magisk 模块
 真正执行停充 / 限流 / 日志；开机 `service.sh` 常驻
-[`module/`](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/module/)
+[`module/`](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/module/)
 
 WebUI（可选）
 模块管理器内改配置、看曲线与日志
-[`apps/webui/`](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/apps/webui/)
+[`apps/webui/`](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/apps/webui/)
 
 伴侣 APP（可选）
 Compose 客户端：状态、策略、动态、主题；可内嵌进模块包
-[`apps/android/`](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/apps/android/)
+[`apps/android/`](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/apps/android/)
 
 qscd（可选）
 只读 `power_supply` 事件守护，降低未插电轮询
-[`native/`](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/native/)
+[`native/`](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/native/)
 
 CLI
 `/data/adb/qsc/bin/qsc`（`help` / `stats` / `diagnostic` …）
@@ -100,19 +100,19 @@ Node.js · ESLint · Stylelint · ShellCheck · Prettier · Vitest · Python · 
 
 ## 适配机型（参考）
 
-停充看内核节点，**列表仅为实测反馈、仅供参考**，同型号因系统/内核不同也可能无效；请刷入后自行验证。详见 [适配机型说明](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/docs/guide/devices.md)。
+停充看内核节点，**列表仅为实测反馈、仅供参考**，同型号因系统/内核不同也可能无效；请刷入后自行验证。详见 [适配机型说明](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/docs/guide/devices.md)。
 
 参考机型：红米 K40 / K50U / K60 / Note 12 Turbo / K90 Ultra，小米 13 / 14 / 17 Pro，一加 Ace 2 Pro / 15 等。
 
 ## 快速开始
 
-- 打开 [Releases](https://github.com/Eikeitsu/QSC-Battery/releases)：多数人下 **`…-full.zip`**；只要脚本可用 **`…-lite.zip`**。各文件含义见 [安装与升级 · Release 说明](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/docs/guide/install.md#%E8%AF%A5%E4%B8%8B%E5%93%AA%E4%B8%AA%E5%85%88%E7%9C%8B%E8%BF%99%E4%B8%89%E5%8F%A5)
+- 打开 [Releases](https://github.com/Eikeitsu/QSC-Battery/releases)：多数人下 **`…-full.zip`**；只要脚本可用 **`…-lite.zip`**。各文件含义见 [安装与升级 · Release 说明](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/docs/guide/install.md#%E8%AF%A5%E4%B8%8B%E5%93%AA%E4%B8%AA%E5%85%88%E7%9C%8B%E8%BF%99%E4%B8%89%E5%8F%A5)
 
 - 刷入模块，按音量键确认；按提示选择 WebUI / 电流控制 / 伴侣 APK / 联网下守护（lite 无 WebUI 与内嵌 APK）
 
 - 更新时可选保留配置；重启后用 WebUI / APP / 配置文件调整
 
-- Action：音量上刷新状态；音量下插电测开关 / 未插电写诊断
+- Action：音量上刷新状态；音量下再选诊断或测开关
 
 旧版 `QuantitativeStopCharging*` 会被自动卸载（**不迁移配置**）。
 
@@ -138,12 +138,12 @@ npm run build:module
 
 ```
 
-说明见 [`tooling/BUILD.md`](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/tooling/BUILD.md)。发版与更新日志约定见 [`tooling/RELEASE.md`](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/tooling/RELEASE.md)（开发写根目录 `changelog.md` → `## Unreleased`）。
+说明见 [`tooling/BUILD.md`](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/tooling/BUILD.md)。发版与更新日志约定见 [`tooling/RELEASE.md`](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/tooling/RELEASE.md)（开发写根目录 `changelog.md` → `## Unreleased`）。
 
 发版：Actions → **Release Module**，或推送 `v*` 标签。
 
 ## 文档与致谢
 
-完整指南见 [`docs/`](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/docs/) 或 [在线文档](https://eikeitsu.github.io/QSC-Battery/)。
+完整指南见 [`docs/`](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/docs/) 或 [在线文档](https://eikeitsu.github.io/QSC-Battery/)。
 
-维护者 **许小墨**；早期思路致谢见 [致谢](https://github.com/Eikeitsu/QSC-Battery/blob/dfc37925961e156ca6bf179046fa6e41eb3a9dca/docs/guide/credits.md)。
+维护者 **许小墨**；早期思路致谢见 [致谢](https://github.com/Eikeitsu/QSC-Battery/blob/f2d191b12285fa60f3c0c30e816935463d004aa6/docs/guide/credits.md)。

@@ -1,14 +1,14 @@
 ## ADB Disabler
 
-[简体中文](https://github.com/Shuoh118/ADB-Disabler/blob/252ffa945007b6dda9471f77217a3d8ef94e340c/README_zh.md)
+[简体中文](https://github.com/Shuoh118/ADB-Disabler/blob/d0381ca234b3b018f10ad57f9839faaa4b99c3c9/README_zh.md)
 
-- Works on Magisk / KernelSU / APatch
+- Compatible with Magisk / KernelSU / APatch
 
-- Disables Developer options, USB debugging and OEM unlocking at boot
+- Automatically disables Developer options / USB debugging / OEM unlocking at boot
 
 ## Install
 
-Download `ADB-Disabler-1.0.4.zip`, flash it in your manager, reboot.
+Download `ADB-Disabler-1.1.0.zip`, flash it in your manager, and reboot.
 
 Manager
 Version
@@ -21,6 +21,23 @@ KernelSU
 
 APatch
 10.7+
+
+## WebUI
+
+Manager
+How to open
+
+KernelSU / KernelSU Next
+Module card → WebUI
+
+APatch
+Module card → WebUI
+
+Magisk
+Install [MMRL](https://github.com/MMRLApp/MMRL), then allow **Advanced KernelSU API** in the module settings
+
+The interface is built with [miuix-vue](https://github.com/YuKongA/miuix-vue)
+and follows the Miuix / HyperOS design language.
 
 ## Build
 

@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795655705.719
+    "timestamp": 1795708516.35
   },
   "modules": [
     {
@@ -24,7 +24,7 @@
       "size": 61224,
       "permissions": [],
       "features": {},
-      "stars": 17,
+      "stars": 18,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794280035,
@@ -149,8 +149,8 @@
     {
       "id": "adbdisabler",
       "name": "ADB Disabler",
-      "version": "1.0.4",
-      "versionCode": 10004,
+      "version": "1.1.0",
+      "versionCode": 10100,
       "author": "Shuoh118",
       "description": "Blocks adb,dev options,OEM unlock at boot",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/README.md",
@@ -158,8 +158,8 @@
       "license": "GPL-3.0-or-later",
       "icon": "https://modules.kernelsu.org/assets/e7734a970891d0f7.png",
       "added": 1794060061,
-      "timestamp": 1795355318.371,
-      "size": 10083,
+      "timestamp": 1795703282,
+      "size": 171514,
       "permissions": [],
       "features": {},
       "stars": 2,
@@ -210,6 +210,14 @@
           "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.0.4/ADB-Disabler-1.0.4.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.0.4.md",
           "size": 10083
+        },
+        {
+          "timestamp": 1795703282,
+          "version": "1.1.0",
+          "versionCode": 10100,
+          "zipUrl": "https://github.com/Shuoh118/ADB-Disabler/releases/download/1.1.0/ADB-Disabler-1.1.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/adbdisabler/changelogs/1.1.0.md",
+          "size": 171514
         }
       ]
     },
@@ -219,7 +227,7 @@
       "version": "v0.3.0",
       "versionCode": 28,
       "author": "Nullptr",
-      "description": "Alternative adb server over local network",
+      "description": "Alternative adb server over TCP or guest-to-host vsock",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/altdb/README.md",
       "support": "https://github.com/Dr-TSNG/altdb/issues",
       "license": "Apache-2.0",
@@ -227,11 +235,11 @@
         "tools"
       ],
       "added": 1792068909,
-      "timestamp": 1792302382,
+      "timestamp": 1795677900.535,
       "size": 1407652,
       "permissions": [],
       "features": {},
-      "stars": 106,
+      "stars": 107,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792068909,
@@ -438,8 +446,8 @@
     {
       "id": "CertBridge",
       "name": "证书桥",
-      "version": "v5.1.2",
-      "versionCode": 50107,
+      "version": "v5.2.0",
+      "versionCode": 50200,
       "author": "许小墨",
       "description": "把 Reqable / ProxyPin / 自定义 PEM 注入系统信任库，兼容 Magisk、KernelSU、APatch。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CertBridge/README.md",
@@ -452,8 +460,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/2ed88922ec2dff12.png",
       "added": 1791735507,
-      "timestamp": 1795433616.483,
-      "size": 5606814,
+      "timestamp": 1795673998,
+      "size": 5622549,
       "permissions": [],
       "features": {},
       "stars": 69,
@@ -472,6 +480,14 @@
           "zipUrl": "https://github.com/Eikeitsu/CertBridge/releases/download/v5.1.2/CertBridge_v5.1.2_arm64.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CertBridge/changelogs/v5.1.2.md",
           "size": 5606814
+        },
+        {
+          "timestamp": 1795673998,
+          "version": "v5.2.0",
+          "versionCode": 50200,
+          "zipUrl": "https://github.com/Eikeitsu/CertBridge/releases/download/v5.2.0/CertBridge_v5.2.0_arm64.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CertBridge/changelogs/v5.2.0.md",
+          "size": 5622549
         }
       ]
     },
@@ -789,8 +805,8 @@
     {
       "id": "CRecordEvolution",
       "name": "CRecord Evolution",
-      "version": "1.3.10",
-      "versionCode": 39,
+      "version": "1.4.0",
+      "versionCode": 40,
       "author": "f1owkang, hcnk3HrzQe",
       "description": "在 root 管理器的模块描述里实时显示电池健康度，内置 WebUI 估算曲线，刷入即用、零配置。 | Real-time battery health in your root manager's module description, with a built-in WebUI — flash and go, zero configuration.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CRecordEvolution/README.md",
@@ -805,8 +821,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/ef5a7662da7b1a2d.png",
       "added": 1792338984,
-      "timestamp": 1795605990.739,
-      "size": 3149975,
+      "timestamp": 1795706525.39,
+      "size": 3174952,
       "permissions": [],
       "features": {},
       "stars": 32,
@@ -857,6 +873,14 @@
           "zipUrl": "https://github.com/f1owkang/CRecordEvolution/releases/download/v1.3.10/CRecordEvolution-39-1.3.10.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CRecordEvolution/changelogs/1.3.10.md",
           "size": 3149975
+        },
+        {
+          "timestamp": 1795706503,
+          "version": "1.4.0",
+          "versionCode": 40,
+          "zipUrl": "https://github.com/f1owkang/CRecordEvolution/releases/download/v1.4.0/CRecordEvolution-40-1.4.0.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/CRecordEvolution/changelogs/1.4.0.md",
+          "size": 3174952
         }
       ]
     },
@@ -929,7 +953,7 @@
       "size": 11455471,
       "permissions": [],
       "features": {},
-      "stars": 495,
+      "stars": 499,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793433107,
@@ -1162,7 +1186,7 @@
       "size": 213346,
       "permissions": [],
       "features": {},
-      "stars": 321,
+      "stars": 323,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791795655,
@@ -1389,7 +1413,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 1867,
+      "stars": 1872,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791694187,
@@ -1466,7 +1490,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/f94576f5a2403819.png",
       "added": 1794736696,
-      "timestamp": 1795619588.981,
+      "timestamp": 1795702090.892,
       "size": 413096,
       "permissions": [],
       "features": {},
@@ -1624,7 +1648,7 @@
       "size": 107758,
       "permissions": [],
       "features": {},
-      "stars": 29,
+      "stars": 30,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794032147,
@@ -1821,7 +1845,7 @@
       "size": 27300879,
       "permissions": [],
       "features": {},
-      "stars": 46,
+      "stars": 47,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792255814,
@@ -1954,7 +1978,7 @@
       "size": 3292,
       "permissions": [],
       "features": {},
-      "stars": 70,
+      "stars": 71,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1795337241,
@@ -1999,7 +2023,7 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/3c34d4d23d484c3b.png",
       "added": 1793666890,
-      "timestamp": 1795605831.766,
+      "timestamp": 1795694826.269,
       "size": 61447585,
       "permissions": [],
       "features": {},
@@ -2236,7 +2260,7 @@
       "size": 2428904,
       "permissions": [],
       "features": {},
-      "stars": 8,
+      "stars": 10,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794460579,
@@ -2381,7 +2405,7 @@
       "size": 28062712,
       "permissions": [],
       "features": {},
-      "stars": 1477,
+      "stars": 1483,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791728886,
@@ -2538,7 +2562,7 @@
       "size": 4511524,
       "permissions": [],
       "features": {},
-      "stars": 758,
+      "stars": 766,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1789532214,
@@ -2602,7 +2626,7 @@
       "size": 168486,
       "permissions": [],
       "features": {},
-      "stars": 5,
+      "stars": 6,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794161870,
@@ -2664,7 +2688,7 @@
       "size": 692511,
       "permissions": [],
       "features": {},
-      "stars": 4253,
+      "stars": 4262,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791813366,
@@ -2737,8 +2761,8 @@
     {
       "id": "QSC_Battery",
       "name": "充电控制",
-      "version": "2026.11.24",
-      "versionCode": 2026112401,
+      "version": "2026.11.26",
+      "versionCode": 2026112601,
       "author": "top大佬, 许小墨",
       "description": "电量/温度停充与可选电流控制，附 WebUI、伴侣 APP 与可选守护进程。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/QSC_Battery/README.md",
@@ -2750,11 +2774,11 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4f63d92c815e1177.png",
       "added": 1791776363,
-      "timestamp": 1795511088,
-      "size": 4630840,
+      "timestamp": 1795664308,
+      "size": 4686532,
       "permissions": [],
       "features": {},
-      "stars": 75,
+      "stars": 77,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791776363,
@@ -2778,6 +2802,14 @@
           "zipUrl": "https://github.com/Eikeitsu/QSC-Battery/releases/download/v2026.11.24/QSC-Battery_v2026.11.24-full.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/QSC_Battery/changelogs/2026.11.24.md",
           "size": 4630840
+        },
+        {
+          "timestamp": 1795664308,
+          "version": "2026.11.26",
+          "versionCode": 2026112601,
+          "zipUrl": "https://github.com/Eikeitsu/QSC-Battery/releases/download/v2026.11.26/QSC-Battery_v2026.11.26-full.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/QSC_Battery/changelogs/2026.11.26.md",
+          "size": 4686532
         }
       ]
     },
@@ -2804,7 +2836,7 @@
       "size": 267182,
       "permissions": [],
       "features": {},
-      "stars": 172,
+      "stars": 173,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792750946,
@@ -3034,7 +3066,7 @@
       "size": 984132,
       "permissions": [],
       "features": {},
-      "stars": 25,
+      "stars": 26,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794842549,
@@ -3129,7 +3161,7 @@
       "size": 155681,
       "permissions": [],
       "features": {},
-      "stars": 35,
+      "stars": 36,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791709999,
@@ -3331,7 +3363,7 @@
       "size": 3549917,
       "permissions": [],
       "features": {},
-      "stars": 158,
+      "stars": 160,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794000287,
@@ -3425,8 +3457,8 @@
     {
       "id": "zygisk_fusehide",
       "name": "Zygisk - FuseHide",
-      "version": "1.221 (221-caffd6f-release)",
-      "versionCode": 221,
+      "version": "1.222 (222-53997de-release)",
+      "versionCode": 222,
       "author": "XiaoTong",
       "description": "Hide /sdcard paths per-UID in MediaProvider using Zygisk.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/README.md",
@@ -3439,28 +3471,20 @@
         "zygisk",
         "fusehide"
       ],
-      "added": 1795100154,
-      "timestamp": 1795424976,
-      "size": 7948826,
+      "added": 1795155877,
+      "timestamp": 1795685939,
+      "size": 7952922,
       "permissions": [],
       "features": {},
-      "stars": 35,
+      "stars": 36,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1795100154,
+        "added": 1795155877,
         "source": "https://github.com/XiaoTong6666/zygisk_fusehide",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1795100154,
-          "version": "1.212 (212-c3020ab-release)",
-          "versionCode": 212,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v212-c3020ab/FuseHide-1.212_212-c3020ab-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.212__212-c3020ab-release_.md",
-          "size": 7759570
-        },
         {
           "timestamp": 1795155877,
           "version": "1.213 (213-8be0b7e-release)",
@@ -3532,14 +3556,22 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v221-caffd6f/FuseHide-1.221_221-caffd6f-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.221__221-caffd6f-release_.md",
           "size": 7948826
+        },
+        {
+          "timestamp": 1795685939,
+          "version": "1.222 (222-53997de-release)",
+          "versionCode": 222,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk_fusehide/releases/download/v222-53997de/FuseHide-1.222_222-53997de-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk_fusehide/changelogs/1.222__222-53997de-release_.md",
+          "size": 7952922
         }
       ]
     },
     {
       "id": "zygisk-sui",
       "name": "Zygisk - Sui",
-      "version": "v13.5.4.3 (589-cb157fa-release)",
-      "versionCode": 589,
+      "version": "v13.5.4.3 (590-6844d95-release)",
+      "versionCode": 590,
       "author": "XiaoTong, RikkaW, Sui Contributors",
       "description": "Fork by XiaoTong. Modern super user interface implementation on Android.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/README.md",
@@ -3553,28 +3585,20 @@
         "sui",
         "zygisk"
       ],
-      "added": 1793337827,
-      "timestamp": 1795422896,
-      "size": 1505878,
+      "added": 1793695454,
+      "timestamp": 1795707772,
+      "size": 1505877,
       "permissions": [],
       "features": {},
       "stars": 24,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1793337827,
+        "added": 1793695454,
         "source": "https://github.com/XiaoTong6666/zygisk-sui",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1793337827,
-          "version": "v13.5.4.3 (573-cab27cf-release)",
-          "versionCode": 573,
-          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v573-cab27cf/Sui-v13.5.4.3_573-cab27cf-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__573-cab27cf-release_.md",
-          "size": 1452813
-        },
         {
           "timestamp": 1793695454,
           "version": "v13.5.4.3 (574-746c06c-release)",
@@ -3646,6 +3670,14 @@
           "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v589-cb157fa/Sui-v13.5.4.3_589-cb157fa-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__589-cb157fa-release_.md",
           "size": 1505878
+        },
+        {
+          "timestamp": 1795707772,
+          "version": "v13.5.4.3 (590-6844d95-release)",
+          "versionCode": 590,
+          "zipUrl": "https://github.com/XiaoTong6666/zygisk-sui/releases/download/v590-6844d95/Sui-v13.5.4.3_590-6844d95-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisk-sui/changelogs/v13.5.4.3__590-6844d95-release_.md",
+          "size": 1505877
         }
       ]
     },
@@ -3667,7 +3699,7 @@
       "size": 6330406,
       "permissions": [],
       "features": {},
-      "stars": 122,
+      "stars": 123,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794722596,

@@ -6,11 +6,11 @@
 [![](/assets/8587f6636a1fd087.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,42 +23,28 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/fa929c6ea48acd04.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/overview-en.png)
-[![](/assets/78388c9b30bfd237.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/history-en.png)
-[![](/assets/2db2ab33ebfafb66.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/trends-en.png)
-[![](/assets/2e7e0cf13dae1f5d.png)](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/.github/images/settings-en.png)
+[![](/assets/8fb222defca54b31.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/overview-en.png)
+[![](/assets/02899d4484d56f1f.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/history-en.png)
+[![](/assets/5f5e32c283b8d42f.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/trends-en.png)
+[![](/assets/351e73d3f06cc0f4.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/settings-en.png)
 
 ## Features
 
-- **Health and capacity at a glance**: the module description shows kernel health, measured health and capacity, cycles and temperature on two icons-and-labels lines, and trims labels by screen width so narrow phones still get two lines — no app needed.
+- **Module description**: two lines with kernel/measured health and capacity, cycles and temperature; labels trim on narrow screens instead of wrapping.
 
-- **Live charging at a glance**: while charging, the Overview shows live current / power / voltage, this session's progress and the estimated time to full, refreshing every 15 s while charging (60 s otherwise).
+- **Overview**: health, measured capacity, resistance and confidence; while charging it also shows live current, power, voltage, session progress and time to full.
 
-- **Three-page WebUI**: Overview / History / Settings; the Overview shows the current battery temperature, history filters by 7/30/90 days and by charge/discharge, records page through, and trend charts expand on tap with per-point values.
+- **History**: filter by 7/30/90 days and by charge/discharge, page through the timeline, and read each record's current level and session change as a SOC bar; trend charts take point taps, and the day-by-day capacity archive is kept permanently.
 
-- **Cross-checked capacity paths**: kernel full charge, mid-stretch calibration, discharge differential and settled sessions each produce a value; a clear mismatch is flagged instead of trusting one path alone.
+- **Cross-checked estimates**: kernel full charge, mid-stretch calibration, discharge differential and settled sessions each produce a value; a wide spread is flagged as questionable.
 
-- **Long-term capacity archive**: the History · Trends view keeps a permanent day-by-day capacity archive (the 90-day window only prunes raw detail), so the wear curve stays visible across seasons.
+- **Degradation trend**: when the trend is significant, shows the weekly loss and "about N months to 80%"; hidden while the data is insufficient.
 
-- **Charging statistics**: the History summary shows total charged, average charge per session and average session length for the selected range.
+- **WebUI**: floating pill or Material 3 bottom bar, swipe paging, collapsing header; light/dark themes, AMOLED black, manager palette and bilingual UI.
 
-- **Wear outlook**: when the capacity trend is statistically significant, the Overview's trend cell estimates "about N months to 80%" at the current rate — it only appears when the data supports it.
+- **Fully offline**: no network permission, no telemetry; data is written only to `data/battery.db`.
 
-- **Fully offline**: no network permission, no telemetry; data is written only to the local `data/battery.db`, with raw detail kept for 90 days and the daily capacity archive kept indefinitely.
-
-- **Multiple managers supported**: Magisk v20.4+ / KernelSU / APatch / MMRL, arm64 only; upgrades keep the previous learning history automatically.
-
-- **Theme options**: follow the system, or pick light / dark, plus an independent pure-black background switch for AMOLED screens (dark mode only); the bottom bar supports a floating pill or a Material 3 navigation bar.
-
-- **Material motion**: the top app bar starts with a large title and collapses smoothly while scrolling (and re-expands at the top); the bottom bar uses Material Symbols icons (outlined / filled for the active item). Reduced-motion settings are respected.
-
-- **Horizontal paging**: swipe left/right anywhere in the content area, or drag horizontally on the bottom bar, to move between Overview / History / Settings; the floating or classic bottom bar indicator follows your finger and snaps to the nearest tab.
-
-- **Manager palette / Material You**: when the manager exposes a WebUI palette (KernelSU v3.0.0+ with a Monet color mode or Material UI, APatch build 11219+, MMRL / WebUI-X v212+), an extra "Dynamic" theme option follows the manager theme; managers without a palette simply hide it.
-
-- **Upgrade self-check**: if an older daemon is still running after an upgrade, Settings says "Updated — restart to apply", so old and new data never mix.
-
-- **Bilingual UI**: Simplified Chinese / English, following the phone language automatically and switchable any time in the WebUI.
+- **Manager support**: Magisk v20.4+ / KernelSU / APatch / MMRL, arm64 only; upgrades keep the previous learning history.
 
 ## Installation
 
@@ -84,23 +70,21 @@ If you flashed the wrong build but have not rebooted yet, simply flash the corre
 
 ### Notes
 
-- Both variants share the same id and name, and are mutually exclusive; the ML build is marked by the `-ML` suffix in the module **Version** field (and by the asset name), so the module description stays identical to the stable build;
+- Both variants share the same id and name and are mutually exclusive; the ML build is marked by the `-ML` suffix in the module **Version** field (and by the asset name), so the module description matches the stable build.
 
-- Upgrades keep the `data/battery.db` learning history (the installer copies the old data automatically), so no manual backup is needed;
+- Upgrades keep the `data/battery.db` learning history (the installer copies the old data); uninstall the old module (id `Charging_Record`) first when coming from that version.
 
-- Reboot soon after upgrading: until then the old daemon keeps writing with the old units, and Settings shows "Updated — restart to apply";
+- Reboot soon after upgrading: until then the old daemon keeps writing with the old units, and Settings shows "Updated — restart to apply"; older Magisk versions have no Action button, so wait for the reboot.
 
-- Bypass charging is recorded too: when the status stays **Full** but the fuel gauge is actually dropping (charger connected, heavy load), the discharge session follows the gauge direction instead of `current_now`'s sign; a segment with no reported % drop only accumulates usage and produces no history row;
+- The language follows the system (or the previous choice) and can be switched in the WebUI; the module description refreshes immediately.
 
-- Duplicate sessions left by an old multi-daemon install are cleaned automatically and re-checked while an old daemon is still detected; charging-session duplicates also inflate the cycle equivalent, so Settings notes "may be inflated" when that happened. Capacity estimates are not affected;
+- Only KernelSU / APatch / MMRL can open the module WebUI (Magisk only flashes it); the bottom bar toggles between a floating pill and the classic style, and chart points can be tapped for exact values.
 
-- Older Magisk versions have no Action button; wait for a reboot;
+- Bypass charging is recorded too: when the status stays **Full** but the fuel gauge is actually dropping, the discharge session follows the gauge direction; a segment with no reported % drop only accumulates usage and produces no history row.
 
-- Upgrading from the old version (module id `Charging_Record`)? Uninstall it first — the two directory layouts are not interchangeable;
+- Duplicate sessions left by an old multi-daemon install are cleaned automatically, and their charging energy is deducted from the lifetime total; float-charge segments that never became sessions can still leave it slightly high. Capacity estimates are not affected.
 
-- The language is chosen at install time and can be switched later in the WebUI; the module description refreshes immediately. With no explicit choice it follows the system language;
-
-- KernelSU / APatch / MMRL can open the bundled WebUI: the bottom bar toggles between a floating pill and the classic edge-to-edge style, and chart points can be tapped for exact values (both the Overview chart and the History trend charts highlight the selected point).
+- If automatic design-capacity arbitration does not fit your device, set it with `batteryd design set <mAh>`; `design clear` restores automatic detection.
 
 ## How it works
 
@@ -141,15 +125,17 @@ Known inaccuracies:
 
 Health is measured full-charge capacity ÷ design capacity, so both sides must use the same basis. Some vivo/iQOO dual-cell kernels put the *battery label* capacity (e.g. 4508 mAh at the label voltage) into `charge_full_design`, while `charge_full` / `charge_counter` report the single-cell charge of the series pack (e.g. 3220 mAh) — dividing them puts a healthy battery at ~60%. The module therefore cross-checks the sysfs value against the `vivo,bat-capacity-mah` device-tree property (same basis as the fuel gauge) and, when the two disagree by more than 20%, keeps the one closer to the measured full charge; a value that would imply more than 110% health is rejected. The chosen number feeds the health percentage, the plausible-capacity window, the cycle equivalent and the "weeks to 80%" projection.
 
-If both sources are wrong for your device, write the correct single-cell design capacity (mAh) to `data/design_mah` and restart the module; delete the file to go back to automatic detection:
+If both sources are wrong for your device, set the correct single-cell design capacity (mAh) from the command line (or write it to `data/design_mah`); run `design clear` to go back to automatic detection:
 
 ```
 # use 3220 mAh as the (single-cell) design capacity
-echo 3220 > /data/adb/modules/CRecordEvolution/data/design_mah
+/data/adb/modules/CRecordEvolution/bin/batteryd design set 3220
 # remove the override and go back to automatic detection
-rm /data/adb/modules/CRecordEvolution/data/design_mah
+/data/adb/modules/CRecordEvolution/bin/batteryd design clear
 
 ```
+
+Run `batteryd once` (or reboot) after changing it to refresh the module description and health values.
 
 `batteryd diag` prints which source was used (`design=src=…`).
 
@@ -180,11 +166,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -229,6 +215,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/75b226d4d989b0f61efad326347f80be61a71b39/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

@@ -239,4 +239,4 @@ The module **ClearBox App** is made using the [**Kr-Script**](https://github.com
 
 # Star History
 
-![](/assets/32f8ebf547006f4e.svg)
+![](/assets/64d7233589fcaa05.svg)
