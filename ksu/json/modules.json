@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795623585.344
+    "timestamp": 1795655705.719
   },
   "modules": [
     {
@@ -336,7 +336,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 151,
+      "stars": 152,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -456,7 +456,7 @@
       "size": 5606814,
       "permissions": [],
       "features": {},
-      "stars": 68,
+      "stars": 69,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -535,7 +535,7 @@
       "size": 3533394,
       "permissions": [],
       "features": {},
-      "stars": 15,
+      "stars": 16,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1795296234,
@@ -882,7 +882,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 923,
+      "stars": 926,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -1904,7 +1904,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 632,
+      "stars": 635,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -2488,7 +2488,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 737,
+      "stars": 738,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2843,7 +2843,7 @@
       "size": 13457214,
       "permissions": [],
       "features": {},
-      "stars": 37,
+      "stars": 38,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793622993,
@@ -3216,7 +3216,7 @@
       "size": 32979,
       "permissions": [],
       "features": {},
-      "stars": 6,
+      "stars": 7,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793870109,
