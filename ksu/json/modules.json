@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795708516.35
+    "timestamp": 1795742021.591
   },
   "modules": [
     {
@@ -289,7 +289,7 @@
       "size": 4027697,
       "permissions": [],
       "features": {},
-      "stars": 41,
+      "stars": 42,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793534585,
@@ -344,7 +344,7 @@
       "size": 9981861,
       "permissions": [],
       "features": {},
-      "stars": 152,
+      "stars": 154,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792766759,
@@ -424,7 +424,7 @@
       "size": 17607,
       "permissions": [],
       "features": {},
-      "stars": 0,
+      "stars": 1,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793524430,
@@ -464,7 +464,7 @@
       "size": 5622549,
       "permissions": [],
       "features": {},
-      "stars": 69,
+      "stars": 70,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -551,7 +551,7 @@
       "size": 3533394,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 18,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1795296234,
@@ -743,7 +743,7 @@
       "size": 11548251,
       "permissions": [],
       "features": {},
-      "stars": 440,
+      "stars": 439,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -906,7 +906,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 926,
+      "stars": 929,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -1928,7 +1928,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 635,
+      "stars": 638,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -2389,8 +2389,8 @@
     {
       "id": "netproxy",
       "name": "NetProxy",
-      "version": "v8.7.3",
-      "versionCode": 1128,
+      "version": "v8.7.4",
+      "versionCode": 1134,
       "author": "Fanju",
       "description": "Android sing-box 透明代理模块，支持 eBPF、TUN、节点订阅和应用代理。",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/README.md",
@@ -2401,8 +2401,8 @@
       ],
       "icon": "https://modules.kernelsu.org/assets/4bef947f9024d913.png",
       "added": 1791728886,
-      "timestamp": 1795591874,
-      "size": 28062712,
+      "timestamp": 1795738554,
+      "size": 28085826,
       "permissions": [],
       "features": {},
       "stars": 1483,
@@ -2485,6 +2485,14 @@
           "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.3/netproxy-1128-v8.7.3.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.3.md",
           "size": 28062712
+        },
+        {
+          "timestamp": 1795738554,
+          "version": "v8.7.4",
+          "versionCode": 1134,
+          "zipUrl": "https://github.com/Fanju6/NetProxy-Releases/releases/download/v8.7.4/netproxy-1134-v8.7.4.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/netproxy/changelogs/v8.7.4.md",
+          "size": 28085826
         }
       ]
     },
@@ -2512,7 +2520,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 738,
+      "stars": 745,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2875,7 +2883,7 @@
       "size": 13457214,
       "permissions": [],
       "features": {},
-      "stars": 38,
+      "stars": 39,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793622993,
@@ -2984,7 +2992,7 @@
       "size": 1178399,
       "permissions": [],
       "features": {},
-      "stars": 47,
+      "stars": 48,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792763658,
@@ -3289,7 +3297,7 @@
       "size": 4060477,
       "permissions": [],
       "features": {},
-      "stars": 18,
+      "stars": 19,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794605486,
@@ -3684,8 +3692,8 @@
     {
       "id": "zygisknextsu",
       "name": "ZNNext",
-      "version": "v2.21.0 (451-eed9487-release)",
-      "versionCode": 451,
+      "version": "v2.22.0 (454-95e2d0a-release)",
+      "versionCode": 454,
       "author": "baaad",
       "description": "A from-scratch, standalone implementation of the Zygisk Next API",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/README.md",
@@ -3694,28 +3702,20 @@
       "categories": [
         "system"
       ],
-      "added": 1794722596,
-      "timestamp": 1795616996.17,
-      "size": 6330406,
+      "added": 1794738738,
+      "timestamp": 1795711297,
+      "size": 6334215,
       "permissions": [],
       "features": {},
       "stars": 123,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794722596,
+        "added": 1794738738,
         "source": "https://github.com/VeryBaaad/ZNNext",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794722596,
-          "version": "v2.17.0 (402-fdd9111-release)",
-          "versionCode": 402,
-          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.17.0/ZNNext-v2.17.0-402-fdd9111-release.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.17.0__402-fdd9111-release_.md",
-          "size": 9969352
-        },
         {
           "timestamp": 1794738738,
           "version": "v2.18.0 (406-a5d3ce6-release)",
@@ -3787,6 +3787,14 @@
           "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.21.0/ZNNext-v2.21.0-451-eed9487-release.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.21.0__451-eed9487-release_.md",
           "size": 6330406
+        },
+        {
+          "timestamp": 1795711297,
+          "version": "v2.22.0 (454-95e2d0a-release)",
+          "versionCode": 454,
+          "zipUrl": "https://github.com/VeryBaaad/ZNNext/releases/download/v2.22.0/ZNNext-v2.22.0-454-95e2d0a-release.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/zygisknextsu/changelogs/v2.22.0__454-95e2d0a-release_.md",
+          "size": 6334215
         }
       ]
     }
