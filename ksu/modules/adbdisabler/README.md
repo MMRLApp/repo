@@ -1,6 +1,6 @@
 ## ADB Disabler
 
-[简体中文](https://github.com/Shuoh118/ADB-Disabler/blob/d0381ca234b3b018f10ad57f9839faaa4b99c3c9/README_zh.md)
+[简体中文](https://github.com/Shuos118/ADB-Disabler/blob/d0381ca234b3b018f10ad57f9839faaa4b99c3c9/README_zh.md)
 
 - Compatible with Magisk / KernelSU / APatch
 

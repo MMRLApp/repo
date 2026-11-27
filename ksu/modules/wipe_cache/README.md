@@ -3,7 +3,7 @@
 # ClearBox
 
 [![](/assets/e05f50066193640e.svg)](https://github.com/FLYCOM-E/ClearBox/blob/a8de1f7f6d70121d154a5a290261e53546bd2742/LICENSE)
-[![](/assets/62ac1fae115a44e0.svg)](https://github.com/FLYCOM-E/ClearBox/releases)
+[![](/assets/c38778f304f02c50.svg)](https://github.com/FLYCOM-E/ClearBox/releases)
 
 [![](/assets/7946b9d9fbca350a.svg)](https://t.me/clearbox_update)
 [![](/assets/e126907470e0b5eb.svg)](https://qm.qq.com/q/GpE08mrl2G)
@@ -19,7 +19,7 @@
 
 The execution time is much faster than regular cleaning software on the market, comparable to ✈️ speed. The automation function is only handled by a very low-usage **Timed**, so the overhead is negligible. No software background process is required, no forced app binding, and it supports full functionality through a terminal **TUI**.
 
-![](/assets/0fafbf2dfe038507.png)
+![](/assets/e416104443ae1895.png)
 
 **Compatible with [Magisk**](https://github.com/topjohnwu/Magisk), [**APatch**](https://github.com/bmax121/APatch), [**KernelSU**](https://github.com/tiann/KernelSU), and their various forks
 
@@ -239,4 +239,4 @@ The module **ClearBox App** is made using the [**Kr-Script**](https://github.com
 
 # Star History
 
-![](/assets/64d7233589fcaa05.svg)
+![](/assets/acf08d9323f94121.svg)

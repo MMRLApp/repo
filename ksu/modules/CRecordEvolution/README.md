@@ -2,15 +2,15 @@
 
 **Battery health written right into your root manager's module description — flash and go, zero configuration**
 
-[![](/assets/ed94b9af23bd53cd.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
-[![](/assets/8587f6636a1fd087.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
+[![](/assets/c2c57ffa544972e2.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
+[![](/assets/bab8bfc40527e542.svg)](https://github.com/f1owkang/CRecordEvolution/releases)
 [![](/assets/434c512d59364215.svg)](https://go.dev/)
 [![](/assets/83dc0fd4758526e3.svg)](#user-content-installation)
-[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/LICENSE)
+[![](/assets/242cc50003eddf0f.svg)](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/LICENSE)
 
-English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/README_ZH.md)
+English | [简体中文（中文说明）](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/README_ZH.md)
 
-中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/README_ZH.md)）。
+中文用户请阅读 [README_ZH.md](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/README_ZH.md)（Chinese users: see the [Chinese documentation](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/README_ZH.md)）。
 
 [Features](#user-content-features) | [Screenshots](#user-content-screenshots) | [Installation](#user-content-installation) | [How it works](#user-content-how-it-works) | [FAQ](#user-content-faq) | [Build from source](#user-content-build-from-source) | [Acknowledgements](#user-content-acknowledgements)
 
@@ -23,10 +23,10 @@ History · Records
 History · Trends
 Settings
 
-[![](/assets/8fb222defca54b31.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/overview-en.png)
-[![](/assets/02899d4484d56f1f.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/history-en.png)
-[![](/assets/5f5e32c283b8d42f.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/trends-en.png)
-[![](/assets/351e73d3f06cc0f4.png)](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/.github/images/settings-en.png)
+[![](/assets/8fb222defca54b31.png)](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/.github/images/overview-en.png)
+[![](/assets/02899d4484d56f1f.png)](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/.github/images/history-en.png)
+[![](/assets/5f5e32c283b8d42f.png)](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/.github/images/trends-en.png)
+[![](/assets/351e73d3f06cc0f4.png)](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/.github/images/settings-en.png)
 
 ## Features
 
@@ -166,11 +166,11 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o bin
 
 ```
 
-`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/AGENTS.md) for the full release flow.
+`bin/batteryd` is the native executable shipped in the module: `once` refreshes the description and prints the current readings (what the manager's Action button runs), `json` emits the Overview/Settings snapshot, `history` emits the paged History data, and `diag` emits a redacted diagnostics summary (Settings → "Copy diagnostics"). On boot `service.sh` starts `batteryd daemon`; see [`AGENTS.md`](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/AGENTS.md) for the full release flow.
 
 ## Research
 
-Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/docs/)):
+Papers consulted during design (PDF library in [`docs/`](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/docs/)):
 
 - He & Shin, ACM e-Energy '23 — resting-voltage fingerprinting
 
@@ -187,6 +187,12 @@ Papers consulted during design (PDF library in [`docs/`](https://github.com/f1ow
 Adoption varies: Lin 2022 (CCCT) and He & Shin (resting voltage) are the method prototypes adopted directly, with parameters recalibrated against this device's data; the rest served as motivation and background reading. The core capacity back-calculation is a standard engineering practice and does not depend on the papers above.
 
 The ± shown by the ML build is an RLS relative-uncertainty indicator, not a strict statistical confidence interval.
+
+## Contributing
+
+Issues and pull requests are welcome. Read [`CONTRIBUTING.md`](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/.github/CONTRIBUTING.md) for the local build/test commands and commit style, report vulnerabilities privately as described in [`SECURITY.md`](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/.github/SECURITY.md), and follow the [`CODE_OF_CONDUCT.md`](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/.github/CODE_OF_CONDUCT.md).
+
+When reporting a battery or estimate issue, attach the redacted `batteryd diag` output (Settings → Copy diagnostics) instead of screenshots only.
 
 ## Contributors
 
@@ -215,6 +221,6 @@ If you like the project, PRs and stars are welcome ⭐
 
 ## License
 
-This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/6519ef731db831f8649e8c51480b82a91a35b04a/LICENSE).
+This project is licensed under [GPL-2.0](https://github.com/f1owkang/CRecordEvolution/blob/2ab2305ccf025bc5194581b058121c9c403418e4/LICENSE).
 
 **Made with ❤ by [f1owkang](https://github.com/f1owkang)**

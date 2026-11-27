@@ -11,7 +11,7 @@
 [![](/assets/ad0e56fdd0adbd4e.svg)](https://gitlab.com/simonpunk/susfs4ksu)
 [![](/assets/06fcdc331daf4f3d.svg)](https://github.com/tiann/KernelSU)
 [![](/assets/703fea9d2ff86ecb.svg)](https://github.com/Baka-SU/BakaSU)
-[![](/assets/006ff8be129fe880.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
+[![](/assets/5695df9bc86f3eb7.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
 
 Root hiding made simple, powerful when you need it. A [KernelSU](https://kernelsu.org/) module and WebUI that turns SuSFS into clean config files and toggle switches for everyday use, with **strong hiding applied out of the box** via built-in spoofing and hiding scripts for one-tap protection, plus a script manager with scheduling for power users who want more, all without leaving the WebUI.
 
@@ -347,7 +347,7 @@ Join the discussion, get support, and stay up to date on ReSuSFS and other proje
 
 Want to see ReSuSFS in your language? Head over to [Weblate](https://hosted.weblate.org/engage/ReSuSFS) to contribute a translation.
 
-[![](/assets/154be3fd7ab29d38.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
+[![](/assets/8ccf49bdfb802eb0.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
 
 ## Credits
 

@@ -6,7 +6,7 @@
 
 [English](https://github.com/Eikeitsu/CertBridge/blob/358929bdba0011e0d5eaf0dd62c16aad44a5eb37/README.md) · [文档](https://eikeitsu.github.io/CertBridge/) · [Releases](https://github.com/Eikeitsu/CertBridge/releases)
 
-[![](/assets/fe855e24b834a612.svg)](https://github.com/Eikeitsu/CertBridge/releases)
+[![](/assets/a22527aba0a04cce.svg)](https://github.com/Eikeitsu/CertBridge/releases)
 [![](/assets/aa58ac1347e63573.svg)](https://eikeitsu.github.io/CertBridge/guide/install)
 [![](/assets/c820843dfc367c03.svg)](https://eikeitsu.github.io/CertBridge/)
 [![](/assets/aaa729390ea15b3d.svg)](https://github.com/Eikeitsu/CertBridge/blob/358929bdba0011e0d5eaf0dd62c16aad44a5eb37/LICENSE)
