@@ -3,12 +3,12 @@
 **A from-scratch, standalone implementation of the Zygisk Next API.**
 
 [![](/assets/ee245273888b189d.svg)](https://github.com/VeryBaaad/ZNNext/actions/workflows/ci.yml?query=branch%3Amaster+event%3Apush)
-[![](/assets/a7d8dbb8a4d2a6df.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
-[![](/assets/99c6f9a5c5cfd2f1.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
-[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE)
-[![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE-DCLPL)
+[![](/assets/ac6e373b7eba2e16.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
+[![](/assets/67708b79eca0cbb2.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
+[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/68d895370255e5d67a9b4baced3a42aec949fdae/LICENSE)
+[![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/68d895370255e5d67a9b4baced3a42aec949fdae/LICENSE-DCLPL)
 
-[中文（简体）](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/README_zh-CN.md) [文言（華夏）](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/README_lzh.md) [Русский](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/README_ru.md)
+[中文（简体）](https://github.com/VeryBaaad/ZNNext/blob/68d895370255e5d67a9b4baced3a42aec949fdae/README_zh-CN.md) [文言（華夏）](https://github.com/VeryBaaad/ZNNext/blob/68d895370255e5d67a9b4baced3a42aec949fdae/README_lzh.md) [Русский](https://github.com/VeryBaaad/ZNNext/blob/68d895370255e5d67a9b4baced3a42aec949fdae/README_ru.md)
 
 Important
 
@@ -38,12 +38,16 @@ Tip
 
 Some features may not function on certain Linux kernels, this does not affect daily use.
 
-For armeabi, x86, riscv64, mips64, and mips, you need to compile them yourself:
+### Build
+
+Build `armeabi`, `x86`, `riscv64`, `mips64`, and `mips` from source. Select the target with `--abis`.
 
 ```
-build.py zip<Release|Debug> --abis <armeabi,x86,riscv64,mips64,mips>
+python3 build.py zipRelease --abis riscv64
 
 ```
+
+Use `zipDebug` for a debug build. Outputs go to `module/build/outputs/release/`. Add `--split-debug-symbols` to generate a matching `.symbols.zip`.
 
 ### Install
 
@@ -166,8 +170,8 @@ decompressors
 
 ZNNext is licensed under the:
 
-- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE).
+- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/68d895370255e5d67a9b4baced3a42aec949fdae/LICENSE).
 
-- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE-DCLPL).
+- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/68d895370255e5d67a9b4baced3a42aec949fdae/LICENSE-DCLPL).
 
 Third-party license texts are bundled verbatim under `licenses/` in the module zip.

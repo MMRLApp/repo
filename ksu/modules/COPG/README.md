@@ -7,7 +7,7 @@
 [![](/assets/8f3fe602259546f0.svg)](https://github.com/AlirezaParsi/COPG/releases)
 [![](/assets/b1313ec045b74093.svg)](https://github.com/topjohnwu/Magisk)
 [![](/assets/964bcdcda941337b.svg)](https://www.android.com/)
-[![](/assets/0ab1afa71c19d08a.svg)](https://github.com/AlirezaParsi/COPG/releases)
+[![](/assets/b0208b0f0c3bc282.svg)](https://github.com/AlirezaParsi/COPG/releases)
 [![](/assets/645662f215fa9272.svg)](https://github.com/AlirezaParsi/COPG/blob/b0d19e65c59041d0edbcb011a8c958bd4a5ce070/LICENSE)
 
 [![](/assets/0ad92c2d0b5f1b92.svg)](#user-content--installation)
@@ -348,7 +348,7 @@ Address
 
 ## 📈 Activity
 
-![](/assets/deb18e8574533d0a.svg)
+![](/assets/217da33af649461a.svg)
 
 **If COPG leveled up your games or apps, drop a ⭐ — it really helps!**
 

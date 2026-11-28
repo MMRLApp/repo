@@ -1,6 +1,6 @@
 # Magic V2Ray
 
-[English](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/README.md) | [Tiếng Việt](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/vi/README.md) | [Русский](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/ru/README.md) | [简体中文](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/zh-CN/README.md) | [繁體中文（台灣）](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/zh-TW/README.md) | [繁體中文（香港）](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/zh-HK/README.md)
+[English](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/README.md) | [Tiếng Việt](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/vi/README.md) | [Русский](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/ru/README.md) | [简体中文](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/zh-CN/README.md) | [繁體中文（台灣）](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/zh-TW/README.md) | [繁體中文（香港）](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/zh-HK/README.md)
 
 ![](/assets/5dcc076b0ad0fda2.jpg)
 
@@ -54,7 +54,7 @@ Starting with **v2.0**, devices without root access can run Magic V2Ray seamless
 
 - **Hotspot Sharing:** Share your proxied connection with laptops, consoles, or other phones via IPv4/IPv6 Wi-Fi Hotspot.
 
-- **Provider Websites:** Add a VPN seller's website as a category, open it in a built-in mini browser, tap its Sync button to import nodes, and pin a home-screen shortcut to it. See [Deep Links](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md#deep-links-for-providers).
+- **Provider Websites:** Add a VPN seller's website as a category, open it in a built-in mini browser, tap its Sync button to import nodes, and pin a home-screen shortcut to it. See [Deep Links](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md#deep-links-for-providers).
 
 ## Installation & Usage
 
@@ -90,19 +90,19 @@ The `.zip` downloaded from [modules.kernelsu.org](https://modules.kernelsu.org/)
 
 ## API & Integration
 
-Everything for websites, VPN sellers and other apps that integrate with Magic V2Ray (deep links, connect / disconnect, node access, temporary settings) is documented in [API.md](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md):
+Everything for websites, VPN sellers and other apps that integrate with Magic V2Ray (deep links, connect / disconnect, node access, temporary settings) is documented in [API.md](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md):
 
-- [Deep Links for Providers](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md#deep-links-for-providers)
+- [Deep Links for Providers](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md#deep-links-for-providers)
 
-- [Connect from other apps and websites](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md#connect-from-other-apps-and-websites)
+- [Connect from other apps and websites](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md#connect-from-other-apps-and-websites)
 
-- [Info and state events (API level 1)](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md#info-and-state-events-api-level-1)
+- [Info and state events (API level 1)](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md#info-and-state-events-api-level-1)
 
-- [Nodes and special connect uris (API level 2, apps only)](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md#nodes-and-special-connect-uris-api-level-2-apps-only)
+- [Nodes and special connect uris (API level 2, apps only)](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md#nodes-and-special-connect-uris-api-level-2-apps-only)
 
-- [Using it from Termux (or any shell)](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md#using-it-from-termux-or-any-shell)
+- [Using it from Termux (or any shell)](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md#using-it-from-termux-or-any-shell)
 
-- [Temporary settings (`overrides`)](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/docs/API.md#temporary-settings-overrides)
+- [Temporary settings (`overrides`)](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/docs/API.md#temporary-settings-overrides)
 
 ## Building from Source
 
@@ -132,6 +132,6 @@ The Web UI assets are located at `app/src/main/assets/webroot`. The app exposes 
 
 ## License
 
-By using this project, you agree to the terms and conditions set forth in the license. For more details, please refer to the [LICENSE](https://github.com/vincentng295/Magic_V2Ray/blob/73f2df674ebb1e031f58d622a77c7ca4c3583aae/LICENSE) file in this repository.
+By using this project, you agree to the terms and conditions set forth in the license. For more details, please refer to the [LICENSE](https://github.com/vincentng295/Magic_V2Ray/blob/c2c0864462e126161468755a8036493ef03e5873/LICENSE) file in this repository.
 
 Essentially, you are free to use, modify, and distribute this software, provided that you include the same license and source code availability in your own project. Moreover, using its source code or replicating its features within closed-source software may constitute a violation of the license terms.

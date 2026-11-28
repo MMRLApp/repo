@@ -5,13 +5,13 @@
 
 [![](/assets/c971bf401f8d3ef6.svg)](https://github.com/ahmed-alnassif/ReSuSFS/actions/workflows/release.yml)
 [![](/assets/7bad82291f0bf241.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
-[![](/assets/b684cef51ab227f6.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
+[![](/assets/9c635c670e215231.svg)](https://github.com/ahmed-alnassif/ReSuSFS/releases)
 [![](/assets/4e0c19d01478f059.svg)](https://t.me/ahmed_alnassif_tg)
 [![](/assets/d78cdaa5efb26e9e.svg)](https://github.com/ahmed-alnassif/ReSuSFS/blob/cbca0e6a58b5fa48020fca4592d8fce99247b46e/LICENSE)
 [![](/assets/ad0e56fdd0adbd4e.svg)](https://gitlab.com/simonpunk/susfs4ksu)
 [![](/assets/06fcdc331daf4f3d.svg)](https://github.com/tiann/KernelSU)
 [![](/assets/703fea9d2ff86ecb.svg)](https://github.com/Baka-SU/BakaSU)
-[![](/assets/5695df9bc86f3eb7.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
+[![](/assets/8ead3867e4ef335d.svg)](https://hosted.weblate.org/engage/ReSuSFS/)
 
 Root hiding made simple, powerful when you need it. A [KernelSU](https://kernelsu.org/) module and WebUI that turns SuSFS into clean config files and toggle switches for everyday use, with **strong hiding applied out of the box** via built-in spoofing and hiding scripts for one-tap protection, plus a script manager with scheduling for power users who want more, all without leaving the WebUI.
 
