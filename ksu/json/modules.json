@@ -7,7 +7,7 @@
   "description": "Modules for KernelSU, published from their authors' GitHub repositories as immutable releases.",
   "metadata": {
     "version": 1,
-    "timestamp": 1795794215.384
+    "timestamp": 1795826786.921
   },
   "modules": [
     {
@@ -464,7 +464,7 @@
       "size": 5622549,
       "permissions": [],
       "features": {},
-      "stars": 70,
+      "stars": 74,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791735507,
@@ -551,7 +551,7 @@
       "size": 3533394,
       "permissions": [],
       "features": {},
-      "stars": 18,
+      "stars": 19,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1795296234,
@@ -591,7 +591,7 @@
       "size": 1504829,
       "permissions": [],
       "features": {},
-      "stars": 11,
+      "stars": 10,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791910273,
@@ -743,7 +743,7 @@
       "size": 11548251,
       "permissions": [],
       "features": {},
-      "stars": 439,
+      "stars": 442,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792694429,
@@ -906,7 +906,7 @@
       "size": 928204,
       "permissions": [],
       "features": {},
-      "stars": 929,
+      "stars": 930,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791799060,
@@ -1605,7 +1605,7 @@
       "size": 73059236,
       "permissions": [],
       "features": {},
-      "stars": 20,
+      "stars": 19,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792659288,
@@ -1928,7 +1928,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 638,
+      "stars": 640,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792146836,
@@ -2138,7 +2138,7 @@
       "size": 49144002,
       "permissions": [],
       "features": {},
-      "stars": 11,
+      "stars": 12,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792770944,
@@ -2528,7 +2528,7 @@
       "features": {
         "metamodule": true
       },
-      "stars": 745,
+      "stars": 752,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1792687379,
@@ -2891,7 +2891,7 @@
       "size": 13457214,
       "permissions": [],
       "features": {},
-      "stars": 39,
+      "stars": 41,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1793622993,
@@ -3177,7 +3177,7 @@
       "size": 155681,
       "permissions": [],
       "features": {},
-      "stars": 36,
+      "stars": 37,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1791709999,
@@ -3362,8 +3362,8 @@
     {
       "id": "yukizygisk",
       "name": "YukiZygisk",
-      "version": "v0.5.0-10162",
-      "versionCode": 10162,
+      "version": "v0.5.0-10163",
+      "versionCode": 10163,
       "author": "Rouyashiki Developers",
       "description": "Standalone kernel-level Zygisk",
       "readme": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/README.md",
@@ -3374,28 +3374,20 @@
         "system"
       ],
       "icon": "https://modules.kernelsu.org/assets/015f8fe60dc9a038.png",
-      "added": 1794088116,
-      "timestamp": 1795770392,
-      "size": 3587797,
+      "added": 1794095268,
+      "timestamp": 1795826123,
+      "size": 3597856,
       "permissions": [],
       "features": {},
-      "stars": 161,
+      "stars": 162,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1794088116,
+        "added": 1794095268,
         "source": "https://github.com/Rouyashiki/YukiZygisk",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
-        {
-          "timestamp": 1794088116,
-          "version": "v0.3.0-10144",
-          "versionCode": 10144,
-          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-42417290425/YukiZygisk-v0.3.0-10144-all-kmi-arm64-v8a.zip",
-          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.3.0-10144.md",
-          "size": 3391404
-        },
         {
           "timestamp": 1794095268,
           "version": "v0.4.0-10145",
@@ -3467,6 +3459,14 @@
           "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-45970261862/YukiZygisk-v0.5.0-10162-all-kmi-arm64-v8a.zip",
           "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.5.0-10162.md",
           "size": 3587797
+        },
+        {
+          "timestamp": 1795826123,
+          "version": "v0.5.0-10163",
+          "versionCode": 10163,
+          "zipUrl": "https://github.com/Rouyashiki/YukiZygisk/releases/download/ci-46088250765/YukiZygisk-v0.5.0-10163-all-kmi-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/repo/refs/heads/master/ksu/modules/yukizygisk/changelogs/v0.5.0-10163.md",
+          "size": 3597856
         }
       ]
     },
@@ -3711,11 +3711,11 @@
         "system"
       ],
       "added": 1794747577,
-      "timestamp": 1795790155,
+      "timestamp": 1795795509.92,
       "size": 6336729,
       "permissions": [],
       "features": {},
-      "stars": 123,
+      "stars": 122,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1794747577,

@@ -5,10 +5,10 @@
 [![](/assets/ee245273888b189d.svg)](https://github.com/VeryBaaad/ZNNext/actions/workflows/ci.yml?query=branch%3Amaster+event%3Apush)
 [![](/assets/a7d8dbb8a4d2a6df.svg)](https://github.com/VeryBaaad/ZNNext/releases/latest)
 [![](/assets/99c6f9a5c5cfd2f1.svg)](https://github.com/VeryBaaad/ZNNext/releases/)
-[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE)
-[![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE-DCLPL)
+[![](/assets/6935a7f3db58a90a.svg)](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE)
+[![](/assets/24e9c4288888d264.svg)](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE-DCLPL)
 
-[中文（简体）](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/README_zh-CN.md) [文言（華夏）](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/README_lzh.md)
+[中文（简体）](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/README_zh-CN.md) [文言（華夏）](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/README_lzh.md) [Русский](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/README_ru.md)
 
 Important
 
@@ -166,8 +166,8 @@ decompressors
 
 ZNNext is licensed under the:
 
-- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE).
+- [**GNU General Public License v3 (GPL-3)**](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE).
 
-- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/eed948778176741e7044b5f4c3e229c83f8d4ed3/LICENSE-DCLPL).
+- [**Developers And Contributors Are Lesbians Public License v2.0 (DCLPLv2)**](https://github.com/VeryBaaad/ZNNext/blob/e18b6b5a14880e0c1574957f9e9e3d5cba4b13c2/LICENSE-DCLPL).
 
 Third-party license texts are bundled verbatim under `licenses/` in the module zip.
